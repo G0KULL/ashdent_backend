@@ -1,0 +1,44 @@
+{% if treatments %}
+<div class="table-responsive">
+    <table class="table table-hover align-middle border">
+        <thead class="table-light">
+            <tr>
+                <th>Date</th>
+                <th>Treatment</th>
+                <th>Teeth</th>
+                <th>Qty</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Discount</th>
+                <th class="text-end">Tax</th>
+                <th class="text-end">Total Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for treatment in treatments %}
+            <tr>
+                <td>{{ treatment.created_at|date:"M d, Y" }}</td>
+                <td class="fw-semibold">{{ treatment.treatment_name }}</td>
+                <td>{{ treatment.teeth|default:"-" }}</td>
+                <td>{{ treatment.quantity }}</td>
+                <td class="text-end">${{ treatment.price }}</td>
+                <td class="text-end">${{ treatment.discount }}</td>
+                <td class="text-end">${{ treatment.tax }}</td>
+                <td class="text-end fw-bold text-primary">${{ treatment.total_amount }}</td>
+                <td>
+                    {% if treatment.invoiceitem_set.exists %}
+                        <span class="badge bg-success">Billed</span>
+                    {% else %}
+                        <span class="badge bg-warning text-dark">Unbilled</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="alert alert-info text-center">
+    No treatments found for this patient. Click "Add Treatment" to record one.
+</div>
+{% endif %}
