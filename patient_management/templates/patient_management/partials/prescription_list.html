@@ -1,0 +1,32 @@
+{% if prescriptions %}
+<div class="table-responsive">
+    <table class="table table-hover align-middle border">
+        <thead class="table-light">
+            <tr>
+                <th>Date</th>
+                <th>Drug Name</th>
+                <th>Dosage</th>
+                <th>Frequency</th>
+                <th>Duration</th>
+                <th>Instructions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for rx in prescriptions %}
+            <tr>
+                <td>{{ rx.created_at|date:"M d, Y" }}</td>
+                <td class="fw-semibold text-primary"><i class="bi bi-capsule text-secondary me-2"></i>{{ rx.drug_name }}</td>
+                <td><span class="badge bg-light text-dark border">{{ rx.dosage }}</span></td>
+                <td>{{ rx.frequency }}</td>
+                <td>{{ rx.duration }}</td>
+                <td class="text-muted small">{{ rx.instructions|default:"-" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="alert alert-info text-center">
+    No prescriptions found for this patient. Click "Add Prescription" to create one.
+</div>
+{% endif %}

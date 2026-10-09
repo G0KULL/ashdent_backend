@@ -1,0 +1,50 @@
+<div class="modal fade" id="prescriptionModal" tabindex="-1" aria-labelledby="prescriptionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <form id="prescriptionForm">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold" id="prescriptionModalLabel">Add Prescription</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-12">
+              <label class="form-label fw-semibold">Drug Name</label>
+              <select class="form-select" id="id_drug_name" required>
+                <option value="">Select Drug...</option>
+                <option value="Amoxicillin 500mg">Amoxicillin 500mg</option>
+                <option value="Ibuprofen 400mg">Ibuprofen 400mg</option>
+                <option value="Paracetamol 500mg">Paracetamol 500mg</option>
+                <option value="Metronidazole 400mg">Metronidazole 400mg</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Dosage</label>
+              <input type="text" class="form-control" id="id_dosage" placeholder="e.g. 500mg" required>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Frequency</label>
+              <input type="text" class="form-control" id="id_frequency" placeholder="e.g. 1-0-1" required>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label fw-semibold">Duration</label>
+              <input type="text" class="form-control" id="id_duration" placeholder="e.g. 5 Days" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Instructions</label>
+              <textarea class="form-control" id="id_instructions" rows="2" placeholder="e.g. After meals"></textarea>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Notes</label>
+              <textarea class="form-control" id="id_notes" rows="2" placeholder="Any extra notes..."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="savePrescriptionBtn">Save Prescription</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
