@@ -10,3 +10,4 @@ expenses = Expense.objects.all().order_by('-id')[:20]
 print(f"Total expenses: {Expense.objects.count()}")
 for e in expenses:
     print(e.id, e.title, e.amount, e.date, e.category)
+
