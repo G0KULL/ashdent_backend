@@ -1,0 +1,35 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad9da2a9ab27704974300df"
+    },
+    "plan_id": "scale",
+    "plan_name": "Scale Plan",
+    "billing_cycle": "yearly",
+    "branches_count": 2,
+    "base_price": {
+      "$numberDecimal": "38000"
+    },
+    "additional_branch_price": {
+      "$numberDecimal": "10000"
+    },
+    "tax_amount": {
+      "$numberDecimal": "8640.00"
+    },
+    "total_amount": {
+      "$numberDecimal": "56640.00"
+    },
+    "status": "Active",
+    "clinic_name": "AshDent Dental Clinic",
+    "contact_name": "",
+    "contact_email": "",
+    "contact_phone": "",
+    "activated_at": {
+      "$date": "2026-10-22T09:40:58.677Z"
+    },
+    "expires_at": {
+      "$date": "2027-10-22T09:40:58.673Z"
+    },
+    "notes": ""
+  }
+]

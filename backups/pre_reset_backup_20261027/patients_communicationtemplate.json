@@ -1,0 +1,114 @@
+[
+  {
+    "_id": {
+      "$oid": "6ac4f23f00d494426a544eb9"
+    },
+    "category": "Appointment",
+    "type": "Confirmation",
+    "text": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "email_enabled": false,
+    "sms_enabled": true,
+    "whatsapp_enabled": false,
+    "created_at": {
+      "$date": "2026-10-06T13:06:07.155Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4f23f00d494426a544eba"
+    },
+    "category": "Follow-up",
+    "type": "Reminder",
+    "text": "Dear [Name], this is a gentle reminder regarding your follow-up appointment. Please let us know if you need to reschedule.",
+    "email_enabled": false,
+    "sms_enabled": true,
+    "whatsapp_enabled": false,
+    "created_at": {
+      "$date": "2026-10-06T13:06:07.199Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4f23f00d494426a544ebb"
+    },
+    "category": "Billing",
+    "type": "Payment Receipt",
+    "text": "Dear [Name], we have received your payment for your recent dental procedure. Thank you for choosing our clinic!",
+    "email_enabled": false,
+    "sms_enabled": true,
+    "whatsapp_enabled": false,
+    "created_at": {
+      "$date": "2026-10-06T13:06:07.205Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4f23f00d494426a544ebc"
+    },
+    "category": "Greeting",
+    "type": "Welcome",
+    "text": "Welcome [Name]! We are excited to assist you with your dental care and help you maintain a healthy smile.",
+    "email_enabled": false,
+    "sms_enabled": true,
+    "whatsapp_enabled": false,
+    "created_at": {
+      "$date": "2026-10-06T13:06:07.212Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4f23f00d494426a544ebd"
+    },
+    "category": "Greeting",
+    "type": "Birthday Wish",
+    "text": "Happy Birthday [Name]! \ud83c\udf82 Wishing you a wonderful day filled with joy and smiles from all of us at the dental clinic!",
+    "email_enabled": false,
+    "sms_enabled": true,
+    "whatsapp_enabled": false,
+    "created_at": {
+      "$date": "2026-10-06T13:06:07.219Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4f23f00d494426a544ebe"
+    },
+    "category": "Appointment",
+    "type": "Missed Appointment",
+    "text": "Dear [Name], we noticed you missed your scheduled appointment today. Please call us to reschedule at your convenience.",
+    "email_enabled": false,
+    "sms_enabled": true,
+    "whatsapp_enabled": false,
+    "created_at": {
+      "$date": "2026-10-06T13:06:07.223Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4f23f00d494426a544ebf"
+    },
+    "category": "Clinical",
+    "type": "Post-Op Care",
+    "text": "Dear [Name], please take your prescribed medications on time and avoid hard or hot foods today. Take rest and feel free to reach out if you have any discomfort.",
+    "email_enabled": false,
+    "sms_enabled": true,
+    "whatsapp_enabled": false,
+    "created_at": {
+      "$date": "2026-10-06T13:06:07.229Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4f23f00d494426a544ec0"
+    },
+    "category": "Reminder",
+    "type": "Routine Dental Checkup",
+    "text": "Dear [Name], it has been 6 months since your last dental checkup! Regular cleanings protect your teeth. Book your slot today.",
+    "email_enabled": false,
+    "sms_enabled": true,
+    "whatsapp_enabled": false,
+    "created_at": {
+      "$date": "2026-10-06T13:06:07.235Z"
+    }
+  }
+]

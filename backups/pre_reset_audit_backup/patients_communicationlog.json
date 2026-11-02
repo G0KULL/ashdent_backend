@@ -1,0 +1,444 @@
+[
+  {
+    "_id": {
+      "$oid": "6ae03dcc7376e57fbf941071"
+    },
+    "patient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T05:59:40.138Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b9d"
+    },
+    "patient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T06:00:11.837Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcf7"
+    },
+    "patient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T06:10:20.934Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d78"
+    },
+    "patient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:04:04.952Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0691ff94bab17fcbc2d55"
+    },
+    "patient_id": {
+      "$oid": "6ae0691ff94bab17fcbc2d51"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:04:31.938Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071b5960fafb8aa95bf06"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:41:09.179Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d0d12f7661b8c50a0a"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:41:36.966Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3b9a"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:42:04.496Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765efc"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:43:12.366Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f9126141"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:20.467Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0728f32f7369b9e70db68"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:47.568Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0728f32f7369b9e70db69"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:47.570Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0728f32f7369b9e70db6a"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:47.571Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0728f32f7369b9e70db6b"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:47.593Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0728f32f7369b9e70db70"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:47.649Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0728f32f7369b9e70db71"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:47.651Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0728f32f7369b9e70db72"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:47.652Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0728f32f7369b9e70db73"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:47.653Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0728f32f7369b9e70db75"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:44:47.676Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0730da0126a4afc8185a3"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:46:53.725Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0730da0126a4afc8185a4"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:46:53.736Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0730da0126a4afc8185a5"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:46:53.738Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0730da0126a4afc8185a7"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:46:53.761Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0730da0126a4afc8185ab"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:46:53.792Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0730da0126a4afc8185ac"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:46:53.800Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0730da0126a4afc8185ae"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:46:53.810Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0730da0126a4afc8185b0"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:46:53.830Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0730da0126a4afc8185b1"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:46:53.842Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0742158bdcf0adb404259"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:51:29.454Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea789a"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T09:53:46.430Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb448"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T10:08:17.222Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0783607aeb06906a6f587"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T10:08:54.991Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07844f1ec62e92b2d0704"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T10:09:08.998Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae078474ed3edaae91f6eb0"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+    "channel": "SMS",
+    "sent_at": {
+      "$date": "2026-10-27T10:09:11.674Z"
+    }
+  }
+]

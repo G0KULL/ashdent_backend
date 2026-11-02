@@ -1,0 +1,86 @@
+[
+  {
+    "_id": {
+      "$oid": "6ac4d2cb60f5fe207a656318"
+    },
+    "role": "Admin",
+    "permissions": [
+      "dashboard",
+      "add-patients",
+      "appointments",
+      "today-patients",
+      "search-patient",
+      "follow-ups",
+      "pre-bookings",
+      "tele-medicine",
+      "website-appointment",
+      "communication",
+      "billing",
+      "expense-manager",
+      "reports",
+      "pathology-lab",
+      "dental-lab",
+      "pharmacy",
+      "purchases",
+      "stock",
+      "prescriptions",
+      "users",
+      "doctors",
+      "settings"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6ac4d2cb60f5fe207a656319"
+    },
+    "role": "Doctor",
+    "permissions": [
+      "dashboard",
+      "add-patients",
+      "appointments",
+      "today-patients",
+      "search-patient",
+      "follow-ups",
+      "pre-bookings",
+      "tele-medicine",
+      "website-appointment",
+      "communication",
+      "reports",
+      "prescriptions",
+      "doctor-slots",
+      "income"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6ac4d2cb60f5fe207a65631a"
+    },
+    "role": "Pharmacist",
+    "permissions": [
+      "dashboard",
+      "pharmacy",
+      "stock",
+      "purchases",
+      "prescriptions"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6ac4d2cb60f5fe207a65631b"
+    },
+    "role": "Receptionist",
+    "permissions": [
+      "dashboard",
+      "add-patients",
+      "appointments",
+      "today-patients",
+      "search-patient",
+      "follow-ups",
+      "pre-bookings",
+      "tele-medicine",
+      "website-appointment",
+      "billing",
+      "lab"
+    ]
+  }
+]

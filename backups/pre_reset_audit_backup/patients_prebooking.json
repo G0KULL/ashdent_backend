@@ -1,0 +1,47 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcc00"
+    },
+    "name": "Kavya Ramesh",
+    "phone": "9847033013",
+    "expected_date": {
+      "$date": "2026-10-18T00:00:00Z"
+    },
+    "notes": "Full mouth scaling & polishing review",
+    "status": "Confirmed",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.578Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcc01"
+    },
+    "name": "Harish Nambiar",
+    "phone": "9847033014",
+    "expected_date": {
+      "$date": "2026-10-20T00:00:00Z"
+    },
+    "notes": "Denture try-in and bite registration",
+    "status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.579Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcc02"
+    },
+    "name": "Dr. Lakshmi Mohan",
+    "phone": "9847033099",
+    "expected_date": {
+      "$date": "2026-10-21T00:00:00Z"
+    },
+    "notes": "Implant specialist consultation",
+    "status": "Confirmed",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.580Z"
+    }
+  }
+]

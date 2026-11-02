@@ -1,0 +1,479 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223544700afea755fcb04"
+    },
+    "staff_level": "Senior Consultant",
+    "user_id": {
+      "$oid": "6ad223544700afea755fcb02"
+    },
+    "doctor_profile_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "name": "Dr. Ananya Menon",
+    "role": "Doctor",
+    "phone": "9847011001",
+    "email": "dr.ananya@ashdent.demo",
+    "gender": "Female",
+    "age": 40,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "85000.00"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [
+      "dashboard",
+      "add-patients",
+      "appointments",
+      "today-patients",
+      "search-patient",
+      "reports",
+      "prescriptions"
+    ],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-16T13:15:00.874Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223554700afea755fcb0e"
+    },
+    "staff_level": "Consultant",
+    "user_id": {
+      "$oid": "6ad223554700afea755fcb0c"
+    },
+    "doctor_profile_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "name": "Dr. Rahul Nair",
+    "role": "Doctor",
+    "phone": "9847011002",
+    "email": "dr.rahul@ashdent.demo",
+    "gender": "Male",
+    "age": 39,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "85000.00"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [
+      "dashboard",
+      "add-patients",
+      "appointments",
+      "today-patients",
+      "search-patient",
+      "reports",
+      "prescriptions"
+    ],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-16T13:15:01.762Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223564700afea755fcb18"
+    },
+    "staff_level": "Senior Consultant",
+    "user_id": {
+      "$oid": "6ad223564700afea755fcb16"
+    },
+    "doctor_profile_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "name": "Dr. Meera Thomas",
+    "role": "Doctor",
+    "phone": "9847011003",
+    "email": "dr.meera@ashdent.demo",
+    "gender": "Female",
+    "age": 41,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "85000.00"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [
+      "dashboard",
+      "add-patients",
+      "appointments",
+      "today-patients",
+      "search-patient",
+      "reports",
+      "prescriptions"
+    ],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-16T13:15:02.636Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223574700afea755fcb22"
+    },
+    "staff_level": "Senior Consultant",
+    "user_id": {
+      "$oid": "6ad223574700afea755fcb20"
+    },
+    "doctor_profile_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "name": "Dr. Arjun Kumar",
+    "role": "Doctor",
+    "phone": "9847011004",
+    "email": "dr.arjun@ashdent.demo",
+    "gender": "Male",
+    "age": 43,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "85000.00"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [
+      "dashboard",
+      "add-patients",
+      "appointments",
+      "today-patients",
+      "search-patient",
+      "reports",
+      "prescriptions"
+    ],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-16T13:15:03.473Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223584700afea755fcb2b"
+    },
+    "staff_level": "Front Desk Executive",
+    "user_id": {
+      "$oid": "6ad223584700afea755fcb2a"
+    },
+    "doctor_profile_id": null,
+    "name": "Anitha Sharma",
+    "role": "Receptionist",
+    "phone": "9847022001",
+    "email": "anitha@ashdent.demo",
+    "gender": "Female",
+    "age": 28,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "32000.00"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [
+      "dashboard",
+      "add-patients",
+      "appointments",
+      "today-patients",
+      "search-patient",
+      "billing"
+    ],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-16T13:15:04.307Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb2e"
+    },
+    "staff_level": "Head Pharmacist",
+    "user_id": {
+      "$oid": "6ad223594700afea755fcb2d"
+    },
+    "doctor_profile_id": null,
+    "name": "Suresh Kumar",
+    "role": "Pharmacist",
+    "phone": "9847022002",
+    "email": "suresh@ashdent.demo",
+    "gender": "Male",
+    "age": 36,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "38000.00"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [
+      "dashboard",
+      "pharmacy",
+      "stock",
+      "purchases",
+      "prescriptions"
+    ],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.084Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7258"
+    },
+    "staff_level": "Junior",
+    "user_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "doctor_profile_id": null,
+    "name": "Slot Administrator",
+    "role": "Admin",
+    "phone": "9822001122",
+    "email": null,
+    "gender": null,
+    "age": null,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "0"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-27T05:49:39.220Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725b"
+    },
+    "staff_level": "Junior",
+    "user_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "doctor_profile_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "name": "Dr. Test Slot Specialist",
+    "role": "Doctor",
+    "phone": "9822003344",
+    "email": null,
+    "gender": null,
+    "age": null,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "0"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-27T05:49:39.302Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725e"
+    },
+    "staff_level": "Junior",
+    "user_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725c"
+    },
+    "doctor_profile_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725d"
+    },
+    "name": "Dr. Second Doctor",
+    "role": "Doctor",
+    "phone": "9822005566",
+    "email": null,
+    "gender": null,
+    "age": null,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "0"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-27T05:49:39.318Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03bc477fa6bdd0ec83f6e"
+    },
+    "staff_level": "Junior",
+    "user_id": null,
+    "doctor_profile_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "name": "Slot Administrator",
+    "role": "Doctor",
+    "phone": "9822001122",
+    "email": null,
+    "gender": null,
+    "age": null,
+    "dob": null,
+    "blood_group": null,
+    "address": null,
+    "status": "Active",
+    "emergency_contact": null,
+    "base_salary": {
+      "$numberDecimal": "0"
+    },
+    "incentive": {
+      "$numberDecimal": "0"
+    },
+    "is_active": true,
+    "permissions": [],
+    "additional_details": {},
+    "created_at": {
+      "$date": "2026-10-27T05:51:00.927Z"
+    },
+    "accessible_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  }
+]

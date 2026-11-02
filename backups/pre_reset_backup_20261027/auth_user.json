@@ -1,0 +1,190 @@
+[
+  {
+    "_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "password": "pbkdf2_sha256$1200000$q3hBYzDHnV5CL4f8TkfH2t$F22FhuVBPkvhHZF5LRLQ9dR41RxxNz2a69naoG6Jb8E=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "gokul",
+    "first_name": "",
+    "last_name": "",
+    "email": "gokulgopinath4050@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-06T10:13:24.772Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "password": "pbkdf2_sha256$1200000$KmyDd42cvQRfjzQHOvIJvm$kOA85XUbJQPOVh/WDWKcbfIoLmevVaw7ELixShp1kjI=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "Dr. Navas Kp",
+    "last_name": "",
+    "email": "admin@dentalclinic.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-06T10:05:11.086Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223544700afea755fcb02"
+    },
+    "id": {
+      "$oid": "6ad223544700afea755fcb01"
+    },
+    "password": "pbkdf2_sha256$1200000$lu8efaimMsLFCPK9p5axuM$KaLjDvIpijEGe/X0/GMXxt/C2cWCdUQ3JbCdaFRidGw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dr_ananya",
+    "first_name": "Ananya",
+    "last_name": "Menon",
+    "email": "dr.ananya@ashdent.demo",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-16T13:14:59.962Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223554700afea755fcb0c"
+    },
+    "id": {
+      "$oid": "6ad223554700afea755fcb0b"
+    },
+    "password": "pbkdf2_sha256$1200000$DhhrxzK6TUOV6k6DkRYoCn$Jm9zxMKM8+UqvO+VDFxROQOmLdyn5ae1PB95wM/QRfU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dr_rahul",
+    "first_name": "Rahul",
+    "last_name": "Nair",
+    "email": "dr.rahul@ashdent.demo",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-16T13:15:00.885Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223564700afea755fcb16"
+    },
+    "id": {
+      "$oid": "6ad223564700afea755fcb15"
+    },
+    "password": "pbkdf2_sha256$1200000$JcNwuxP2jJvy1NJAO9srB1$wHKNT+ERTPjVe6WxAQSyPMafNLZoA/q1u72VjHrvoz4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dr_meera",
+    "first_name": "Meera",
+    "last_name": "Thomas",
+    "email": "dr.meera@ashdent.demo",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-16T13:15:01.771Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223574700afea755fcb20"
+    },
+    "id": {
+      "$oid": "6ad223574700afea755fcb1f"
+    },
+    "password": "pbkdf2_sha256$1200000$IloXVBKtbX8yWPRRsgJ6Mg$0MU/1F9lTcLkQASEuiof9QlBUWPMXB83VfPP8CzyKHY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dr_arjun",
+    "first_name": "Arjun",
+    "last_name": "Kumar",
+    "email": "dr.arjun@ashdent.demo",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-16T13:15:02.646Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223584700afea755fcb2a"
+    },
+    "id": {
+      "$oid": "6ad223584700afea755fcb29"
+    },
+    "password": "pbkdf2_sha256$1200000$XVgpkvieoZwt6dLP6jeSe3$rJk1qraQU8ApK5JKA9WKlUtGjv6Wi9bDhLWqpY8MjB4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "receptionist_anitha",
+    "first_name": "Anitha",
+    "last_name": "Sharma",
+    "email": "anitha@ashdent.demo",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-16T13:15:03.487Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb2d"
+    },
+    "id": {
+      "$oid": "6ad223594700afea755fcb2c"
+    },
+    "password": "pbkdf2_sha256$1200000$Tb2GZySdKNzwEI0n300qAX$wOAoZwdnRMiH6Iesd5tNbrAY393V9lo5RYVZMR3957g=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "pharmacist_suresh",
+    "first_name": "Suresh",
+    "last_name": "Kumar",
+    "email": "suresh@ashdent.demo",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-16T13:15:04.310Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "password": "pbkdf2_sha256$1500000$wZ2hrX8N4fFXNhsoV5woJJ$5ZFNelHkfg9a3aFWlBTXxrsM0zw+gvJlE3rMid0OWvU=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "Gokul",
+    "first_name": "",
+    "last_name": "",
+    "email": "gokul@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-22T10:53:12.597Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0808848cf73c64e3bb8ee"
+    },
+    "password": "pbkdf2_sha256$1500000$oKP4ORr6fiJzKcFmAUlLrL$4BIoIrJjn7Uvp9ufTazp/724O6zF5nwY/NamuwJLPkQ=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admingokul",
+    "first_name": "",
+    "last_name": "",
+    "email": "gokul@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": {
+      "$date": "2026-10-27T10:44:22.245Z"
+    }
+  }
+]

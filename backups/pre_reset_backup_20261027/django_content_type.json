@@ -1,0 +1,604 @@
+[
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5b9"
+    },
+    "app_label": "admin",
+    "model": "logentry"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5be"
+    },
+    "app_label": "auth",
+    "model": "group"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5bf"
+    },
+    "app_label": "auth",
+    "model": "permission"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5c0"
+    },
+    "app_label": "auth",
+    "model": "user"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5cd"
+    },
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5d2"
+    },
+    "app_label": "sessions",
+    "model": "session"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5d7"
+    },
+    "app_label": "patients",
+    "model": "appointment"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5d8"
+    },
+    "app_label": "patients",
+    "model": "auditlog"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5d9"
+    },
+    "app_label": "patients",
+    "model": "autonumbering"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5da"
+    },
+    "app_label": "patients",
+    "model": "billing"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5db"
+    },
+    "app_label": "patients",
+    "model": "billingitem"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5dc"
+    },
+    "app_label": "patients",
+    "model": "clinicalnotes"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5dd"
+    },
+    "app_label": "patients",
+    "model": "clinicprofile"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5de"
+    },
+    "app_label": "patients",
+    "model": "clinictiming"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5df"
+    },
+    "app_label": "patients",
+    "model": "communicationlog"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e0"
+    },
+    "app_label": "patients",
+    "model": "communicationtemplate"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e1"
+    },
+    "app_label": "patients",
+    "model": "dentallaboratory"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e2"
+    },
+    "app_label": "patients",
+    "model": "dentallabwork"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e3"
+    },
+    "app_label": "patients",
+    "model": "dentalmaterial"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e4"
+    },
+    "app_label": "patients",
+    "model": "dentalmaterialpurchase"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e5"
+    },
+    "app_label": "patients",
+    "model": "designationmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e6"
+    },
+    "app_label": "patients",
+    "model": "discountmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e7"
+    },
+    "app_label": "patients",
+    "model": "doctor"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e8"
+    },
+    "app_label": "patients",
+    "model": "doctorsalary"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5e9"
+    },
+    "app_label": "patients",
+    "model": "doctorsalaryrecord"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5ea"
+    },
+    "app_label": "patients",
+    "model": "doctorschedule"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5eb"
+    },
+    "app_label": "patients",
+    "model": "dosagelabel"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5ec"
+    },
+    "app_label": "patients",
+    "model": "dropdownmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5ed"
+    },
+    "app_label": "patients",
+    "model": "expense"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5ee"
+    },
+    "app_label": "patients",
+    "model": "expensecategory"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5ef"
+    },
+    "app_label": "patients",
+    "model": "labheader"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f0"
+    },
+    "app_label": "patients",
+    "model": "laboratory"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f1"
+    },
+    "app_label": "patients",
+    "model": "labpackage"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f2"
+    },
+    "app_label": "patients",
+    "model": "labtestmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f3"
+    },
+    "app_label": "patients",
+    "model": "labtestparameter"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f4"
+    },
+    "app_label": "patients",
+    "model": "medicinemaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f5"
+    },
+    "app_label": "patients",
+    "model": "medicinepurchase"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f6"
+    },
+    "app_label": "patients",
+    "model": "medicinestock"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f7"
+    },
+    "app_label": "patients",
+    "model": "offerpackage"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f8"
+    },
+    "app_label": "patients",
+    "model": "offerpackageitem"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5f9"
+    },
+    "app_label": "patients",
+    "model": "packageredemption"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5fa"
+    },
+    "app_label": "patients",
+    "model": "patient"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5fb"
+    },
+    "app_label": "patients",
+    "model": "patientgroup"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5fc"
+    },
+    "app_label": "patients",
+    "model": "patientimage"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5fd"
+    },
+    "app_label": "patients",
+    "model": "patientlaborder"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5fe"
+    },
+    "app_label": "patients",
+    "model": "patientpackagesubscription"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f5ff"
+    },
+    "app_label": "patients",
+    "model": "patientrequiredfields"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f600"
+    },
+    "app_label": "patients",
+    "model": "patienttypemaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f601"
+    },
+    "app_label": "patients",
+    "model": "payment"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f602"
+    },
+    "app_label": "patients",
+    "model": "permissionmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f603"
+    },
+    "app_label": "patients",
+    "model": "pharmacypurchase"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f604"
+    },
+    "app_label": "patients",
+    "model": "pharmacypurchaseitem"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f605"
+    },
+    "app_label": "patients",
+    "model": "pharmacysettings"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f606"
+    },
+    "app_label": "patients",
+    "model": "prebooking"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f607"
+    },
+    "app_label": "patients",
+    "model": "prescription"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f608"
+    },
+    "app_label": "patients",
+    "model": "prescriptionitem"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f609"
+    },
+    "app_label": "patients",
+    "model": "prescriptiontemplate"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f60a"
+    },
+    "app_label": "patients",
+    "model": "roledefaultpermissions"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f60b"
+    },
+    "app_label": "patients",
+    "model": "rolemaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f60c"
+    },
+    "app_label": "patients",
+    "model": "rolepermission"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f60d"
+    },
+    "app_label": "patients",
+    "model": "salutation"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f60e"
+    },
+    "app_label": "patients",
+    "model": "staff"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f60f"
+    },
+    "app_label": "patients",
+    "model": "staffbenefit"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f610"
+    },
+    "app_label": "patients",
+    "model": "staffinsurance"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f611"
+    },
+    "app_label": "patients",
+    "model": "staffleaveconfig"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f612"
+    },
+    "app_label": "patients",
+    "model": "stafflevelmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f613"
+    },
+    "app_label": "patients",
+    "model": "staffpermissionoverride"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f614"
+    },
+    "app_label": "patients",
+    "model": "supplier"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f615"
+    },
+    "app_label": "patients",
+    "model": "supplierledger"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f616"
+    },
+    "app_label": "patients",
+    "model": "taxsetting"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f617"
+    },
+    "app_label": "patients",
+    "model": "tooth"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f618"
+    },
+    "app_label": "patients",
+    "model": "toothmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f619"
+    },
+    "app_label": "patients",
+    "model": "transaction"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f61a"
+    },
+    "app_label": "patients",
+    "model": "treatmentmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f61b"
+    },
+    "app_label": "patients",
+    "model": "treatmentrecord"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f61c"
+    },
+    "app_label": "patients",
+    "model": "visit"
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c9a4470e815ac823f61d"
+    },
+    "app_label": "patients",
+    "model": "websiteappointmentrequest"
+  },
+  {
+    "_id": {
+      "$oid": "6ac8dca125e0d2ebbb4da4aa"
+    },
+    "app_label": "patients",
+    "model": "company"
+  },
+  {
+    "_id": {
+      "$oid": "6ad1ccd5c8db57acb097b8f6"
+    },
+    "app_label": "patients",
+    "model": "doctorscheduleproposal"
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b64b4a1194455e7ede27"
+    },
+    "app_label": "patients",
+    "model": "diagnosismaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b64b4a1194455e7ede28"
+    },
+    "app_label": "patients",
+    "model": "examinationmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b64b4a1194455e7ede29"
+    },
+    "app_label": "patients",
+    "model": "toothconditionmaster"
+  },
+  {
+    "_id": {
+      "$oid": "6ad9d9a7c906333f3b3f027e"
+    },
+    "app_label": "patients",
+    "model": "clinicsubscription"
+  },
+  {
+    "_id": {
+      "$oid": "6ae06bfc1d937571a6a77f2a"
+    },
+    "app_label": "patients",
+    "model": "branch"
+  },
+  {
+    "_id": {
+      "$oid": "6ae06bfc1d937571a6a77f2b"
+    },
+    "app_label": "patients",
+    "model": "doctordateoverride"
+  },
+  {
+    "_id": {
+      "$oid": "6ae06bfc1d937571a6a77f2c"
+    },
+    "app_label": "patients",
+    "model": "inappnotification"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "name": "Dr. Ananya Menon",
+    "color": "#3b82f6",
+    "phone": "9847011001",
+    "email": "dr.ananya@ashdent.demo",
+    "specialization": "General Dentistry",
+    "qualification": "BDS, MDS (General Dentistry)",
+    "experience_years": 8,
+    "availability": null,
+    "consultation_fee": {
+      "$numberDecimal": "500.00"
+    },
+    "slot_duration": 30,
+    "assigned_branches": [
+      "6ae07122dff61e5ede81e19c"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "name": "Dr. Rahul Nair",
+    "color": "#10b981",
+    "phone": "9847011002",
+    "email": "dr.rahul@ashdent.demo",
+    "specialization": "Orthodontics & Dentofacial Orthopedics",
+    "qualification": "BDS, MDS (Orthodontics)",
+    "experience_years": 7,
+    "availability": null,
+    "consultation_fee": {
+      "$numberDecimal": "800.00"
+    },
+    "slot_duration": 30,
+    "assigned_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "name": "Dr. Meera Thomas",
+    "color": "#8b5cf6",
+    "phone": "9847011003",
+    "email": "dr.meera@ashdent.demo",
+    "specialization": "Prosthodontics & Implantology",
+    "qualification": "BDS, MDS (Prosthodontics)",
+    "experience_years": 9,
+    "availability": null,
+    "consultation_fee": {
+      "$numberDecimal": "700.00"
+    },
+    "slot_duration": 30,
+    "assigned_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "name": "Dr. Arjun Kumar",
+    "color": "#f59e0b",
+    "phone": "9847011004",
+    "email": "dr.arjun@ashdent.demo",
+    "specialization": "Oral & Maxillofacial Surgery",
+    "qualification": "BDS, MDS (OMFS)",
+    "experience_years": 11,
+    "availability": null,
+    "consultation_fee": {
+      "$numberDecimal": "1000.00"
+    },
+    "slot_duration": 30,
+    "assigned_branches": [
+      "6ae06c1ba7492ed0d8b71809"
+    ],
+    "primary_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  }
+]

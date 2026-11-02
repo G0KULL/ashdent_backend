@@ -1,0 +1,3819 @@
+[
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76a4"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_admin_slot directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.358Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76a7"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725c"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_superadmin directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725d"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.449Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76aa"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03d47daae4c37bdca76a9",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.507Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76ab"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03d47daae4c37bdca76a9",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.509Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76ac"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03d47daae4c37bdca76a9",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.511Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76ad"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03d47daae4c37bdca76a9",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.513Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76ae"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03d47daae4c37bdca76a9",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.515Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76af"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03d47daae4c37bdca76a9",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.517Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76b0"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03d47daae4c37bdca76a9",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.518Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76b1"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03d47daae4c37bdca76a9",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.520Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dad3b60ab7895dcc83c"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_admin_slot directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:09.886Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dad3b60ab7895dcc83f"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725c"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_superadmin directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725d"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:09.944Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc842"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dad3b60ab7895dcc841",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.013Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc843"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dad3b60ab7895dcc841",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.015Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc844"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dad3b60ab7895dcc841",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.018Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc845"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dad3b60ab7895dcc841",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.020Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc846"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dad3b60ab7895dcc841",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.022Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc847"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dad3b60ab7895dcc841",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.024Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc848"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dad3b60ab7895dcc841",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.026Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc849"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dad3b60ab7895dcc841",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.029Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc84b"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Proposal Rejected",
+    "message": "Your schedule proposal was rejected. Reason: Tuesday already has too many specialists rostered.",
+    "notification_type": "PROPOSAL_REJECTED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dad3b60ab7895dcc841",
+      "reason": "Tuesday already has too many specialists rostered."
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.141Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc84e"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dae3b60ab7895dcc84d",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.216Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc84f"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dae3b60ab7895dcc84d",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.218Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc850"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dae3b60ab7895dcc84d",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.220Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc851"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dae3b60ab7895dcc84d",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.222Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc852"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dae3b60ab7895dcc84d",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.224Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc853"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dae3b60ab7895dcc84d",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.226Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc854"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dae3b60ab7895dcc84d",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.229Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dae3b60ab7895dcc855"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dae3b60ab7895dcc84d",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:10.231Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf94104f"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_admin_slot directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.571Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941052"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725c"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_superadmin directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725d"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.628Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941055"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941054",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.697Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941056"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941054",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.700Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941057"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941054",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.702Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941058"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941054",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941059"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941054",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.706Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf94105a"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941054",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.707Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf94105b"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941054",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.709Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf94105c"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941054",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.713Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf94105e"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Proposal Rejected",
+    "message": "Your schedule proposal was rejected. Reason: Tuesday already has too many specialists rostered.",
+    "notification_type": "PROPOSAL_REJECTED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941054",
+      "reason": "Tuesday already has too many specialists rostered."
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.830Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941061"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941060",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.901Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941062"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941060",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.904Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941063"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941060",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.906Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941064"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941060",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.908Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941065"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941060",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.909Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941066"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941060",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.912Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941067"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941060",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.914Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941068"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941060",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.916Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf94106c"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Proposal Approved",
+    "message": "Your schedule proposal for Dr. Dr. Test Slot Specialist has been approved and is now active.",
+    "notification_type": "PROPOSAL_APPROVED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcb7376e57fbf941060"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.964Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcc7376e57fbf941073"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcc7376e57fbf941072",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:40.253Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcc7376e57fbf941074"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcc7376e57fbf941072",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:40.255Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcc7376e57fbf941075"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcc7376e57fbf941072",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:40.257Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcc7376e57fbf941076"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcc7376e57fbf941072",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:40.259Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcc7376e57fbf941077"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcc7376e57fbf941072",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:40.262Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcc7376e57fbf941078"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcc7376e57fbf941072",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:40.265Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcc7376e57fbf941079"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcc7376e57fbf941072",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:40.267Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcc7376e57fbf94107a"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03dcc7376e57fbf941072",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:40.269Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b7b"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_admin_slot directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.294Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b7e"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725c"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_superadmin directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725d"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.353Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b81"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b80",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.430Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b82"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b80",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.433Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b83"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b80",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.435Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b84"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b80",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.438Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b85"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b80",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.440Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b86"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b80",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.442Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b87"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b80",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.444Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b88"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b80",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.447Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b8a"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Proposal Rejected",
+    "message": "Your schedule proposal was rejected. Reason: Tuesday already has too many specialists rostered.",
+    "notification_type": "PROPOSAL_REJECTED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b80",
+      "reason": "Tuesday already has too many specialists rostered."
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.564Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b8d"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b8c",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.639Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b8e"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b8c",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.641Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b8f"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b8c",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.643Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b90"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b8c",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.646Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b91"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b8c",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.648Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b92"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b8c",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.650Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b93"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b8c",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.652Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b94"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b8c",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.654Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b98"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Proposal Approved",
+    "message": "Your schedule proposal for Dr. Dr. Test Slot Specialist has been approved and is now active.",
+    "notification_type": "PROPOSAL_APPROVED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b8c"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.707Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b9f"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b9e",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.918Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8ba0"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b9e",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.921Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8ba1"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b9e",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.923Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8ba2"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b9e",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.925Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8ba3"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b9e",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.927Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8ba4"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b9e",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.930Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8ba5"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b9e",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.933Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8ba6"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae03deb2ced3160175e8b9e",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.935Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcd5"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_admin_slot directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.496Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcd8"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725c"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_superadmin directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725d"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.545Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcdb"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcda",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.602Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcdc"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcda",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.604Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcdd"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcda",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.605Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcde"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcda",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.606Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcdf"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcda",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.608Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fce0"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcda",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.609Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fce1"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcda",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.611Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fce2"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcda",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.612Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fce4"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Proposal Rejected",
+    "message": "Your schedule proposal was rejected. Reason: Tuesday already has too many specialists rostered.",
+    "notification_type": "PROPOSAL_REJECTED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcda",
+      "reason": "Tuesday already has too many specialists rostered."
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.692Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fce7"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fce6",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.756Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fce8"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fce6",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.758Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fce9"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fce6",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.760Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcea"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fce6",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.763Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fceb"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fce6",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.765Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcec"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fce6",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.769Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fced"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fce6",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.771Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcee"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fce6",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.773Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcf2"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Proposal Approved",
+    "message": "Your schedule proposal for Dr. Dr. Test Slot Specialist has been approved and is now active.",
+    "notification_type": "PROPOSAL_APPROVED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fce6"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.820Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcf9"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcf8",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.995Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcfa"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcf8",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.997Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404d261df64726d6fcfb"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcf8",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:21.001Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404d261df64726d6fcfc"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcf8",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:21.002Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404d261df64726d6fcfd"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcf8",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:21.004Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404d261df64726d6fcfe"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcf8",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:21.005Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404d261df64726d6fcff"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcf8",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:21.006Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404d261df64726d6fd00"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0404c261df64726d6fcf8",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:21.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d56"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_admin_slot directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.610Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d59"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725c"
+    },
+    "title": "Schedule Updated",
+    "message": "Administrator test_superadmin directly updated your active working hours.",
+    "notification_type": "SCHEDULE_UPDATE",
+    "is_read": false,
+    "data": {
+      "doctor_id": "6ae03b738d2a7ff53a4d725d"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.652Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d5c"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d5b",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.701Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d5d"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d5b",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.702Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d5e"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d5b",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d5f"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d5b",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.706Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d60"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d5b",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.707Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d61"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d5b",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.708Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d62"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d5b",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.709Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d63"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d5b",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.711Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d65"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Proposal Rejected",
+    "message": "Your schedule proposal was rejected. Reason: Tuesday already has too many specialists rostered.",
+    "notification_type": "PROPOSAL_REJECTED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d5b",
+      "reason": "Tuesday already has too many specialists rostered."
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.778Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d68"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d67",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.823Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d69"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d67",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.825Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d6a"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d67",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.826Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d6b"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d67",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.828Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d6c"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d67",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.829Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d6d"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d67",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.830Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d6e"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d67",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.832Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d6f"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d67",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.833Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d73"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "title": "Schedule Proposal Approved",
+    "message": "Your schedule proposal for Dr. Dr. Test Slot Specialist has been approved and is now active.",
+    "notification_type": "PROPOSAL_APPROVED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d67"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.866Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06905f0e96df1db8c9d7a"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d79",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:05.005Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06905f0e96df1db8c9d7b"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d79",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:05.007Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06905f0e96df1db8c9d7c"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d79",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:05.009Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06905f0e96df1db8c9d7d"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d79",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:05.010Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06905f0e96df1db8c9d7e"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d79",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:05.012Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06905f0e96df1db8c9d7f"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d79",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:05.013Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06905f0e96df1db8c9d80"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d79",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:05.014Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06905f0e96df1db8c9d81"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Test Slot Specialist submitted a proposed schedule for approval.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae06904f0e96df1db8c9d79",
+      "doctor_id": "6ae03b738d2a7ff53a4d725a"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:05.015Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d1d12f7661b8c50a0c"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071d1d12f7661b8c50a0b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:41:37.043Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d1d12f7661b8c50a0d"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071d1d12f7661b8c50a0b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:41:37.045Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d1d12f7661b8c50a0e"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071d1d12f7661b8c50a0b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:41:37.047Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d1d12f7661b8c50a0f"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071d1d12f7661b8c50a0b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:41:37.048Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d1d12f7661b8c50a10"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071d1d12f7661b8c50a0b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:41:37.049Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d1d12f7661b8c50a11"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071d1d12f7661b8c50a0b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:41:37.050Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d1d12f7661b8c50a12"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071d1d12f7661b8c50a0b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:41:37.051Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d1d12f7661b8c50a13"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071d1d12f7661b8c50a0b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:41:37.052Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3b9c"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071ec2bf237c9ca1c3b9b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:42:04.583Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3b9d"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071ec2bf237c9ca1c3b9b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:42:04.586Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3b9e"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071ec2bf237c9ca1c3b9b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:42:04.587Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3b9f"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071ec2bf237c9ca1c3b9b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:42:04.589Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3ba0"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071ec2bf237c9ca1c3b9b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:42:04.590Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3ba1"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071ec2bf237c9ca1c3b9b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:42:04.592Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3ba2"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071ec2bf237c9ca1c3b9b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:42:04.594Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3ba3"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae071ec2bf237c9ca1c3b9b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:42:04.595Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765efe"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07230b7d8a39801765efd",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:43:12.454Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765eff"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07230b7d8a39801765efd",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:43:12.456Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765f00"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07230b7d8a39801765efd",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:43:12.457Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765f01"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07230b7d8a39801765efd",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:43:12.459Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765f02"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07230b7d8a39801765efd",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:43:12.461Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765f03"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07230b7d8a39801765efd",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:43:12.462Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765f04"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07230b7d8a39801765efd",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:43:12.465Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765f05"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07230b7d8a39801765efd",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:43:12.467Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765f08"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "Schedule Proposal Approved",
+    "message": "Your schedule proposal for Dr. Dr. Ananya Menon has been approved and is now active.",
+    "notification_type": "PROPOSAL_APPROVED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07230b7d8a39801765efd"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:43:12.501Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f9126143"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0727453876f45f9126142",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:44:20.541Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f9126144"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0727453876f45f9126142",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:44:20.543Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f9126145"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0727453876f45f9126142",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:44:20.544Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f9126146"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0727453876f45f9126142",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:44:20.546Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f9126147"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0727453876f45f9126142",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:44:20.547Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f9126148"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0727453876f45f9126142",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:44:20.550Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f9126149"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0727453876f45f9126142",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:44:20.552Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f912614a"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0727453876f45f9126142",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:44:20.553Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f912614d"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "Schedule Proposal Approved",
+    "message": "Your schedule proposal for Dr. Dr. Ananya Menon has been approved and is now active.",
+    "notification_type": "PROPOSAL_APPROVED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae0727453876f45f9126142"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:44:20.583Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea789c"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae074aabe857b1750ea789b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:53:46.502Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea789d"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae074aabe857b1750ea789b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:53:46.503Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea789e"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae074aabe857b1750ea789b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:53:46.504Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea789f"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae074aabe857b1750ea789b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:53:46.506Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea78a0"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae074aabe857b1750ea789b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:53:46.506Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea78a1"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae074aabe857b1750ea789b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:53:46.507Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea78a2"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae074aabe857b1750ea789b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:53:46.508Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea78a3"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae074aabe857b1750ea789b",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:53:46.509Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea78a6"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "Schedule Proposal Approved",
+    "message": "Your schedule proposal for Dr. Dr. Ananya Menon has been approved and is now active.",
+    "notification_type": "PROPOSAL_APPROVED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae074aabe857b1750ea789b"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:53:46.538Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb44a"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07811265eaf7017cfb449",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:08:17.302Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb44b"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07811265eaf7017cfb449",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:08:17.304Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb44c"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07811265eaf7017cfb449",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:08:17.306Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb44d"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07811265eaf7017cfb449",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:08:17.308Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb44e"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07811265eaf7017cfb449",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:08:17.309Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb44f"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07811265eaf7017cfb449",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:08:17.310Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb450"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07811265eaf7017cfb449",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:08:17.312Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb451"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07811265eaf7017cfb449",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:08:17.314Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb454"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "Schedule Proposal Approved",
+    "message": "Your schedule proposal for Dr. Dr. Ananya Menon has been approved and is now active.",
+    "notification_type": "PROPOSAL_APPROVED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07811265eaf7017cfb449"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:08:17.344Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d0706"
+    },
+    "recipient_id": {
+      "$oid": "6ac4c9c5451a504a886a8bc0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07845f1ec62e92b2d0705",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.079Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d0707"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf7"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07845f1ec62e92b2d0705",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.081Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d0708"
+    },
+    "recipient_id": {
+      "$oid": "6ad1cf6836ac65c9e15a0bf8"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07845f1ec62e92b2d0705",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.083Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d0709"
+    },
+    "recipient_id": {
+      "$oid": "6ad1d0554dca3f2a8020a1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07845f1ec62e92b2d0705",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.085Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d070a"
+    },
+    "recipient_id": {
+      "$oid": "6ad1fb72c3e1c07eb7aebc74"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07845f1ec62e92b2d0705",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.087Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d070b"
+    },
+    "recipient_id": {
+      "$oid": "6ad9eb1984f0f728805be1e0"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07845f1ec62e92b2d0705",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.089Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d070c"
+    },
+    "recipient_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07845f1ec62e92b2d0705",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.090Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d070d"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "New Schedule Proposal",
+    "message": "Dr. Dr. Ananya Menon submitted a proposed schedule for approval at West Clinic Branch.",
+    "notification_type": "SCHEDULE_PROPOSAL",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07845f1ec62e92b2d0705",
+      "doctor_id": "6ad223544700afea755fcb03"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.091Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d0710"
+    },
+    "recipient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "title": "Schedule Proposal Approved",
+    "message": "Your schedule proposal for Dr. Dr. Ananya Menon has been approved and is now active.",
+    "notification_type": "PROPOSAL_APPROVED",
+    "is_read": false,
+    "data": {
+      "proposal_id": "6ae07845f1ec62e92b2d0705"
+    },
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.118Z"
+    }
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92e3"
+    },
+    "name": "Gingivitis",
+    "code": "DX-001",
+    "description": "Inflammation of the gingival tissues",
+    "category": "Specialized Periodontics",
+    "is_active": true,
+    "display_order": 1,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.734Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T08:09:10.482Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92e5"
+    },
+    "name": "Reversible Pulpitis",
+    "code": "DX-002",
+    "description": "Mild pulp inflammation that subsides after stimulus removal",
+    "category": "Endodontics",
+    "is_active": true,
+    "display_order": 2,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.766Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.766Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92e7"
+    },
+    "name": "Irreversible Pulpitis",
+    "code": "DX-003",
+    "description": "Severe pulp inflammation requiring endodontic intervention",
+    "category": "Endodontics",
+    "is_active": true,
+    "display_order": 3,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.777Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.777Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92e9"
+    },
+    "name": "Dental Caries",
+    "code": "DX-004",
+    "description": "Microbial disease of the calcified tissues of the teeth",
+    "category": "Restorative",
+    "is_active": true,
+    "display_order": 4,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.788Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.788Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92eb"
+    },
+    "name": "Periodontitis",
+    "code": "DX-005",
+    "description": "Infection that damages gum tissue and can destroy jawbone",
+    "category": "Periodontics",
+    "is_active": true,
+    "display_order": 5,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.799Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.799Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92ed"
+    },
+    "name": "Fractured Tooth",
+    "code": "DX-006",
+    "description": "Crack or broken cusp/crown structure of tooth",
+    "category": "Trauma",
+    "is_active": true,
+    "display_order": 6,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.810Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.811Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92ef"
+    },
+    "name": "Periapical Abscess",
+    "code": "DX-007",
+    "description": "Collection of pus at the root tip",
+    "category": "Endodontics",
+    "is_active": true,
+    "display_order": 7,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.820Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.820Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92f1"
+    },
+    "name": "Chronic Generalized Periodontitis",
+    "code": "DX-008",
+    "description": "Widespread deep pocketing and bone loss",
+    "category": "Periodontics",
+    "is_active": true,
+    "display_order": 8,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.830Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.830Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92f3"
+    },
+    "name": "Impacted Tooth / Wisdom Tooth",
+    "code": "DX-009",
+    "description": "Tooth unable to erupt normally through gum",
+    "category": "Surgery",
+    "is_active": true,
+    "display_order": 9,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.840Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.840Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92f5"
+    },
+    "name": "Tooth Wear / Attrition",
+    "code": "DX-010",
+    "description": "Loss of tooth surface due to friction or bruxism",
+    "category": "Restorative",
+    "is_active": true,
+    "display_order": 10,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.849Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.849Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92f7"
+    },
+    "name": "Missing Tooth",
+    "code": "DX-011",
+    "description": "Absence of tooth due to extraction or congenital absence",
+    "category": "Prosthodontics",
+    "is_active": true,
+    "display_order": 11,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.859Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.859Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92f9"
+    },
+    "name": "Cracked Tooth Syndrome",
+    "code": "DX-012",
+    "description": "Incomplete fracture of vital posterior tooth",
+    "category": "Endodontics",
+    "is_active": true,
+    "display_order": 12,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.868Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.869Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9b6a6e4b98668a81c92fb"
+    },
+    "name": "Pulpitis",
+    "code": "DX-013",
+    "description": "Imported from dropdown catalog: Pulpitis",
+    "category": "General",
+    "is_active": true,
+    "display_order": 13,
+    "created_at": {
+      "$date": "2026-10-22T07:09:26.879Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-22T07:09:26.879Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad9cf88ede9af5fe4fa7397"
+    },
+    "name": "test",
+    "code": "DX-TEST",
+    "description": "",
+    "category": "Specialized Periodontics",
+    "is_active": true,
+    "display_order": 0,
+    "created_at": {
+      "$date": "2026-10-22T08:55:36.131Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T09:04:13.967Z"
+    }
+  }
+]

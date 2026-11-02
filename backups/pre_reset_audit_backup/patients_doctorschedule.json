@@ -1,0 +1,1330 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223544700afea755fcb06"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "day_of_week": 1,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.244Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223544700afea755fcb07"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.248Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223544700afea755fcb08"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "day_of_week": 3,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.251Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223544700afea755fcb09"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "day_of_week": 4,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.254Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223544700afea755fcb0a"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "day_of_week": 5,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.257Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223554700afea755fcb0f"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "day_of_week": 0,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.261Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223554700afea755fcb10"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "day_of_week": 1,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.264Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223554700afea755fcb11"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.267Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223554700afea755fcb12"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "day_of_week": 3,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.269Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223554700afea755fcb13"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "day_of_week": 4,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.272Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223554700afea755fcb14"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "day_of_week": 5,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.275Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223564700afea755fcb19"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "day_of_week": 0,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.278Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223564700afea755fcb1a"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "day_of_week": 1,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.280Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223564700afea755fcb1b"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.283Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223564700afea755fcb1c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "day_of_week": 3,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.285Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223564700afea755fcb1d"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "day_of_week": 4,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.288Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223564700afea755fcb1e"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "day_of_week": 5,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.293Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223574700afea755fcb23"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "day_of_week": 0,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.297Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223574700afea755fcb24"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "day_of_week": 1,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.302Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223574700afea755fcb25"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.306Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223574700afea755fcb26"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "day_of_week": 3,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.309Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223574700afea755fcb27"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "day_of_week": 4,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.311Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223574700afea755fcb28"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "day_of_week": 5,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135533800000"
+      }
+    },
+    "is_active": true,
+    "slot_duration": 30,
+    "session_name": "Regular Session",
+    "status": "APPROVED",
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": null,
+    "updated_at": {
+      "$date": "2026-10-27T05:39:38.314Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03d47daae4c37bdca76a6"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725d"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135560800000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135539200000"
+      }
+    },
+    "slot_duration": 45,
+    "session_name": "Wednesday Clinic",
+    "status": "APPROVED",
+    "is_active": false,
+    "created_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:57:27.437Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T05:57:27.438Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dad3b60ab7895dcc83e"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725d"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135560800000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135539200000"
+      }
+    },
+    "slot_duration": 45,
+    "session_name": "Wednesday Clinic",
+    "status": "APPROVED",
+    "is_active": false,
+    "created_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:09.931Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T05:59:09.932Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03dcb7376e57fbf941051"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725d"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135560800000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135539200000"
+      }
+    },
+    "slot_duration": 45,
+    "session_name": "Wednesday Clinic",
+    "status": "APPROVED",
+    "is_active": false,
+    "created_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:59:39.615Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T05:59:39.615Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03deb2ced3160175e8b7d"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725d"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135560800000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135539200000"
+      }
+    },
+    "slot_duration": 45,
+    "session_name": "Wednesday Clinic",
+    "status": "APPROVED",
+    "is_active": false,
+    "created_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:00:11.340Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T06:00:11.340Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0404c261df64726d6fcd7"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725d"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135560800000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135539200000"
+      }
+    },
+    "slot_duration": 45,
+    "session_name": "Wednesday Clinic",
+    "status": "APPROVED",
+    "is_active": false,
+    "created_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "created_at": {
+      "$date": "2026-10-27T06:10:20.535Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T06:10:20.535Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d54"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "day_of_week": 0,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135553600000"
+      }
+    },
+    "slot_duration": 30,
+    "session_name": "Monday Morning",
+    "status": "APPROVED",
+    "is_active": false,
+    "created_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.599Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T09:04:04.600Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d55"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "day_of_week": 0,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135546400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135535600000"
+      }
+    },
+    "slot_duration": 30,
+    "session_name": "Monday Afternoon",
+    "status": "APPROVED",
+    "is_active": false,
+    "created_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.601Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T09:04:04.601Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d58"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725d"
+    },
+    "day_of_week": 2,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135560800000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135539200000"
+      }
+    },
+    "slot_duration": 45,
+    "session_name": "Wednesday Clinic",
+    "status": "APPROVED",
+    "is_active": true,
+    "created_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03c71fd32a449b254a219"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.644Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T09:04:04.644Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d71"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "day_of_week": 1,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135553600000"
+      }
+    },
+    "slot_duration": 30,
+    "session_name": "Tuesday Morning",
+    "status": "APPROVED",
+    "is_active": true,
+    "created_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.857Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T09:04:04.857Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d72"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "day_of_week": 1,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135546400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135535600000"
+      }
+    },
+    "slot_duration": 30,
+    "session_name": "Tuesday Afternoon",
+    "status": "APPROVED",
+    "is_active": true,
+    "created_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "approved_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:04.859Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T09:04:04.859Z"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07844f1ec62e92b2d0701"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "day_of_week": 0,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135553600000"
+      }
+    },
+    "slot_duration": 30,
+    "session_name": "Main Morning",
+    "status": "APPROVED",
+    "is_active": true,
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": {
+      "$date": "2026-10-27T10:09:08.928Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T10:09:08.929Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07844f1ec62e92b2d0702"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "day_of_week": 0,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135546400000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135532000000"
+      }
+    },
+    "slot_duration": 30,
+    "session_name": "West Afternoon",
+    "status": "APPROVED",
+    "is_active": false,
+    "created_by_id": null,
+    "approved_by_id": null,
+    "created_at": {
+      "$date": "2026-10-27T10:09:08.930Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T10:09:08.931Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d070f"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "day_of_week": 0,
+    "start_time": {
+      "$date": {
+        "$numberLong": "-62135542800000"
+      }
+    },
+    "end_time": {
+      "$date": {
+        "$numberLong": "-62135528400000"
+      }
+    },
+    "slot_duration": 30,
+    "session_name": "West Evening Extended",
+    "status": "APPROVED",
+    "is_active": true,
+    "created_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "approved_by_id": null,
+    "created_at": {
+      "$date": "2026-10-27T10:09:09.111Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T10:09:09.111Z"
+    }
+  }
+]

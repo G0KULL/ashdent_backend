@@ -1,0 +1,142 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbf8"
+    },
+    "title": "Composite Resins & Etch Purchase",
+    "category": "Dental Materials",
+    "category_ref_id": null,
+    "description": "Authorized clinical expense for Composite Resins & Etch Purchase",
+    "amount": {
+      "$numberDecimal": "8400.00"
+    },
+    "date": {
+      "$date": "2026-10-14T00:00:00Z"
+    },
+    "paid_to": "3M ESPE Healthcare",
+    "vendor": "3M ESPE Healthcare",
+    "payment_method": "Bank Transfer",
+    "transaction_id": null,
+    "notes": null,
+    "attachment_name": null,
+    "attachment_data": null,
+    "is_recurring": false,
+    "recurring_frequency": null,
+    "status": "Paid",
+    "branch": "Main Branch",
+    "created_at": {
+      "$date": "2026-10-14T06:30:00Z"
+    },
+    "branch_ref_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbfa"
+    },
+    "title": "Biomedical Waste Disposal Fee",
+    "category": "Waste Disposal & Biomedical Waste",
+    "category_ref_id": null,
+    "description": "Authorized clinical expense for Biomedical Waste Disposal Fee",
+    "amount": {
+      "$numberDecimal": "3200.00"
+    },
+    "date": {
+      "$date": "2026-10-12T00:00:00Z"
+    },
+    "paid_to": "Image Kerala Waste Solutions",
+    "vendor": "Image Kerala Waste Solutions",
+    "payment_method": "Bank Transfer",
+    "transaction_id": null,
+    "notes": null,
+    "attachment_name": null,
+    "attachment_data": null,
+    "is_recurring": false,
+    "recurring_frequency": null,
+    "status": "Paid",
+    "branch": "Main Branch",
+    "created_at": {
+      "$date": "2026-10-12T06:30:00Z"
+    },
+    "branch_ref_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbfc"
+    },
+    "title": "Clinic Electricity Bill (October)",
+    "category": "Rent & Electricity Bill",
+    "category_ref_id": null,
+    "description": "Authorized clinical expense for Clinic Electricity Bill (October)",
+    "amount": {
+      "$numberDecimal": "14800.00"
+    },
+    "date": {
+      "$date": "2026-10-11T00:00:00Z"
+    },
+    "paid_to": "KSEB Commercial",
+    "vendor": "KSEB Commercial",
+    "payment_method": "Bank Transfer",
+    "transaction_id": null,
+    "notes": null,
+    "attachment_name": null,
+    "attachment_data": null,
+    "is_recurring": false,
+    "recurring_frequency": null,
+    "status": "Paid",
+    "branch": "Main Branch",
+    "created_at": {
+      "$date": "2026-10-11T06:30:00Z"
+    },
+    "branch_ref_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbfe"
+    },
+    "title": "Sterilization Pouches & Suction Tips",
+    "category": "Consumables (Gloves, Glass, Suction)",
+    "category_ref_id": null,
+    "description": "Authorized clinical expense for Sterilization Pouches & Suction Tips",
+    "amount": {
+      "$numberDecimal": "4500.00"
+    },
+    "date": {
+      "$date": "2026-10-15T00:00:00Z"
+    },
+    "paid_to": "Prime Med Surgicals",
+    "vendor": "Prime Med Surgicals",
+    "payment_method": "Bank Transfer",
+    "transaction_id": null,
+    "notes": null,
+    "attachment_name": null,
+    "attachment_data": null,
+    "is_recurring": false,
+    "recurring_frequency": null,
+    "status": "Paid",
+    "branch": "Main Branch",
+    "created_at": {
+      "$date": "2026-10-15T06:30:00Z"
+    },
+    "branch_ref_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  }
+]

@@ -1,0 +1,870 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb3f"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135564400000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb4d"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb30"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135561700000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb58"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb32"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135559000000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb62"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb31"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135556300000"
+      }
+    },
+    "status": "Engaged",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb66"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb34"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135554500000"
+      }
+    },
+    "status": "Waiting",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb67"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb38"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135552700000"
+      }
+    },
+    "status": "Waiting",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb68"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb33"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135546400000"
+      }
+    },
+    "status": "Scheduled",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb69"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb35"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135543700000"
+      }
+    },
+    "status": "Scheduled",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb6a"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb36"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135541000000"
+      }
+    },
+    "status": "Scheduled",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb6b"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb37"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135538300000"
+      }
+    },
+    "status": "Scheduled",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb6c"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb33"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "date": {
+      "$date": "2026-10-13T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135542800000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb77"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb3d"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "date": {
+      "$date": "2026-10-15T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135560800000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb81"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb39"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "date": {
+      "$date": "2026-10-15T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135555400000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb8a"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb3e"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "date": {
+      "$date": "2026-10-15T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135546400000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb92"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb3c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "date": {
+      "$date": "2026-10-14T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135562600000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb9a"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb3b"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-14T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135557200000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcba2"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb3a"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-14T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135541000000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcba9"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb34"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-13T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135559900000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbb1"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb35"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "date": {
+      "$date": "2026-10-13T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135553600000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbb9"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb36"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "date": {
+      "$date": "2026-10-13T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135539200000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbc2"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb37"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-12T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135562600000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbcc"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb38"
+    },
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "date": {
+      "$date": "2026-10-12T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135554500000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbd4"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-11T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135560800000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbde"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb30"
+    },
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "date": {
+      "$date": "2026-10-11T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135544600000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbe6"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb31"
+    },
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "date": {
+      "$date": "2026-10-10T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135557200000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbf0"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb32"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "date": {
+      "$date": "2026-10-10T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135542800000"
+      }
+    },
+    "status": "Completed",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d77"
+    },
+    "patient_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725f"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "date": {
+      "$date": "2026-11-03T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135557200000"
+      }
+    },
+    "status": "Cancelled",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "duration_minutes": 30,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0691ff94bab17fcbc2d52"
+    },
+    "patient_id": {
+      "$oid": "6ae0691ff94bab17fcbc2d51"
+    },
+    "doctor_id": null,
+    "date": {
+      "$date": "2026-10-27T00:00:00Z"
+    },
+    "time": {
+      "$date": {
+        "$numberLong": "-62135564128100"
+      }
+    },
+    "status": "Waiting",
+    "rescheduled_to_date": null,
+    "rescheduled_to_time": null,
+    "is_virtual": false,
+    "meeting_link": null,
+    "telemedicine_notes": null,
+    "duration_minutes": 30,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  }
+]

@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <!-- Patient Header -->
+    <div class="card mb-4 shadow-sm border-0">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <h4 class="text-primary fw-bold mb-0">{{ patient.name }}</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="text-muted">Age:</span> <strong class="fs-5">{{ patient.age }}</strong>
+                </div>
+                <div class="col-md-3">
+                    <span class="text-muted">Gender:</span> <strong class="fs-5">{{ patient.gender }}</strong>
+                </div>
+                <div class="col-md-3">
+                    <span class="text-muted">Phone:</span> <strong class="fs-5">{{ patient.phone }}</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs" id="patientTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active fw-semibold" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab">General</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link fw-semibold" id="appointments-tab" data-bs-toggle="tab" data-bs-target="#appointments" type="button" role="tab">Appointments</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link fw-semibold" id="clinic-notes-tab" data-bs-toggle="tab" data-bs-target="#clinic-notes" type="button" role="tab">Clinic Notes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link fw-semibold" id="treatments-tab" data-bs-toggle="tab" data-bs-target="#treatments" type="button" role="tab" onclick="loadTreatments()">Treatments</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link fw-semibold" id="prescription-tab" data-bs-toggle="tab" data-bs-target="#prescription" type="button" role="tab" onclick="loadPrescriptions()">Prescription</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link fw-semibold" id="invoice-tab" data-bs-toggle="tab" data-bs-target="#invoice" type="button" role="tab" onclick="loadInvoices()">Invoice</button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content bg-white p-4 border border-top-0 rounded-bottom shadow-sm" id="patientTabsContent">
+        <!-- General -->
+        <div class="tab-pane fade show active" id="general" role="tabpanel">
+            <p class="text-muted">General patient information and medical history.</p>
+        </div>
+        
+        <!-- Appointments -->
+        <div class="tab-pane fade" id="appointments" role="tabpanel">
+            <p class="text-muted">Upcoming and past appointments.</p>
+        </div>
+        
+        <!-- Clinic Notes -->
+        <div class="tab-pane fade" id="clinic-notes" role="tabpanel">
+            <p class="text-muted">Doctors observations and clinic notes.</p>
+        </div>
+        
+        <!-- Treatments -->
+        <div class="tab-pane fade" id="treatments" role="tabpanel">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-bold mb-0">Treatment History</h5>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#treatmentModal">
+                    <i class="bi bi-plus-circle me-1"></i> Add Treatment
+                </button>
+            </div>
+            <div id="treatments-container">
+                <div class="text-center py-5"><div class="spinner-border text-primary" role="status"></div></div>
+            </div>
+        </div>
+        
+        <!-- Prescription -->
+        <div class="tab-pane fade" id="prescription" role="tabpanel">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-bold mb-0">Prescriptions</h5>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#prescriptionModal">
+                    <i class="bi bi-plus-circle me-1"></i> Add Prescription
+                </button>
+            </div>
+            <div id="prescriptions-container">
+                <div class="text-center py-5"><div class="spinner-border text-primary" role="status"></div></div>
+            </div>
+        </div>
+        
+        <!-- Invoice -->
+        <div class="tab-pane fade" id="invoice" role="tabpanel">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-bold mb-0">Invoices & Billing</h5>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#invoiceModal">
+                    <i class="bi bi-receipt me-1"></i> Add Invoice
+                </button>
+            </div>
+            <div id="invoices-container">
+                <div class="text-center py-5"><div class="spinner-border text-primary" role="status"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055">
+    <div id="successToast" class="toast align-items-center text-white bg-success border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body d-flex align-items-center" id="toastMessage">
+                <i class="bi bi-check-circle-fill me-2 fs-5"></i>
+                <span>Data Saved Successfully</span>
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+<!-- Includes -->
+{% include 'patient_management/modals/treatment_modal.html' %}
+{% include 'patient_management/modals/prescription_modal.html' %}
+{% include 'patient_management/modals/invoice_modal.html' %}
+
+<script>
+    const patientId = "{{ patient.id }}";
+    
+    function showToast(message) {
+        document.querySelector('#toastMessage span').innerText = message;
+        const toastEl = document.getElementById('successToast');
+        const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+        toast.show();
+    }
+
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    const csrftoken = getCookie('csrftoken');
+
+    /* === Treatments Logic === */
+    function loadTreatments() {
+        fetch(`/patient_management/patient/${patientId}/treatments/`)
+            .then(res => res.text())
+            .then(html => document.getElementById('treatments-container').innerHTML = html);
+    }
+
+    document.getElementById('treatmentForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('saveTreatmentBtn');
+        btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Saving...';
+        btn.disabled = true;
+
+        const data = {
+            treatment_name: document.getElementById('id_treatment_name').value,
+            teeth: document.getElementById('id_teeth').value,
+            quantity: document.getElementById('id_quantity').value,
+            price: document.getElementById('id_price').value,
+            discount: document.getElementById('id_discount').value || 0,
+            tax: document.getElementById('id_tax').value || 0
+        };
+
+        fetch(`/patient_management/patient/${patientId}/add_treatment/`, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json', 'X-CSRFToken': csrftoken},
+            body: JSON.stringify(data)
+        }).then(res => res.json()).then(resData => {
+            btn.innerHTML = 'Save Treatment';
+            btn.disabled = false;
+            if(resData.status === 'success') {
+                bootstrap.Modal.getInstance(document.getElementById('treatmentModal')).hide();
+                showToast(resData.message);
+                loadTreatments();
+                document.getElementById('treatmentForm').reset();
+            } else {
+                alert(resData.message);
+            }
+        });
+    });
+
+    function calculateTreatmentAmount() {
+        const qty = parseFloat(document.getElementById('id_quantity').value) || 0;
+        const price = parseFloat(document.getElementById('id_price').value) || 0;
+        const discount = parseFloat(document.getElementById('id_discount').value) || 0;
+        const tax = parseFloat(document.getElementById('id_tax').value) || 0;
+        const amount = (price * qty) - discount + tax;
+        document.getElementById('id_amount').value = amount.toFixed(2);
+    }
+    document.querySelectorAll('.calc-field').forEach(el => el.addEventListener('input', calculateTreatmentAmount));
+
+    /* === Prescriptions Logic === */
+    function loadPrescriptions() {
+        fetch(`/patient_management/patient/${patientId}/prescriptions/`)
+            .then(res => res.text())
+            .then(html => document.getElementById('prescriptions-container').innerHTML = html);
+    }
+
+    document.getElementById('prescriptionForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('savePrescriptionBtn');
+        btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Saving...';
+        btn.disabled = true;
+
+        const data = {
+            drug_name: document.getElementById('id_drug_name').value,
+            dosage: document.getElementById('id_dosage').value,
+            frequency: document.getElementById('id_frequency').value,
+            duration: document.getElementById('id_duration').value,
+            instructions: document.getElementById('id_instructions').value,
+            notes: document.getElementById('id_notes').value
+        };
+
+        fetch(`/patient_management/patient/${patientId}/add_prescription/`, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json', 'X-CSRFToken': csrftoken},
+            body: JSON.stringify(data)
+        }).then(res => res.json()).then(resData => {
+            btn.innerHTML = 'Save Prescription';
+            btn.disabled = false;
+            if(resData.status === 'success') {
+                bootstrap.Modal.getInstance(document.getElementById('prescriptionModal')).hide();
+                showToast(resData.message);
+                loadPrescriptions();
+                document.getElementById('prescriptionForm').reset();
+            } else {
+                alert(resData.message);
+            }
+        });
+    });
+
+    /* === Invoices Logic === */
+    function loadInvoices() {
+        fetch(`/patient_management/patient/${patientId}/invoices/`)
+            .then(res => res.text())
+            .then(html => document.getElementById('invoices-container').innerHTML = html);
+    }
+
+    document.getElementById('invoiceModal').addEventListener('show.bs.modal', function() {
+        fetch(`/patient_management/patient/${patientId}/unbilled_treatments/`)
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('invoice-treatments-list');
+                container.innerHTML = '';
+                let subtotal = 0;
+                
+                if (data.treatments.length === 0) {
+                    container.innerHTML = '<p class="text-muted">No unbilled treatments found.</p>';
+                } else {
+                    data.treatments.forEach(t => {
+                        subtotal += parseFloat(t.total_amount);
+                        container.innerHTML += `
+                            <div class="form-check mb-2">
+                                <input class="form-check-input invoice-treatment-cb" type="checkbox" value="${t.id}" data-amount="${t.total_amount}" id="inv_t_${t.id}" checked>
+                                <label class="form-check-label d-flex justify-content-between w-100" for="inv_t_${t.id}">
+                                    <span>${t.treatment_name} (x${t.quantity})</span>
+                                    <strong>$${parseFloat(t.total_amount).toFixed(2)}</strong>
+                                </label>
+                            </div>
+                        `;
+                    });
+                }
+                
+                document.getElementById('inv_subtotal').value = subtotal.toFixed(2);
+                calculateInvoiceTotal();
+
+                // Add event listeners to new checkboxes
+                document.querySelectorAll('.invoice-treatment-cb').forEach(cb => {
+                    cb.addEventListener('change', updateInvoiceSubtotal);
+                });
+            });
+    });
+
+    function updateInvoiceSubtotal() {
+        let subtotal = 0;
+        document.querySelectorAll('.invoice-treatment-cb:checked').forEach(cb => {
+            subtotal += parseFloat(cb.getAttribute('data-amount'));
+        });
+        document.getElementById('inv_subtotal').value = subtotal.toFixed(2);
+        calculateInvoiceTotal();
+    }
+
+    function calculateInvoiceTotal() {
+        const sub = parseFloat(document.getElementById('inv_subtotal').value) || 0;
+        const tax = parseFloat(document.getElementById('inv_tax').value) || 0;
+        const disc = parseFloat(document.getElementById('inv_discount').value) || 0;
+        const total = sub + tax - disc;
+        document.getElementById('inv_total').value = total.toFixed(2);
+        document.getElementById('display_grand_total').innerText = '$' + total.toFixed(2);
+    }
+
+    document.querySelectorAll('.inv-calc-field').forEach(el => el.addEventListener('input', calculateInvoiceTotal));
+
+    document.getElementById('invoiceForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('saveInvoiceBtn');
+        btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Generating...';
+        btn.disabled = true;
+
+        const selectedTreatments = Array.from(document.querySelectorAll('.invoice-treatment-cb:checked')).map(cb => cb.value);
+
+        const data = {
+            treatment_ids: selectedTreatments,
+            subtotal: document.getElementById('inv_subtotal').value,
+            tax: document.getElementById('inv_tax').value,
+            discount: document.getElementById('inv_discount').value
+        };
+
+        fetch(`/patient_management/patient/${patientId}/add_invoice/`, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json', 'X-CSRFToken': csrftoken},
+            body: JSON.stringify(data)
+        }).then(res => res.json()).then(resData => {
+            btn.innerHTML = 'Generate Invoice';
+            btn.disabled = false;
+            if(resData.status === 'success') {
+                bootstrap.Modal.getInstance(document.getElementById('invoiceModal')).hide();
+                showToast(resData.message);
+                loadInvoices();
+                document.getElementById('invoiceForm').reset();
+            } else {
+                alert(resData.message);
+            }
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,650 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb41"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb3f"
+    },
+    "selected_teeth": [],
+    "complaints": [],
+    "observations": [],
+    "investigations": [],
+    "diagnosis": [],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "",
+    "patient_type": "Adult",
+    "notes": "",
+    "treatment_plan": "",
+    "follow_up_date": null,
+    "follow_up_note": "",
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.138Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb4f"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb4d"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Anterior spacing and crowding"
+    ],
+    "observations": [
+      "Angle Class I Malocclusion with crowding"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Angle Class I Malocclusion with crowding"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Anterior spacing and crowding",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Orthodontic Consultation, Metal / Ceramic Braces Setup",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.179Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb5a"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb58"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Gingival bleeding while brushing"
+    ],
+    "observations": [
+      "Marginal Gingivitis"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Marginal Gingivitis"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Gingival bleeding while brushing",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Dental Consultation, Dental Cleaning & Scaling",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.216Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb64"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb62"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Severe pain & swelling in lower right jaw (Wisdom tooth)"
+    ],
+    "observations": [
+      "Pericoronitis with impacted 48"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Pericoronitis with impacted 48"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Severe pain & swelling in lower right jaw (Wisdom tooth)",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Surgical / Wisdom Tooth Extraction",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.233Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb6e"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb6c"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Molar pain"
+    ],
+    "observations": [
+      "Root treated 46 needs full crown coverage, occlusal caries in 14"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Grossly decayed 46 post-endo, Class I caries 14"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Severe masticatory pain in 46 & food trapping in 14",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Zirconia crown on 46, RCT recommended for 14",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.255Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb79"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb77"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Missing lower first molar aesthetic replacement"
+    ],
+    "observations": [
+      "Missing 36 edentulous space"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Missing 36 edentulous space"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Missing lower first molar aesthetic replacement",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Porcelain / E-Max Crown, Dental Cleaning & Scaling",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.279Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb83"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb81"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Routine orthodontic wire tightening"
+    ],
+    "observations": [
+      "Active orthodontic alignment Phase II"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Active orthodontic alignment Phase II"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Routine orthodontic wire tightening",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Orthodontic Consultation",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.296Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb8c"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb8a"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Mobile lower anterior tooth"
+    ],
+    "observations": [
+      "Grade III mobility in 31"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Grade III mobility in 31"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Mobile lower anterior tooth",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Simple Tooth Extraction",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.326Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb94"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb92"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Full mouth prosthetic rehabilitation consult"
+    ],
+    "observations": [
+      "Multiple missing teeth in upper jaw"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Multiple missing teeth in upper jaw"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Full mouth prosthetic rehabilitation consult",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Complete Denture (Per Arch)",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.340Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb9c"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcb9a"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Discoloration of front teeth for upcoming event"
+    ],
+    "observations": [
+      "Fluorosis staining anterior teeth"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Fluorosis staining anterior teeth"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Discoloration of front teeth for upcoming event",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Professional Teeth Whitening",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.353Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcba4"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcba2"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Senior dental wellness check"
+    ],
+    "observations": [
+      "Generalized enamel attrition"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Generalized enamel attrition"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Senior dental wellness check",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Dental Consultation",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.367Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbab"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcba9"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Sensitivity to cold drinks"
+    ],
+    "observations": [
+      "Cervical abrasion 23, 24"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Cervical abrasion 23, 24"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Sensitivity to cold drinks",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Composite Tooth Filling",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.379Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbb3"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcbb1"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Wisdom tooth swelling and trismus"
+    ],
+    "observations": [
+      "Impacted 38"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Impacted 38"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Wisdom tooth swelling and trismus",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Surgical / Wisdom Tooth Extraction",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.393Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbbb"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcbb9"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Lingual retainer detachment"
+    ],
+    "observations": [
+      "Broken retainer wire"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Broken retainer wire"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Lingual retainer detachment",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Orthodontic Consultation",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.406Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbc4"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcbc2"
+    },
+    "selected_teeth": [],
+    "complaints": [],
+    "observations": [],
+    "investigations": [],
+    "diagnosis": [],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "",
+    "patient_type": "Adult",
+    "notes": "",
+    "treatment_plan": "",
+    "follow_up_date": null,
+    "follow_up_note": "",
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.438Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbce"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcbcc"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Chipped porcelain crown on upper premolar"
+    ],
+    "observations": [
+      "Fractured bridge pontic 15"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Fractured bridge pontic 15"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Chipped porcelain crown on upper premolar",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Porcelain / E-Max Crown",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.452Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbd6"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcbd4"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Diagnostic evaluation for full mouth restoration"
+    ],
+    "observations": [
+      "Multiple restoration requirements"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Multiple restoration requirements"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Diagnostic evaluation for full mouth restoration",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Dental Consultation, Digital Dental X-Ray (RVG)",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.467Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbe0"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcbde"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Initial orthodontic records & study models"
+    ],
+    "observations": [
+      "Orthodontic workup"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Orthodontic workup"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Initial orthodontic records & study models",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Orthodontic Consultation",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.483Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbe8"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcbe6"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Pre-surgical wisdom tooth checkup"
+    ],
+    "observations": [
+      "Mesioangular impaction 48"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Mesioangular impaction 48"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Pre-surgical wisdom tooth checkup",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Dental Consultation, Digital Dental X-Ray (RVG)",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.530Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbf2"
+    },
+    "appointment_id": {
+      "$oid": "6ad223594700afea755fcbf0"
+    },
+    "selected_teeth": [],
+    "complaints": [
+      "Cavity checkup and initial filling"
+    ],
+    "observations": [
+      "Class I cavity in 45"
+    ],
+    "investigations": [],
+    "diagnosis": [
+      "Class I cavity in 45"
+    ],
+    "medical_history": [],
+    "dental_history": [],
+    "allergies": [],
+    "ongoing_medications": [],
+    "chief_complaint": "Cavity checkup and initial filling",
+    "patient_type": "Adult",
+    "notes": null,
+    "treatment_plan": "Composite Tooth Filling",
+    "follow_up_date": null,
+    "follow_up_note": null,
+    "follow_up_status": "Pending",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.547Z"
+    }
+  }
+]

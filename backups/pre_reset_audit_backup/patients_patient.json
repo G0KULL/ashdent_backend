@@ -1,0 +1,726 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb2f"
+    },
+    "name": "Arjun Mathew",
+    "phone": "9847033001",
+    "dob": {
+      "$date": "1988-04-12T00:00:00Z"
+    },
+    "age": 38,
+    "gender": "Male",
+    "address": "4B Emerald Heights, MG Road",
+    "pincode": "682016",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "500.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.109Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb30"
+    },
+    "name": "Neha Krishnan",
+    "phone": "9847033002",
+    "dob": {
+      "$date": "1996-08-24T00:00:00Z"
+    },
+    "age": 30,
+    "gender": "Female",
+    "address": "Skyline Apartments, Kakkanad",
+    "pincode": "682030",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4c7d703e026ec2de47c6d"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "800.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.110Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb31"
+    },
+    "name": "Rahul Joseph",
+    "phone": "9847033003",
+    "dob": {
+      "$date": "1992-11-05T00:00:00Z"
+    },
+    "age": 33,
+    "gender": "Male",
+    "address": "Palm Grove Colony, Marine Drive",
+    "pincode": "682031",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "1000.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.112Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb32"
+    },
+    "name": "Anjali Nair",
+    "phone": "9847033004",
+    "dob": {
+      "$date": "1994-02-18T00:00:00Z"
+    },
+    "age": 32,
+    "gender": "Female",
+    "address": "Silver Oaks Estate, Edapally",
+    "pincode": "682024",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "500.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.114Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb33"
+    },
+    "name": "Vivek Menon",
+    "phone": "9847033005",
+    "dob": {
+      "$date": "1983-07-30T00:00:00Z"
+    },
+    "age": 43,
+    "gender": "Male",
+    "address": "Orchid Enclave, Vyttila",
+    "pincode": "682019",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "700.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.115Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb34"
+    },
+    "name": "Sneha Thomas",
+    "phone": "9847033006",
+    "dob": {
+      "$date": "1999-12-14T00:00:00Z"
+    },
+    "age": 26,
+    "gender": "Female",
+    "address": "Rose Gardens, Panampilly Nagar",
+    "pincode": "682036",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "500.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.117Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb35"
+    },
+    "name": "Adithya Raj",
+    "phone": "9847033007",
+    "dob": {
+      "$date": {
+        "$numberLong": "-177292800000"
+      }
+    },
+    "age": 62,
+    "gender": "Male",
+    "address": "Lotus Avenue, Aluva",
+    "pincode": "683101",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e02"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "1000.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.118Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb36"
+    },
+    "name": "Priya Suresh",
+    "phone": "9847033008",
+    "dob": {
+      "$date": "2001-09-03T00:00:00Z"
+    },
+    "age": 25,
+    "gender": "Female",
+    "address": "City Lights Terrace, Kaloor",
+    "pincode": "682017",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "800.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.121Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb37"
+    },
+    "name": "Nikhil Varma",
+    "phone": "9847033009",
+    "dob": {
+      "$date": "1990-03-27T00:00:00Z"
+    },
+    "age": 36,
+    "gender": "Male",
+    "address": "Green Valley, Tripunithura",
+    "pincode": "682301",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "500.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.123Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb38"
+    },
+    "name": "Divya Mohan",
+    "phone": "9847033010",
+    "dob": {
+      "$date": "1997-06-11T00:00:00Z"
+    },
+    "age": 29,
+    "gender": "Female",
+    "address": "Blue Mist Towers, Fort Kochi",
+    "pincode": "682001",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "700.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.125Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb39"
+    },
+    "name": "Akhil George",
+    "phone": "9847033011",
+    "dob": {
+      "$date": "1993-10-08T00:00:00Z"
+    },
+    "age": 33,
+    "gender": "Male",
+    "address": "Harmony Heights, Kalamassery",
+    "pincode": "683104",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "800.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.126Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb3a"
+    },
+    "name": "Meera Rajan",
+    "phone": "9847033012",
+    "dob": {
+      "$date": {
+        "$numberLong": "-377481600000"
+      }
+    },
+    "age": 68,
+    "gender": "Female",
+    "address": "Sunshine Residency, Thrikkakara",
+    "pincode": "682021",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e03"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "0.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.128Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb3b"
+    },
+    "name": "Kavya Ramesh",
+    "phone": "9847033013",
+    "dob": {
+      "$date": "2003-03-17T00:00:00Z"
+    },
+    "age": 23,
+    "gender": "Female",
+    "address": "Metro View, Kadavanthra",
+    "pincode": "682020",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223554700afea755fcb0d"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "800.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.129Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb3c"
+    },
+    "name": "Harish Nambiar",
+    "phone": "9847033014",
+    "dob": {
+      "$date": "1972-08-09T00:00:00Z"
+    },
+    "age": 54,
+    "gender": "Male",
+    "address": "Haritha Gardens, Ravipuram",
+    "pincode": "682015",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "700.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.131Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb3d"
+    },
+    "name": "Pooja Varghese",
+    "phone": "9847033015",
+    "dob": {
+      "$date": "1985-11-22T00:00:00Z"
+    },
+    "age": 40,
+    "gender": "Female",
+    "address": "Crystal Palace, Palarivattom",
+    "pincode": "682025",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223564700afea755fcb17"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4c7d703e026ec2de47c6d"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "700.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.132Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb3e"
+    },
+    "name": "Deepak Pillai",
+    "phone": "9847033016",
+    "dob": {
+      "$date": "1978-02-04T00:00:00Z"
+    },
+    "age": 48,
+    "gender": "Male",
+    "address": "Waterfront Residences, Thevara",
+    "pincode": "682013",
+    "status": "Active",
+    "doctor_id": {
+      "$oid": "6ad223574700afea755fcb21"
+    },
+    "patient_type_id": {
+      "$oid": "6ac4f183fc826c7498499e01"
+    },
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "1000.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.133Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725f"
+    },
+    "name": "Slot Test Patient",
+    "phone": "9988776655",
+    "dob": null,
+    "age": null,
+    "gender": null,
+    "address": null,
+    "pincode": null,
+    "status": "Active",
+    "doctor_id": null,
+    "patient_type_id": null,
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "0"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-27T05:49:39.323Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0691ff94bab17fcbc2d50"
+    },
+    "name": "Test ZeroFee Patient",
+    "phone": "9998887760",
+    "dob": {
+      "$date": "1995-01-01T00:00:00Z"
+    },
+    "age": 31,
+    "gender": "Male",
+    "address": null,
+    "pincode": null,
+    "status": "Active",
+    "doctor_id": null,
+    "patient_type_id": null,
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "0.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:31.695Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae0691ff94bab17fcbc2d51"
+    },
+    "name": "Test Fee Patient 3",
+    "phone": "9998887763",
+    "dob": {
+      "$date": "1988-08-20T00:00:00Z"
+    },
+    "age": 38,
+    "gender": "Male",
+    "address": null,
+    "pincode": null,
+    "status": "Active",
+    "doctor_id": null,
+    "patient_type_id": null,
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "500.00"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:04:31.899Z"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07107b2206eb08d8dabeb"
+    },
+    "company_id": {
+      "$oid": "6ae07107b2206eb08d8dabe9"
+    },
+    "registration_branch_id": {
+      "$oid": "6ae07107b2206eb08d8dabea"
+    },
+    "name": "John Doe Tenant B",
+    "phone": "9998887770",
+    "dob": null,
+    "age": null,
+    "gender": null,
+    "address": null,
+    "pincode": null,
+    "status": "Active",
+    "doctor_id": null,
+    "patient_type_id": null,
+    "notes": null,
+    "consultation_fee": {
+      "$numberDecimal": "0"
+    },
+    "balance_adjustment": {
+      "$numberDecimal": "0"
+    },
+    "created_at": {
+      "$date": "2026-10-27T09:38:15.426Z"
+    }
+  }
+]

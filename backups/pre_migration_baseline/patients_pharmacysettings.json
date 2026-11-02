@@ -1,0 +1,1 @@
+[{"_id": {"$oid": "6ac4db9028ae00206707b6d8"}, "default_payment_method": "Cash", "low_stock_threshold": 10, "require_prescription": false, "allow_partial_dispensing": true, "auto_deduct_stock_on_bill": true, "auto_print_receipt": false, "apply_gst": false, "gst_percent": {"$numberDecimal": "0"}}]

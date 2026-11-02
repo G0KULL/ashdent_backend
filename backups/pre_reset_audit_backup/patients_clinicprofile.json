@@ -1,0 +1,29 @@
+[
+  {
+    "_id": {
+      "$oid": "6ac5038c00d494426a544ece"
+    },
+    "name": "AshDent Advanced Dental & Implant Center",
+    "specialization": "Multispeciality Dental Hospital & Digital Implantology Center",
+    "phone": "+91 484 280 4500",
+    "mobile": "+91 98470 12345",
+    "address": "Level 3, Premier Healthcare Arcade, MG Road",
+    "slogan": "Precision Care for Every Smile",
+    "locality": null,
+    "country": "India",
+    "state": "Kerala",
+    "city": "Kochi",
+    "email": "care@ashdent.demo",
+    "website": "www.ashdent.demo",
+    "tax": null,
+    "zip_code": "682016",
+    "default_language": "English",
+    "default_currency": "INR",
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  }
+]

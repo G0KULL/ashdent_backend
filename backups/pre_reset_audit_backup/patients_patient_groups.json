@@ -1,0 +1,35 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb51"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb30"
+    },
+    "patientgroup_id": {
+      "$oid": "6ac4f18dfc826c7498499e60"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb85"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb39"
+    },
+    "patientgroup_id": {
+      "$oid": "6ac4f18dfc826c7498499e60"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbbd"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb36"
+    },
+    "patientgroup_id": {
+      "$oid": "6ac4f18dfc826c7498499e60"
+    }
+  }
+]

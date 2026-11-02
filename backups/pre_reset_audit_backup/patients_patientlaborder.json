@@ -1,0 +1,42 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcc03"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb33"
+    },
+    "name": "Zirconia Multilayer Crown 46",
+    "category": "Crown & Bridge",
+    "price": {
+      "$numberDecimal": "3500.00"
+    },
+    "date": {
+      "$date": "2026-10-16T00:00:00Z"
+    },
+    "status": "In Progress",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.582Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcc04"
+    },
+    "patient_id": {
+      "$oid": "6ad223594700afea755fcb3d"
+    },
+    "name": "E-Max Aesthetic Inlay 36",
+    "category": "Ceramic Lab",
+    "price": {
+      "$numberDecimal": "2800.00"
+    },
+    "date": {
+      "$date": "2026-10-15T00:00:00Z"
+    },
+    "status": "Delivered",
+    "created_at": {
+      "$date": "2026-10-16T13:15:05.583Z"
+    }
+  }
+]

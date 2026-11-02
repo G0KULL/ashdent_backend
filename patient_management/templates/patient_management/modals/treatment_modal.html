@@ -1,0 +1,56 @@
+<div class="modal fade" id="treatmentModal" tabindex="-1" aria-labelledby="treatmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <form id="treatmentForm">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold" id="treatmentModalLabel">Add Treatment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Treatment</label>
+              <select class="form-select" id="id_treatment_name" required>
+                <option value="">Select Treatment...</option>
+                <option value="Scaling" data-price="50.00">Scaling</option>
+                <option value="Root Canal" data-price="200.00">Root Canal</option>
+                <option value="Extraction" data-price="100.00">Extraction</option>
+                <option value="Filling" data-price="75.00">Filling</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Teeth</label>
+              <input type="text" class="form-control" id="id_teeth" placeholder="e.g. 11, 12, 13">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label fw-semibold">Quantity</label>
+              <input type="number" class="form-control calc-field" id="id_quantity" value="1" min="1" required>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label fw-semibold">Price</label>
+              <input type="number" class="form-control calc-field" id="id_price" step="0.01" required>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label fw-semibold">Discount</label>
+              <input type="number" class="form-control calc-field" id="id_discount" step="0.01" value="0">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label fw-semibold">Tax</label>
+              <input type="number" class="form-control calc-field" id="id_tax" step="0.01" value="0">
+            </div>
+            <div class="col-12 mt-4">
+              <div class="p-3 bg-light rounded d-flex justify-content-between align-items-center border">
+                <h5 class="mb-0 text-muted">Total Amount</h5>
+                <input type="number" class="form-control w-25 fw-bold text-end" id="id_amount" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="saveTreatmentBtn">Save Treatment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

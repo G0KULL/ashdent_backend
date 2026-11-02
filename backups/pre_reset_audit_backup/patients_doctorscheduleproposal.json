@@ -1,0 +1,661 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad1d18a501d77168a24d319"
+    },
+    "doctor_id": {
+      "$oid": "6ac4f185fc826c7498499e1a"
+    },
+    "status": "REJECTED",
+    "proposed_slots": [
+      {
+        "day_of_week": 0,
+        "start_time": "09:00",
+        "end_time": "12:00",
+        "specific_date": null,
+        "is_active": true
+      },
+      {
+        "day_of_week": 0,
+        "start_time": "14:00",
+        "end_time": "17:00",
+        "specific_date": null,
+        "is_active": true
+      }
+    ],
+    "existing_slots_snapshot": [],
+    "notes": "Requesting Monday morning and afternoon slots.",
+    "submitted_by_id": null,
+    "submitted_by_name": "Ananya Menon",
+    "submitted_at": {
+      "$date": "2026-10-16T07:26:02.650Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_by_name": "Dr. Navas Kp",
+    "reviewed_at": {
+      "$date": "2026-10-16T07:26:02.724Z"
+    },
+    "rejection_reason": "Monday afternoon has full clinic overlap. Please adjust hours.",
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad1d18a501d77168a24d31a"
+    },
+    "doctor_id": {
+      "$oid": "6ac4f185fc826c7498499e1a"
+    },
+    "status": "APPROVED",
+    "proposed_slots": [
+      {
+        "day_of_week": 1,
+        "start_time": "10:00",
+        "end_time": "13:00",
+        "specific_date": null,
+        "is_active": true
+      },
+      {
+        "day_of_week": 1,
+        "start_time": "15:00",
+        "end_time": "18:00",
+        "specific_date": null,
+        "is_active": true
+      }
+    ],
+    "existing_slots_snapshot": [],
+    "notes": "Revised to Tuesday shifts.",
+    "submitted_by_id": null,
+    "submitted_by_name": "Ananya Menon",
+    "submitted_at": {
+      "$date": "2026-10-16T07:26:02.747Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_by_name": "Dr. Navas Kp",
+    "reviewed_at": {
+      "$date": "2026-10-16T07:26:02.765Z"
+    },
+    "rejection_reason": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad1d18a501d77168a24d31d"
+    },
+    "doctor_id": {
+      "$oid": "6ac4f185fc826c7498499e1a"
+    },
+    "status": "PENDING_APPROVAL",
+    "proposed_slots": [
+      {
+        "day_of_week": 2,
+        "start_time": "09:00",
+        "end_time": "14:00",
+        "specific_date": null,
+        "is_active": true
+      }
+    ],
+    "existing_slots_snapshot": [
+      {
+        "id": "6ad1d18a501d77168a24d31b",
+        "doctor_name": "Dr. Ananya Menon",
+        "day_of_week": 1,
+        "start_time": "10:00:00",
+        "end_time": "13:00:00",
+        "is_active": true,
+        "specific_date": null,
+        "doctor": "6ac4f185fc826c7498499e1a"
+      },
+      {
+        "id": "6ad1d18a501d77168a24d31c",
+        "doctor_name": "Dr. Ananya Menon",
+        "day_of_week": 1,
+        "start_time": "15:00:00",
+        "end_time": "18:00:00",
+        "is_active": true,
+        "specific_date": null,
+        "doctor": "6ac4f185fc826c7498499e1a"
+      }
+    ],
+    "notes": "Want to switch from Tuesday to Wednesday.",
+    "submitted_by_id": null,
+    "submitted_by_name": "Ananya Menon",
+    "submitted_at": {
+      "$date": "2026-10-16T07:26:02.807Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_by_name": null,
+    "reviewed_at": null,
+    "rejection_reason": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad1d18a501d77168a24d320"
+    },
+    "doctor_id": {
+      "$oid": "6ac4f185fc826c7498499e1a"
+    },
+    "status": "APPROVED",
+    "proposed_slots": [
+      {
+        "day_of_week": 3,
+        "start_time": "08:00",
+        "end_time": "12:00",
+        "specific_date": null,
+        "is_active": true
+      },
+      {
+        "day_of_week": 3,
+        "start_time": "16:00",
+        "end_time": "19:00",
+        "specific_date": null,
+        "is_active": true
+      }
+    ],
+    "existing_slots_snapshot": [
+      {
+        "id": "6ad1d18a501d77168a24d31b",
+        "doctor_name": "Dr. Ananya Menon",
+        "day_of_week": 1,
+        "start_time": "10:00:00",
+        "end_time": "13:00:00",
+        "is_active": true,
+        "specific_date": null,
+        "doctor": "6ac4f185fc826c7498499e1a"
+      },
+      {
+        "id": "6ad1d18a501d77168a24d31c",
+        "doctor_name": "Dr. Ananya Menon",
+        "day_of_week": 1,
+        "start_time": "15:00:00",
+        "end_time": "18:00:00",
+        "is_active": true,
+        "specific_date": null,
+        "doctor": "6ac4f185fc826c7498499e1a"
+      }
+    ],
+    "notes": "Direct configuration by Clinic Director",
+    "submitted_by_id": null,
+    "submitted_by_name": "Dr. Navas Kp",
+    "submitted_at": {
+      "$date": "2026-10-16T07:26:02.843Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_by_name": "Dr. Navas Kp",
+    "reviewed_at": {
+      "$date": "2026-10-16T07:26:02.843Z"
+    },
+    "rejection_reason": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad1d18a501d77168a24d324"
+    },
+    "doctor_id": {
+      "$oid": "6ac4f186fc826c7498499e24"
+    },
+    "status": "APPROVED",
+    "proposed_slots": [
+      {
+        "day_of_week": 4,
+        "start_time": "09:00",
+        "end_time": "12:00",
+        "specific_date": null,
+        "is_active": true
+      }
+    ],
+    "existing_slots_snapshot": [],
+    "notes": "Super admin cross-company direct configuration",
+    "submitted_by_id": null,
+    "submitted_by_name": "Dr. Navas Kp",
+    "submitted_at": {
+      "$date": "2026-10-16T07:26:02.946Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_by_name": "Dr. Navas Kp",
+    "reviewed_at": {
+      "$date": "2026-10-16T07:26:02.945Z"
+    },
+    "rejection_reason": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae03ceec10859e432d7dcf4"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [],
+    "date_exceptions": [],
+    "status": "PENDING_APPROVAL",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T05:55:58.458Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_at": null,
+    "rejection_reason": null,
+    "notes": null,
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d5b"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 1,
+        "start_time": "08:00",
+        "end_time": "13:00",
+        "session_name": "Tuesday Shift"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "REJECTED",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T09:04:04.678Z"
+    },
+    "reviewed_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "reviewed_at": {
+      "$date": "2026-10-27T09:04:04.774Z"
+    },
+    "rejection_reason": "Tuesday already has too many specialists rostered.",
+    "notes": "Doctor requested shift to Tuesday",
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d67"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 1,
+        "start_time": "09:00",
+        "end_time": "12:00",
+        "session_name": "Tuesday Morning"
+      },
+      {
+        "day_of_week": 1,
+        "start_time": "14:00",
+        "end_time": "17:00",
+        "session_name": "Tuesday Afternoon"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "APPROVED",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T09:04:04.801Z"
+    },
+    "reviewed_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "reviewed_at": {
+      "$date": "2026-10-27T09:04:04.861Z"
+    },
+    "rejection_reason": null,
+    "notes": "Revised Tuesday hours",
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae06904f0e96df1db8c9d79"
+    },
+    "doctor_id": {
+      "$oid": "6ae03b738d2a7ff53a4d725a"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 1,
+        "start_time": "14:00",
+        "end_time": "18:00",
+        "session_name": "Tuesday Afternoon Only"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "PENDING_APPROVAL",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7259"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T09:04:04.983Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_at": null,
+    "rejection_reason": null,
+    "notes": "Dropping morning session",
+    "branch_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae071d1d12f7661b8c50a0b"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 0,
+        "start_time": "15:00",
+        "end_time": "19:00",
+        "session_name": "West Evening Extended"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "PENDING_APPROVAL",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T09:41:37.021Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_at": null,
+    "rejection_reason": null,
+    "notes": "Extending West Clinic hours"
+  },
+  {
+    "_id": {
+      "$oid": "6ae071ec2bf237c9ca1c3b9b"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 0,
+        "start_time": "15:00",
+        "end_time": "19:00",
+        "session_name": "West Evening Extended"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "PENDING_APPROVAL",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T09:42:04.554Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_at": null,
+    "rejection_reason": null,
+    "notes": "Extending West Clinic hours"
+  },
+  {
+    "_id": {
+      "$oid": "6ae07230b7d8a39801765efd"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 0,
+        "start_time": "15:00",
+        "end_time": "19:00",
+        "session_name": "West Evening Extended"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "APPROVED",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T09:43:12.426Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_at": {
+      "$date": "2026-10-27T09:43:12.496Z"
+    },
+    "rejection_reason": null,
+    "notes": "Extending West Clinic hours"
+  },
+  {
+    "_id": {
+      "$oid": "6ae0727453876f45f9126142"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 0,
+        "start_time": "15:00",
+        "end_time": "19:00",
+        "session_name": "West Evening Extended"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "APPROVED",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T09:44:20.523Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_at": {
+      "$date": "2026-10-27T09:44:20.578Z"
+    },
+    "rejection_reason": null,
+    "notes": "Extending West Clinic hours"
+  },
+  {
+    "_id": {
+      "$oid": "6ae074aabe857b1750ea789b"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 0,
+        "start_time": "15:00",
+        "end_time": "19:00",
+        "session_name": "West Evening Extended"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "APPROVED",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T09:53:46.480Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_at": {
+      "$date": "2026-10-27T09:53:46.533Z"
+    },
+    "rejection_reason": null,
+    "notes": "Extending West Clinic hours"
+  },
+  {
+    "_id": {
+      "$oid": "6ae07811265eaf7017cfb449"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 0,
+        "start_time": "15:00",
+        "end_time": "19:00",
+        "session_name": "West Evening Extended"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "APPROVED",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T10:08:17.281Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_at": {
+      "$date": "2026-10-27T10:08:17.340Z"
+    },
+    "rejection_reason": null,
+    "notes": "Extending West Clinic hours"
+  },
+  {
+    "_id": {
+      "$oid": "6ae07845f1ec62e92b2d0705"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "branch_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "doctor_id": {
+      "$oid": "6ad223544700afea755fcb03"
+    },
+    "proposal_type": "RECURRING_SCHEDULE",
+    "slot_duration": 30,
+    "proposed_slots": [
+      {
+        "day_of_week": 0,
+        "start_time": "15:00",
+        "end_time": "19:00",
+        "session_name": "West Evening Extended"
+      }
+    ],
+    "date_exceptions": [],
+    "status": "APPROVED",
+    "submitted_by_id": {
+      "$oid": "6ae03b738d2a7ff53a4d7257"
+    },
+    "submitted_at": {
+      "$date": "2026-10-27T10:09:09.056Z"
+    },
+    "reviewed_by_id": null,
+    "reviewed_at": {
+      "$date": "2026-10-27T10:09:09.113Z"
+    },
+    "rejection_reason": null,
+    "notes": "Extending West Clinic hours"
+  }
+]

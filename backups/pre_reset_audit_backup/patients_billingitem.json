@@ -1,0 +1,437 @@
+[
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb47"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb46"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e05"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "1000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb48"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb46"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e06"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "1500.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb49"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb46"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e08"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "1000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb4a"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb46"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e07"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "0.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb54"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb53"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0b"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "800.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb55"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb53"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0c"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "25000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb5e"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb5d"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e04"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "500.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb5f"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb5d"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e05"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "1200.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb73"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb72"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0a"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "9000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb74"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb72"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e08"
+    },
+    "qty": 2,
+    "price": {
+      "$numberDecimal": "2000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb7d"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb7c"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e09"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "6000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb7e"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb7c"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e05"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "1200.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb87"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb86"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0b"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "800.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb8f"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb8e"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e08"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "1000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb97"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb96"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0f"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "12000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcb9f"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcb9e"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0e"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "6000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcba7"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcba6"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e04"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "0.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbae"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbad"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e06"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "3000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbb6"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbb5"
+    },
+    "treatment_id": {
+      "$oid": "6ad207ba7744ced438154282"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "4000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbbf"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbbe"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0b"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "800.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbc8"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbc7"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e05"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "1200.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbc9"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbc7"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0d"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "300.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbd1"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbd0"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e09"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "6000.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbda"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbd9"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e04"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "500.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbdb"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbd9"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0d"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "300.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbe3"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbe2"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0b"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "800.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbec"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbeb"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e04"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "500.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbed"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbeb"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e0d"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "300.00"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad223594700afea755fcbf5"
+    },
+    "billing_id": {
+      "$oid": "6ad223594700afea755fcbf4"
+    },
+    "treatment_id": {
+      "$oid": "6ac4f183fc826c7498499e06"
+    },
+    "qty": 1,
+    "price": {
+      "$numberDecimal": "1500.00"
+    }
+  }
+]

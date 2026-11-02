@@ -1,0 +1,146 @@
+[
+  {
+    "_id": {
+      "$oid": "6ac4c7d703e026ec2de47c66"
+    },
+    "name": "Admin",
+    "code": "ADMIN",
+    "description": "Full administrative control over clinic operations, staff, and settings",
+    "is_system_role": true,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-06T10:05:11.861Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-06T10:29:27.617Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c7d703e026ec2de47c67"
+    },
+    "name": "Doctor",
+    "code": "DOCTOR",
+    "description": "Clinical practitioner handling diagnosis, treatments, and prescriptions",
+    "is_system_role": true,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-06T10:05:11.874Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-06T10:29:27.620Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c7d703e026ec2de47c68"
+    },
+    "name": "Pharmacist",
+    "code": "PHARMACIST",
+    "description": "Pharmacy inventory, medicine dispensation, and stock management",
+    "is_system_role": true,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-06T10:05:11.876Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-06T10:29:27.623Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c7d703e026ec2de47c69"
+    },
+    "name": "Receptionist",
+    "code": "RECEPTIONIST",
+    "description": "Front desk manager handling registrations, appointments, and billing",
+    "is_system_role": true,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-06T10:05:11.878Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-06T10:29:27.626Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c7d703e026ec2de47c6a"
+    },
+    "name": "Accountant",
+    "code": "ACCOUNTANT",
+    "description": "Financial audits, clinic expense tracking, and salary management",
+    "is_system_role": true,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-06T10:05:11.880Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-16T10:46:26.052Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4c7d703e026ec2de47c6b"
+    },
+    "name": "Dental Assistant",
+    "code": "ASSISTANT",
+    "description": "Clinical chairside assistance and instrument sterilization",
+    "is_system_role": true,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-06T10:05:11.881Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-06T10:29:27.634Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4cd87e339bc230b38d7ce"
+    },
+    "name": "Lab Technician",
+    "code": "LAB_TECH",
+    "description": "Pathology and dental lab work coordinator",
+    "is_system_role": false,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-06T10:29:27.639Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-06T10:29:27.639Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ac4cd87e339bc230b38d7cf"
+    },
+    "name": "Hygienist",
+    "code": "HYGIENIST",
+    "description": "Preventive oral care and scaling specialist",
+    "is_system_role": false,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-06T10:29:27.643Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-06T10:29:27.643Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ad2038d61d973c42bd8ef45"
+    },
+    "name": "Account",
+    "code": "ACCOUNT",
+    "description": "123456789",
+    "is_system_role": false,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-16T10:59:25.380Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-16T10:59:25.380Z"
+    }
+  }
+]

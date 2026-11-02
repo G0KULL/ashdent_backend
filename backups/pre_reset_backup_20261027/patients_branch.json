@@ -1,0 +1,74 @@
+[
+  {
+    "_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71809"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "name": "Main Branch",
+    "code": "MAIN",
+    "phone": "9822001122",
+    "email": null,
+    "address": null,
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India",
+    "zip_code": null,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-27T09:17:15.612Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T09:17:15.612Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07107b2206eb08d8dabea"
+    },
+    "company_id": {
+      "$oid": "6ae07107b2206eb08d8dabe9"
+    },
+    "name": "Downtown Branch",
+    "code": "COMPB-BR1",
+    "phone": null,
+    "email": null,
+    "address": null,
+    "city": null,
+    "state": null,
+    "country": "India",
+    "zip_code": null,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-27T09:38:15.421Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T09:38:15.422Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ae07122dff61e5ede81e19c"
+    },
+    "company_id": {
+      "$oid": "6ae06c1ba7492ed0d8b71808"
+    },
+    "name": "West Clinic Branch",
+    "code": "WEST-BR",
+    "phone": null,
+    "email": null,
+    "address": null,
+    "city": null,
+    "state": null,
+    "country": "India",
+    "zip_code": null,
+    "is_active": true,
+    "created_at": {
+      "$date": "2026-10-27T09:38:42.553Z"
+    },
+    "updated_at": {
+      "$date": "2026-10-27T09:38:42.553Z"
+    }
+  }
+]
