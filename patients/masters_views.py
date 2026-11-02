@@ -1088,32 +1088,48 @@ class ResolveTreatmentMastersAPIView(APIView):
         results = {}
 
         if treatment_name:
-            t_obj, t_created, t_err = auto_create_or_reuse_master('treatment', treatment_name, {'price': price})
-            if t_obj:
-                results['treatment'] = {
-                    "id": str(t_obj.id), "name": t_obj.name, "created": t_created
-                }
+            t_names = treatment_name if isinstance(treatment_name, list) else [treatment_name]
+            resolved_t = []
+            for t_name in t_names:
+                if t_name and str(t_name).strip():
+                    t_obj, t_created, t_err = auto_create_or_reuse_master('treatment', str(t_name).strip(), {'price': price})
+                    if t_obj:
+                        resolved_t.append({"id": str(t_obj.id), "name": t_obj.name, "created": t_created})
+            if resolved_t:
+                results['treatment'] = resolved_t if isinstance(treatment_name, list) else resolved_t[0]
 
         if diagnosis_name:
-            d_obj, d_created, d_err = auto_create_or_reuse_master('diagnosis', diagnosis_name)
-            if d_obj:
-                results['diagnosis'] = {
-                    "id": str(d_obj.id), "name": d_obj.name, "created": d_created
-                }
+            d_names = diagnosis_name if isinstance(diagnosis_name, list) else [diagnosis_name]
+            resolved_d = []
+            for d_name in d_names:
+                if d_name and str(d_name).strip():
+                    d_obj, d_created, d_err = auto_create_or_reuse_master('diagnosis', str(d_name).strip())
+                    if d_obj:
+                        resolved_d.append({"id": str(d_obj.id), "name": d_obj.name, "created": d_created})
+            if resolved_d:
+                results['diagnosis'] = resolved_d if isinstance(diagnosis_name, list) else resolved_d[0]
 
         if exam_name:
-            e_obj, e_created, e_err = auto_create_or_reuse_master('examination', exam_name)
-            if e_obj:
-                results['examination'] = {
-                    "id": str(e_obj.id), "name": e_obj.name, "created": e_created
-                }
+            e_names = exam_name if isinstance(exam_name, list) else [exam_name]
+            resolved_e = []
+            for e_name in e_names:
+                if e_name and str(e_name).strip():
+                    e_obj, e_created, e_err = auto_create_or_reuse_master('examination', str(e_name).strip())
+                    if e_obj:
+                        resolved_e.append({"id": str(e_obj.id), "name": e_obj.name, "created": e_created})
+            if resolved_e:
+                results['examination'] = resolved_e if isinstance(exam_name, list) else resolved_e[0]
 
         if cond_name:
-            c_obj, c_created, c_err = auto_create_or_reuse_master('tooth_condition', cond_name)
-            if c_obj:
-                results['condition'] = {
-                    "id": str(c_obj.id), "name": c_obj.name, "created": c_created
-                }
+            c_names = cond_name if isinstance(cond_name, list) else [cond_name]
+            resolved_c = []
+            for c_name in c_names:
+                if c_name and str(c_name).strip():
+                    c_obj, c_created, c_err = auto_create_or_reuse_master('tooth_condition', str(c_name).strip())
+                    if c_obj:
+                        resolved_c.append({"id": str(c_obj.id), "name": c_obj.name, "created": c_created})
+            if resolved_c:
+                results['condition'] = resolved_c if isinstance(cond_name, list) else resolved_c[0]
 
         # Provide refreshed catalogues
         refreshed = {

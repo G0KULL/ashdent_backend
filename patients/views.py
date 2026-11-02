@@ -4,6 +4,9 @@ from rest_framework.views import APIView
 from django.db import transaction, IntegrityError, connections
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
+from django.core.exceptions import ValidationError
+from .file_validators import validate_file, sanitize_filename, generate_unique_filename
 from django.contrib.auth import authenticate, login as django_login
 from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
@@ -1799,6 +1802,9 @@ class ClinicalNotesSaveView(APIView):
 
         defaults = {
             'selected_teeth': request.data.get('selected_teeth', existing_note.selected_teeth if existing_note else []),
+            'chart_conditions': request.data.get('chart_conditions', existing_note.chart_conditions if (existing_note and hasattr(existing_note, 'chart_conditions')) else {}),
+            'tooth_details': request.data.get('tooth_details', existing_note.tooth_details if (existing_note and hasattr(existing_note, 'tooth_details')) else {}),
+            'vitals': request.data.get('vitals', existing_note.vitals if (existing_note and hasattr(existing_note, 'vitals')) else {}),
             'complaints': request.data.get('complaints', existing_note.complaints if existing_note else []),
             'observations': request.data.get('observations', existing_note.observations if existing_note else []),
             'investigations': request.data.get('investigations', existing_note.investigations if existing_note else []),
@@ -1864,6 +1870,42 @@ class ClinicalNotesSaveView(APIView):
                     appt.save()
                 else:
                     appt.delete()
+
+        # Sync chart_conditions to persistent ToothConditionRecord
+        chart_conds = defaults.get('chart_conditions') or {}
+        if chart_conds and isinstance(chart_conds, dict):
+            from .models import ToothConditionRecord
+            for t_str, c_val in chart_conds.items():
+                try:
+                    t_num = int(t_str)
+                    cond_list = c_val if isinstance(c_val, list) else ([c_val] if c_val else [])
+                    ToothConditionRecord.objects.update_or_create(
+                        patient=appointment.patient,
+                        tooth_number=t_num,
+                        defaults={
+                            'appointment': appointment,
+                            'condition': cond_list,
+                            'is_active': True
+                        }
+                    )
+                except Exception:
+                    pass
+
+        # Also ensure selected_teeth are tracked
+        for t in defaults.get('selected_teeth') or []:
+            try:
+                t_num = int(t)
+                from .models import ToothConditionRecord
+                if not ToothConditionRecord.objects.filter(patient=appointment.patient, tooth_number=t_num).exists():
+                    ToothConditionRecord.objects.create(
+                        patient=appointment.patient,
+                        tooth_number=t_num,
+                        appointment=appointment,
+                        condition=[],
+                        is_active=True
+                    )
+            except Exception:
+                pass
 
         return Response({"message": "Saved successfully", "id": str(notes.id)})
 
@@ -7166,6 +7208,8 @@ class InvestigationMasterDetailView(APIView):
 
 
 class PatientInvestigationListView(APIView):
+    parser_classes = [MultiPartParser, FormParser, JSONParser]
+
     def get(self, request):
         scope = get_request_scope(request)
         patient_id = request.query_params.get('patient') or request.query_params.get('patient_id')
@@ -7263,11 +7307,21 @@ class PatientInvestigationListView(APIView):
         if not uploaded_files and 'file' in request.FILES:
             uploaded_files = [request.FILES['file']]
 
+        # Validate each uploaded file
         for f in uploaded_files:
+            try:
+                validate_file(f)
+            except ValidationError as ve:
+                err_msg = ve.message if hasattr(ve, 'message') else str(ve)
+                return Response({'error': err_msg}, status=status.HTTP_400_BAD_REQUEST)
+
+        for f in uploaded_files:
+            orig_name = sanitize_filename(f.name)
+            f.name = generate_unique_filename(orig_name)
             InvestigationAttachment.objects.create(
                 investigation=inv,
                 file=f,
-                file_name=f.name,
+                file_name=orig_name,
                 file_type=f.content_type if hasattr(f, 'content_type') else '',
                 file_size=f.size if hasattr(f, 'size') else 0
             )
@@ -7290,6 +7344,8 @@ class PatientInvestigationListView(APIView):
 
 
 class PatientInvestigationDetailView(APIView):
+    parser_classes = [MultiPartParser, FormParser, JSONParser]
+
     def get(self, request, pk):
         inv = get_object_or_404(PatientInvestigation, pk=pk)
         return Response(PatientInvestigationSerializer(inv, context={'request': request}).data)
@@ -7323,10 +7379,19 @@ class PatientInvestigationDetailView(APIView):
             uploaded_files = [request.FILES['file']]
 
         for f in uploaded_files:
+            try:
+                validate_file(f)
+            except ValidationError as ve:
+                err_msg = ve.message if hasattr(ve, 'message') else str(ve)
+                return Response({'error': err_msg}, status=status.HTTP_400_BAD_REQUEST)
+
+        for f in uploaded_files:
+            orig_name = sanitize_filename(f.name)
+            f.name = generate_unique_filename(orig_name)
             InvestigationAttachment.objects.create(
                 investigation=inv,
                 file=f,
-                file_name=f.name,
+                file_name=orig_name,
                 file_type=f.content_type if hasattr(f, 'content_type') else '',
                 file_size=f.size if hasattr(f, 'size') else 0
             )
@@ -7348,23 +7413,40 @@ class PatientInvestigationDetailView(APIView):
 
     def delete(self, request, pk):
         inv = get_object_or_404(PatientInvestigation, pk=pk)
+        for att in inv.attachments.all():
+            if att.file:
+                try:
+                    att.file.delete(save=False)
+                except Exception:
+                    pass
         inv.delete()
         return Response({'status': 'deleted', 'id': str(pk)})
 
 
 class InvestigationAttachmentUploadView(APIView):
+    parser_classes = [MultiPartParser, FormParser, JSONParser]
+
     def post(self, request, pk):
         inv = get_object_or_404(PatientInvestigation, pk=pk)
         uploaded_files = request.FILES.getlist('files') or request.FILES.getlist('attachments')
         if not uploaded_files and 'file' in request.FILES:
             uploaded_files = [request.FILES['file']]
 
+        for f in uploaded_files:
+            try:
+                validate_file(f)
+            except ValidationError as ve:
+                err_msg = ve.message if hasattr(ve, 'message') else str(ve)
+                return Response({'error': err_msg}, status=status.HTTP_400_BAD_REQUEST)
+
         created_atts = []
         for f in uploaded_files:
+            orig_name = sanitize_filename(f.name)
+            f.name = generate_unique_filename(orig_name)
             att = InvestigationAttachment.objects.create(
                 investigation=inv,
                 file=f,
-                file_name=f.name,
+                file_name=orig_name,
                 file_type=f.content_type if hasattr(f, 'content_type') else '',
                 file_size=f.size if hasattr(f, 'size') else 0
             )

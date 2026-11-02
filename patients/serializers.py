@@ -48,9 +48,24 @@ class TreatmentMasterSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class PatientImageSerializer(serializers.ModelSerializer):
+    file_url = serializers.SerializerMethodField()
+
     class Meta:
         model = PatientImage
         fields = '__all__'
+
+    def get_file_url(self, obj):
+        if obj.image:
+            try:
+                request = self.context.get('request')
+                if request:
+                    return request.build_absolute_uri(obj.image.url)
+                return obj.image.url
+            except Exception:
+                pass
+        if obj.image_data:
+            return obj.image_data
+        return ''
 
 class StaffSerializer(serializers.ModelSerializer):
     username = serializers.ReadOnlyField(source='user.username')

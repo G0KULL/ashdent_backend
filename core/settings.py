@@ -143,3 +143,9 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+
+# File Upload Settings for Dental Imaging and Medical Reports
+FILE_UPLOAD_MAX_MEMORY_SIZE = 26214400  # 25 MB
+DATA_UPLOAD_MAX_MEMORY_SIZE = 26214400  # 25 MB
+FILE_UPLOAD_PERMISSIONS = 0o644

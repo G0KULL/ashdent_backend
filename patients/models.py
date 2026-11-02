@@ -512,6 +512,9 @@ class TaxSetting(models.Model):
 class ClinicalNotes(models.Model):
     appointment = models.OneToOneField(Appointment, on_delete=models.CASCADE, related_name='clinical_notes', null=True, blank=True)
     selected_teeth = models.JSONField(default=list, blank=True)
+    chart_conditions = models.JSONField(default=dict, blank=True)
+    tooth_details = models.JSONField(default=dict, blank=True)
+    vitals = models.JSONField(default=dict, blank=True)
     complaints = models.JSONField(default=list, blank=True)
     observations = models.JSONField(default=list, blank=True)
     investigations = models.JSONField(default=list, blank=True)
@@ -549,7 +552,10 @@ class TreatmentRecord(models.Model):
 class PatientImage(models.Model):
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='images')
     visit = models.ForeignKey(Visit, on_delete=models.SET_NULL, null=True, blank=True, related_name='images')
-    image_data = models.TextField() # Base64
+    image = models.FileField(upload_to='patient_images/%Y/%m/', null=True, blank=True)
+    file_name = models.CharField(max_length=255, blank=True, null=True)
+    tooth_number = models.CharField(max_length=50, blank=True, null=True)
+    image_data = models.TextField(blank=True, null=True) # Base64 fallback
     image_type = models.CharField(max_length=50, default='RVG') # RVG, Camera, Document
     notes = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -1648,3 +1654,144 @@ class InvestigationAttachment(models.Model):
 
     def __str__(self):
         return f"{self.file_name} ({self.investigation.investigation_name})"
+
+
+class ToothConditionRecord(models.Model):
+    patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='tooth_conditions')
+    visit = models.ForeignKey(Visit, on_delete=models.SET_NULL, null=True, blank=True, related_name='tooth_conditions')
+    appointment = models.ForeignKey(Appointment, on_delete=models.SET_NULL, null=True, blank=True, related_name='tooth_conditions')
+    tooth_number = models.IntegerField()
+    condition = models.JSONField(default=list, blank=True)
+    surfaces = models.JSONField(default=list, blank=True)
+    examination = models.JSONField(default=list, blank=True)
+    diagnosis = models.JSONField(default=list, blank=True)
+    treatments_suggested = models.JSONField(default=list, blank=True)
+    mobility = models.CharField(max_length=50, blank=True, default='')
+    pocket_depth = models.CharField(max_length=50, blank=True, default='')
+    furcation = models.CharField(max_length=50, blank=True, default='')
+    plaque_index = models.CharField(max_length=50, blank=True, default='')
+    notes = models.TextField(blank=True, default='')
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['tooth_number']
+
+    def __str__(self):
+        return f'Tooth #{self.tooth_number} ({self.patient.name}): {self.condition}'
+
+
+class TreatmentPlan(models.Model):
+    STATUS_CHOICES = [
+        ('Draft', 'Draft'),
+        ('Proposed', 'Proposed'),
+        ('Accepted', 'Accepted'),
+        ('In Progress', 'In Progress'),
+        ('Completed', 'Completed'),
+        ('Cancelled', 'Cancelled'),
+    ]
+
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True, related_name='treatment_plans')
+    branch = models.ForeignKey(Branch, on_delete=models.SET_NULL, null=True, blank=True, related_name='treatment_plans')
+    patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='treatment_plans')
+    visit = models.ForeignKey(Visit, on_delete=models.SET_NULL, null=True, blank=True, related_name='treatment_plans')
+    appointment = models.ForeignKey(Appointment, on_delete=models.SET_NULL, null=True, blank=True, related_name='treatment_plans')
+    doctor = models.ForeignKey(Doctor, on_delete=models.SET_NULL, null=True, blank=True, related_name='treatment_plans')
+    title = models.CharField(max_length=255, default='Comprehensive Dental Treatment Plan')
+    status = models.CharField(max_length=30, choices=STATUS_CHOICES, default='Proposed')
+    total_estimated_cost = models.DecimalField(max_digits=12, decimal_places=2, default=0.00)
+    notes = models.TextField(blank=True, default='')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f'{self.title} for {self.patient.name} [{self.status}]'
+
+
+class TreatmentPlanItem(models.Model):
+    PRIORITY_CHOICES = [
+        ('Urgent', 'Urgent'),
+        ('Routine', 'Routine'),
+        ('Elective', 'Elective'),
+    ]
+    STATUS_CHOICES = [
+        ('Proposed', 'Proposed'),
+        ('Accepted', 'Accepted'),
+        ('In Progress', 'In Progress'),
+        ('Completed', 'Completed'),
+        ('Cancelled', 'Cancelled'),
+    ]
+
+    plan = models.ForeignKey(TreatmentPlan, on_delete=models.CASCADE, related_name='items')
+    tooth_number = models.CharField(max_length=50, blank=True, default='')
+    surface = models.CharField(max_length=100, blank=True, default='All')
+    diagnosis = models.CharField(max_length=255, blank=True, default='')
+    procedure_name = models.CharField(max_length=255)
+    treatment_master = models.ForeignKey(TreatmentMaster, null=True, blank=True, on_delete=models.SET_NULL, related_name='plan_items')
+    priority = models.CharField(max_length=50, choices=PRIORITY_CHOICES, default='Routine')
+    estimated_cost = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
+    discount = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
+    final_cost = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
+    estimated_visits = models.IntegerField(default=1)
+    status = models.CharField(max_length=30, choices=STATUS_CHOICES, default='Proposed')
+    notes = models.TextField(blank=True, default='')
+    description = models.TextField(blank=True, default='')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['id']
+
+    def __str__(self):
+        return f'{self.procedure_name} (#{self.tooth_number}) - {self.status}'
+
+
+class TreatmentSession(models.Model):
+    STATUS_CHOICES = [
+        ('Scheduled', 'Scheduled'),
+        ('In Progress', 'In Progress'),
+        ('Completed', 'Completed'),
+        ('Incomplete', 'Incomplete'),
+        ('Cancelled', 'Cancelled'),
+    ]
+
+    treatment_record = models.ForeignKey(TreatmentRecord, null=True, blank=True, on_delete=models.CASCADE, related_name='sessions')
+    plan_item = models.ForeignKey(TreatmentPlanItem, null=True, blank=True, on_delete=models.SET_NULL, related_name='sessions')
+    patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='treatment_sessions')
+    visit = models.ForeignKey(Visit, null=True, blank=True, on_delete=models.SET_NULL, related_name='treatment_sessions')
+    doctor = models.ForeignKey(Doctor, null=True, blank=True, on_delete=models.SET_NULL, related_name='treatment_sessions')
+    session_number = models.IntegerField(default=1)
+    session_date = models.DateField(default=timezone.now)
+    procedure_performed = models.CharField(max_length=255)
+    clinical_notes = models.TextField(blank=True, default='')
+    materials_used = models.TextField(blank=True, default='')
+    next_session_plan = models.TextField(blank=True, default='')
+    next_session_date = models.DateField(null=True, blank=True)
+    status = models.CharField(max_length=30, choices=STATUS_CHOICES, default='Completed')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['session_date', 'session_number']
+
+    def __str__(self):
+        return f'Session #{self.session_number}: {self.procedure_performed} ({self.patient.name})'
+
+
+class EMRChangeLog(models.Model):
+    patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='emr_audit_logs')
+    entity_type = models.CharField(max_length=100)
+    entity_id = models.CharField(max_length=100)
+    action = models.CharField(max_length=50) # CREATE, UPDATE, DELETE
+    changed_by = models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL)
+    changes = models.JSONField(default=dict, blank=True)
+    timestamp = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        ordering = ['-timestamp']
+
+    def __str__(self):
+        return f'{self.action} on {self.entity_type} #{self.entity_id} at {self.timestamp}'

@@ -46,6 +46,15 @@ from .views import (
     InvestigationAttachmentUploadView, InvestigationAttachmentDetailView,
     PatientInvestigationHistoryView,
 )
+from .emr_views import (
+    PatientToothConditionsView,
+    TreatmentPlanListCreateView,
+    TreatmentPlanItemUpdateView,
+    ConvertPlanItemToTreatmentRecordView,
+    TreatmentSessionListCreateView,
+    PatientEMRDetailView,
+    EMRPDFReportView
+)
 from .masters_views import (
     PatientTypeMasterAPIView, StaffLevelMasterAPIView, DesignationMasterAPIView,
     RoleMasterAPIView, PermissionMasterAPIView, DiscountMasterAPIView,
@@ -329,6 +338,17 @@ urlpatterns = [
     path('patient-investigations/<str:pk>/attachments/', InvestigationAttachmentUploadView.as_view()),
     path('investigation-attachments/<str:pk>/', InvestigationAttachmentDetailView.as_view()),
     path('patients/<str:patient_id>/investigations-history/', PatientInvestigationHistoryView.as_view()),
+
+    # COMPREHENSIVE PATIENT EMR & CLINICAL DATA PERSISTENCE
+    path('patients/<str:patient_id>/tooth-conditions/', PatientToothConditionsView.as_view()),
+    path('patients/<str:patient_id>/treatment-plans/', TreatmentPlanListCreateView.as_view()),
+    path('treatment-plan-items/<str:item_id>/', TreatmentPlanItemUpdateView.as_view()),
+    path('treatment-plan-items/<str:item_id>/convert-to-treatment/', ConvertPlanItemToTreatmentRecordView.as_view()),
+    path('patients/<str:patient_id>/treatment-sessions/', TreatmentSessionListCreateView.as_view()),
+    path('treatment-records/<str:record_id>/sessions/', TreatmentSessionListCreateView.as_view()),
+    path('patients/<str:patient_id>/emr/', PatientEMRDetailView.as_view()),
+    path('patients/<str:patient_id>/emr-report/pdf/', EMRPDFReportView.as_view()),
+    path('visits/<str:visit_id>/emr-report/pdf/', EMRPDFReportView.as_view()),
 
 ]
 
