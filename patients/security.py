@@ -1,3 +1,4 @@
+from bson import ObjectId
 from django.contrib.auth.models import User
 from patients.models import Staff
 
@@ -321,15 +322,15 @@ def get_request_scope(request):
         company = None
         branch = None
 
-        if company_header:
+        if company_header and ObjectId.is_valid(str(company_header)):
             company = Company.objects.filter(pk=company_header, is_active=True).first()
         if not company:
-            company = Company.objects.filter(is_active=True).first()
+            company = Company.objects.filter(code='ASHDENT', is_active=True).first() or Company.objects.filter(is_active=True).first()
 
-        if branch_header and company:
+        if branch_header and branch_header != 'all' and ObjectId.is_valid(str(branch_header)) and company:
             branch = Branch.objects.filter(pk=branch_header, company=company, is_active=True).first()
         if not branch and company:
-            branch = Branch.objects.filter(company=company, is_active=True).first()
+            branch = Branch.objects.filter(company=company, code='MAIN', is_active=True).first() or Branch.objects.filter(company=company, is_active=True).first()
 
         accessible_ids = [str(b.id) for b in Branch.objects.filter(company=company, is_active=True)] if company else []
         return RequestScope(

@@ -7,7 +7,7 @@ from .models import (
     PatientGroup, Transaction, Supplier, PharmacyPurchase, PharmacyPurchaseItem, MedicineStock,
     SupplierLedger, TaxSetting, CommunicationTemplate, LabHeader, Laboratory, LabTestMaster,
     LabTestParameter, LabPackage, DentalLaboratory, DentalLabWork, WebsiteAppointmentRequest,
-    Staff, PatientLabOrder, PatientImage, StaffLeaveConfig, StaffBenefit, StaffInsurance
+    Staff, PatientLabOrder, PatientImage, StaffLeaveConfig, StaffBenefit, StaffInsurance, InvestigationMaster, PatientInvestigation, InvestigationAttachment
 )
 from django_mongodb_backend.fields.auto import ObjectIdAutoField
 
@@ -540,3 +540,45 @@ class PatientLabOrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = PatientLabOrder
         fields = '__all__'
+
+
+class InvestigationMasterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = InvestigationMaster
+        fields = '__all__'
+
+
+class InvestigationAttachmentSerializer(serializers.ModelSerializer):
+    file_url = serializers.SerializerMethodField()
+
+    class Meta:
+        model = InvestigationAttachment
+        fields = ['id', 'investigation', 'file', 'file_url', 'file_name', 'file_type', 'file_size', 'file_data', 'uploaded_at']
+
+    def get_file_url(self, obj):
+        if obj.file:
+            try:
+                request = self.context.get('request')
+                if request:
+                    return request.build_absolute_uri(obj.file.url)
+                return obj.file.url
+            except Exception:
+                return ""
+        return ""
+
+
+class PatientInvestigationSerializer(serializers.ModelSerializer):
+    attachments = serializers.SerializerMethodField()
+    doctor_name = serializers.ReadOnlyField(source='doctor.name')
+    patient_name = serializers.ReadOnlyField(source='patient.name')
+    master_name = serializers.ReadOnlyField(source='investigation_master.name')
+
+    class Meta:
+        model = PatientInvestigation
+        fields = '__all__'
+
+    def get_attachments(self, obj):
+        try:
+            return InvestigationAttachmentSerializer(obj.attachments.all(), many=True, context=self.context).data
+        except Exception:
+            return []

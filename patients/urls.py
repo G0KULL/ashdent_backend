@@ -41,6 +41,10 @@ from .views import (
     PatientLabOrderListView, PatientLabOrderDeleteView,
     GlobalLabOrderListView,
     CompanyListView, CompanyDetailView, BranchListView, BranchDetailView,
+    InvestigationMasterListView, InvestigationMasterDetailView,
+    PatientInvestigationListView, PatientInvestigationDetailView,
+    InvestigationAttachmentUploadView, InvestigationAttachmentDetailView,
+    PatientInvestigationHistoryView,
 )
 from .masters_views import (
     PatientTypeMasterAPIView, StaffLevelMasterAPIView, DesignationMasterAPIView,
@@ -315,5 +319,16 @@ urlpatterns = [
     path('companies/<str:pk>/', CompanyDetailView.as_view()),
     path('branches/', BranchListView.as_view()),
     path('branches/<str:pk>/', BranchDetailView.as_view()),
+    # INVESTIGATION MODULE APIs
+    path('investigation-masters/', InvestigationMasterListView.as_view()),
+    path('investigation-masters/<str:pk>/', InvestigationMasterDetailView.as_view()),
+    path('masters/investigations/', InvestigationMasterListView.as_view()),
+    path('masters/investigations/<str:pk>/', InvestigationMasterDetailView.as_view()),
+    path('patient-investigations/', PatientInvestigationListView.as_view()),
+    path('patient-investigations/<str:pk>/', PatientInvestigationDetailView.as_view()),
+    path('patient-investigations/<str:pk>/attachments/', InvestigationAttachmentUploadView.as_view()),
+    path('investigation-attachments/<str:pk>/', InvestigationAttachmentDetailView.as_view()),
+    path('patients/<str:patient_id>/investigations-history/', PatientInvestigationHistoryView.as_view()),
+
 ]
 

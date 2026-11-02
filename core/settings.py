@@ -137,4 +137,9 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
     'x-user-id',
     'x-username',
     'x-user-role',
+    'x-branch-id',
+    'x-company-id',
 ]
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"

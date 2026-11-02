@@ -1581,3 +1581,70 @@ class StaffInsurance(models.Model):
     def __str__(self):
         return f"{self.staff.name} - {self.provider} ({self.policy_number})"
 
+
+
+class InvestigationMaster(models.Model):
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True, related_name='investigation_masters')
+    name = models.CharField(max_length=200)
+    code = models.CharField(max_length=50, blank=True, null=True)
+    category = models.CharField(max_length=100, default='Radiology / Imaging')
+    description = models.TextField(blank=True, null=True)
+    default_cost = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name
+
+
+class PatientInvestigation(models.Model):
+    STATUS_CHOICES = [
+        ('Requested', 'Requested'),
+        ('Result Pending', 'Result Pending'),
+        ('Completed', 'Completed'),
+        ('Cancelled', 'Cancelled'),
+    ]
+
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True, related_name='patient_investigations')
+    branch = models.ForeignKey(Branch, on_delete=models.SET_NULL, null=True, blank=True, related_name='patient_investigations')
+    patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='investigations')
+    appointment = models.ForeignKey(Appointment, on_delete=models.SET_NULL, null=True, blank=True, related_name='investigations')
+    visit = models.ForeignKey(Visit, on_delete=models.SET_NULL, null=True, blank=True, related_name='investigations')
+    doctor = models.ForeignKey(Doctor, on_delete=models.SET_NULL, null=True, blank=True, related_name='investigations')
+    investigation_master = models.ForeignKey(InvestigationMaster, on_delete=models.SET_NULL, null=True, blank=True, related_name='patient_investigations')
+
+    investigation_name = models.CharField(max_length=255)
+    investigation_date = models.DateField(default=timezone.now)
+    reason = models.TextField(blank=True, null=True)
+    findings = models.TextField(blank=True, null=True)
+    remarks = models.TextField(blank=True, null=True)
+    status = models.CharField(max_length=30, choices=STATUS_CHOICES, default='Requested')
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-investigation_date', '-created_at']
+
+    def __str__(self):
+        return f"{self.investigation_name} - {self.patient.name} ({self.status})"
+
+
+class InvestigationAttachment(models.Model):
+    investigation = models.ForeignKey(PatientInvestigation, on_delete=models.CASCADE, related_name='attachments')
+    file = models.FileField(upload_to='investigations/%Y/%m/', null=True, blank=True)
+    file_name = models.CharField(max_length=255)
+    file_type = models.CharField(max_length=100, blank=True, null=True)
+    file_size = models.IntegerField(default=0)
+    file_data = models.TextField(blank=True, null=True)
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-uploaded_at']
+
+    def __str__(self):
+        return f"{self.file_name} ({self.investigation.investigation_name})"

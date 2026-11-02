@@ -24,7 +24,7 @@ from .models import (
     Transaction, Supplier, MedicinePurchase, PharmacyPurchase, PharmacyPurchaseItem, MedicineStock,
     SupplierLedger, TaxSetting, CommunicationTemplate, LabHeader, Laboratory, LabTestMaster,
     LabTestParameter, LabPackage, DentalLaboratory, DentalLabWork, Expense, ExpenseCategory,
-    PatientLabOrder, StaffLeaveConfig, StaffBenefit, StaffInsurance
+    PatientLabOrder, StaffLeaveConfig, StaffBenefit, StaffInsurance, InvestigationMaster, PatientInvestigation, InvestigationAttachment
 )
 from .serializers import (
     CompanySerializer, BranchSerializer,
@@ -37,7 +37,7 @@ from .serializers import (
     MedicineStockSerializer, SupplierLedgerSerializer, TaxSettingSerializer, CommunicationTemplateSerializer,
     LabHeaderSerializer, LaboratorySerializer, LabTestMasterSerializer, LabTestParameterSerializer,
     LabPackageSerializer, DentalLaboratorySerializer, DentalLabWorkSerializer, StaffSerializer,
-    PatientLabOrderSerializer, StaffLeaveConfigSerializer, StaffBenefitSerializer, StaffInsuranceSerializer
+    PatientLabOrderSerializer, StaffLeaveConfigSerializer, StaffBenefitSerializer, StaffInsuranceSerializer, InvestigationMasterSerializer, PatientInvestigationSerializer, InvestigationAttachmentSerializer
 )
 from .security import (
     get_authenticated_user, is_super_admin, is_application_admin,
@@ -1091,9 +1091,11 @@ class TodayAppointmentListView(APIView):
         if scope.company and not scope.is_super:
             appts = appts.filter(company=scope.company)
 
+        from bson import ObjectId
         branch_id = request.query_params.get('branch_id') or request.headers.get('X-Branch-Id')
         if branch_id and branch_id != 'all':
-            appts = appts.filter(branch_id=branch_id)
+            if ObjectId.is_valid(str(branch_id)):
+                appts = appts.filter(Q(branch_id=branch_id) | (Q(branch__isnull=True) & Q(company=scope.company)))
         elif not scope.is_company_admin and scope.branch:
             appts = appts.filter(branch=scope.branch)
 
@@ -1120,9 +1122,11 @@ class AllAppointmentListView(APIView):
         if scope.company and not scope.is_super:
             appts = appts.filter(company=scope.company)
 
+        from bson import ObjectId
         branch_id = request.query_params.get('branch_id') or request.headers.get('X-Branch-Id')
         if branch_id and branch_id != 'all':
-            appts = appts.filter(branch_id=branch_id)
+            if ObjectId.is_valid(str(branch_id)):
+                appts = appts.filter(Q(branch_id=branch_id) | (Q(branch__isnull=True) & Q(company=scope.company)))
         elif not scope.is_company_admin and scope.branch:
             appts = appts.filter(branch=scope.branch)
 
@@ -1597,6 +1601,40 @@ class PatientClinicalHistoryView(APIView):
                         "tooth": img.tooth_number
                     })
 
+            # Fetch dedicated PatientInvestigations for this appointment / visit
+            investigation_records = []
+            try:
+                inv_qs = PatientInvestigation.objects.filter(appointment=note.appointment)
+                for inv in inv_qs:
+                    inv_atts = []
+                    for att in inv.attachments.all():
+                        att_url = ""
+                        if att.file:
+                            try:
+                                att_url = request.build_absolute_uri(att.file.url)
+                            except Exception:
+                                att_url = str(att.file.url)
+                        inv_atts.append({
+                            "id": str(att.id),
+                            "file_name": att.file_name,
+                            "file_url": att_url,
+                            "file_type": att.file_type or "",
+                            "file_size": att.file_size or 0,
+                        })
+                    investigation_records.append({
+                        "id": str(inv.id),
+                        "name": inv.investigation_name,
+                        "date": inv.investigation_date,
+                        "doctor": inv.doctor.name if inv.doctor else "Unassigned",
+                        "status": inv.status,
+                        "reason": inv.reason or "",
+                        "findings": inv.findings or "",
+                        "remarks": inv.remarks or "",
+                        "attachments": inv_atts
+                    })
+            except Exception:
+                pass
+
             result.append({
                 "appointment_id": note.appointment.id,
                 "date": note.appointment.date,
@@ -1610,7 +1648,8 @@ class PatientClinicalHistoryView(APIView):
                 "treatment_plan": note.treatment_plan or "",
                 "follow_up": note.follow_up_date,
                 "treatments": treatments,
-                "rvgs": rvgs
+                "rvgs": rvgs,
+                "investigations": investigation_records or (note.investigations if hasattr(note, 'investigations') else [])
             })
             
         return Response(result)
@@ -1655,6 +1694,19 @@ class ClinicalNotesDetailView(APIView):
             patient = Patient.objects.filter(id=appointment_id).first()
             if patient:
                 appointment = Appointment.objects.filter(patient=patient).order_by('-date').first()
+                if not appointment:
+                    return Response({
+                        "appointment": None,
+                        "patient": patient.id,
+                        "selected_teeth": [],
+                        "complaints": [],
+                        "observations": [],
+                        "investigations": [],
+                        "diagnosis": [],
+                        "medical_history": [],
+                        "notes": "",
+                        "treatment_plan": "",
+                    })
                 
         if not appointment:
             return Response({"detail": "Appointment not found"}, status=404)
@@ -1736,6 +1788,7 @@ class ClinicalNotesSaveView(APIView):
                     appointment.doctor = doc_obj
                     appointment.save()
 
+        existing_note = None
         old_follow_up_date = None
         try:
             existing_note = ClinicalNotes.objects.filter(appointment=appointment).first()
@@ -1745,22 +1798,22 @@ class ClinicalNotesSaveView(APIView):
             pass
 
         defaults = {
-            'selected_teeth': request.data.get('selected_teeth', []),
-            'complaints': request.data.get('complaints', []),
-            'observations': request.data.get('observations', []),
-            'investigations': request.data.get('investigations', []),
-            'diagnosis': request.data.get('diagnosis', []),
-            'medical_history': request.data.get('medical_history', []),
-            'dental_history': request.data.get('dental_history', []),
-            'allergies': request.data.get('allergies', []),
-            'ongoing_medications': request.data.get('ongoing_medications', []),
-            'chief_complaint': request.data.get('chief_complaint', ""),
-            'patient_type': request.data.get('patient_type', "Adult"),
-            'notes': request.data.get('notes', ""),
-            'treatment_plan': request.data.get('treatment_plan', ""),
-            'follow_up_date': request.data.get('follow_up_date') or None,
-            'follow_up_note': request.data.get('follow_up_note', ""),
-            'follow_up_status': request.data.get('follow_up_status', 'Pending')
+            'selected_teeth': request.data.get('selected_teeth', existing_note.selected_teeth if existing_note else []),
+            'complaints': request.data.get('complaints', existing_note.complaints if existing_note else []),
+            'observations': request.data.get('observations', existing_note.observations if existing_note else []),
+            'investigations': request.data.get('investigations', existing_note.investigations if existing_note else []),
+            'diagnosis': request.data.get('diagnosis', existing_note.diagnosis if existing_note else []),
+            'medical_history': request.data.get('medical_history', existing_note.medical_history if existing_note else []),
+            'dental_history': request.data.get('dental_history', existing_note.dental_history if existing_note else []),
+            'allergies': request.data.get('allergies', existing_note.allergies if existing_note else []),
+            'ongoing_medications': request.data.get('ongoing_medications', existing_note.ongoing_medications if existing_note else []),
+            'chief_complaint': request.data.get('chief_complaint', existing_note.chief_complaint if existing_note else ""),
+            'patient_type': request.data.get('patient_type', existing_note.patient_type if existing_note else "Adult"),
+            'notes': request.data.get('notes', existing_note.notes if existing_note else ""),
+            'treatment_plan': request.data.get('treatment_plan', existing_note.treatment_plan if existing_note else ""),
+            'follow_up_date': request.data.get('follow_up_date', existing_note.follow_up_date if existing_note else None),
+            'follow_up_note': request.data.get('follow_up_note', existing_note.follow_up_note if existing_note else ""),
+            'follow_up_status': request.data.get('follow_up_status', existing_note.follow_up_status if existing_note else 'Pending')
         }
 
         notes, created = ClinicalNotes.objects.update_or_create(
@@ -1768,11 +1821,12 @@ class ClinicalNotesSaveView(APIView):
             defaults=defaults
         )
         
-        treatments = request.data.get('treatments', [])
-        if treatments:
-            notes.treatments.set(treatments)
-        else:
-            notes.treatments.clear()
+        if 'treatments' in request.data:
+            treatments = request.data.get('treatments', [])
+            if treatments:
+                notes.treatments.set(treatments)
+            else:
+                notes.treatments.clear()
 
         # Keep follow-up appointment in sync
         new_follow_up_date = defaults.get('follow_up_date')
@@ -6995,7 +7049,7 @@ class BranchListView(APIView):
         else:
             branches = Branch.objects.filter(is_active=True)
 
-        return Response(BranchSerializer(branches.order_by('name'), many=True).data)
+        return Response(BranchSerializer(branches.order_by('created_at'), many=True).data)
 
     def post(self, request):
         scope = get_request_scope(request)
@@ -7033,3 +7087,329 @@ class BranchDetailView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+
+
+# --- INVESTIGATION MASTER & PATIENT INVESTIGATIONS ---
+
+DEFAULT_INVESTIGATION_TYPES = [
+    {"name": "Digital OPG", "code": "OPG", "category": "Radiology / Imaging", "description": "Orthopantomogram digital panoramic radiograph"},
+    {"name": "TMJ Lateral", "code": "TMJ-LAT", "category": "Radiology / Imaging", "description": "Temporomandibular joint lateral view"},
+    {"name": "Hand Wrist", "code": "HW-RAD", "category": "Radiology / Imaging", "description": "Hand-wrist radiograph for skeletal maturity evaluation"},
+    {"name": "Bitewing", "code": "BW-RAD", "category": "Radiology / Imaging", "description": "Bitewing radiograph for interproximal caries and alveolar crest"},
+    {"name": "Ceph Lateral", "code": "CEPH-LAT", "category": "Radiology / Imaging", "description": "Lateral cephalometric radiograph for craniofacial evaluation"},
+    {"name": "PA View", "code": "PA-VIEW", "category": "Radiology / Imaging", "description": "Posteroanterior radiograph view"},
+    {"name": "PNS View", "code": "PNS-VIEW", "category": "Radiology / Imaging", "description": "Paranasal sinus view (Water's view)"},
+    {"name": "Submento Vertex", "code": "SMV", "category": "Radiology / Imaging", "description": "Submentovertical / base of skull radiograph view"},
+]
+
+class InvestigationMasterListView(APIView):
+    def get(self, request):
+        scope = get_request_scope(request)
+        company = scope.company if scope else None
+
+        q_filter = Q(company=company) if company else Q()
+        masters_count = InvestigationMaster.objects.filter(q_filter).count()
+        if masters_count == 0:
+            for item in DEFAULT_INVESTIGATION_TYPES:
+                InvestigationMaster.objects.create(
+                    company=company,
+                    name=item["name"],
+                    code=item["code"],
+                    category=item["category"],
+                    description=item["description"],
+                    is_active=True
+                )
+
+        include_inactive = request.query_params.get('include_inactive', 'false').lower() in ['true', '1']
+        qs = InvestigationMaster.objects.filter(q_filter)
+        if not include_inactive:
+            qs = qs.filter(is_active=True)
+
+        search = request.query_params.get('search') or request.query_params.get('q')
+        if search:
+            qs = qs.filter(Q(name__icontains=search) | Q(code__icontains=search) | Q(category__icontains=search))
+
+        serializer = InvestigationMasterSerializer(qs.order_by('name'), many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        scope = get_request_scope(request)
+        data = request.data.copy() if hasattr(request.data, 'copy') else dict(request.data)
+        if scope and scope.company and not data.get('company'):
+            data['company'] = str(scope.company.id)
+
+        serializer = InvestigationMasterSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class InvestigationMasterDetailView(APIView):
+    def get(self, request, pk):
+        master = get_object_or_404(InvestigationMaster, pk=pk)
+        return Response(InvestigationMasterSerializer(master).data)
+
+    def patch(self, request, pk):
+        master = get_object_or_404(InvestigationMaster, pk=pk)
+        serializer = InvestigationMasterSerializer(master, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk):
+        master = get_object_or_404(InvestigationMaster, pk=pk)
+        master.is_active = False
+        master.save()
+        return Response({'status': 'deactivated', 'id': str(pk)})
+
+
+class PatientInvestigationListView(APIView):
+    def get(self, request):
+        scope = get_request_scope(request)
+        patient_id = request.query_params.get('patient') or request.query_params.get('patient_id')
+        appointment_id = request.query_params.get('appointment') or request.query_params.get('appointment_id')
+        visit_id = request.query_params.get('visit') or request.query_params.get('visit_id')
+
+        qs = PatientInvestigation.objects.all()
+        if scope and scope.company:
+            qs = qs.filter(company=scope.company)
+
+        if patient_id:
+            qs = qs.filter(patient_id=patient_id)
+        if appointment_id:
+            qs = qs.filter(appointment_id=appointment_id)
+        if visit_id:
+            qs = qs.filter(visit_id=visit_id)
+
+        qs = qs.order_by('-investigation_date', '-created_at')
+        serializer = PatientInvestigationSerializer(qs, many=True, context={'request': request})
+        return Response(serializer.data)
+
+    def post(self, request):
+        scope = get_request_scope(request)
+        data = request.data.dict() if hasattr(request.data, 'dict') else dict(request.data)
+
+        company = scope.company if scope else None
+        branch = scope.branch if scope else None
+
+        patient_id = data.get('patient') or data.get('patient_id')
+        appointment_id = data.get('appointment') or data.get('appointment_id')
+        visit_id = data.get('visit') or data.get('visit_id')
+        doctor_id = data.get('doctor') or data.get('doctor_id')
+        master_id = data.get('investigation_master') or data.get('investigation_master_id')
+
+        patient = Patient.objects.filter(id=patient_id).first() if patient_id else None
+        appointment = Appointment.objects.filter(id=appointment_id).first() if appointment_id else None
+        visit = Visit.objects.filter(id=visit_id).first() if visit_id else None
+
+        if not patient and appointment:
+            patient = appointment.patient
+        if not appointment and visit:
+            appointment = visit.appointment
+            if not patient:
+                patient = visit.patient
+
+        if appointment and not visit:
+            visit = Visit.objects.filter(appointment=appointment).first()
+
+        # Referring doctor: authoritative doctor from appointment or explicit parameter
+        doctor = None
+        if doctor_id:
+            doctor = Doctor.objects.filter(id=doctor_id).first()
+        if not doctor and appointment and appointment.doctor:
+            doctor = appointment.doctor
+        if not doctor and visit and visit.doctor:
+            doctor = visit.doctor
+
+        master = None
+        if master_id:
+            master = InvestigationMaster.objects.filter(id=master_id).first()
+
+        inv_name = data.get('investigation_name')
+        if not inv_name and master:
+            inv_name = master.name
+        if not inv_name:
+            return Response({'error': 'investigation_name or investigation_master is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        inv_date = data.get('investigation_date') or timezone.now().date()
+        status_val = data.get('status', 'Requested')
+        reason = data.get('reason', '')
+        findings = data.get('findings', '')
+        remarks = data.get('remarks', '')
+
+        if not patient:
+            return Response({'error': 'patient is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        inv = PatientInvestigation.objects.create(
+            company=company or (patient.company if hasattr(patient, 'company') else None),
+            branch=branch or (appointment.branch if appointment and hasattr(appointment, 'branch') else None),
+            patient=patient,
+            appointment=appointment,
+            visit=visit,
+            doctor=doctor,
+            investigation_master=master,
+            investigation_name=inv_name,
+            investigation_date=inv_date,
+            reason=reason,
+            findings=findings,
+            remarks=remarks,
+            status=status_val
+        )
+
+        # Handle uploaded multipart files
+        uploaded_files = request.FILES.getlist('files') or request.FILES.getlist('attachments')
+        if not uploaded_files and 'file' in request.FILES:
+            uploaded_files = [request.FILES['file']]
+
+        for f in uploaded_files:
+            InvestigationAttachment.objects.create(
+                investigation=inv,
+                file=f,
+                file_name=f.name,
+                file_type=f.content_type if hasattr(f, 'content_type') else '',
+                file_size=f.size if hasattr(f, 'size') else 0
+            )
+
+        # Handle base64 attachments if sent in JSON
+        base64_attachments = request.data.get('attachments_data') or request.data.get('attachments')
+        if isinstance(base64_attachments, list):
+            for att in base64_attachments:
+                if isinstance(att, dict) and att.get('file_data'):
+                    InvestigationAttachment.objects.create(
+                        investigation=inv,
+                        file_name=att.get('file_name', 'attachment'),
+                        file_type=att.get('file_type', ''),
+                        file_size=att.get('file_size', 0),
+                        file_data=att.get('file_data')
+                    )
+
+        serializer = PatientInvestigationSerializer(inv, context={'request': request})
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+class PatientInvestigationDetailView(APIView):
+    def get(self, request, pk):
+        inv = get_object_or_404(PatientInvestigation, pk=pk)
+        return Response(PatientInvestigationSerializer(inv, context={'request': request}).data)
+
+    def patch(self, request, pk):
+        inv = get_object_or_404(PatientInvestigation, pk=pk)
+        data = request.data
+
+        if 'status' in data:
+            inv.status = data['status']
+        if 'findings' in data:
+            inv.findings = data['findings']
+        if 'remarks' in data:
+            inv.remarks = data['remarks']
+        if 'reason' in data:
+            inv.reason = data['reason']
+        if 'investigation_date' in data and data['investigation_date']:
+            inv.investigation_date = data['investigation_date']
+        if 'investigation_name' in data and data['investigation_name']:
+            inv.investigation_name = data['investigation_name']
+        if 'doctor' in data or 'doctor_id' in data:
+            doc_id = data.get('doctor') or data.get('doctor_id')
+            doc = Doctor.objects.filter(id=doc_id).first() if doc_id else None
+            inv.doctor = doc
+
+        inv.save()
+
+        # Handle newly added uploaded multipart files
+        uploaded_files = request.FILES.getlist('files') or request.FILES.getlist('attachments')
+        if not uploaded_files and 'file' in request.FILES:
+            uploaded_files = [request.FILES['file']]
+
+        for f in uploaded_files:
+            InvestigationAttachment.objects.create(
+                investigation=inv,
+                file=f,
+                file_name=f.name,
+                file_type=f.content_type if hasattr(f, 'content_type') else '',
+                file_size=f.size if hasattr(f, 'size') else 0
+            )
+
+        # Handle base64 attachments if sent in JSON
+        base64_attachments = request.data.get('attachments_data') or request.data.get('attachments')
+        if isinstance(base64_attachments, list):
+            for att in base64_attachments:
+                if isinstance(att, dict) and att.get('file_data'):
+                    InvestigationAttachment.objects.create(
+                        investigation=inv,
+                        file_name=att.get('file_name', 'attachment'),
+                        file_type=att.get('file_type', ''),
+                        file_size=att.get('file_size', 0),
+                        file_data=att.get('file_data')
+                    )
+
+        return Response(PatientInvestigationSerializer(inv, context={'request': request}).data)
+
+    def delete(self, request, pk):
+        inv = get_object_or_404(PatientInvestigation, pk=pk)
+        inv.delete()
+        return Response({'status': 'deleted', 'id': str(pk)})
+
+
+class InvestigationAttachmentUploadView(APIView):
+    def post(self, request, pk):
+        inv = get_object_or_404(PatientInvestigation, pk=pk)
+        uploaded_files = request.FILES.getlist('files') or request.FILES.getlist('attachments')
+        if not uploaded_files and 'file' in request.FILES:
+            uploaded_files = [request.FILES['file']]
+
+        created_atts = []
+        for f in uploaded_files:
+            att = InvestigationAttachment.objects.create(
+                investigation=inv,
+                file=f,
+                file_name=f.name,
+                file_type=f.content_type if hasattr(f, 'content_type') else '',
+                file_size=f.size if hasattr(f, 'size') else 0
+            )
+            created_atts.append(att)
+
+        base64_attachments = request.data.get('attachments_data') or request.data.get('attachments')
+        if isinstance(base64_attachments, list):
+            for item in base64_attachments:
+                if isinstance(item, dict) and item.get('file_data'):
+                    att = InvestigationAttachment.objects.create(
+                        investigation=inv,
+                        file_name=item.get('file_name', 'attachment'),
+                        file_type=item.get('file_type', ''),
+                        file_size=item.get('file_size', 0),
+                        file_data=item.get('file_data')
+                    )
+                    created_atts.append(att)
+
+        serializer = InvestigationAttachmentSerializer(created_atts, many=True, context={'request': request})
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+class InvestigationAttachmentDetailView(APIView):
+    def delete(self, request, pk):
+        att = get_object_or_404(InvestigationAttachment, pk=pk)
+        if att.file:
+            try:
+                att.file.delete(save=False)
+            except Exception:
+                pass
+        att.delete()
+        return Response({'status': 'deleted', 'id': str(pk)})
+
+
+class PatientInvestigationHistoryView(APIView):
+    def get(self, request, patient_id):
+        patient = Patient.objects.filter(id=patient_id).first()
+        if not patient:
+            return Response({"detail": "Patient not found"}, status=404)
+
+        scope = get_request_scope(request)
+        qs = PatientInvestigation.objects.filter(patient=patient)
+        if scope and scope.company:
+            qs = qs.filter(company=scope.company)
+
+        qs = qs.order_by('-investigation_date', '-created_at')
+        serializer = PatientInvestigationSerializer(qs, many=True, context={'request': request})
+        return Response(serializer.data)
