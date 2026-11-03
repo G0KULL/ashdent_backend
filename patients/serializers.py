@@ -168,9 +168,20 @@ class InAppNotificationSerializer(serializers.ModelSerializer):
 
 class TreatmentRecordSerializer(serializers.ModelSerializer):
     treatment_name = serializers.ReadOnlyField(source='treatment.name')
+    doctor_name = serializers.SerializerMethodField()
+
     class Meta:
         model = TreatmentRecord
         fields = '__all__'
+
+    def get_doctor_name(self, obj):
+        if getattr(obj, 'doctor', None):
+            return obj.doctor.name
+        if obj.visit and obj.visit.doctor:
+            return obj.visit.doctor.name
+        if obj.visit and obj.visit.appointment and obj.visit.appointment.doctor:
+            return obj.visit.appointment.doctor.name
+        return 'Doctor not assigned'
 
 class PaymentSerializer(serializers.ModelSerializer):
     class Meta:
@@ -223,6 +234,8 @@ class PatientGroupSerializer(serializers.ModelSerializer):
 class VisitSerializer(serializers.ModelSerializer):
     patient_name = serializers.CharField(source='patient.name', read_only=True)
     patient_phone = serializers.CharField(source='patient.phone', read_only=True)
+    doctor = serializers.SerializerMethodField()
+    doctor_name = serializers.SerializerMethodField()
     # Use SerializerMethodField for all reverse relations - MongoDB ObjectId compat
     treatment_records = serializers.SerializerMethodField()
     payment = serializers.SerializerMethodField()
@@ -233,9 +246,23 @@ class VisitSerializer(serializers.ModelSerializer):
         model = Visit
         fields = [
             'id', 'patient', 'patient_name', 'patient_phone',
-            'appointment', 'created_at',
+            'appointment', 'doctor', 'doctor_name', 'created_at',
             'treatment_records', 'payment', 'prescriptions', 'clinical_notes'
         ]
+
+    def get_doctor(self, obj):
+        if getattr(obj, 'doctor_id', None):
+            return str(obj.doctor_id)
+        if obj.appointment and obj.appointment.doctor_id:
+            return str(obj.appointment.doctor_id)
+        return None
+
+    def get_doctor_name(self, obj):
+        if getattr(obj, 'doctor', None):
+            return obj.doctor.name
+        if obj.appointment and obj.appointment.doctor:
+            return obj.appointment.doctor.name
+        return 'Doctor not assigned'
 
     def get_treatment_records(self, obj):
         from .models import TreatmentRecord
@@ -372,6 +399,7 @@ class AppointmentSerializer(serializers.ModelSerializer):
 
 class PatientSerializer(serializers.ModelSerializer):
     total_balance = serializers.DecimalField(max_digits=10, decimal_places=2, read_only=True)
+    doctor_name = serializers.ReadOnlyField(source='doctor.name')
     last_visit = serializers.SerializerMethodField()
     groups = serializers.SerializerMethodField()
     group_ids = serializers.ListField(child=serializers.CharField(), write_only=True, required=False)
@@ -382,7 +410,7 @@ class PatientSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'name', 'phone', 'dob', 'age', 'gender', 'status', 'patient_type', 'patient_type_name', 'groups', 'group_ids', 'notes',
             'address', 'pincode',
-            'created_at', 'total_balance', 'last_visit', 'consultation_fee', 'balance_adjustment', 'doctor'
+            'created_at', 'total_balance', 'last_visit', 'consultation_fee', 'balance_adjustment', 'doctor', 'doctor_name'
         ]
         read_only_fields = ['total_balance', 'balance_adjustment', 'last_visit', 'groups', 'created_at']
 

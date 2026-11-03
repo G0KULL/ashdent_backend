@@ -466,6 +466,7 @@ class Visit(models.Model):
     branch = models.ForeignKey(Branch, on_delete=models.SET_NULL, null=True, blank=True, related_name='visits')
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='visits')
     appointment = models.OneToOneField(Appointment, on_delete=models.CASCADE, related_name='visit', null=True, blank=True)
+    doctor = models.ForeignKey(Doctor, on_delete=models.SET_NULL, null=True, blank=True, related_name='visits')
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -511,6 +512,7 @@ class TaxSetting(models.Model):
 
 class ClinicalNotes(models.Model):
     appointment = models.OneToOneField(Appointment, on_delete=models.CASCADE, related_name='clinical_notes', null=True, blank=True)
+    doctor = models.ForeignKey(Doctor, on_delete=models.SET_NULL, null=True, blank=True, related_name='clinical_notes')
     selected_teeth = models.JSONField(default=list, blank=True)
     chart_conditions = models.JSONField(default=dict, blank=True)
     tooth_details = models.JSONField(default=dict, blank=True)
@@ -1727,6 +1729,7 @@ class TreatmentPlanItem(models.Model):
     ]
 
     plan = models.ForeignKey(TreatmentPlan, on_delete=models.CASCADE, related_name='items')
+    doctor = models.ForeignKey(Doctor, on_delete=models.SET_NULL, null=True, blank=True, related_name='treatment_plan_items')
     tooth_number = models.CharField(max_length=50, blank=True, default='')
     surface = models.CharField(max_length=100, blank=True, default='All')
     diagnosis = models.CharField(max_length=255, blank=True, default='')

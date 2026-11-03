@@ -240,17 +240,23 @@ class TreatmentPlanListCreateView(APIView):
                     "final_cost": float(item.final_cost),
                     "visits": item.estimated_visits,
                     "status": item.status,
+                    "doctor": (item.doctor.name if getattr(item, 'doctor', None) else (p.doctor.name if p.doctor else "Doctor not assigned")),
+                    "doctor_name": (item.doctor.name if getattr(item, 'doctor', None) else (p.doctor.name if p.doctor else "Doctor not assigned")),
+                    "doctor_id": str(item.doctor_id if getattr(item, 'doctor_id', None) else (p.doctor_id if p.doctor else '')) or None,
                     "notes": item.notes,
                     "description": item.description,
                     "created_at": item.created_at.strftime('%Y-%m-%d')
                 })
 
+            p_doc_name = p.doctor.name if p.doctor else "Doctor not assigned"
             results.append({
                 "id": p.id,
                 "title": p.title,
                 "status": p.status,
                 "total_estimated_cost": float(p.total_estimated_cost),
-                "doctor_name": p.doctor.name if p.doctor else "Unassigned",
+                "doctor": p_doc_name,
+                "doctor_name": p_doc_name,
+                "doctor_id": str(p.doctor_id) if p.doctor_id else None,
                 "notes": p.notes,
                 "created_at": p.created_at.strftime('%Y-%m-%d %H:%M'),
                 "items": items_data
@@ -269,6 +275,12 @@ class TreatmentPlanListCreateView(APIView):
         items = data.get('items', [])
         doctor_id = data.get('doctor_id') or (patient.doctor_id if patient.doctor else None)
         doctor = Doctor.objects.filter(id=doctor_id).first() if doctor_id else None
+        if not doctor and patient.doctor:
+            doctor = patient.doctor
+        if not doctor:
+            latest_appt = Appointment.objects.filter(patient=patient).order_by('-date', '-time').first()
+            if latest_appt and latest_appt.doctor:
+                doctor = latest_appt.doctor
 
         if plan_id:
             plan = get_object_or_404(TreatmentPlan, id=plan_id, patient=patient)
@@ -329,8 +341,11 @@ class TreatmentPlanListCreateView(APIView):
             # Link treatment master if matching name
             tm = TreatmentMaster.objects.filter(name__iexact=proc_name).first()
 
+            it_doc_id = it.get('doctor_id')
+            it_doc = Doctor.objects.filter(id=it_doc_id).first() if it_doc_id else doctor
             item_obj = TreatmentPlanItem.objects.create(
                 plan=plan,
+                doctor=it_doc,
                 tooth_number=tooth_num,
                 surface=surf,
                 diagnosis=diag,
@@ -374,7 +389,12 @@ class TreatmentPlanItemUpdateView(APIView):
     Updates a single TreatmentPlanItem's status or converts it into a performed TreatmentRecord.
     """
     def patch(self, request, item_id):
-        item = get_object_or_404(TreatmentPlanItem, id=item_id)
+        from bson import ObjectId
+        if not ObjectId.is_valid(str(item_id)):
+            return Response({"error": "Invalid item ID", "id": item_id}, status=status.HTTP_404_NOT_FOUND)
+        item = TreatmentPlanItem.objects.filter(id=item_id).first()
+        if not item:
+            return Response({"error": "Treatment plan item not found", "id": item_id}, status=status.HTTP_404_NOT_FOUND)
         new_status = request.data.get('status')
         new_priority = request.data.get('priority')
         new_notes = request.data.get('notes')
@@ -413,16 +433,31 @@ class ConvertPlanItemToTreatmentRecordView(APIView):
     Executes a recommended treatment item, creating an official TreatmentRecord.
     """
     def post(self, request, item_id):
-        item = get_object_or_404(TreatmentPlanItem, id=item_id)
+        from bson import ObjectId
+        if not ObjectId.is_valid(str(item_id)):
+            return Response({"error": "Invalid item ID", "id": item_id}, status=status.HTTP_404_NOT_FOUND)
+        item = TreatmentPlanItem.objects.filter(id=item_id).first()
+        if not item:
+            return Response({"error": "Treatment plan item not found", "id": item_id}, status=status.HTTP_404_NOT_FOUND)
         plan = item.plan
         patient = plan.patient
 
         visit_id = request.data.get('visit_id')
-        doctor_id = request.data.get('doctor_id') or (plan.doctor_id if plan.doctor else None)
+        doctor_id = request.data.get('doctor_id') or (item.doctor_id if getattr(item, 'doctor', None) else (plan.doctor_id if plan.doctor else None))
         notes = request.data.get('notes', item.notes or '')
         tx_status = request.data.get('status', 'Completed')
 
-        doctor = Doctor.objects.filter(id=doctor_id).first() if doctor_id else patient.doctor
+        doctor = Doctor.objects.filter(id=doctor_id).first() if doctor_id else None
+        if not doctor and getattr(item, 'doctor', None):
+            doctor = item.doctor
+        if not doctor and plan.doctor:
+            doctor = plan.doctor
+        if not doctor and patient.doctor:
+            doctor = patient.doctor
+        if not doctor:
+            latest_appt = Appointment.objects.filter(patient=patient).order_by('-date', '-time').first()
+            if latest_appt and latest_appt.doctor:
+                doctor = latest_appt.doctor
 
         visit = None
         if visit_id:
@@ -432,7 +467,7 @@ class ConvertPlanItemToTreatmentRecordView(APIView):
             if latest_appt and hasattr(latest_appt, 'visit'):
                 visit = latest_appt.visit
             elif latest_appt:
-                visit = Visit.objects.create(patient=patient, appointment=latest_appt, company=patient.company, branch=patient.registration_branch)
+                visit = Visit.objects.create(patient=patient, appointment=latest_appt, doctor=latest_appt.doctor or doctor, company=patient.company, branch=patient.registration_branch)
             else:
                 appt = Appointment.objects.create(
                     patient=patient,
@@ -506,7 +541,7 @@ class TreatmentSessionListCreateView(APIView):
                 "tooth_number": s.treatment_record.tooth_number if s.treatment_record else (s.plan_item.tooth_number if s.plan_item else ""),
                 "session_number": s.session_number,
                 "session_date": s.session_date.strftime('%Y-%m-%d'),
-                "doctor_name": s.doctor.name if s.doctor else "Unassigned",
+                "doctor_name": s.doctor.name if s.doctor else "Doctor not assigned",
                 "procedure_performed": s.procedure_performed,
                 "clinical_notes": s.clinical_notes,
                 "materials_used": s.materials_used,
@@ -580,7 +615,7 @@ class PatientEMRDetailView(APIView):
             "pincode": patient.pincode or "",
             "status": patient.status,
             "registered_at": patient.created_at.strftime('%Y-%m-%d'),
-            "primary_doctor": patient.doctor.name if patient.doctor else "Unassigned",
+            "primary_doctor": patient.doctor.name if patient.doctor else "Doctor not assigned",
             "branch": patient.registration_branch.name if patient.registration_branch else "Main Clinic",
             "company": patient.company.name if patient.company else "AshDent Health"
         }
@@ -626,7 +661,7 @@ class PatientEMRDetailView(APIView):
                 "status": p.status,
                 "total_estimated_cost": float(p.total_estimated_cost),
                 "created_at": p.created_at.strftime('%Y-%m-%d %H:%M'),
-                "doctor": p.doctor.name if p.doctor else "Unassigned",
+                "doctor": p.doctor.name if p.doctor else "Doctor not assigned",
                 "items": p_items
             })
 
@@ -640,7 +675,7 @@ class PatientEMRDetailView(APIView):
                 "tooth_number": r.tooth_number or "General",
                 "price": float(r.price),
                 "status": r.status,
-                "doctor": r.doctor.name if r.doctor else "Doctor",
+                "doctor": r.doctor.name if r.doctor else (r.visit.doctor.name if r.visit and getattr(r.visit, "doctor", None) else "Doctor not assigned"),
                 "notes": r.notes or "",
                 "date": r.visit.created_at.strftime('%Y-%m-%d') if r.visit else "Past Visit"
             })
@@ -657,7 +692,7 @@ class PatientEMRDetailView(APIView):
                 "tooth_number": s.treatment_record.tooth_number if s.treatment_record else "",
                 "clinical_notes": s.clinical_notes,
                 "materials_used": s.materials_used,
-                "doctor": s.doctor.name if s.doctor else "Doctor",
+                "doctor": s.doctor.name if s.doctor else "Doctor not assigned",
                 "status": s.status,
                 "next_session_date": s.next_session_date.strftime('%Y-%m-%d') if s.next_session_date else None
             })
@@ -678,7 +713,7 @@ class PatientEMRDetailView(APIView):
             prescriptions.append({
                 "id": rx.id,
                 "date": rx.created_at.strftime('%Y-%m-%d'),
-                "doctor": rx.doctor.name if rx.doctor else "Doctor",
+                "doctor": rx.doctor.name if rx.doctor else "Doctor not assigned",
                 "status": rx.status,
                 "notes": rx.notes or "",
                 "items": meds
@@ -706,7 +741,7 @@ class PatientEMRDetailView(APIView):
                 "id": inv.id,
                 "name": inv.investigation_name,
                 "date": inv.investigation_date.strftime('%Y-%m-%d'),
-                "doctor": inv.doctor.name if inv.doctor else "Doctor",
+                "doctor": inv.doctor.name if inv.doctor else "Doctor not assigned",
                 "status": inv.status,
                 "reason": inv.reason or "",
                 "findings": inv.findings or "",
@@ -758,7 +793,7 @@ class PatientEMRDetailView(APIView):
                 "visit_id": v.id if v else None,
                 "date": appt.date.strftime('%Y-%m-%d'),
                 "time": appt.time.strftime('%I:%M %p') if appt.time else "",
-                "doctor": appt.doctor.name if appt.doctor else "Doctor",
+                "doctor": appt.doctor.name if appt.doctor else "Doctor not assigned",
                 "status": appt.status,
                 "chief_complaint": cn.chief_complaint if cn else "",
                 "complaints": cn.complaints if cn else [],
@@ -945,7 +980,7 @@ class EMRPDFReportView(APIView):
         story.append(HRFlowable(width="100%", thickness=1.5, color=colors.HexColor('#2563eb'), spaceBefore=2, spaceAfter=8))
 
         # --- 2. PATIENT DEMOGRAPHICS TABLE ---
-        doctor_name = "Unassigned"
+        doctor_name = "Doctor not assigned"
         if is_visit_mode and target_appointment and target_appointment.doctor:
             doctor_name = f"Dr. {target_appointment.doctor.name}"
         elif patient.doctor:

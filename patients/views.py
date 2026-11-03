@@ -27,7 +27,8 @@ from .models import (
     Transaction, Supplier, MedicinePurchase, PharmacyPurchase, PharmacyPurchaseItem, MedicineStock,
     SupplierLedger, TaxSetting, CommunicationTemplate, LabHeader, Laboratory, LabTestMaster,
     LabTestParameter, LabPackage, DentalLaboratory, DentalLabWork, Expense, ExpenseCategory,
-    PatientLabOrder, StaffLeaveConfig, StaffBenefit, StaffInsurance, InvestigationMaster, PatientInvestigation, InvestigationAttachment
+    PatientLabOrder, StaffLeaveConfig, StaffBenefit, StaffInsurance, InvestigationMaster, PatientInvestigation, InvestigationAttachment,
+    PatientImage
 )
 from .serializers import (
     CompanySerializer, BranchSerializer,
@@ -942,6 +943,7 @@ class AppointmentCreateView(APIView):
 
         lock_acquired = False
         if doctor and appt_date_str and appt_time_str:
+            doc_disp = doctor.name if (doctor.name.startswith('Dr.') or doctor.name.startswith('Dr ')) else f'Dr. {doctor.name}'
             try:
                 target_date = datetime.strptime(str(appt_date_str), '%Y-%m-%d').date()
             except Exception:
@@ -965,14 +967,14 @@ class AppointmentCreateView(APIView):
                 conflict_appt = existing_conflict.first()
                 loc_info = f" at {conflict_appt.branch.name}" if conflict_appt.branch else ""
                 return Response({
-                    'error': f'Slot {raw_time[:5]} on {target_date} is already booked for Dr. {doctor.name}{loc_info}. Please select an available slot.'
+                    'error': f'Slot {raw_time[:5]} on {target_date} is already booked for {doc_disp}{loc_info}. Please select an available slot.'
                 }, status=status.HTTP_409_CONFLICT)
 
             # Atomic database lock acquisition for true concurrency safety
             lock_acquired, lock_id = acquire_slot_lock(doctor.id, target_date, raw_time)
             if not lock_acquired:
                 return Response({
-                    'error': f'Slot {raw_time[:5]} on {target_date} is already booked for Dr. {doctor.name}. Please select an available slot.'
+                    'error': f'Slot {raw_time[:5]} on {target_date} is already booked for {doc_disp}. Please select an available slot.'
                 }, status=status.HTTP_409_CONFLICT)
 
             # 2. Check Doctor Leave / Blocked Time
@@ -986,12 +988,12 @@ class AppointmentCreateView(APIView):
                 if ov.override_type in ['LEAVE', 'UNAVAILABLE'] and not ov.start_time:
                     reason_msg = f" (Reason: {ov.reason})" if ov.reason else ""
                     return Response({
-                        'error': f'Dr. {doctor.name} is on leave/unavailable on {target_date}{reason_msg}. No appointments can be booked.'
+                        'error': f'{doc_disp} is on leave/unavailable on {target_date}{reason_msg}. No appointments can be booked.'
                     }, status=400)
                 elif ov.override_type in ['LEAVE', 'UNAVAILABLE', 'BLOCKED'] and ov.start_time and ov.end_time:
                     if ov.start_time <= target_time < ov.end_time:
                         return Response({
-                            'error': f'Dr. {doctor.name} is blocked/unavailable between {ov.start_time} and {ov.end_time} on {target_date}.'
+                            'error': f'{doc_disp} is blocked/unavailable between {ov.start_time} and {ov.end_time} on {target_date}.'
                         }, status=400)
 
             # 3. Check Active Approved Schedule for THIS branch
@@ -1011,7 +1013,7 @@ class AppointmentCreateView(APIView):
                     if lock_acquired: release_slot_lock(doctor.id, target_date, raw_time)
                     branch_name_str = f" at {branch.name}" if branch else ""
                     return Response({
-                        'error': f'Dr. {doctor.name} has no approved active schedule{branch_name_str} on {target_date.strftime("%A")}s.'
+                        'error': f'{doc_disp} has no approved active schedule{branch_name_str} on {target_date.strftime("%A")}s.'
                     }, status=400)
 
                 within_session = False
@@ -1435,7 +1437,15 @@ class PatientBillCreateView(APIView):
             return Response({'error': f'Paid amount (₹{paid_amt}) cannot exceed total bill amount (₹{total_amt}).'}, status=400)
 
         patient = get_object_or_404(Patient, pk=patient_id)
-        doctor  = Doctor.objects.filter(id=doctor_id).first() if doctor_id else Doctor.objects.first()
+        doctor = None
+        if doctor_id:
+            doctor = Doctor.objects.filter(id=doctor_id).first()
+        if not doctor and patient.doctor:
+            doctor = patient.doctor
+        if not doctor:
+            latest_appt = Appointment.objects.filter(patient=patient).order_by('-date', '-time').first()
+            if latest_appt and latest_appt.doctor:
+                doctor = latest_appt.doctor
 
         # Always create a fresh appointment + visit for each bill
         appt = Appointment.objects.create(
@@ -1558,7 +1568,34 @@ class TodayVisitListView(APIView):
 
 class VisitDetailByAppointmentView(APIView):
     def get(self, request, appointment_id):
+        from bson import ObjectId
         visit = Visit.objects.filter(appointment_id=appointment_id).first()
+        if not visit and ObjectId.is_valid(str(appointment_id)):
+            # Check if this ID is an Appointment ID without a Visit yet
+            appt = Appointment.objects.filter(id=appointment_id).first()
+            if appt:
+                visit = Visit.objects.create(
+                    appointment=appt,
+                    patient=appt.patient,
+                    company=appt.company,
+                    branch=appt.branch,
+                    doctor=appt.doctor
+                )
+            else:
+                # Check if this ID is actually a Patient ID
+                patient = Patient.objects.filter(id=appointment_id).first()
+                if patient:
+                    visit = Visit.objects.filter(patient=patient).order_by('-created_at').first()
+                    if not visit:
+                        latest_appt = Appointment.objects.filter(patient=patient).order_by('-date').first()
+                        visit = Visit.objects.create(
+                            patient=patient,
+                            appointment=latest_appt,
+                            company=patient.company,
+                            branch=patient.registration_branch,
+                            doctor=patient.doctor or (latest_appt.doctor if latest_appt else None)
+                        )
+
         if not visit:
             return Response({"detail": "No visit found"}, status=404)
         serializer = VisitSerializer(visit)
@@ -1586,22 +1623,33 @@ class PatientClinicalHistoryView(APIView):
                 # Treatments
                 records = TreatmentRecord.objects.filter(visit=visit)
                 for rec in records:
+                    rec_doc = rec.doctor or (visit.doctor if getattr(visit, 'doctor', None) else None) or (visit.appointment.doctor if visit and visit.appointment else None)
                     treatments.append({
                         "id": rec.id,
                         "treatment": rec.treatment.name if rec.treatment else "",
                         "tooth_number": rec.tooth_number,
                         "status": rec.status,
-                        "doctor": rec.doctor.name if rec.doctor else "Unknown",
+                        "doctor": rec_doc.name if rec_doc else "Doctor not assigned",
+                        "doctor_id": str(rec_doc.id) if rec_doc else None,
                         "notes": rec.notes
                     })
                 # RVGs
                 images = PatientImage.objects.filter(visit=visit)
                 for img in images:
+                    img_url = ""
+                    if getattr(img, 'image', None) and getattr(img.image, 'name', None):
+                        try:
+                            img_url = request.build_absolute_uri(img.image.url)
+                        except Exception:
+                            img_url = str(img.image.url)
+                    elif getattr(img, 'image_data', None):
+                        img_url = img.image_data
+
                     rvgs.append({
-                        "id": img.id,
-                        "file_url": img.image.url if img.image else "",
-                        "type": img.image_type,
-                        "tooth": img.tooth_number
+                        "id": str(img.id),
+                        "file_url": img_url,
+                        "type": getattr(img, 'image_type', ''),
+                        "tooth": getattr(img, 'tooth_number', '')
                     })
 
             # Fetch dedicated PatientInvestigations for this appointment / visit
@@ -1638,10 +1686,14 @@ class PatientClinicalHistoryView(APIView):
             except Exception:
                 pass
 
+            appt_id = str(note.appointment.id) if note.appointment else None
+            appt_date = note.appointment.date if note.appointment else (note.created_at.date() if hasattr(note, 'created_at') and note.created_at else None)
+            appt_doc = (note.appointment.doctor.name if note.appointment.doctor else "Unknown") if note.appointment else "Unknown"
+
             result.append({
-                "appointment_id": note.appointment.id,
-                "date": note.appointment.date,
-                "doctor": note.appointment.doctor.name if note.appointment.doctor else "Unknown",
+                "appointment_id": appt_id,
+                "date": appt_date,
+                "doctor": appt_doc,
                 "chief_complaint": note.chief_complaint or (", ".join(note.complaints) if note.complaints else ""),
                 "medical_history": note.medical_history or [],
                 "dental_history": note.dental_history or [],
@@ -1680,7 +1732,7 @@ class PatientTreatmentHistoryView(APIView):
                 "tooth_number": rec.tooth_number,
                 "diagnosis": diagnosis,
                 "treatment": rec.treatment.name if rec.treatment else "",
-                "doctor": rec_doc.name if rec_doc else "Unassigned",
+                "doctor": rec_doc.name if rec_doc else "Doctor not assigned",
                 "doctor_id": str(rec_doc.id) if rec_doc else None,
                 "status": rec.status,
                 "notes": rec.notes
@@ -1717,10 +1769,13 @@ class ClinicalNotesDetailView(APIView):
         
         patient_id = appointment.patient.id
         
+        doc = appointment.doctor if appointment else None
         if not notes:
             return Response({
                 "appointment": appointment.id,
                 "patient": patient_id,
+                "doctor": str(doc.id) if doc else None,
+                "doctor_name": doc.name if doc else "Doctor not assigned",
                 "selected_teeth": [],
                 "complaints": [],
                 "observations": [],
@@ -1731,9 +1786,12 @@ class ClinicalNotesDetailView(APIView):
                 "treatment_plan": "",
             })
 
+        doc = notes.doctor or (notes.appointment.doctor if notes.appointment else None)
         return Response({
             "appointment": notes.appointment.id,
             "patient": patient_id,
+            "doctor": str(doc.id) if doc else None,
+            "doctor_name": doc.name if doc else "Doctor not assigned",
             "selected_teeth": notes.selected_teeth or [],
             "complaints": notes.complaints or [],
             "observations": notes.observations or [],
@@ -1777,7 +1835,15 @@ class ClinicalNotesSaveView(APIView):
                 date=timezone.now().date()
             ).first()
             if not appointment:
-                doc_obj = Doctor.objects.filter(id=doctor_id).first() if doctor_id else Doctor.objects.first()
+                doc_obj = None
+                if doctor_id:
+                    doc_obj = Doctor.objects.filter(id=doctor_id).first()
+                if not doc_obj and patient.doctor:
+                    doc_obj = patient.doctor
+                if not doc_obj:
+                    latest_appt = Appointment.objects.filter(patient=patient).order_by('-date', '-time').first()
+                    if latest_appt and latest_appt.doctor:
+                        doc_obj = latest_appt.doctor
                 appointment = Appointment.objects.create(
                     patient=patient,
                     doctor=doc_obj,
@@ -1822,6 +1888,7 @@ class ClinicalNotesSaveView(APIView):
             'follow_up_status': request.data.get('follow_up_status', existing_note.follow_up_status if existing_note else 'Pending')
         }
 
+        defaults['doctor'] = appointment.doctor if appointment else None
         notes, created = ClinicalNotes.objects.update_or_create(
             appointment=appointment,
             defaults=defaults
@@ -2413,6 +2480,29 @@ class PrescriptionAddView(APIView):
             if str(note_id or '').strip().lower() in ['', 'null', 'undefined', 'new']: note_id = None
             if str(doctor_id or '').strip().lower() in ['', 'null', 'undefined', 'new']: doctor_id = None
 
+            if not doctor_id and visit_id:
+                v_obj = Visit.objects.filter(id=visit_id).first()
+                if v_obj and v_obj.doctor_id:
+                    doctor_id = v_obj.doctor_id
+                elif v_obj and v_obj.appointment and v_obj.appointment.doctor_id:
+                    doctor_id = v_obj.appointment.doctor_id
+
+            if not doctor_id and note_id:
+                cn_obj = ClinicalNotes.objects.filter(id=note_id).first()
+                if cn_obj and getattr(cn_obj, 'doctor_id', None):
+                    doctor_id = cn_obj.doctor_id
+                elif cn_obj and cn_obj.appointment and cn_obj.appointment.doctor_id:
+                    doctor_id = cn_obj.appointment.doctor_id
+
+            if not doctor_id and patient_id:
+                p_obj = Patient.objects.filter(id=patient_id).first()
+                if p_obj and p_obj.doctor_id:
+                    doctor_id = p_obj.doctor_id
+                else:
+                    latest_appt = Appointment.objects.filter(patient_id=patient_id).order_by('-date', '-time').first()
+                    if latest_appt and latest_appt.doctor_id:
+                        doctor_id = latest_appt.doctor_id
+
             if not doctor_id:
                 doc_profile = get_user_doctor(request)
                 if doc_profile:
@@ -2728,7 +2818,15 @@ class CreateBillingView(APIView):
         if not visit:
             # Create a shell visit if none exists today
             req_doctor_id = request.data.get('doctor_id')
-            doctor = Doctor.objects.filter(id=req_doctor_id).first() if req_doctor_id else Doctor.objects.first()
+            doctor = None
+            if req_doctor_id:
+                doctor = Doctor.objects.filter(id=req_doctor_id).first()
+            if not doctor and patient.doctor:
+                doctor = patient.doctor
+            if not doctor:
+                latest_appt = Appointment.objects.filter(patient=patient).order_by('-date', '-time').first()
+                if latest_appt and latest_appt.doctor:
+                    doctor = latest_appt.doctor
             appt = Appointment.objects.create(
                 patient=patient, 
                 doctor=doctor, 
@@ -3186,12 +3284,29 @@ class PrescriptionPDFView(APIView):
             p.drawText(text_object)
 
         # Footer / Signatures
+        doc_name = "Doctor not assigned"
+        if rx.doctor:
+            doc_name = rx.doctor.name
+        elif rx.visit and rx.visit.doctor:
+            doc_name = rx.visit.doctor.name
+        elif rx.visit and rx.visit.appointment and rx.visit.appointment.doctor:
+            doc_name = rx.visit.appointment.doctor.name
+        elif rx.patient and rx.patient.doctor:
+            doc_name = rx.patient.doctor.name
+        if doc_name != "Doctor not assigned" and not (doc_name.startswith("Dr.") or doc_name.startswith("Dr ")):
+            doc_name = f"Dr. {doc_name}"
+
+        p.setFont("Helvetica-Bold", 10)
+        p.drawString(380, height - 146, f"Doctor: {doc_name}")
+
         p.line(50, 100, 545, 100)
         p.setFont("Helvetica-Oblique", 9)
         p.drawString(50, 85, "Disclaimer: This prescription is generated electronically. Please consult your doctor for any severe reactions.")
         
-        p.setFont("Helvetica-Bold", 11)
-        p.drawString(420, 120, "Doctor's Signature")
+        p.setFont("Helvetica-Bold", 10)
+        p.drawString(400, 135, doc_name)
+        p.setFont("Helvetica", 9)
+        p.drawString(400, 120, "Doctor's Signature")
         
         p.showPage()
         p.save()
