@@ -1,0 +1,54 @@
+{
+  "counts": {
+    "patients_patient": 25,
+    "patients_appointment": 24,
+    "patients_visit": 17,
+    "patients_clinicalnotes": 9,
+    "patients_toothconditionrecord": 10,
+    "patients_treatmentplan": 112,
+    "patients_treatmentplanitem": 56644,
+    "patients_treatmentrecord": 17,
+    "patients_treatmentsession": 2,
+    "patients_patientinvestigation": 26,
+    "patients_investigationattachment": 14,
+    "patients_prescription": 5,
+    "patients_prescriptionitem": 7
+  },
+  "appointments": {
+    "total": 24,
+    "patient_orphans": 0,
+    "company_mismatches": 0
+  },
+  "visits": {
+    "total": 17,
+    "patient_orphans": 0,
+    "appointment_orphans": 0,
+    "patient_appointment_mismatches": 0
+  },
+  "clinical_notes": {
+    "total": 9,
+    "without_visit": 9,
+    "without_appointment": 0
+  },
+  "treatment_plans": {
+    "total": 112,
+    "without_patient": 0,
+    "patient_orphans": 0
+  },
+  "treatment_records": {
+    "total": 17,
+    "without_patient": 17,
+    "without_visit": 0
+  },
+  "prescriptions": {
+    "total": 5,
+    "without_patient": 0,
+    "without_visit": 4,
+    "without_appointment": 5
+  },
+  "tooth_condition_records": {
+    "total": 10,
+    "without_patient": 0,
+    "without_visit": 3
+  }
+}

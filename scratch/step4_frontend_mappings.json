@@ -1,0 +1,1311 @@
+[
+  {
+    "file_name": "Accounts.jsx",
+    "file_path": "ashdent-front/src/components/Accounts.jsx",
+    "endpoints_called": [
+      "/accounts/summary/",
+      "/doctors/",
+      "/patient/search/",
+      "/transactions/",
+      "/transactions/create/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/accounts/summary/?${q}`)"
+  },
+  {
+    "file_name": "AddPatient.jsx",
+    "file_path": "ashdent-front/src/components/AddPatient.jsx",
+    "endpoints_called": [
+      "/doctors/",
+      "/dropdowns/payment_method/",
+      "/masters/patient-types/",
+      "/patient-groups/",
+      "/patient/create/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "name"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/doctors/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "AppointmentStatus.jsx",
+    "file_path": "ashdent-front/src/components/AppointmentStatus.jsx",
+    "endpoints_called": [
+      "/appointments/${apptId}/status/",
+      "/appointments/today/"
+    ],
+    "http_methods": [
+      "PATCH"
+    ],
+    "submitted_fields": [
+      "status"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/appointments/today/`, { headers })"
+  },
+  {
+    "file_name": "Appointments.jsx",
+    "file_path": "ashdent-front/src/components/Appointments.jsx",
+    "endpoints_called": [
+      "/${role}/case-sheet/${caseId}",
+      "/${role}/create-case/${appt.patient}",
+      "/appointment/create/",
+      "/appointments/${apptId}/status/",
+      "/appointments/${editingAppt.id}/status/",
+      "/appointments/all/",
+      "/bill/create-advanced/",
+      "/doctors/",
+      "/doctors/${bookingData.doctor}/available-slots/",
+      "/doctors/${editForm.doctor}/available-slots/",
+      "/patient/${appt.patient}/profile/",
+      "/patient/${p.id}/profile/",
+      "/patient/${selectedProfile.patient.id}/profile/",
+      "/patient/search/",
+      "/visit/get-or-create/"
+    ],
+    "http_methods": [
+      "PATCH",
+      "POST"
+    ],
+    "submitted_fields": [
+      "branch",
+      "date",
+      "doctor",
+      "is_virtual",
+      "meeting_link",
+      "patient",
+      "patient_id",
+      "status",
+      "time",
+      "total_amount",
+      "visit"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/doctors/${bookingData.doctor}/available-slots/?date=${bookingData.date}${branchParam}`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "BillingModal.jsx",
+    "file_path": "ashdent-front/src/components/BillingModal.jsx",
+    "endpoints_called": [
+      "/bill/list/",
+      "/billing/${billingId}/update/",
+      "/dropdowns/payment_method/",
+      "/settings/taxes/",
+      "/treatment-master/list/"
+    ],
+    "http_methods": [
+      "PATCH"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch('http://127.0.0.1:8000/api/treatment-master/list/')"
+  },
+  {
+    "file_name": "Bills.jsx",
+    "file_path": "ashdent-front/src/components/Bills.jsx",
+    "endpoints_called": [
+      "/bill/create-advanced/",
+      "/billing/${bill.id}/payments/",
+      "/billing/${bill.id}/pdf/",
+      "/billing/${payModal.billId}/payments/",
+      "/billing/receipts/${payments[0].id}/pdf/",
+      "/billing/receipts/${receiptId}/pdf/",
+      "/credits/",
+      "/doctors/",
+      "/patient/${billForm.patient.id}/balance/waiver/",
+      "/patient/search/",
+      "/patients/${billForm.patient.id}/unbilled-treatments/",
+      "/payment/pay/${payModal.billId}/",
+      "/payments/search/",
+      "/visit/get-or-create/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "amount",
+      "include_prior_balance",
+      "items",
+      "name",
+      "paid_amount",
+      "patient",
+      "patient_id",
+      "payment_method",
+      "quantity",
+      "total_amount",
+      "type",
+      "unit_price",
+      "visit"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const response = await fetch(url, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "ClinicalNotesModal.jsx",
+    "file_path": "ashdent-front/src/components/ClinicalNotesModal.jsx",
+    "endpoints_called": [
+      "/bill/create-advanced/",
+      "/clinical-notes/${appointmentId}/",
+      "/dropdowns/${item.type}/",
+      "/medicine-master/list/",
+      "/patient/${patId}/profile/",
+      "/patient/${profile.id}/profile/",
+      "/settings/lab-tests/",
+      "/teeth/select/",
+      "/treatment-master/list/",
+      "/visit/appointment/${appointmentId}/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "appointment_id",
+      "doctor_id",
+      "paid_amount",
+      "patient",
+      "patient_id",
+      "total_amount",
+      "treatments",
+      "visit"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`http://127.0.0.1:8000/api/clinical-notes/${appointmentId}/`),"
+  },
+  {
+    "file_name": "Communication.jsx",
+    "file_path": "ashdent-front/src/components/Communication.jsx",
+    "endpoints_called": [
+      "/communication-logs/",
+      "/patient-groups/",
+      "/patient/${id}/profile/",
+      "/patient/search/",
+      "/patients/bulk-group-update/",
+      "/reminders/pending/",
+      "/settings/communication-templates/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "action",
+      "channels",
+      "group_id",
+      "message",
+      "name",
+      "patient_ids"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch('http://127.0.0.1:8000/api/settings/communication-templates/')"
+  },
+  {
+    "file_name": "ConsultationPage.jsx",
+    "file_path": "ashdent-front/src/components/ConsultationPage.jsx",
+    "endpoints_called": [
+      "/appointments/all/",
+      "/logo.png",
+      "/medicine-master/list/",
+      "/prescription/add/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "appointment",
+      "dosage",
+      "duration",
+      "frequency",
+      "instructions",
+      "items",
+      "medicine_master_id",
+      "medicine_name",
+      "notes",
+      "patient"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/medicine-master/list/`, { headers: getHeaders() });"
+  },
+  {
+    "file_name": "ConsultationPage.new.jsx",
+    "file_path": "ashdent-front/src/components/ConsultationPage.new.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": false,
+    "sample_call": ""
+  },
+  {
+    "file_name": "Credits.jsx",
+    "file_path": "ashdent-front/src/components/Credits.jsx",
+    "endpoints_called": [
+      "/billing/search/",
+      "/credits/",
+      "/patient/${patient.id}/profile/",
+      "/patient/${selectedPatient.id}/balance/waiver/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/credits/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "DashboardCharts.jsx",
+    "file_path": "ashdent-front/src/components/DashboardCharts.jsx",
+    "endpoints_called": [
+      "/appointments/stats/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch('http://127.0.0.1:8000/api/appointments/stats/', {"
+  },
+  {
+    "file_name": "DashboardFinanceWidgets.jsx",
+    "file_path": "ashdent-front/src/components/DashboardFinanceWidgets.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(url, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "DentalLabSettings.jsx",
+    "file_path": "ashdent-front/src/components/DentalLabSettings.jsx",
+    "endpoints_called": [
+      "/settings/dental-lab-work/",
+      "/settings/dental-lab-work/${id}/",
+      "/settings/dental-laboratories/",
+      "/settings/dental-laboratories/${id}/"
+    ],
+    "http_methods": [
+      "DELETE",
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch('http://127.0.0.1:8000/api/settings/dental-lab-work/');"
+  },
+  {
+    "file_name": "DoctorPerformance.jsx",
+    "file_path": "ashdent-front/src/components/DoctorPerformance.jsx",
+    "endpoints_called": [
+      "/${userRole.toLowerCase()}",
+      "/admin",
+      "/dashboard/doctor-performance/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(url, { headers })"
+  },
+  {
+    "file_name": "DoctorSlots.jsx",
+    "file_path": "ashdent-front/src/components/DoctorSlots.jsx",
+    "endpoints_called": [
+      "/doctor-date-overrides/",
+      "/doctor-schedule-proposals/",
+      "/doctor-schedule-proposals/${proposalId}/approve/",
+      "/doctor-schedule-proposals/${proposalId}/conflicts/",
+      "/doctor-schedule-proposals/${proposalId}/withdraw/",
+      "/doctor-schedule-proposals/${rejectModalProposal.id}/reject/",
+      "/doctor-schedules/direct/",
+      "/doctors/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "branch",
+      "day_of_week",
+      "doctor",
+      "is_available",
+      "mode",
+      "proposal_type",
+      "rejection_reason",
+      "slot_duration"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/doctors/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "Doctors.jsx",
+    "file_path": "ashdent-front/src/components/Doctors.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "DELETE",
+      "POST"
+    ],
+    "submitted_fields": [
+      "day_of_week",
+      "doctor",
+      "end_time",
+      "start_time"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API}/doctors/`)"
+  },
+  {
+    "file_name": "EstimateModal.jsx",
+    "file_path": "ashdent-front/src/components/EstimateModal.jsx",
+    "endpoints_called": [
+      "/billing/${data.billing_id}/pdf/",
+      "/estimates/${activeEstimate.id}/convert-to-bill/",
+      "/estimates/${activeEstimate.id}/pdf/",
+      "/estimates/${estId}/",
+      "/patients/${patientId}/estimates/"
+    ],
+    "http_methods": [
+      "PATCH",
+      "POST"
+    ],
+    "submitted_fields": [
+      "status"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const response = await fetch(url, { headers: getHeaders() });"
+  },
+  {
+    "file_name": "ExpenseManager.jsx",
+    "file_path": "ashdent-front/src/components/ExpenseManager.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "DELETE",
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API}/finance/categories/`, { headers: getHeaders() });"
+  },
+  {
+    "file_name": "FinanceModals.jsx",
+    "file_path": "ashdent-front/src/components/FinanceModals.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(url)"
+  },
+  {
+    "file_name": "FollowUps.jsx",
+    "file_path": "ashdent-front/src/components/FollowUps.jsx",
+    "endpoints_called": [
+      "/doctors/",
+      "/follow-ups/",
+      "/follow-ups/update/${followUpId}/",
+      "/follow-ups/update/${id}/"
+    ],
+    "http_methods": [
+      "PATCH"
+    ],
+    "submitted_fields": [
+      "doctor"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch('http://127.0.0.1:8000/api/doctors/')"
+  },
+  {
+    "file_name": "Labs.jsx",
+    "file_path": "ashdent-front/src/components/Labs.jsx",
+    "endpoints_called": [
+      "/lab-orders/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(url, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "LoginPage.jsx",
+    "file_path": "ashdent-front/src/components/LoginPage.jsx",
+    "endpoints_called": [
+      "/logo.png"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API}/login/`, {"
+  },
+  {
+    "file_name": "MastersManager.jsx",
+    "file_path": "ashdent-front/src/components/MastersManager.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [
+      "is_active"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API}/masters/patient-types/`, { headers: authHeaders }),"
+  },
+  {
+    "file_name": "MaterialPurchase.jsx",
+    "file_path": "ashdent-front/src/components/MaterialPurchase.jsx",
+    "endpoints_called": [
+      "/finance/materials/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "action"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(API)"
+  },
+  {
+    "file_name": "MedicationsSection.jsx",
+    "file_path": "ashdent-front/src/components/MedicationsSection.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API}/medicine-master/list/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "PathologyLabSettings.jsx",
+    "file_path": "ashdent-front/src/components/PathologyLabSettings.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "name",
+      "normal_range",
+      "price",
+      "test",
+      "tests",
+      "unit"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API}/settings/lab-headers/`),"
+  },
+  {
+    "file_name": "PatientEMRView.jsx",
+    "file_path": "ashdent-front/src/components/PatientEMRView.jsx",
+    "endpoints_called": [
+      "/billing/${b.id}/pdf/",
+      "/estimates/${est.id}/pdf/",
+      "/patients/${patientId}/emr-report/pdf/",
+      "/patients/${patientId}/emr/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`http://127.0.0.1:8000/api/patients/${patientId}/emr/`);"
+  },
+  {
+    "file_name": "PatientProfileInvoice.jsx",
+    "file_path": "ashdent-front/src/components/PatientProfileInvoice.jsx",
+    "endpoints_called": [
+      "/bill/create-advanced/",
+      "/billing/${b.id}/payments/",
+      "/billing/${b.id}/pdf/",
+      "/billing/${data.billing_id}/pdf/",
+      "/billing/receipts/${payments[0].id}/pdf/",
+      "/doctors/",
+      "/estimates/",
+      "/estimates/${est.id}/pdf/",
+      "/visit/get-or-create/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "patient_id"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const response = await fetch(url, { headers: getHeaders() });"
+  },
+  {
+    "file_name": "PatientProfileLaboratory.jsx",
+    "file_path": "ashdent-front/src/components/PatientProfileLaboratory.jsx",
+    "endpoints_called": [
+      "/laboratory/list/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/laboratory/list/?patient=${viewPatient?.id}`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "PatientProfilePrescription.jsx",
+    "file_path": "ashdent-front/src/components/PatientProfilePrescription.jsx",
+    "endpoints_called": [
+      "/medicine-master/list/",
+      "/prescription/${p.id}/pdf/",
+      "/prescription/add/",
+      "/visit/get-or-create/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "patient_id"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const response = await fetch(url, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "PatientProfileTreatment.jsx",
+    "file_path": "ashdent-front/src/components/PatientProfileTreatment.jsx",
+    "endpoints_called": [
+      "/create-billing/",
+      "/doctors/",
+      "/treatment-master/list/",
+      "/visit/get-or-create/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "discount",
+      "doctor_id",
+      "id",
+      "patient_id",
+      "price",
+      "qty",
+      "teeth",
+      "treatment_ids",
+      "visit_id"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/treatment-master/list/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "PatientProfileView.jsx",
+    "file_path": "ashdent-front/src/components/PatientProfileView.jsx",
+    "endpoints_called": [
+      "/doctors/",
+      "/patient/${patient.id}/profile/"
+    ],
+    "http_methods": [
+      "PATCH"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/doctors/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "PatientTreatmentHistoryTab.jsx",
+    "file_path": "ashdent-front/src/components/PatientTreatmentHistoryTab.jsx",
+    "endpoints_called": [
+      "/patient/${patientId}/treatment-history/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`http://127.0.0.1:8000/api/patient/${patientId}/treatment-history/`, { headers })"
+  },
+  {
+    "file_name": "PendingReminders.jsx",
+    "file_path": "ashdent-front/src/components/PendingReminders.jsx",
+    "endpoints_called": [
+      "/communication-logs/",
+      "/reminders/pending/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/reminders/pending/`, { headers })"
+  },
+  {
+    "file_name": "Pharmacy.jsx",
+    "file_path": "ashdent-front/src/components/Pharmacy.jsx",
+    "endpoints_called": [
+      "/settings/pharmacy/"
+    ],
+    "http_methods": [
+      "PATCH",
+      "POST"
+    ],
+    "submitted_fields": [
+      "Pharmacy",
+      "items",
+      "name",
+      "paid_amount",
+      "patient",
+      "patient_id",
+      "payment_method",
+      "prescription_id",
+      "stock_quantity",
+      "total_amount",
+      "visit"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API}/billing/${billId}/pdf/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "PharmacyStock.jsx",
+    "file_path": "ashdent-front/src/components/PharmacyStock.jsx",
+    "endpoints_called": [
+      "/pharmacy/stock/batches/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/pharmacy/stock/batches/`)"
+  },
+  {
+    "file_name": "PreBookings.jsx",
+    "file_path": "ashdent-front/src/components/PreBookings.jsx",
+    "endpoints_called": [
+      "/pre-bookings/",
+      "/pre-bookings/book/${id}/",
+      "/pre-bookings/sync-missed/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`http://127.0.0.1:8000/api/pre-bookings/?status=${filterStatus}`)"
+  },
+  {
+    "file_name": "PrescriptionModal.jsx",
+    "file_path": "ashdent-front/src/components/PrescriptionModal.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "appointment_id",
+      "clinical_note",
+      "doctor",
+      "items",
+      "name",
+      "notes",
+      "paid_amount",
+      "patient",
+      "patient_id",
+      "payment_method",
+      "total_amount",
+      "visit"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const response = await fetch(url, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "PrescriptionView.jsx",
+    "file_path": "ashdent-front/src/components/PrescriptionView.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API}/pharmacy/queue/?date=${filterDate}`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "Prescriptions.jsx",
+    "file_path": "ashdent-front/src/components/Prescriptions.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API}/prescription/list/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "PurchaseEntry.jsx",
+    "file_path": "ashdent-front/src/components/PurchaseEntry.jsx",
+    "endpoints_called": [
+      "/stock/purchase/history/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/stock/purchase/history/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "RecentPatients.jsx",
+    "file_path": "ashdent-front/src/components/RecentPatients.jsx",
+    "endpoints_called": [
+      "/patients/recent/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch('http://127.0.0.1:8000/api/patients/recent/', { headers })"
+  },
+  {
+    "file_name": "Reports.jsx",
+    "file_path": "ashdent-front/src/components/Reports.jsx",
+    "endpoints_called": [
+      "/reports/${reportId}/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const response = await fetch(`http://127.0.0.1:8000/api/reports/${reportId}/?start_date=${start}&end_date=${end}`);"
+  },
+  {
+    "file_name": "SearchPatient.jsx",
+    "file_path": "ashdent-front/src/components/SearchPatient.jsx",
+    "endpoints_called": [
+      "/${role}/${path}",
+      "/appointment/create/",
+      "/doctors/",
+      "/patient/${patient.id}/profile/",
+      "/patient/${patientId}/profile/",
+      "/patient/${viewPatient.id}/profile/",
+      "/patient/{id}/profile/"
+    ],
+    "http_methods": [
+      "PATCH",
+      "POST"
+    ],
+    "submitted_fields": [
+      "date",
+      "doctor",
+      "patient",
+      "status",
+      "time"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/doctors/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "Sidebar.jsx",
+    "file_path": "ashdent-front/src/components/Sidebar.jsx",
+    "endpoints_called": [
+      "/doctor-schedule-proposals/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch("
+  },
+  {
+    "file_name": "StaffOnboardingWizard.jsx",
+    "file_path": "ashdent-front/src/components/StaffOnboardingWizard.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch("
+  },
+  {
+    "file_name": "StatsCards.jsx",
+    "file_path": "ashdent-front/src/components/StatsCards.jsx",
+    "endpoints_called": [
+      "/appointments/all/",
+      "/appointments/stats/",
+      "/finance/dashboard/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch('http://127.0.0.1:8000/api/appointments/stats/', {"
+  },
+  {
+    "file_name": "TeleMedicine.jsx",
+    "file_path": "ashdent-front/src/components/TeleMedicine.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": false,
+    "sample_call": ""
+  },
+  {
+    "file_name": "TodayPatients.jsx",
+    "file_path": "ashdent-front/src/components/TodayPatients.jsx",
+    "endpoints_called": [
+      "/${role}/search-patient",
+      "/appointment/create/",
+      "/appointments/${appt.id}/status/",
+      "/appointments/all/",
+      "/appointments/today/",
+      "/bill/create-advanced/",
+      "/patient/${appt.patient}/profile/",
+      "/visit/get-or-create/"
+    ],
+    "http_methods": [
+      "PATCH",
+      "POST"
+    ],
+    "submitted_fields": [
+      "appointment_id",
+      "date",
+      "doctor",
+      "paid_amount",
+      "patient",
+      "patient_id",
+      "rescheduled_to_date",
+      "rescheduled_to_time",
+      "status",
+      "time",
+      "total_amount",
+      "visit"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/patient/${appt.patient}/profile/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "Topbar.jsx",
+    "file_path": "ashdent-front/src/components/Topbar.jsx",
+    "endpoints_called": [
+      "/admin",
+      "/admin/dashboard",
+      "/dashboard",
+      "/doctor",
+      "/doctor/dashboard",
+      "/notifications/",
+      "/notifications/${id}/read/",
+      "/notifications/mark-all-read/",
+      "/pharmacist",
+      "/pharmacist/dashboard",
+      "/pharmacy",
+      "/pharmacy/dashboard",
+      "/receptionist",
+      "/receptionist/dashboard"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch('http://127.0.0.1:8000/api/notifications/', {"
+  },
+  {
+    "file_name": "Transactions.jsx",
+    "file_path": "ashdent-front/src/components/Transactions.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "DELETE"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API}/payments/search/${qs}`, { headers: getHeaders() }),"
+  },
+  {
+    "file_name": "TreatmentModal.jsx",
+    "file_path": "ashdent-front/src/components/TreatmentModal.jsx",
+    "endpoints_called": [
+      "/create-billing/",
+      "/doctors/",
+      "/treatment-master/list/",
+      "/visit/get-or-create/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "appointment_id",
+      "discount",
+      "doctor_id",
+      "id",
+      "patient_id",
+      "price",
+      "qty",
+      "teeth",
+      "treatment_ids",
+      "visit_id"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API_BASE}/treatment-master/list/`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "TreatmentRates.jsx",
+    "file_path": "ashdent-front/src/components/TreatmentRates.jsx",
+    "endpoints_called": [
+      "/treatment-master/create/",
+      "/treatment-master/list/",
+      "/treatment-master/update/${id}/"
+    ],
+    "http_methods": [
+      "PATCH",
+      "POST"
+    ],
+    "submitted_fields": [
+      "price"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch('http://127.0.0.1:8000/api/treatment-master/list/')"
+  },
+  {
+    "file_name": "UpcomingAppointments.jsx",
+    "file_path": "ashdent-front/src/components/UpcomingAppointments.jsx",
+    "endpoints_called": [
+      "/appointments/today/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch('http://127.0.0.1:8000/api/appointments/today/', { headers })"
+  },
+  {
+    "file_name": "UserManagement.jsx",
+    "file_path": "ashdent-front/src/components/UserManagement.jsx",
+    "endpoints_called": [
+      "/masters/roles/",
+      "/settings/role-defaults/${role}/"
+    ],
+    "http_methods": [
+      "PATCH",
+      "POST",
+      "PUT"
+    ],
+    "submitted_fields": [
+      "permissions"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API}/staff/${staff.id}/insurance/`)"
+  },
+  {
+    "file_name": "WebsiteAppointments.jsx",
+    "file_path": "ashdent-front/src/components/WebsiteAppointments.jsx",
+    "endpoints_called": [
+      "/doctors/",
+      "/patient/search/",
+      "/website-appointments/",
+      "/website-appointments/${id}/action/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "action",
+      "date",
+      "doctor_id",
+      "notes",
+      "time"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/website-appointments/?status=all`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "OverviewTab.jsx",
+    "file_path": "ashdent-front/src/components/consultation/tabs/OverviewTab.jsx",
+    "endpoints_called": [
+      "/clinical-notes/${activeId}/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`http://127.0.0.1:8000/api/clinical-notes/${activeId}/`, { headers })"
+  },
+  {
+    "file_name": "PrescriptionTab.jsx",
+    "file_path": "ashdent-front/src/components/consultation/tabs/PrescriptionTab.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "name",
+      "patient_id"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API}/medicine-master/list/`, { headers: getHeaders() });"
+  },
+  {
+    "file_name": "InvestigationsSection.jsx",
+    "file_path": "ashdent-front/src/components/investigations/InvestigationsSection.jsx",
+    "endpoints_called": [
+      "/doctors/",
+      "/investigation-attachments/${attId}/",
+      "/investigation-masters/",
+      "/patient-investigations/",
+      "/patient-investigations/${editingId}/",
+      "/patient-investigations/${invId}/",
+      "/patients/${patientId}/investigations-history/"
+    ],
+    "http_methods": [
+      "DELETE"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/investigation-masters/`, {"
+  },
+  {
+    "file_name": "BranchContext.jsx",
+    "file_path": "ashdent-front/src/context/BranchContext.jsx",
+    "endpoints_called": [
+      "/branches/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/branches/`, {"
+  },
+  {
+    "file_name": "PatientContext.jsx",
+    "file_path": "ashdent-front/src/context/PatientContext.jsx",
+    "endpoints_called": [
+      "/patient/search/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`${API_BASE}/patient/search/?q=${encodeURIComponent(query)}&date=${date}`, { headers: getHeaders() })"
+  },
+  {
+    "file_name": "CreateCaseForm.jsx",
+    "file_path": "ashdent-front/src/pages/CreateCaseForm.jsx",
+    "endpoints_called": [
+      "/admin",
+      "/clinical-notes/save/",
+      "/doctor",
+      "/patient/${patientId}/clinical-history/",
+      "/patient/${patientId}/profile",
+      "/patient/${patientId}/profile/",
+      "/receptionist",
+      "/settings/clinic-profile/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "Notes",
+      "appointment_id",
+      "chief_complaint",
+      "dental_history",
+      "doctor_id",
+      "medical_history",
+      "notes",
+      "patient_id"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch('http://127.0.0.1:8000/api/settings/clinic-profile/')"
+  },
+  {
+    "file_name": "DiagnosisPage.jsx",
+    "file_path": "ashdent-front/src/pages/DiagnosisPage.jsx",
+    "endpoints_called": [
+      "/admin",
+      "/doctor",
+      "/settings/clinic-profile/"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch('http://127.0.0.1:8000/api/settings/clinic-profile/')"
+  },
+  {
+    "file_name": "DoctorDashboard.jsx",
+    "file_path": "ashdent-front/src/pages/DoctorDashboard.jsx",
+    "endpoints_called": [
+      "/doctor/appointments",
+      "/doctor/doctor-slots",
+      "/doctor/follow-ups",
+      "/doctor/income",
+      "/doctor/prescriptions",
+      "/doctor/reports",
+      "/doctor/search-patient",
+      "/doctor/today-patients"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const apptRes = await fetch(`${API}/appointments/all/?date=${today}`, {"
+  },
+  {
+    "file_name": "DoctorIncome.jsx",
+    "file_path": "ashdent-front/src/pages/DoctorIncome.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(url, {"
+  },
+  {
+    "file_name": "OdontogramPage.jsx",
+    "file_path": "ashdent-front/src/pages/OdontogramPage.jsx",
+    "endpoints_called": [
+      "/${type}.png",
+      "/admin",
+      "/clinical-notes/${patientId}/",
+      "/clinical-notes/save/",
+      "/doctor",
+      "/masters/diagnoses/",
+      "/masters/examinations/",
+      "/masters/resolve-treatment-masters/",
+      "/masters/tooth-conditions/",
+      "/masters/treatments/",
+      "/patient/${patientId}/treatment-history/",
+      "/patients/${patientId}/tooth-conditions/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [
+      "appointment_id",
+      "chart_conditions",
+      "patient_id",
+      "selected_teeth",
+      "teeth_data"
+    ],
+    "has_error_handling": true,
+    "sample_call": "fetch('http://127.0.0.1:8000/api/masters/treatments/?active_only=true').then(r => r.ok ? r.json() : []),"
+  },
+  {
+    "file_name": "PharmacistDashboard.jsx",
+    "file_path": "ashdent-front/src/pages/PharmacistDashboard.jsx",
+    "endpoints_called": [
+      "/pharmacist/pharmacy",
+      "/pharmacist/prescriptions",
+      "/pharmacist/purchases",
+      "/pharmacist/sales",
+      "/pharmacist/stock"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API}/pharmacy/queue/`, { headers: getHeaders() }),"
+  },
+  {
+    "file_name": "PharmacyDashboard.jsx",
+    "file_path": "ashdent-front/src/pages/PharmacyDashboard.jsx",
+    "endpoints_called": [
+      "/pharmacy/pharmacy",
+      "/pharmacy/prescriptions",
+      "/pharmacy/purchases",
+      "/pharmacy/sales",
+      "/pharmacy/stock"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API}/pharmacy/queue/`, { headers: getHeaders() }),"
+  },
+  {
+    "file_name": "PharmacySales.jsx",
+    "file_path": "ashdent-front/src/pages/PharmacySales.jsx",
+    "endpoints_called": [],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(url)"
+  },
+  {
+    "file_name": "ReceptionDashboard.jsx",
+    "file_path": "ashdent-front/src/pages/ReceptionDashboard.jsx",
+    "endpoints_called": [
+      "/receptionist/appointments",
+      "/receptionist/billing",
+      "/receptionist/follow-ups",
+      "/receptionist/pre-bookings",
+      "/receptionist/search-patient",
+      "/receptionist/today-patients"
+    ],
+    "http_methods": [
+      "GET"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": "fetch(`${API}/patient/search/`, { headers: getHeaders() }),"
+  },
+  {
+    "file_name": "TreatmentPlansPage.jsx",
+    "file_path": "ashdent-front/src/pages/TreatmentPlansPage.jsx",
+    "endpoints_called": [
+      "/masters/diagnoses/",
+      "/masters/resolve-treatment-masters/",
+      "/masters/treatments/",
+      "/patient/${caseId}/profile/",
+      "/patients/${caseId}/treatment-plans/",
+      "/treatment-plan-items/${id}/",
+      "/treatment-plan-items/${id}/convert-to-treatment/"
+    ],
+    "http_methods": [
+      "PATCH",
+      "POST"
+    ],
+    "submitted_fields": [
+      "doctor_id",
+      "items",
+      "plan_id",
+      "status",
+      "title"
+    ],
+    "has_error_handling": true,
+    "sample_call": "const res = await fetch(`http://127.0.0.1:8000/api/patients/${caseId}/treatment-plans/`, {"
+  },
+  {
+    "file_name": "api.js",
+    "file_path": "ashdent-front/src/utils/api.js",
+    "endpoints_called": [
+      "/api/",
+      "/login",
+      "/login/",
+      "/token/refresh/"
+    ],
+    "http_methods": [
+      "POST"
+    ],
+    "submitted_fields": [],
+    "has_error_handling": true,
+    "sample_call": ""
+  }
+]

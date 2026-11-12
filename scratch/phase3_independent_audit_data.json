@@ -1,0 +1,327 @@
+{
+  "prod_collection_count": 68,
+  "mig_collection_count": 64,
+  "collections_in_mig_not_prod": [
+    "archived_clinicsubscription",
+    "archived_legacy_payments",
+    "archived_treatmentplanitems_raw"
+  ],
+  "collections_in_prod_not_mig": [
+    "patients_clinicsubscription",
+    "patients_patient_groups",
+    "patients_patientimage",
+    "patients_patientlaborder",
+    "patients_prebooking",
+    "patients_staffbenefit",
+    "patients_staffinsurance"
+  ],
+  "treatment_items": {
+    "prod_count": 56644,
+    "raw_archived_count": 56644,
+    "mig_active_count": 125,
+    "field_divergences": {
+      "differing_costs": 83,
+      "differing_doctors": 0,
+      "differing_diagnoses": 0,
+      "differing_treatment_masters": 0,
+      "differing_notes": 0
+    },
+    "divergence_samples": [
+      {
+        "key": [
+          "6ae97d05...",
+          "36",
+          "composite filling",
+          "All",
+          "Completed"
+        ],
+        "count": 4,
+        "divergences": [
+          "costs: {'15000', '1500'}"
+        ],
+        "sample_ids": [
+          "6ae97d050b648da885614f8b",
+          "6ae97d050b648da885614f8e"
+        ]
+      },
+      {
+        "key": [
+          "6ae97d66...",
+          "36",
+          "composite filling",
+          "All",
+          "Completed"
+        ],
+        "count": 4,
+        "divergences": [
+          "costs: {'15000', '1500'}"
+        ],
+        "sample_ids": [
+          "6ae97d66ec59e7479b8bb142",
+          "6ae97d66ec59e7479b8bb145"
+        ]
+      },
+      {
+        "key": [
+          "6ae97d66...",
+          "36",
+          "composite filling",
+          "All",
+          "Completed"
+        ],
+        "count": 9,
+        "divergences": [
+          "costs: {'15000', '1500'}"
+        ],
+        "sample_ids": [
+          "6ae97d66ec59e7479b8bb148",
+          "6ae97d66ec59e7479b8bb150"
+        ]
+      },
+      {
+        "key": [
+          "6ae988a7...",
+          "36",
+          "composite filling",
+          "All",
+          "Completed"
+        ],
+        "count": 9,
+        "divergences": [
+          "costs: {'15000', '1500'}"
+        ],
+        "sample_ids": [
+          "6ae988a7ec59e7479b8bb153",
+          "6ae988a7ec59e7479b8bb15e"
+        ]
+      },
+      {
+        "key": [
+          "6ae988a7...",
+          "36",
+          "composite filling",
+          "All",
+          "Completed"
+        ],
+        "count": 9,
+        "divergences": [
+          "costs: {'15000', '1500'}"
+        ],
+        "sample_ids": [
+          "6ae988a7ec59e7479b8bb15b",
+          "6ae988a7ec59e7479b8bb166"
+        ]
+      }
+    ],
+    "orphan_plan_items_in_mig": 0
+  },
+  "payments": {
+    "prod_legacy_payment_count": 9,
+    "mig_legacy_archive_count": 9,
+    "prod_billpayment_count": 27,
+    "mig_billpayment_count": 38,
+    "legacy_payment_details": [
+      {
+        "legacy_id": "6ae82fceaa6aecd55d34d219",
+        "amount": 800.0,
+        "payment_date": "2026-11-02 06:38:06.271000",
+        "payment_method": "Cash",
+        "patient_id": "6ae82fceaa6aecd55d34d216",
+        "visit_id": "6ae82fceaa6aecd55d34d218",
+        "matched_billpayment": {
+          "id": "6aeef145c21db8ed3e7c3459",
+          "receipt_number": "RCP-LEGACY-34D219",
+          "billing_id": "6ae9782499ca57772af9a1ae",
+          "amount": 800.0,
+          "transaction_reference": "6ae82fceaa6aecd55d34d219",
+          "company_id": "6ae9776f62359c077a3ae526",
+          "branch_id": "6ae9776f62359c077a3ae527"
+        }
+      },
+      {
+        "legacy_id": "6ae84eba7c8309d649393f23",
+        "amount": 500.0,
+        "payment_date": "2026-11-02 08:50:02.133000",
+        "payment_method": "Cash",
+        "patient_id": "6ae84eba7c8309d649393f20",
+        "visit_id": "6ae84eba7c8309d649393f22",
+        "matched_billpayment": {
+          "id": "6aeef145c21db8ed3e7c345a",
+          "receipt_number": "RCP-LEGACY-393F23",
+          "billing_id": "6ae9782499ca57772af9a1ae",
+          "amount": 500.0,
+          "transaction_reference": "6ae84eba7c8309d649393f23",
+          "company_id": "6ae9776f62359c077a3ae526",
+          "branch_id": "6ae9776f62359c077a3ae527"
+        }
+      },
+      {
+        "legacy_id": "6ae870dd04d6879596603f41",
+        "amount": 800.0,
+        "payment_date": "2026-11-02 11:15:41.306000",
+        "payment_method": "Cash",
+        "patient_id": "6ae870dd04d6879596603f3e",
+        "visit_id": "6ae870dd04d6879596603f40",
+        "matched_billpayment": {
+          "id": "6aeef145c21db8ed3e7c345b",
+          "receipt_number": "RCP-LEGACY-603F41",
+          "billing_id": "6ae9782499ca57772af9a1ae",
+          "amount": 800.0,
+          "transaction_reference": "6ae870dd04d6879596603f41",
+          "company_id": "6ae9776f62359c077a3ae526",
+          "branch_id": "6ae9776f62359c077a3ae527"
+        }
+      },
+      {
+        "legacy_id": "6ae9782499ca57772af9a1b1",
+        "amount": 1000.0,
+        "payment_date": "2026-11-03 05:59:00.793000",
+        "payment_method": "Card",
+        "patient_id": "6ae977fd417c55180548e1dc",
+        "visit_id": "6ae9782499ca57772af9a1a3",
+        "matched_billpayment": {
+          "id": "6aeef145c21db8ed3e7c345c",
+          "receipt_number": "RCP-LEGACY-F9A1B1",
+          "billing_id": "6ae9782499ca57772af9a1ae",
+          "amount": 1000.0,
+          "transaction_reference": "6ae9782499ca57772af9a1b1",
+          "company_id": "6ae9776f62359c077a3ae526",
+          "branch_id": "6ae9776f62359c077a3ae527"
+        }
+      },
+      {
+        "legacy_id": "6ae9782499ca57772af9a1b5",
+        "amount": 5000.0,
+        "payment_date": "2026-11-03 05:59:00.824000",
+        "payment_method": "UPI",
+        "patient_id": "6ae977fd417c55180548e1dd",
+        "visit_id": "6ae9782499ca57772af9a1a9",
+        "matched_billpayment": {
+          "id": "6aeef145c21db8ed3e7c345d",
+          "receipt_number": "RCP-LEGACY-F9A1B5",
+          "billing_id": "6ae9782499ca57772af9a1b2",
+          "amount": 5000.0,
+          "transaction_reference": "6ae9782499ca57772af9a1b5",
+          "company_id": "6ae9776f62359c077a3ae526",
+          "branch_id": "6ae9776f62359c077a3ae527"
+        }
+      },
+      {
+        "legacy_id": "6ae97840f3a0d81af3fb4693",
+        "amount": 1000.0,
+        "payment_date": "2026-11-03 05:59:28.383000",
+        "payment_method": "Card",
+        "patient_id": "6ae977fd417c55180548e1dc",
+        "visit_id": "6ae9783ff3a0d81af3fb4685",
+        "matched_billpayment": {
+          "id": "6aeef145c21db8ed3e7c345e",
+          "receipt_number": "RCP-LEGACY-FB4693",
+          "billing_id": "6ae97840f3a0d81af3fb4690",
+          "amount": 1000.0,
+          "transaction_reference": "6ae97840f3a0d81af3fb4693",
+          "company_id": "6ae9776f62359c077a3ae526",
+          "branch_id": "6ae9776f62359c077a3ae527"
+        }
+      },
+      {
+        "legacy_id": "6ae97840f3a0d81af3fb4697",
+        "amount": 5000.0,
+        "payment_date": "2026-11-03 05:59:28.411000",
+        "payment_method": "UPI",
+        "patient_id": "6ae977fd417c55180548e1dd",
+        "visit_id": "6ae97840f3a0d81af3fb468b",
+        "matched_billpayment": {
+          "id": "6aeef145c21db8ed3e7c345f",
+          "receipt_number": "RCP-LEGACY-FB4697",
+          "billing_id": "6ae97840f3a0d81af3fb4694",
+          "amount": 5000.0,
+          "transaction_reference": "6ae97840f3a0d81af3fb4697",
+          "company_id": "6ae9776f62359c077a3ae526",
+          "branch_id": "6ae9776f62359c077a3ae527"
+        }
+      },
+      {
+        "legacy_id": "6aead3b73f2ae583c2280d21",
+        "amount": 1000.0,
+        "payment_date": "2026-11-04 06:41:59.008000",
+        "payment_method": "Cash",
+        "patient_id": "6aead3b63f2ae583c2280d1e",
+        "visit_id": "6aead3b63f2ae583c2280d20",
+        "matched_billpayment": {
+          "id": "6aeef145c21db8ed3e7c3460",
+          "receipt_number": "RCP-LEGACY-280D21",
+          "billing_id": "6ae9782499ca57772af9a1ae",
+          "amount": 1000.0,
+          "transaction_reference": "6aead3b73f2ae583c2280d21",
+          "company_id": "6ae9776f62359c077a3ae526",
+          "branch_id": "6ae9776f62359c077a3ae527"
+        }
+      },
+      {
+        "legacy_id": "6aead74a3f2ae583c2280d26",
+        "amount": 700.0,
+        "payment_date": "2026-11-04 06:57:14.136000",
+        "payment_method": "Cash",
+        "patient_id": "6aead74a3f2ae583c2280d23",
+        "visit_id": "6aead74a3f2ae583c2280d25",
+        "matched_billpayment": {
+          "id": "6aeef145c21db8ed3e7c3461",
+          "receipt_number": "RCP-LEGACY-280D26",
+          "billing_id": "6ae9782499ca57772af9a1ae",
+          "amount": 700.0,
+          "transaction_reference": "6aead74a3f2ae583c2280d26",
+          "company_id": "6ae9776f62359c077a3ae526",
+          "branch_id": "6ae9776f62359c077a3ae527"
+        }
+      }
+    ],
+    "mutated_original_billpayments": 0
+  },
+  "tenant_backfill": {
+    "patients_billing": {
+      "prod_null_companies": 6,
+      "mig_null_companies": 0,
+      "mismatched_records_count": 0,
+      "mismatched_samples": []
+    },
+    "patients_visit": {
+      "prod_null_companies": 5,
+      "mig_null_companies": 1,
+      "mismatched_records_count": 0,
+      "mismatched_samples": []
+    },
+    "patients_prescription": {
+      "prod_null_companies": 5,
+      "mig_null_companies": 1,
+      "mismatched_records_count": 0,
+      "mismatched_samples": []
+    },
+    "patients_doctor": {
+      "prod_null_companies": 2,
+      "mig_null_companies": 0,
+      "mismatched_records_count": 0,
+      "mismatched_samples": []
+    }
+  },
+  "archives": {
+    "archived_treatmentplanitems_raw": {
+      "prod_ids_count": 56644,
+      "arch_ids_count": 56644,
+      "hash_match": true,
+      "prod_hash": "d1d38d61745d6e7d",
+      "arch_hash": "d1d38d61745d6e7d"
+    },
+    "archived_legacy_payments": {
+      "prod_ids_count": 9,
+      "arch_ids_count": 9,
+      "hash_match": true,
+      "prod_hash": "01d97e786fd2f599",
+      "arch_hash": "01d97e786fd2f599"
+    },
+    "archived_clinicsubscription": {
+      "prod_count": 1,
+      "arch_count": 1,
+      "match": true
+    }
+  }
+}

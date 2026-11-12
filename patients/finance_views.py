@@ -39,9 +39,6 @@ def seed_default_categories():
         )
 
 class FinanceDashboardView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
     def get(self, request):
         filter_type = request.query_params.get('filter_type', 'monthly') # 'today', 'yesterday', 'custom', 'monthly'
         
@@ -791,6 +788,10 @@ class FinanceDashboardView(APIView):
                 'profit': inc - exp
             })
 
+        # Sort detailed income & expense ledgers latest records first
+        detailed_income.sort(key=lambda x: (str(x.get('date') or x.get('created_at') or ''), str(x.get('id') or '')), reverse=True)
+        detailed_expenses.sort(key=lambda x: (str(x.get('date') or x.get('created_at') or ''), str(x.get('id') or '')), reverse=True)
+
         return Response({
             'dailyIncome': daily_income,
             'monthlyIncome': month_income,
@@ -944,9 +945,6 @@ class FinanceDashboardView(APIView):
 
 
 class ExpenseCategoryAPIView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
     def get(self, request):
         seed_default_categories()
         cats = ExpenseCategory.objects.all().order_by('-is_predefined', 'name')
@@ -1023,9 +1021,6 @@ class ExpenseCategoryAPIView(APIView):
 
 
 class ExpenseAPIView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
     def get(self, request):
         q = request.query_params.get('q', '')
         category = request.query_params.get('category', '')
@@ -1034,7 +1029,7 @@ class ExpenseAPIView(APIView):
         start_date = request.query_params.get('start_date')
         end_date = request.query_params.get('end_date')
 
-        qs = Expense.objects.all().order_by('-date', '-created_at')
+        qs = Expense.objects.all().order_by("-date", "-created_at", "-id")
 
         if q:
             qs = qs.filter(Q(title__icontains=q) | Q(description__icontains=q) | Q(paid_to__icontains=q))
@@ -1171,9 +1166,6 @@ class ExpenseAPIView(APIView):
 
 
 class ExpenseBulkDeleteAPIView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
     def post(self, request):
         ids = request.data.get('ids', [])
         if not ids:
@@ -1185,9 +1177,6 @@ class ExpenseBulkDeleteAPIView(APIView):
 
 
 class DoctorSalaryAPIView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
     def get(self, request):
         doctors = Doctor.objects.all()
         configs = []
@@ -1203,7 +1192,7 @@ class DoctorSalaryAPIView(APIView):
                 'incentive_percent': float(salary_config.incentive_percent)
             })
             
-        records = DoctorSalaryRecord.objects.all().order_by('-year', '-month', '-created_at')
+        records = DoctorSalaryRecord.objects.all().order_by("-year", "-month", "-created_at", "-id")
         records_data = [{
             'id': r.id,
             'doctor_id': r.doctor.id,
@@ -1333,9 +1322,6 @@ class DoctorSalaryAPIView(APIView):
 
 
 class DentalMaterialAPIView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
     def get(self, request):
         materials = DentalMaterial.objects.all().order_by('name')
         materials_data = [{
@@ -1355,7 +1341,7 @@ class DentalMaterialAPIView(APIView):
             'name': s.name
         } for s in suppliers]
 
-        purchases = DentalMaterialPurchase.objects.all().order_by('-date', '-created_at')
+        purchases = DentalMaterialPurchase.objects.all().order_by("-date", "-created_at", "-id")
         purchases_data = [{
             'id': p.id,
             'material_id': p.material.id,
@@ -1465,9 +1451,6 @@ class DentalMaterialAPIView(APIView):
 
 
 class PharmacyDashboardAPIView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
     def get(self, request):
         today = timezone.localtime().date()
         preset = request.query_params.get('preset', 'today') # today, weekly, monthly, custom
@@ -1645,9 +1628,6 @@ class GenerateSalariesAPIView(APIView):
 
 
 class TotalExpenseSummaryView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
     def get(self, request):
         today = timezone.localtime().date()
         month = request.query_params.get('month')
@@ -1759,9 +1739,6 @@ class TotalExpenseSummaryView(APIView):
 
 
 class TransactionSummaryAPIView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
     def get(self, request):
         today = datetime.date.today()
         start_str = request.query_params.get('start_date')

@@ -1,0 +1,65 @@
+[
+  {
+    "role": "Super Admin",
+    "username": "test_super_admin",
+    "emr_status": 200,
+    "tc_status": 200,
+    "bill_payment_status": 200,
+    "alpha_bill_in_list": true,
+    "overall_pass": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "username": "test_alpha_admin",
+    "emr_status": 200,
+    "tc_status": 200,
+    "bill_payment_status": 200,
+    "alpha_bill_in_list": true,
+    "overall_pass": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "username": "test_beta_admin",
+    "emr_status": 403,
+    "tc_status": 403,
+    "bill_payment_status": 403,
+    "alpha_bill_in_list": false,
+    "overall_pass": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "username": "test_alpha_doc",
+    "emr_status": 200,
+    "tc_status": 200,
+    "bill_payment_status": 200,
+    "alpha_bill_in_list": false,
+    "overall_pass": true
+  },
+  {
+    "role": "Beta Doctor",
+    "username": "test_beta_doc",
+    "emr_status": 403,
+    "tc_status": 403,
+    "bill_payment_status": 403,
+    "alpha_bill_in_list": false,
+    "overall_pass": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "username": "test_alpha_rec",
+    "emr_status": 200,
+    "tc_status": 200,
+    "bill_payment_status": 200,
+    "alpha_bill_in_list": true,
+    "overall_pass": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "username": "test_beta_rec",
+    "emr_status": 403,
+    "tc_status": 403,
+    "bill_payment_status": 403,
+    "alpha_bill_in_list": false,
+    "overall_pass": true
+  }
+]

@@ -1,0 +1,2632 @@
+{
+  "total_models": 96,
+  "models": [
+    {
+      "app_label": "admin",
+      "model_name": "LogEntry",
+      "collection_name": "django_admin_log",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "user -> User (auth_user)",
+        "content_type -> ContentType (django_content_type)"
+      ]
+    },
+    {
+      "app_label": "auth",
+      "model_name": "Permission",
+      "collection_name": "auth_permission",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 388,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "group -> Group (auth_group)",
+        "user -> User (auth_user)",
+        "content_type -> ContentType (django_content_type)"
+      ]
+    },
+    {
+      "app_label": "auth",
+      "model_name": "Group",
+      "collection_name": "auth_group",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "user -> User (auth_user)",
+        "permissions -> Permission (auth_permission)"
+      ]
+    },
+    {
+      "app_label": "auth",
+      "model_name": "User",
+      "collection_name": "auth_user",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 24,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_schedules",
+        "created_date_overrides",
+        "created_estimates",
+        "status_updated_estimates",
+        "date_joined"
+      ],
+      "related_models": [
+        "logentry -> LogEntry (django_admin_log)",
+        "created_schedules -> DoctorSchedule (patients_doctorschedule)",
+        "approved_schedules -> DoctorSchedule (patients_doctorschedule)",
+        "submitted_proposals -> DoctorScheduleProposal (patients_doctorscheduleproposal)",
+        "reviewed_proposals -> DoctorScheduleProposal (patients_doctorscheduleproposal)",
+        "created_date_overrides -> DoctorDateOverride (patients_doctordateoverride)",
+        "approved_date_overrides -> DoctorDateOverride (patients_doctordateoverride)",
+        "notifications -> InAppNotification (patients_inappnotification)",
+        "staff_profile -> Staff (patients_staff)",
+        "modified_treatment_records -> TreatmentRecord (patients_treatmentrecord)",
+        "billing -> Billing (patients_billing)",
+        "prescription -> Prescription (patients_prescription)",
+        "auditlog -> AuditLog (patients_auditlog)",
+        "modified_plan_items -> TreatmentPlanItem (patients_treatmentplanitem)",
+        "emrchangelog -> EMRChangeLog (patients_emrchangelog)",
+        "created_estimates -> Estimate (patients_estimate)",
+        "status_updated_estimates -> Estimate (patients_estimate)",
+        "billpayment -> BillPayment (patients_billpayment)",
+        "groups -> Group (auth_group)",
+        "user_permissions -> Permission (auth_permission)"
+      ]
+    },
+    {
+      "app_label": "contenttypes",
+      "model_name": "ContentType",
+      "collection_name": "django_content_type",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 97,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "logentry -> LogEntry (django_admin_log)",
+        "permission -> Permission (auth_permission)"
+      ]
+    },
+    {
+      "app_label": "sessions",
+      "model_name": "Session",
+      "collection_name": "django_session",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "session_key",
+        "type": "CharField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Company",
+      "collection_name": "patients_company",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 11,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "branches -> Branch (patients_branch)",
+        "doctors -> Doctor (patients_doctor)",
+        "doctor_schedules -> DoctorSchedule (patients_doctorschedule)",
+        "schedule_proposals -> DoctorScheduleProposal (patients_doctorscheduleproposal)",
+        "date_overrides -> DoctorDateOverride (patients_doctordateoverride)",
+        "staff_members -> Staff (patients_staff)",
+        "patients -> Patient (patients_patient)",
+        "appointments -> Appointment (patients_appointment)",
+        "visits -> Visit (patients_visit)",
+        "payments -> Payment (patients_payment)",
+        "billings -> Billing (patients_billing)",
+        "prescriptions -> Prescription (patients_prescription)",
+        "transactions -> Transaction (patients_transaction)",
+        "expenses -> Expense (patients_expense)",
+        "clinic_profiles -> ClinicProfile (patients_clinicprofile)",
+        "auto_numberings -> AutoNumbering (patients_autonumbering)",
+        "investigation_masters -> InvestigationMaster (patients_investigationmaster)",
+        "patient_investigations -> PatientInvestigation (patients_patientinvestigation)",
+        "treatment_plans -> TreatmentPlan (patients_treatmentplan)",
+        "estimates -> Estimate (patients_estimate)",
+        "billpayment -> BillPayment (patients_billpayment)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Branch",
+      "collection_name": "patients_branch",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 13,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "primary_doctors -> Doctor (patients_doctor)",
+        "doctor_schedules -> DoctorSchedule (patients_doctorschedule)",
+        "doctor_proposals -> DoctorScheduleProposal (patients_doctorscheduleproposal)",
+        "doctor_overrides -> DoctorDateOverride (patients_doctordateoverride)",
+        "primary_staff -> Staff (patients_staff)",
+        "registered_patients -> Patient (patients_patient)",
+        "appointments -> Appointment (patients_appointment)",
+        "visits -> Visit (patients_visit)",
+        "payments -> Payment (patients_payment)",
+        "billings -> Billing (patients_billing)",
+        "prescriptions -> Prescription (patients_prescription)",
+        "transactions -> Transaction (patients_transaction)",
+        "expenses -> Expense (patients_expense)",
+        "clinic_profiles -> ClinicProfile (patients_clinicprofile)",
+        "auto_numberings -> AutoNumbering (patients_autonumbering)",
+        "patient_investigations -> PatientInvestigation (patients_patientinvestigation)",
+        "treatment_plans -> TreatmentPlan (patients_treatmentplan)",
+        "estimates -> Estimate (patients_estimate)",
+        "billpayment -> BillPayment (patients_billpayment)",
+        "company -> Company (patients_company)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Doctor",
+      "collection_name": "patients_doctor",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 11,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": false,
+        "appointment": true,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "schedules -> DoctorSchedule (patients_doctorschedule)",
+        "schedule_proposals -> DoctorScheduleProposal (patients_doctorscheduleproposal)",
+        "date_overrides -> DoctorDateOverride (patients_doctordateoverride)",
+        "staff_account -> Staff (patients_staff)",
+        "patients -> Patient (patients_patient)",
+        "appointment -> Appointment (patients_appointment)",
+        "visits -> Visit (patients_visit)",
+        "clinical_notes -> ClinicalNotes (patients_clinicalnotes)",
+        "treatment_records -> TreatmentRecord (patients_treatmentrecord)",
+        "payments -> Payment (patients_payment)",
+        "billings -> Billing (patients_billing)",
+        "prescription -> Prescription (patients_prescription)",
+        "websiteappointmentrequest -> WebsiteAppointmentRequest (patients_websiteappointmentrequest)",
+        "transaction -> Transaction (patients_transaction)",
+        "salary_config -> DoctorSalary (patients_doctorsalary)",
+        "salary_records -> DoctorSalaryRecord (patients_doctorsalaryrecord)",
+        "investigations -> PatientInvestigation (patients_patientinvestigation)",
+        "treatment_plans -> TreatmentPlan (patients_treatmentplan)",
+        "treatment_plan_items -> TreatmentPlanItem (patients_treatmentplanitem)",
+        "treatment_sessions -> TreatmentSession (patients_treatmentsession)",
+        "estimates -> Estimate (patients_estimate)",
+        "company -> Company (patients_company)",
+        "primary_branch -> Branch (patients_branch)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DoctorSchedule",
+      "collection_name": "patients_doctorschedule",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 34,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_by",
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "doctor -> Doctor (patients_doctor)",
+        "created_by -> User (auth_user)",
+        "approved_by -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DoctorScheduleProposal",
+      "collection_name": "patients_doctorscheduleproposal",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 6,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [],
+      "related_models": [
+        "date_overrides -> DoctorDateOverride (patients_doctordateoverride)",
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "doctor -> Doctor (patients_doctor)",
+        "submitted_by -> User (auth_user)",
+        "reviewed_by -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DoctorDateOverride",
+      "collection_name": "patients_doctordateoverride",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_by",
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "doctor -> Doctor (patients_doctor)",
+        "proposal -> DoctorScheduleProposal (patients_doctorscheduleproposal)",
+        "created_by -> User (auth_user)",
+        "approved_by -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "InAppNotification",
+      "collection_name": "patients_inappnotification",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 153,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "recipient -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Staff",
+      "collection_name": "patients_staff",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 30,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "permission_overrides -> StaffPermissionOverride (patients_staffpermissionoverride)",
+        "packageredemption -> PackageRedemption (patients_packageredemption)",
+        "leave_configs -> StaffLeaveConfig (patients_staffleaveconfig)",
+        "benefits -> StaffBenefit (patients_staffbenefit)",
+        "insurance_policies -> StaffInsurance (patients_staffinsurance)",
+        "company -> Company (patients_company)",
+        "primary_branch -> Branch (patients_branch)",
+        "user -> User (auth_user)",
+        "doctor_profile -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PatientGroup",
+      "collection_name": "patients_patientgroup",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 1,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "patients -> Patient (patients_patient)",
+        "package_subscriptions -> PatientPackageSubscription (patients_patientpackagesubscription)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Patient",
+      "collection_name": "patients_patient",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 25,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "appointments -> Appointment (patients_appointment)",
+        "visits -> Visit (patients_visit)",
+        "images -> PatientImage (patients_patientimage)",
+        "payments -> Payment (patients_payment)",
+        "billings -> Billing (patients_billing)",
+        "prescriptions -> Prescription (patients_prescription)",
+        "communication_logs -> CommunicationLog (patients_communicationlog)",
+        "transaction -> Transaction (patients_transaction)",
+        "lab_orders -> PatientLabOrder (patients_patientlaborder)",
+        "package_subscriptions -> PatientPackageSubscription (patients_patientpackagesubscription)",
+        "package_redemptions -> PackageRedemption (patients_packageredemption)",
+        "investigations -> PatientInvestigation (patients_patientinvestigation)",
+        "tooth_conditions -> ToothConditionRecord (patients_toothconditionrecord)",
+        "treatment_plans -> TreatmentPlan (patients_treatmentplan)",
+        "treatment_sessions -> TreatmentSession (patients_treatmentsession)",
+        "emr_audit_logs -> EMRChangeLog (patients_emrchangelog)",
+        "estimates -> Estimate (patients_estimate)",
+        "bill_payments -> BillPayment (patients_billpayment)",
+        "company -> Company (patients_company)",
+        "registration_branch -> Branch (patients_branch)",
+        "doctor -> Doctor (patients_doctor)",
+        "patient_type -> PatientTypeMaster (patients_patienttypemaster)",
+        "groups -> PatientGroup (patients_patientgroup)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Appointment",
+      "collection_name": "patients_appointment",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 24,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": false,
+        "visit": true,
+        "doctor": true
+      },
+      "timestamps": [],
+      "related_models": [
+        "visit -> Visit (patients_visit)",
+        "clinical_notes -> ClinicalNotes (patients_clinicalnotes)",
+        "investigations -> PatientInvestigation (patients_patientinvestigation)",
+        "tooth_conditions -> ToothConditionRecord (patients_toothconditionrecord)",
+        "treatment_plans -> TreatmentPlan (patients_treatmentplan)",
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "patient -> Patient (patients_patient)",
+        "doctor -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "ToothMaster",
+      "collection_name": "patients_toothmaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 52,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Tooth",
+      "collection_name": "patients_tooth",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "TreatmentMaster",
+      "collection_name": "patients_treatmentmaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 43,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "clinical_notes -> ClinicalNotes (patients_clinicalnotes)",
+        "treatmentrecord -> TreatmentRecord (patients_treatmentrecord)",
+        "billingitem -> BillingItem (patients_billingitem)",
+        "offerpackageitem -> OfferPackageItem (patients_offerpackageitem)",
+        "plan_items -> TreatmentPlanItem (patients_treatmentplanitem)",
+        "estimateitem -> EstimateItem (patients_estimateitem)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DiagnosisMaster",
+      "collection_name": "patients_diagnosismaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 14,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "ExaminationMaster",
+      "collection_name": "patients_examinationmaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 19,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "ToothConditionMaster",
+      "collection_name": "patients_toothconditionmaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 13,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Visit",
+      "collection_name": "patients_visit",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 17,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": true,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "treatment_records -> TreatmentRecord (patients_treatmentrecord)",
+        "images -> PatientImage (patients_patientimage)",
+        "payment -> Payment (patients_payment)",
+        "billings -> Billing (patients_billing)",
+        "prescriptions -> Prescription (patients_prescription)",
+        "investigations -> PatientInvestigation (patients_patientinvestigation)",
+        "tooth_conditions -> ToothConditionRecord (patients_toothconditionrecord)",
+        "treatment_plans -> TreatmentPlan (patients_treatmentplan)",
+        "treatment_sessions -> TreatmentSession (patients_treatmentsession)",
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "patient -> Patient (patients_patient)",
+        "appointment -> Appointment (patients_appointment)",
+        "doctor -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DropdownMaster",
+      "collection_name": "patients_dropdownmaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 39,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "CommunicationTemplate",
+      "collection_name": "patients_communicationtemplate",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 8,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "TaxSetting",
+      "collection_name": "patients_taxsetting",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "ClinicalNotes",
+      "collection_name": "patients_clinicalnotes",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 9,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": true,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "billing -> Billing (patients_billing)",
+        "prescription -> Prescription (patients_prescription)",
+        "appointment -> Appointment (patients_appointment)",
+        "doctor -> Doctor (patients_doctor)",
+        "treatments -> TreatmentMaster (patients_treatmentmaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "TreatmentRecord",
+      "collection_name": "patients_treatmentrecord",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 17,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": true,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "billing_items -> BillingItem (patients_billingitem)",
+        "sessions -> TreatmentSession (patients_treatmentsession)",
+        "visit -> Visit (patients_visit)",
+        "treatment -> TreatmentMaster (patients_treatmentmaster)",
+        "doctor -> Doctor (patients_doctor)",
+        "price_modified_by -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PatientImage",
+      "collection_name": "patients_patientimage",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": true,
+        "appointment": false,
+        "visit": true,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "patient -> Patient (patients_patient)",
+        "visit -> Visit (patients_visit)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Payment",
+      "collection_name": "patients_payment",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 9,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": false,
+        "visit": true,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "patient -> Patient (patients_patient)",
+        "visit -> Visit (patients_visit)",
+        "doctor -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Billing",
+      "collection_name": "patients_billing",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 39,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": false,
+        "visit": true,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_by",
+        "created_at"
+      ],
+      "related_models": [
+        "items -> BillingItem (patients_billingitem)",
+        "payments_ledger -> BillPayment (patients_billpayment)",
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "patient -> Patient (patients_patient)",
+        "visit -> Visit (patients_visit)",
+        "clinical_note -> ClinicalNotes (patients_clinicalnotes)",
+        "doctor -> Doctor (patients_doctor)",
+        "estimate -> Estimate (patients_estimate)",
+        "created_by -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "BillingItem",
+      "collection_name": "patients_billingitem",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 38,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "package_redemption -> PackageRedemption (patients_packageredemption)",
+        "billing -> Billing (patients_billing)",
+        "treatment -> TreatmentMaster (patients_treatmentmaster)",
+        "estimate_item -> EstimateItem (patients_estimateitem)",
+        "treatment_record -> TreatmentRecord (patients_treatmentrecord)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Prescription",
+      "collection_name": "patients_prescription",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 5,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": false,
+        "visit": true,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_by",
+        "created_at"
+      ],
+      "related_models": [
+        "items -> PrescriptionItem (patients_prescriptionitem)",
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "patient -> Patient (patients_patient)",
+        "visit -> Visit (patients_visit)",
+        "clinical_note -> ClinicalNotes (patients_clinicalnotes)",
+        "doctor -> Doctor (patients_doctor)",
+        "created_by -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PrescriptionItem",
+      "collection_name": "patients_prescriptionitem",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 7,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "prescription -> Prescription (patients_prescription)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "MedicineMaster",
+      "collection_name": "patients_medicinemaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 10,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "purchases -> MedicinePurchase (patients_medicinepurchase)",
+        "pharmacypurchaseitem -> PharmacyPurchaseItem (patients_pharmacypurchaseitem)",
+        "batches -> MedicineStock (patients_medicinestock)",
+        "offerpackageitem -> OfferPackageItem (patients_offerpackageitem)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "MedicinePurchase",
+      "collection_name": "patients_medicinepurchase",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "medicine -> MedicineMaster (patients_medicinemaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Supplier",
+      "collection_name": "patients_supplier",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "ledger_entries -> SupplierLedger (patients_supplierledger)",
+        "purchases -> PharmacyPurchase (patients_pharmacypurchase)",
+        "materials -> DentalMaterial (patients_dentalmaterial)",
+        "dentalmaterialpurchase -> DentalMaterialPurchase (patients_dentalmaterialpurchase)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "SupplierLedger",
+      "collection_name": "patients_supplierledger",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "supplier -> Supplier (patients_supplier)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PharmacyPurchase",
+      "collection_name": "patients_pharmacypurchase",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "items -> PharmacyPurchaseItem (patients_pharmacypurchaseitem)",
+        "supplier -> Supplier (patients_supplier)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PharmacyPurchaseItem",
+      "collection_name": "patients_pharmacypurchaseitem",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "purchase -> PharmacyPurchase (patients_pharmacypurchase)",
+        "medicine -> MedicineMaster (patients_medicinemaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "MedicineStock",
+      "collection_name": "patients_medicinestock",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "last_updated"
+      ],
+      "related_models": [
+        "medicine -> MedicineMaster (patients_medicinemaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PreBooking",
+      "collection_name": "patients_prebooking",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "WebsiteAppointmentRequest",
+      "collection_name": "patients_websiteappointmentrequest",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 3,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "preferred_doctor -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "CommunicationLog",
+      "collection_name": "patients_communicationlog",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 13,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": true,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "patient -> Patient (patients_patient)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Transaction",
+      "collection_name": "patients_transaction",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 27,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "patient -> Patient (patients_patient)",
+        "doctor -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "LabHeader",
+      "collection_name": "patients_labheader",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Laboratory",
+      "collection_name": "patients_laboratory",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "LabTestMaster",
+      "collection_name": "patients_labtestmaster",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "parameters -> LabTestParameter (patients_labtestparameter)",
+        "packages -> LabPackage (patients_labpackage)",
+        "offerpackageitem -> OfferPackageItem (patients_offerpackageitem)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "LabTestParameter",
+      "collection_name": "patients_labtestparameter",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "test -> LabTestMaster (patients_labtestmaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "LabPackage",
+      "collection_name": "patients_labpackage",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "tests -> LabTestMaster (patients_labtestmaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DentalLaboratory",
+      "collection_name": "patients_dentallaboratory",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DentalLabWork",
+      "collection_name": "patients_dentallabwork",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "ExpenseCategory",
+      "collection_name": "patients_expensecategory",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 16,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "expenses -> Expense (patients_expense)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Expense",
+      "collection_name": "patients_expense",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "company -> Company (patients_company)",
+        "branch_ref -> Branch (patients_branch)",
+        "category_ref -> ExpenseCategory (patients_expensecategory)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DoctorSalary",
+      "collection_name": "patients_doctorsalary",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "doctor -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DoctorSalaryRecord",
+      "collection_name": "patients_doctorsalaryrecord",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "doctor -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DentalMaterial",
+      "collection_name": "patients_dentalmaterial",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "purchases -> DentalMaterialPurchase (patients_dentalmaterialpurchase)",
+        "supplier -> Supplier (patients_supplier)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DentalMaterialPurchase",
+      "collection_name": "patients_dentalmaterialpurchase",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "material -> DentalMaterial (patients_dentalmaterial)",
+        "supplier -> Supplier (patients_supplier)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "AuditLog",
+      "collection_name": "patients_auditlog",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 65,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "user -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "ClinicProfile",
+      "collection_name": "patients_clinicprofile",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 1,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "ClinicTiming",
+      "collection_name": "patients_clinictiming",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "AutoNumbering",
+      "collection_name": "patients_autonumbering",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 1,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Salutation",
+      "collection_name": "patients_salutation",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PatientRequiredFields",
+      "collection_name": "patients_patientrequiredfields",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PatientLabOrder",
+      "collection_name": "patients_patientlaborder",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": true,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "patient -> Patient (patients_patient)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "RoleDefaultPermissions",
+      "collection_name": "patients_roledefaultpermissions",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 4,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PharmacySettings",
+      "collection_name": "patients_pharmacysettings",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 1,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PrescriptionTemplate",
+      "collection_name": "patients_prescriptiontemplate",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DosageLabel",
+      "collection_name": "patients_dosagelabel",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PatientTypeMaster",
+      "collection_name": "patients_patienttypemaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 10,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "patients -> Patient (patients_patient)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "StaffLevelMaster",
+      "collection_name": "patients_stafflevelmaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 5,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DesignationMaster",
+      "collection_name": "patients_designationmaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 8,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "RoleMaster",
+      "collection_name": "patients_rolemaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 9,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "role_permissions -> RolePermission (patients_rolepermission)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PermissionMaster",
+      "collection_name": "patients_permissionmaster",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "role_assignments -> RolePermission (patients_rolepermission)",
+        "staffpermissionoverride -> StaffPermissionOverride (patients_staffpermissionoverride)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "RolePermission",
+      "collection_name": "patients_rolepermission",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "role -> RoleMaster (patients_rolemaster)",
+        "permission -> PermissionMaster (patients_permissionmaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "StaffPermissionOverride",
+      "collection_name": "patients_staffpermissionoverride",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "staff -> Staff (patients_staff)",
+        "permission -> PermissionMaster (patients_permissionmaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "DiscountMaster",
+      "collection_name": "patients_discountmaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 7,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": []
+    },
+    {
+      "app_label": "patients",
+      "model_name": "OfferPackage",
+      "collection_name": "patients_offerpackage",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 4,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "items -> OfferPackageItem (patients_offerpackageitem)",
+        "subscriptions -> PatientPackageSubscription (patients_patientpackagesubscription)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "OfferPackageItem",
+      "collection_name": "patients_offerpackageitem",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "redemptions -> PackageRedemption (patients_packageredemption)",
+        "package -> OfferPackage (patients_offerpackage)",
+        "treatment -> TreatmentMaster (patients_treatmentmaster)",
+        "lab_test -> LabTestMaster (patients_labtestmaster)",
+        "medicine -> MedicineMaster (patients_medicinemaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PatientPackageSubscription",
+      "collection_name": "patients_patientpackagesubscription",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": true,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "redemptions -> PackageRedemption (patients_packageredemption)",
+        "patient -> Patient (patients_patient)",
+        "group -> PatientGroup (patients_patientgroup)",
+        "package -> OfferPackage (patients_offerpackage)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PackageRedemption",
+      "collection_name": "patients_packageredemption",
+      "exists_in_mongo": false,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": true,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "subscription -> PatientPackageSubscription (patients_patientpackagesubscription)",
+        "package_item -> OfferPackageItem (patients_offerpackageitem)",
+        "patient -> Patient (patients_patient)",
+        "billing_item -> BillingItem (patients_billingitem)",
+        "staff -> Staff (patients_staff)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "StaffLeaveConfig",
+      "collection_name": "patients_staffleaveconfig",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 4,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "staff -> Staff (patients_staff)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "StaffBenefit",
+      "collection_name": "patients_staffbenefit",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "staff -> Staff (patients_staff)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "StaffInsurance",
+      "collection_name": "patients_staffinsurance",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 0,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "staff -> Staff (patients_staff)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "InvestigationMaster",
+      "collection_name": "patients_investigationmaster",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 17,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "patient_investigations -> PatientInvestigation (patients_patientinvestigation)",
+        "company -> Company (patients_company)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "PatientInvestigation",
+      "collection_name": "patients_patientinvestigation",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 26,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": true,
+        "visit": true,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "attachments -> InvestigationAttachment (patients_investigationattachment)",
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "patient -> Patient (patients_patient)",
+        "appointment -> Appointment (patients_appointment)",
+        "visit -> Visit (patients_visit)",
+        "doctor -> Doctor (patients_doctor)",
+        "investigation_master -> InvestigationMaster (patients_investigationmaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "InvestigationAttachment",
+      "collection_name": "patients_investigationattachment",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 14,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [],
+      "related_models": [
+        "investigation -> PatientInvestigation (patients_patientinvestigation)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "ToothConditionRecord",
+      "collection_name": "patients_toothconditionrecord",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 10,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": true,
+        "appointment": true,
+        "visit": true,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "patient -> Patient (patients_patient)",
+        "visit -> Visit (patients_visit)",
+        "appointment -> Appointment (patients_appointment)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "TreatmentPlan",
+      "collection_name": "patients_treatmentplan",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 112,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": true,
+        "visit": true,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "items -> TreatmentPlanItem (patients_treatmentplanitem)",
+        "estimates -> Estimate (patients_estimate)",
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "patient -> Patient (patients_patient)",
+        "visit -> Visit (patients_visit)",
+        "appointment -> Appointment (patients_appointment)",
+        "doctor -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "TreatmentPlanItem",
+      "collection_name": "patients_treatmentplanitem",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 56644,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "sessions -> TreatmentSession (patients_treatmentsession)",
+        "estimate_items -> EstimateItem (patients_estimateitem)",
+        "plan -> TreatmentPlan (patients_treatmentplan)",
+        "doctor -> Doctor (patients_doctor)",
+        "treatment_master -> TreatmentMaster (patients_treatmentmaster)",
+        "price_modified_by -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "TreatmentSession",
+      "collection_name": "patients_treatmentsession",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 2,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": true,
+        "appointment": false,
+        "visit": true,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "treatment_record -> TreatmentRecord (patients_treatmentrecord)",
+        "plan_item -> TreatmentPlanItem (patients_treatmentplanitem)",
+        "patient -> Patient (patients_patient)",
+        "visit -> Visit (patients_visit)",
+        "doctor -> Doctor (patients_doctor)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "EMRChangeLog",
+      "collection_name": "patients_emrchangelog",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 121,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": true,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "timestamp"
+      ],
+      "related_models": [
+        "patient -> Patient (patients_patient)",
+        "changed_by -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "Estimate",
+      "collection_name": "patients_estimate",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 40,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": false,
+        "visit": false,
+        "doctor": true
+      },
+      "timestamps": [
+        "created_by",
+        "status_updated_by",
+        "status_updated_at",
+        "created_at",
+        "updated_at"
+      ],
+      "related_models": [
+        "billings -> Billing (patients_billing)",
+        "revisions -> Estimate (patients_estimate)",
+        "items -> EstimateItem (patients_estimateitem)",
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "patient -> Patient (patients_patient)",
+        "doctor -> Doctor (patients_doctor)",
+        "treatment_plan -> TreatmentPlan (patients_treatmentplan)",
+        "parent_estimate -> Estimate (patients_estimate)",
+        "created_by -> User (auth_user)",
+        "status_updated_by -> User (auth_user)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "EstimateItem",
+      "collection_name": "patients_estimateitem",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 86,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": false,
+        "branch": false,
+        "patient": false,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "billing_items -> BillingItem (patients_billingitem)",
+        "estimate -> Estimate (patients_estimate)",
+        "plan_item -> TreatmentPlanItem (patients_treatmentplanitem)",
+        "treatment_master -> TreatmentMaster (patients_treatmentmaster)"
+      ]
+    },
+    {
+      "app_label": "patients",
+      "model_name": "BillPayment",
+      "collection_name": "patients_billpayment",
+      "exists_in_mongo": true,
+      "mongo_doc_count": 27,
+      "pk_info": {
+        "name": "id",
+        "type": "ObjectIdAutoField"
+      },
+      "relationships": {
+        "company": true,
+        "branch": true,
+        "patient": true,
+        "appointment": false,
+        "visit": false,
+        "doctor": false
+      },
+      "timestamps": [
+        "created_at"
+      ],
+      "related_models": [
+        "billing -> Billing (patients_billing)",
+        "patient -> Patient (patients_patient)",
+        "company -> Company (patients_company)",
+        "branch -> Branch (patients_branch)",
+        "received_by -> User (auth_user)"
+      ]
+    }
+  ],
+  "unmodeled_collections": [
+    "django_migrations",
+    "numbering_sequences",
+    "patients_clinicsubscription",
+    "patients_patient_groups",
+    "patients_slot_lock"
+  ],
+  "models_without_collections": [
+    "LogEntry",
+    "Group",
+    "Session",
+    "Tooth",
+    "TaxSetting",
+    "MedicinePurchase",
+    "Supplier",
+    "SupplierLedger",
+    "PharmacyPurchase",
+    "PharmacyPurchaseItem",
+    "MedicineStock",
+    "LabHeader",
+    "Laboratory",
+    "LabTestMaster",
+    "LabTestParameter",
+    "LabPackage",
+    "DentalLaboratory",
+    "DentalLabWork",
+    "DoctorSalary",
+    "DoctorSalaryRecord",
+    "DentalMaterial",
+    "DentalMaterialPurchase",
+    "ClinicTiming",
+    "Salutation",
+    "PatientRequiredFields",
+    "PrescriptionTemplate",
+    "DosageLabel",
+    "PermissionMaster",
+    "RolePermission",
+    "StaffPermissionOverride",
+    "OfferPackageItem",
+    "PatientPackageSubscription",
+    "PackageRedemption"
+  ]
+}

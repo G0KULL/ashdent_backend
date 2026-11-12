@@ -8,24 +8,48 @@ from django.core.exceptions import ValidationError
 from .models import PatientImage, Patient, Visit
 from .serializers import PatientImageSerializer
 from .file_validators import validate_file, sanitize_filename, generate_unique_filename
+from .security import get_request_scope
 
 
 class PatientImageListView(APIView):
     parser_classes = [MultiPartParser, FormParser, JSONParser]
 
     def get(self, request):
+        scope = get_request_scope(request)
+        if not scope.is_authenticated:
+            return Response({"detail": "Authentication credentials were not provided."}, status=status.HTTP_401_UNAUTHORIZED)
+
         patient_id = request.query_params.get('patient_id')
         if not patient_id:
             return Response({"error": "patient_id required"}, status=status.HTTP_400_BAD_REQUEST)
+
+        patient = get_object_or_404(Patient, id=patient_id)
+        if not scope.is_super:
+            if not scope.company or (patient.company_id and patient.company_id != scope.company.id):
+                return Response({"detail": "You do not have permission to view images for this patient."}, status=status.HTTP_403_FORBIDDEN)
+            if scope.branch and not scope.is_company_admin:
+                if patient.registration_branch_id and not scope.has_access_to_branch(patient.registration_branch_id):
+                    return Response({"detail": "You do not have permission to access records for this branch."}, status=status.HTTP_403_FORBIDDEN)
+
         images = PatientImage.objects.filter(patient_id=patient_id).order_by('-created_at')
         return Response(PatientImageSerializer(images, many=True, context={'request': request}).data)
 
     def post(self, request):
+        scope = get_request_scope(request)
+        if not scope.is_authenticated:
+            return Response({"detail": "Authentication credentials were not provided."}, status=status.HTTP_401_UNAUTHORIZED)
+
         patient_id = request.data.get('patient') or request.data.get('patient_id')
         if not patient_id:
             return Response({"error": "patient or patient_id is required"}, status=status.HTTP_400_BAD_REQUEST)
 
         patient = get_object_or_404(Patient, id=patient_id)
+        if not scope.is_super:
+            if not scope.company or (patient.company_id and patient.company_id != scope.company.id):
+                return Response({"detail": "You do not have permission to upload images for this patient."}, status=status.HTTP_403_FORBIDDEN)
+            if scope.branch and not scope.is_company_admin:
+                if patient.registration_branch_id and not scope.has_access_to_branch(patient.registration_branch_id):
+                    return Response({"detail": "You do not have permission to access records for this branch."}, status=status.HTTP_403_FORBIDDEN)
 
         visit_id = request.data.get('visit') or request.data.get('visit_id')
         visit = Visit.objects.filter(id=visit_id).first() if visit_id else None
@@ -76,7 +100,19 @@ class PatientImageListView(APIView):
 
 class PatientImageDetailView(APIView):
     def delete(self, request, pk):
+        scope = get_request_scope(request)
+        if not scope.is_authenticated:
+            return Response({"detail": "Authentication credentials were not provided."}, status=status.HTTP_401_UNAUTHORIZED)
+
         img = get_object_or_404(PatientImage, pk=pk)
+
+        if not scope.is_super:
+            if not scope.company or (img.patient and img.patient.company_id and img.patient.company_id != scope.company.id):
+                return Response({"detail": "You do not have permission to delete this image."}, status=status.HTTP_403_FORBIDDEN)
+            if scope.branch and not scope.is_company_admin:
+                if img.patient and img.patient.registration_branch_id and not scope.has_access_to_branch(img.patient.registration_branch_id):
+                    return Response({"detail": "You do not have permission to access records for this branch."}, status=status.HTTP_403_FORBIDDEN)
+
         if img.image:
             try:
                 img.image.delete(save=False)

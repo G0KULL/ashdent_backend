@@ -1,0 +1,111 @@
+{
+  "cutover_time": "2026-11-07T17:46:54.825316",
+  "detected_count": 11,
+  "simulated_operations": [
+    {
+      "operation": "1. New patient registration",
+      "collection": "patients_patient",
+      "doc_id": "6aef16b689f836943149edc5",
+      "type": "INSERT",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "2. New appointment",
+      "collection": "patients_appointment",
+      "doc_id": "6aef16b689f836943149edc6",
+      "type": "INSERT",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "3. Updated clinical note",
+      "collection": "patients_clinicalnotes",
+      "doc_id": "6ae82f58458ef4dbf30e312c",
+      "type": "UPDATE (No updated_at)",
+      "detected_by_timestamp_query": false
+    },
+    {
+      "operation": "4. Updated tooth condition",
+      "collection": "patients_toothconditionrecord",
+      "doc_id": "6ae8688d24228921e98878e3",
+      "type": "UPDATE (Has updated_at)",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "5. New treatment plan & item",
+      "collection": "patients_treatmentplan",
+      "doc_id": "6aef16b689f836943149edc7",
+      "type": "INSERT",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "6. New investigation & attachment",
+      "collection": "patients_patientinvestigation",
+      "doc_id": "6aef16b689f836943149edc9",
+      "type": "INSERT",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "7. New prescription & items",
+      "collection": "patients_prescription",
+      "doc_id": "6aef16b689f836943149edcb",
+      "type": "INSERT",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "8. New estimate",
+      "collection": "patients_estimate",
+      "doc_id": "6aef16b689f836943149edcd",
+      "type": "INSERT",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "9. New invoice",
+      "collection": "patients_billing",
+      "doc_id": "6aef16b689f836943149edce",
+      "type": "INSERT",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "10. Partial payment",
+      "collection": "patients_billpayment",
+      "doc_id": "6aef16b689f836943149edcf",
+      "type": "INSERT + Billing UPDATE",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "11. Full payment",
+      "collection": "patients_billpayment",
+      "doc_id": "6aef16b689f836943149edd0",
+      "type": "INSERT + Billing UPDATE",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "12. Payment update/reversal",
+      "collection": "patients_billpayment",
+      "doc_id": "6aef16b689f836943149edd0",
+      "type": "UPDATE (No updated_at)",
+      "detected_by_timestamp_query": true
+    },
+    {
+      "operation": "13. Deleted appointment",
+      "collection": "patients_appointment",
+      "doc_id": "6ae82f58458ef4dbf30e312b",
+      "type": "DELETE (Hard Delete)",
+      "detected_by_timestamp_query": false
+    },
+    {
+      "operation": "14. Deleted clinical record",
+      "collection": "patients_visit",
+      "doc_id": "6ae82fceaa6aecd55d34d218",
+      "type": "DELETE (Hard Delete)",
+      "detected_by_timestamp_query": false
+    },
+    {
+      "operation": "15. Updated receipt sequence",
+      "collection": "patients_autonumbersequence",
+      "doc_id": "N/A",
+      "type": "SKIPPED (No sequence coll)",
+      "detected_by_timestamp_query": false
+    }
+  ]
+}

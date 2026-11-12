@@ -1,0 +1,166 @@
+{
+  "checks_passed": 29,
+  "checks_failed": 3,
+  "details": [
+    {
+      "name": "production_db_isolation",
+      "status": "PASS",
+      "message": "Source DB untouched: patients_treatmentplanitem count is 56644"
+    },
+    {
+      "name": "count_equality_patients_patient",
+      "status": "PASS",
+      "message": "Source: 25, Target: 25"
+    },
+    {
+      "name": "count_equality_patients_appointment",
+      "status": "PASS",
+      "message": "Source: 24, Target: 24"
+    },
+    {
+      "name": "count_equality_patients_visit",
+      "status": "PASS",
+      "message": "Source: 17, Target: 17"
+    },
+    {
+      "name": "count_equality_patients_clinicalnotes",
+      "status": "PASS",
+      "message": "Source: 9, Target: 9"
+    },
+    {
+      "name": "count_equality_patients_treatmentplan",
+      "status": "PASS",
+      "message": "Source: 112, Target: 112"
+    },
+    {
+      "name": "count_equality_patients_prescription",
+      "status": "PASS",
+      "message": "Source: 5, Target: 5"
+    },
+    {
+      "name": "count_equality_patients_prescriptionitem",
+      "status": "PASS",
+      "message": "Source: 7, Target: 7"
+    },
+    {
+      "name": "count_equality_patients_company",
+      "status": "PASS",
+      "message": "Source: 11, Target: 11"
+    },
+    {
+      "name": "count_equality_patients_branch",
+      "status": "FAIL",
+      "message": "Source: 13, Target: 15"
+    },
+    {
+      "name": "count_equality_patients_doctor",
+      "status": "FAIL",
+      "message": "Source: 11, Target: 14"
+    },
+    {
+      "name": "count_equality_patients_staff",
+      "status": "FAIL",
+      "message": "Source: 30, Target: 38"
+    },
+    {
+      "name": "archive_raw_treatment_plan_items",
+      "status": "PASS",
+      "message": "Archived raw items count: 56644 (expected 56644)"
+    },
+    {
+      "name": "deduplicated_treatment_plan_items",
+      "status": "PASS",
+      "message": "Deduplicated treatment plan items: 123 (expected 123)"
+    },
+    {
+      "name": "patient_data_sha256_integrity",
+      "status": "PASS",
+      "message": "Patient hash match: 40f9bd0f47430e81... == 40f9bd0f47430e81..."
+    },
+    {
+      "name": "vetted_standard_price_composite_filling",
+      "status": "PASS",
+      "message": "Retained price for tooth 36 composite filling is 1500 (catalogue standard: 1500)"
+    },
+    {
+      "name": "tenant_isolation_null_check_patients_billing",
+      "status": "PASS",
+      "message": "Null company_id: 0, Null branch_id: 0"
+    },
+    {
+      "name": "tenant_isolation_null_check_patients_visit",
+      "status": "PASS",
+      "message": "Null company_id: 0, Null branch_id: 0"
+    },
+    {
+      "name": "tenant_isolation_null_check_patients_prescription",
+      "status": "PASS",
+      "message": "Null company_id: 0, Null branch_id: 0"
+    },
+    {
+      "name": "tenant_isolation_null_check_patients_doctor",
+      "status": "PASS",
+      "message": "Null company_id: 0, Null branch_id: 0"
+    },
+    {
+      "name": "tenant_isolation_null_check_patients_patient",
+      "status": "PASS",
+      "message": "Null company_id: 0, Null branch_id: 0"
+    },
+    {
+      "name": "tenant_isolation_null_check_patients_appointment",
+      "status": "PASS",
+      "message": "Null company_id: 0, Null branch_id: 0"
+    },
+    {
+      "name": "legacy_payment_consolidation_count",
+      "status": "PASS",
+      "message": "Original BillPayments: 27, Migrated: 36 (Consolidated +9 legacy payments)"
+    },
+    {
+      "name": "zero_cross_patient_payment_attribution",
+      "status": "PASS",
+      "message": "Cross-patient payment mismatches: 0 (must be 0)"
+    },
+    {
+      "name": "zero_cross_company_payment_attribution",
+      "status": "PASS",
+      "message": "Cross-company payment mismatches: 0 (must be 0)"
+    },
+    {
+      "name": "referential_integrity_treatment_plan_items",
+      "status": "PASS",
+      "message": "Orphan treatment plan items: 0"
+    },
+    {
+      "name": "referential_integrity_billing_patients",
+      "status": "PASS",
+      "message": "Orphan billing records: 0"
+    },
+    {
+      "name": "referential_integrity_appointments",
+      "status": "PASS",
+      "message": "Orphan appointment records: 0"
+    },
+    {
+      "name": "index_verified_treatmentplanitem_plan_id_idx",
+      "status": "PASS",
+      "message": "Index treatmentplanitem_plan_id_idx on patients_treatmentplanitem: [('plan_id', 1)]"
+    },
+    {
+      "name": "index_verified_billing_company_created_idx",
+      "status": "PASS",
+      "message": "Index billing_company_created_idx on patients_billing: [('company_id', 1), ('created_at', -1)]"
+    },
+    {
+      "name": "index_verified_appointment_doc_datetime_idx",
+      "status": "PASS",
+      "message": "Index appointment_doc_datetime_idx on patients_appointment: [('doctor_id', 1), ('date', 1), ('time', 1)]"
+    },
+    {
+      "name": "index_verified_patient_company_phone_idx",
+      "status": "PASS",
+      "message": "Index patient_company_phone_idx on patients_patient: [('company_id', 1), ('phone', 1)]"
+    }
+  ]
+}

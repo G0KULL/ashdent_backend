@@ -1,0 +1,1873 @@
+{
+  "total_collections_audited": 68,
+  "indexes_by_collection": {
+    "auth_permission": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "auth_user": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "django_content_type": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "django_migrations": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "numbering_sequences": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_appointment": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_appointment_branch_id_0dc09fba",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_appointment_company_id_a98522e2",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_auditlog": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_auditlog_company_id_9d2d819a",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_autonumbering": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_autonumbering_branch_id_5ff4f02d",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_autonumbering_company_id_be217b3e",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_billing": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billing_branch_id_9d3761c2",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billing_company_id_5d8ff112",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billing_invoice_number_52cb4262",
+        "keys": [
+          [
+            "invoice_number",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billing_estimate_id_984f9235",
+        "keys": [
+          [
+            "estimate_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_billingitem": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billingitem_treatment_record_id_82ed05dc",
+        "keys": [
+          [
+            "treatment_record_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billingitem_estimate_item_id_48b959f4",
+        "keys": [
+          [
+            "estimate_item_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_billpayment": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_receipt_number_7dd2ff5e_uniq",
+        "keys": [
+          [
+            "receipt_number",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_billpayment_billing_id_8356163e",
+        "keys": [
+          [
+            "billing_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_branch_id_8404754d",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_company_id_a73a9047",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_patient_id_d01f49f9",
+        "keys": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_received_by_id_5ff7b35b",
+        "keys": [
+          [
+            "received_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_branch": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_branch_company_id_9deb3c8c",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_branch_company_id_code_6524e111_uniq",
+        "keys": [
+          [
+            "company_id",
+            1
+          ],
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "patients_clinicalnotes": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_clinicalnotes_visit_id_0b585439",
+        "keys": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_clinicalnotes_doctor_id_baadbfb9",
+        "keys": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_clinicprofile": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_clinicprofile_branch_id_5f08026d",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_clinicprofile_company_id_3077eb28",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_clinicsubscription": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_communicationlog": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_communicationtemplate": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_company": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_company_code_b88c1237_uniq",
+        "keys": [
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "patients_designationmaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_diagnosismaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_diagnosismaster_name_9fa11249_uniq",
+        "keys": [
+          [
+            "name",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_diagnosismaster_code_06e803e6_uniq",
+        "keys": [
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "patients_discountmaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_doctor": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctor_company_id_12e32428",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctor_primary_branch_id_955d8db6",
+        "keys": [
+          [
+            "primary_branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_doctordateoverride": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctordateoverride_approved_by_id_5b882d99",
+        "keys": [
+          [
+            "approved_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctordateoverride_created_by_id_76dd8d28",
+        "keys": [
+          [
+            "created_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctordateoverride_branch_id_d5f0b8aa",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctordateoverride_company_id_cde064b1",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_doctorschedule": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorschedule_branch_id_ffd62c03",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorschedule_company_id_0035329f",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_doctorscheduleproposal": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_doctor_id_97b47b1f",
+        "keys": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_reviewed_by_id_3ec6df02",
+        "keys": [
+          [
+            "reviewed_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_submitted_by_id_965b5044",
+        "keys": [
+          [
+            "submitted_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_branch_id_b2353b65",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_company_id_ccb721c3",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_dropdownmaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_emrchangelog": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_emrchangelog_changed_by_id_cc7c4f10",
+        "keys": [
+          [
+            "changed_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_emrchangelog_patient_id_4f30cda5",
+        "keys": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_estimate": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_estimate_number_6298a6ba_uniq",
+        "keys": [
+          [
+            "estimate_number",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_estimate_branch_id_ec674cd7",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_company_id_454c46df",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_created_by_id_feeb1d5f",
+        "keys": [
+          [
+            "created_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_doctor_id_9342217f",
+        "keys": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_parent_estimate_id_8b19056e",
+        "keys": [
+          [
+            "parent_estimate_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_patient_id_45fb3778",
+        "keys": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_status_updated_by_id_9a5314e5",
+        "keys": [
+          [
+            "status_updated_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_treatment_plan_id_ceeb819f",
+        "keys": [
+          [
+            "treatment_plan_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_estimateitem": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimateitem_estimate_id_f8cd7e2e",
+        "keys": [
+          [
+            "estimate_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimateitem_plan_item_id_6573926b",
+        "keys": [
+          [
+            "plan_item_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimateitem_treatment_master_id_28efd01f",
+        "keys": [
+          [
+            "treatment_master_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_examinationmaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_examinationmaster_name_70c6227b_uniq",
+        "keys": [
+          [
+            "name",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_examinationmaster_code_881c3263_uniq",
+        "keys": [
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "patients_expense": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_expense_branch_ref_id_4e84a678",
+        "keys": [
+          [
+            "branch_ref_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_expense_company_id_575e1e9f",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_expensecategory": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_inappnotification": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_investigationattachment": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_investigationattachment_investigation_id_8d73c06c",
+        "keys": [
+          [
+            "investigation_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_investigationmaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_investigationmaster_company_id_84b8ce84",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_medicinemaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_offerpackage": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_patient": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patient_registration_branch_id_42abc887",
+        "keys": [
+          [
+            "registration_branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patient_company_id_573c1c9c",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_patient_groups": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_patientgroup": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_patientimage": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_patientinvestigation": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_appointment_id_0120630d",
+        "keys": [
+          [
+            "appointment_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_branch_id_a5fe6920",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_company_id_8595cf44",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_doctor_id_bb7c04b7",
+        "keys": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_investigation_master_id_a964b27f",
+        "keys": [
+          [
+            "investigation_master_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_patient_id_29855a34",
+        "keys": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_visit_id_69c4f0f1",
+        "keys": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_patientlaborder": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_patienttypemaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_payment": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_payment_branch_id_8f9b8b86",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_payment_company_id_f4a77c5c",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_pharmacysettings": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_prebooking": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_prescription": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_prescription_branch_id_50474bab",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_prescription_company_id_1d7494a1",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_prescriptionitem": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_roledefaultpermissions": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_rolemaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_slot_lock": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_staff": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_staff_company_id_c8df402e",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_staff_primary_branch_id_30443d34",
+        "keys": [
+          [
+            "primary_branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_staffbenefit": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_staffinsurance": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_staffleaveconfig": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_stafflevelmaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_toothconditionmaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_toothconditionmaster_name_1d23b1e2_uniq",
+        "keys": [
+          [
+            "name",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_toothconditionmaster_code_eb016103_uniq",
+        "keys": [
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "patients_toothconditionrecord": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_toothconditionrecord_appointment_id_fce01b8f",
+        "keys": [
+          [
+            "appointment_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_toothconditionrecord_patient_id_adaed71f",
+        "keys": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_toothconditionrecord_visit_id_9195e778",
+        "keys": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_toothmaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_transaction": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_transaction_branch_id_44100f5a",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_transaction_company_id_9b526528",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_treatmentmaster": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_treatmentplan": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_appointment_id_6eb0aa79",
+        "keys": [
+          [
+            "appointment_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_branch_id_6f267026",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_company_id_1546d46a",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_doctor_id_51e3aaa2",
+        "keys": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_patient_id_3c3ab7c9",
+        "keys": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_visit_id_e636ff03",
+        "keys": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_treatmentplanitem": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplanitem_plan_id_c0ec4be8",
+        "keys": [
+          [
+            "plan_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplanitem_treatment_master_id_b60cafc4",
+        "keys": [
+          [
+            "treatment_master_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplanitem_doctor_id_88adc167",
+        "keys": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplanitem_price_modified_by_id_63239701",
+        "keys": [
+          [
+            "price_modified_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_treatmentrecord": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentrecord_price_modified_by_id_20ab8531",
+        "keys": [
+          [
+            "price_modified_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_treatmentsession": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_doctor_id_8f4ce70e",
+        "keys": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_patient_id_57fd56f7",
+        "keys": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_plan_item_id_4da75d86",
+        "keys": [
+          [
+            "plan_item_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_treatment_record_id_06f79532",
+        "keys": [
+          [
+            "treatment_record_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_visit_id_aaccff34",
+        "keys": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_visit": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_visit_branch_id_6e5a2bb1",
+        "keys": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_visit_company_id_5b80e714",
+        "keys": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_visit_doctor_id_b701616a",
+        "keys": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "patients_websiteappointmentrequest": [
+      {
+        "name": "_id_",
+        "keys": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ]
+  },
+  "index_recommendations": [
+    {
+      "collection": "patients_appointment",
+      "recommended_index": [
+        [
+          "patient_id",
+          1
+        ]
+      ],
+      "reason": "Patient EMR lookup: Queries filter by patient on patients_appointment."
+    },
+    {
+      "collection": "patients_billing",
+      "recommended_index": [
+        [
+          "patient_id",
+          1
+        ]
+      ],
+      "reason": "Patient EMR lookup: Queries filter by patient on patients_billing."
+    },
+    {
+      "collection": "patients_visit",
+      "recommended_index": [
+        [
+          "patient_id",
+          1
+        ]
+      ],
+      "reason": "Patient EMR lookup: Queries filter by patient on patients_visit."
+    },
+    {
+      "collection": "patients_transaction",
+      "recommended_index": [
+        [
+          "patient_id",
+          1
+        ]
+      ],
+      "reason": "Patient EMR lookup: Queries filter by patient on patients_transaction."
+    }
+  ],
+  "orphaned_references": {
+    "treatmentplanitem_to_plan": 0,
+    "estimateitem_to_estimate": 0,
+    "billingitem_to_billing": 0,
+    "billpayment_to_billing": 0
+  }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "collection": "patients_patient",
+    "id": "6aeef65ef054fbd01ad70dd3",
+    "description": "Patient Arthur Dentist",
+    "exists_in_target_migrated": true,
+    "exists_in_production_src": false,
+    "patient_ref": "",
+    "is_arthur_dentist": true
+  },
+  {
+    "collection": "patients_appointment",
+    "id": "6aeef65ef054fbd01ad70dd4",
+    "description": "Appointment on 2026-11-20",
+    "exists_in_target_migrated": true,
+    "exists_in_production_src": false,
+    "patient_ref": "6aeef65ef054fbd01ad70dd3",
+    "is_arthur_dentist": true
+  },
+  {
+    "collection": "patients_slot_lock",
+    "id": "6aeef65ef054fbd01ad70dd5",
+    "description": "Slot lock for Arthur Dentist appt",
+    "exists_in_target_migrated": false,
+    "exists_in_production_src": false,
+    "patient_ref": null,
+    "is_arthur_dentist": false
+  },
+  {
+    "collection": "patients_visit",
+    "id": "6aeef65ef054fbd01ad70dd6",
+    "description": "Visit encounter for Arthur Dentist",
+    "exists_in_target_migrated": true,
+    "exists_in_production_src": false,
+    "patient_ref": "6aeef65ef054fbd01ad70dd3",
+    "is_arthur_dentist": true
+  },
+  {
+    "collection": "patients_clinicalnotes",
+    "id": "6aeef65ef054fbd01ad70dd7",
+    "description": "Clinical notes for Arthur Dentist",
+    "exists_in_target_migrated": true,
+    "exists_in_production_src": false,
+    "patient_ref": "",
+    "is_arthur_dentist": false
+  },
+  {
+    "collection": "patients_toothcondition",
+    "id": "6aeef65ef054fbd01ad70dd8",
+    "description": "Tooth 46 condition",
+    "exists_in_target_migrated": false,
+    "exists_in_production_src": false,
+    "patient_ref": null,
+    "is_arthur_dentist": false
+  },
+  {
+    "collection": "patients_treatmentplan",
+    "id": "6aeef65ef054fbd01ad70ddc",
+    "description": "Treatment plan for Arthur Dentist",
+    "exists_in_target_migrated": true,
+    "exists_in_production_src": false,
+    "patient_ref": "6aeef65ef054fbd01ad70dd3",
+    "is_arthur_dentist": true
+  },
+  {
+    "collection": "patients_treatmentplanitem",
+    "id": "6aeef65ef054fbd01ad70ddd",
+    "description": "Treatment item 1 (Tooth 46 RCT)",
+    "exists_in_target_migrated": false,
+    "exists_in_production_src": false,
+    "patient_ref": null,
+    "is_arthur_dentist": false
+  },
+  {
+    "collection": "patients_treatmentplanitem",
+    "id": "6aeef65ef054fbd01ad70dde",
+    "description": "Treatment item 2 (Tooth 46 Crown)",
+    "exists_in_target_migrated": false,
+    "exists_in_production_src": false,
+    "patient_ref": null,
+    "is_arthur_dentist": false
+  },
+  {
+    "collection": "patients_estimate",
+    "id": "6aeef65ff054fbd01ad70de0",
+    "description": "Estimate for Arthur Dentist",
+    "exists_in_target_migrated": true,
+    "exists_in_production_src": false,
+    "patient_ref": "6aeef65ef054fbd01ad70dd3",
+    "is_arthur_dentist": true
+  },
+  {
+    "collection": "patients_treatmentrecord",
+    "id": "6aeef65ff054fbd01ad70de5",
+    "description": "Treatment record for Tooth 46",
+    "exists_in_target_migrated": false,
+    "exists_in_production_src": false,
+    "patient_ref": null,
+    "is_arthur_dentist": false
+  },
+  {
+    "collection": "patients_prescription",
+    "id": "6aeef65ff054fbd01ad70de6",
+    "description": "Prescription for Arthur Dentist",
+    "exists_in_target_migrated": false,
+    "exists_in_production_src": false,
+    "patient_ref": null,
+    "is_arthur_dentist": false
+  },
+  {
+    "collection": "patients_prescriptionitem",
+    "id": "6aeef65ff054fbd01ad70de7",
+    "description": "Prescription item (Amoxicillin)",
+    "exists_in_target_migrated": true,
+    "exists_in_production_src": false,
+    "patient_ref": "",
+    "is_arthur_dentist": false
+  },
+  {
+    "collection": "patients_billing",
+    "id": "6aeef65ff054fbd01ad70de8",
+    "description": "Invoice for Arthur Dentist",
+    "exists_in_target_migrated": true,
+    "exists_in_production_src": false,
+    "patient_ref": "6aeef65ef054fbd01ad70dd3",
+    "is_arthur_dentist": true
+  },
+  {
+    "collection": "patients_billpayment",
+    "id": "6aeef65ff054fbd01ad70de9",
+    "description": "BillPayment partial (\u20b94,000)",
+    "exists_in_target_migrated": false,
+    "exists_in_production_src": false,
+    "patient_ref": null,
+    "is_arthur_dentist": false
+  },
+  {
+    "collection": "patients_billpayment",
+    "id": "6aeef65ff054fbd01ad70deb",
+    "description": "BillPayment final (\u20b98,000)",
+    "exists_in_target_migrated": true,
+    "exists_in_production_src": false,
+    "patient_ref": "6aeef65ef054fbd01ad70dd3",
+    "is_arthur_dentist": true
+  }
+]

@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework_simplejwt',
     'corsheaders',
     'patients',
 ]
@@ -80,8 +82,8 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django_mongodb_backend',
-        'NAME': 'dental_clinic_db',
-        'HOST': 'mongodb://localhost:27017/',
+        'NAME': os.getenv('DJANGO_DB_NAME', 'dental_clinic_db'),
+        'HOST': os.getenv('DJANGO_DB_HOST', 'mongodb://localhost:27017/'),
     }
 }
 
@@ -149,3 +151,25 @@ MEDIA_ROOT = BASE_DIR / "media"
 FILE_UPLOAD_MAX_MEMORY_SIZE = 26214400  # 25 MB
 DATA_UPLOAD_MAX_MEMORY_SIZE = 26214400  # 25 MB
 FILE_UPLOAD_PERMISSIONS = 0o644
+
+
+from datetime import timedelta
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+}
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+    'ROTATE_REFRESH_TOKENS': True,
+    'BLACKLIST_AFTER_ROTATION': False,
+    'AUTH_HEADER_TYPES': ('Bearer',),
+    'USER_ID_FIELD': 'id',
+    'USER_ID_CLAIM': 'user_id',
+}

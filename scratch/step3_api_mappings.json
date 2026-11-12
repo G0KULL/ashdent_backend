@@ -1,0 +1,7692 @@
+[
+  {
+    "url": "/admin/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "index",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/login/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "login",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/logout/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "logout",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/password_change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "password_change",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/password_change/done/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "password_change_done",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/autocomplete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "autocomplete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/jsi18n/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "i18n_javascript",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/r/<path:content_type_id>/<path:object_id>/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "shortcut",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/group/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/group/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/group/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/group/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/group/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/group/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/auth/user/<id>/password/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "user_change_password",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/user/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/user/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/user/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/user/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/user/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/auth/user/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/staff/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/staff/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/staff/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/staff/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/staff/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/staff/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/medicinemaster/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/medicinemaster/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/medicinemaster/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/medicinemaster/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/medicinemaster/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/medicinemaster/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/patient/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/patient/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/patient/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/patient/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/patient/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/patient/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/prescription/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescription/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescription/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescription/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescription/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescription/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/prescriptionitem/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescriptionitem/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescriptionitem/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescriptionitem/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescriptionitem/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/prescriptionitem/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/billing/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billing/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billing/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billing/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billing/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billing/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/billingitem/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billingitem/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billingitem/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billingitem/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billingitem/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/billingitem/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/treatmentmaster/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/treatmentmaster/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/treatmentmaster/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/treatmentmaster/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/treatmentmaster/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/treatmentmaster/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/labheader/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labheader/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labheader/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labheader/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labheader/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labheader/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/laboratory/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/laboratory/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/laboratory/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/laboratory/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/laboratory/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/laboratory/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/labtestmaster/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestmaster/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestmaster/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestmaster/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestmaster/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestmaster/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/patients/labtestparameter/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "changelist_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestparameter/add/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "add_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestparameter/<path:object_id>/history/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "history_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestparameter/<path:object_id>/delete/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "delete_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestparameter/<path:object_id>/change/",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "change_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/patients/labtestparameter/<path:object_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RedirectView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/admin/^(?P<app_label>auth|patients)/$",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "app_index",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/admin/(?P<url>.*)$",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "catch_all_view",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  },
+  {
+    "url": "/api/dashboard/doctor-performance/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "DoctorPerformanceAPIView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Doctor"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_doctor"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/appointments/doctor-performance/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "DoctorPerformanceAPIView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Doctor"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_doctor"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/dashboard/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PharmacyDashboardAPIView",
+    "serializer": null,
+    "models": [
+      "Billing",
+      "BillingItem",
+      "MedicineMaster",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_billing",
+      "patients_billingitem",
+      "patients_medicinemaster",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/queue/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PharmacyQueueView",
+    "serializer": null,
+    "models": [
+      "Billing",
+      "BillingItem",
+      "MedicineMaster",
+      "Patient",
+      "Payment",
+      "Prescription",
+      "PrescriptionItem",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_billing",
+      "patients_billingitem",
+      "patients_medicinemaster",
+      "patients_patient",
+      "patients_payment",
+      "patients_prescription",
+      "patients_prescriptionitem",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/bill/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PharmacyBillView",
+    "serializer": null,
+    "models": [
+      "Billing",
+      "BillingItem",
+      "MedicineMaster",
+      "MedicineStock",
+      "Prescription",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_billing",
+      "patients_billingitem",
+      "patients_medicinemaster",
+      "patients_medicinestock",
+      "patients_prescription",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/direct-bill/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "DirectBillView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "BillingItem",
+      "MedicineMaster",
+      "MedicineStock",
+      "Patient",
+      "TreatmentMaster",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_billingitem",
+      "patients_medicinemaster",
+      "patients_medicinestock",
+      "patients_patient",
+      "patients_treatmentmaster",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/dispense/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PharmacyBillView",
+    "serializer": null,
+    "models": [
+      "Billing",
+      "BillingItem",
+      "MedicineMaster",
+      "MedicineStock",
+      "Prescription",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_billing",
+      "patients_billingitem",
+      "patients_medicinemaster",
+      "patients_medicinestock",
+      "patients_prescription",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/prescriptions/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PharmacyQueueView",
+    "serializer": null,
+    "models": [
+      "Billing",
+      "BillingItem",
+      "MedicineMaster",
+      "Patient",
+      "Payment",
+      "Prescription",
+      "PrescriptionItem",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_billing",
+      "patients_billingitem",
+      "patients_medicinemaster",
+      "patients_patient",
+      "patients_payment",
+      "patients_prescription",
+      "patients_prescriptionitem",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/stock/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StockManageView",
+    "serializer": "MedicineMasterSerializer",
+    "models": [
+      "MedicineMaster"
+    ],
+    "collections": [
+      "patients_medicinemaster"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/stock/purchase/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "MedicinePurchaseView",
+    "serializer": null,
+    "models": [
+      "Expense",
+      "ExpenseCategory",
+      "MedicineMaster",
+      "MedicinePurchase",
+      "MedicineStock"
+    ],
+    "collections": [
+      "patients_expense",
+      "patients_expensecategory",
+      "patients_medicinemaster",
+      "patients_medicinepurchase",
+      "patients_medicinestock"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/stock/purchase/history/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "MedicinePurchaseHistoryView",
+    "serializer": null,
+    "models": [
+      "MedicinePurchase",
+      "PharmacyPurchase",
+      "PharmacyPurchaseItem"
+    ],
+    "collections": [
+      "patients_medicinepurchase",
+      "patients_pharmacypurchase",
+      "patients_pharmacypurchaseitem"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/stock/purchase/advanced/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PharmacyPurchaseCreateView",
+    "serializer": "PharmacyPurchaseSerializer",
+    "models": [
+      "Expense",
+      "ExpenseCategory",
+      "MedicineStock",
+      "PharmacyPurchaseItem"
+    ],
+    "collections": [
+      "patients_expense",
+      "patients_expensecategory",
+      "patients_medicinestock",
+      "patients_pharmacypurchaseitem"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/stock/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StockManageView",
+    "serializer": "MedicineMasterSerializer",
+    "models": [
+      "MedicineMaster"
+    ],
+    "collections": [
+      "patients_medicinemaster"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PatientCreateView",
+    "serializer": "PatientSerializer",
+    "models": [
+      "Appointment",
+      "Branch",
+      "Company",
+      "Doctor",
+      "Patient",
+      "PatientTypeMaster",
+      "Payment",
+      "Prescription",
+      "TreatmentMaster",
+      "TreatmentRecord",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_branch",
+      "patients_company",
+      "patients_doctor",
+      "patients_patient",
+      "patients_patienttypemaster",
+      "patients_payment",
+      "patients_prescription",
+      "patients_treatmentmaster",
+      "patients_treatmentrecord",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient/search/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PatientSearchView",
+    "serializer": null,
+    "models": [
+      "Patient"
+    ],
+    "collections": [
+      "patients_patient"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/recent/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "RecentPatientsView",
+    "serializer": "PatientSerializer",
+    "models": [
+      "Patient"
+    ],
+    "collections": [
+      "patients_patient"
+    ],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient/by-phone/<str:phone>/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PatientByPhoneView",
+    "serializer": "PatientSerializer",
+    "models": [
+      "Patient"
+    ],
+    "collections": [
+      "patients_patient"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient/<str:pk>/profile/",
+    "http_methods": [
+      "GET",
+      "PATCH"
+    ],
+    "view_name": "PatientProfileView",
+    "serializer": "PatientSerializer",
+    "models": [
+      "Appointment",
+      "Billing",
+      "Prescription"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_prescription"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient/<str:pk>/balance/waiver/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PatientBalanceWaiverView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient/<int:patient_id>/lab-orders/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "PatientLabOrderListView",
+    "serializer": "PatientLabOrderSerializer",
+    "models": [
+      "PatientLabOrder"
+    ],
+    "collections": [
+      "patients_patientlaborder"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/lab-orders/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "GlobalLabOrderListView",
+    "serializer": null,
+    "models": [
+      "PatientLabOrder"
+    ],
+    "collections": [
+      "patients_patientlaborder"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/lab-orders/<int:pk>/",
+    "http_methods": [
+      "DELETE"
+    ],
+    "view_name": "PatientLabOrderDeleteView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "DELETE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/appointment/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "AppointmentCreateView",
+    "serializer": "AppointmentSerializer",
+    "models": [
+      "Appointment",
+      "Branch",
+      "Doctor",
+      "DoctorDateOverride",
+      "DoctorSchedule",
+      "Patient",
+      "Payment",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_branch",
+      "patients_doctor",
+      "patients_doctordateoverride",
+      "patients_doctorschedule",
+      "patients_patient",
+      "patients_payment",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/appointment/patient/<str:patient_id>/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "AppointmentByPatientView",
+    "serializer": "AppointmentSerializer",
+    "models": [
+      "Appointment"
+    ],
+    "collections": [
+      "patients_appointment"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/appointments/today/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "TodayAppointmentListView",
+    "serializer": "AppointmentSerializer",
+    "models": [
+      "Appointment"
+    ],
+    "collections": [
+      "patients_appointment"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/appointments/all/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "AllAppointmentListView",
+    "serializer": "AppointmentSerializer",
+    "models": [
+      "Appointment"
+    ],
+    "collections": [
+      "patients_appointment"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/appointments/stats/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "AppointmentStatsView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "ClinicalNotes",
+      "Patient",
+      "Payment",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_clinicalnotes",
+      "patients_patient",
+      "patients_payment",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/appointments/<str:pk>/status/",
+    "http_methods": [
+      "PATCH"
+    ],
+    "view_name": "AppointmentStatusUpdateView",
+    "serializer": "AppointmentSerializer",
+    "models": [
+      "Appointment",
+      "Doctor",
+      "DoctorDateOverride",
+      "DoctorSchedule"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_doctor",
+      "patients_doctordateoverride",
+      "patients_doctorschedule"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/appointments/<str:pk>/move-to-today/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "MoveAppointmentToTodayView",
+    "serializer": "AppointmentSerializer",
+    "models": [
+      "Payment",
+      "Visit"
+    ],
+    "collections": [
+      "patients_payment",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/bill/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PatientBillCreateView",
+    "serializer": "BillingSerializer",
+    "models": [
+      "Appointment",
+      "Billing",
+      "Doctor",
+      "Payment",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_doctor",
+      "patients_payment",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/visit/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "VisitGetOrCreateView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Payment",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_payment",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/visit/get-or-create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "VisitGetOrCreateView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Payment",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_payment",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/visit/appointment/<str:appointment_id>/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "VisitDetailByAppointmentView",
+    "serializer": "VisitSerializer",
+    "models": [
+      "Appointment",
+      "Patient",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_patient",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/visits/today/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "TodayVisitListView",
+    "serializer": "VisitSerializer",
+    "models": [
+      "Visit"
+    ],
+    "collections": [
+      "patients_visit"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/clinical-notes/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "ClinicalNotesSaveView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicalNotes",
+      "Doctor",
+      "ToothConditionRecord"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_doctor",
+      "patients_toothconditionrecord"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/clinical-notes/save/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "ClinicalNotesSaveView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicalNotes",
+      "Doctor",
+      "ToothConditionRecord"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_doctor",
+      "patients_toothconditionrecord"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/clinical-notes/<str:appointment_id>/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "ClinicalNotesDetailView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicalNotes",
+      "Patient"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_patient"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient/<str:patient_id>/clinical-history/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PatientClinicalHistoryView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicalNotes",
+      "Patient",
+      "PatientImage",
+      "PatientInvestigation",
+      "TreatmentRecord",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_patient",
+      "patients_patientimage",
+      "patients_patientinvestigation",
+      "patients_treatmentrecord",
+      "patients_visit"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient/<str:patient_id>/treatment-history/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PatientTreatmentHistoryView",
+    "serializer": null,
+    "models": [
+      "ClinicalNotes",
+      "Patient",
+      "TreatmentRecord"
+    ],
+    "collections": [
+      "patients_clinicalnotes",
+      "patients_patient",
+      "patients_treatmentrecord"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/dropdowns/<str:type>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "DELETE"
+    ],
+    "view_name": "DropdownMasterListView",
+    "serializer": null,
+    "models": [
+      "DropdownMaster"
+    ],
+    "collections": [
+      "patients_dropdownmaster"
+    ],
+    "operations": [
+      "DELETE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/treatment-master/list/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "TreatmentMasterListView",
+    "serializer": "TreatmentMasterSerializer",
+    "models": [
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/treatment-master/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "TreatmentMasterCreateView",
+    "serializer": "TreatmentMasterSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/treatment-master/update/<str:pk>/",
+    "http_methods": [
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentMasterUpdateView",
+    "serializer": "TreatmentMasterSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/treatment-record/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "TreatmentRecordAddView",
+    "serializer": "TreatmentRecordSerializer",
+    "models": [
+      "Doctor",
+      "TreatmentRecord"
+    ],
+    "collections": [
+      "patients_doctor",
+      "patients_treatmentrecord"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/treatment-record/add/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "TreatmentRecordAddView",
+    "serializer": "TreatmentRecordSerializer",
+    "models": [
+      "Doctor",
+      "TreatmentRecord"
+    ],
+    "collections": [
+      "patients_doctor",
+      "patients_treatmentrecord"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/payment/pay/<str:pk>/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PaymentPayView",
+    "serializer": "BillingSerializer",
+    "models": [
+      "Billing"
+    ],
+    "collections": [
+      "patients_billing"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/payments/search/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PaymentSearchView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "BillingItem",
+      "Doctor",
+      "Patient",
+      "Payment",
+      "TreatmentMaster",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_billingitem",
+      "patients_doctor",
+      "patients_patient",
+      "patients_payment",
+      "patients_treatmentmaster",
+      "patients_visit"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/payments/recent/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "RecentPaymentsView",
+    "serializer": null,
+    "models": [
+      "Billing"
+    ],
+    "collections": [
+      "patients_billing"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/billing/search/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PaymentSearchView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "BillingItem",
+      "Doctor",
+      "Patient",
+      "Payment",
+      "TreatmentMaster",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_billingitem",
+      "patients_doctor",
+      "patients_patient",
+      "patients_payment",
+      "patients_treatmentmaster",
+      "patients_visit"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/credits/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "CreditPatientView",
+    "serializer": null,
+    "models": [
+      "Billing",
+      "BillingItem",
+      "Patient",
+      "Payment"
+    ],
+    "collections": [
+      "patients_billing",
+      "patients_billingitem",
+      "patients_patient",
+      "patients_payment"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctors/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "DoctorListView",
+    "serializer": "DoctorSerializer",
+    "models": [
+      "Doctor",
+      "DoctorSchedule"
+    ],
+    "collections": [
+      "patients_doctor",
+      "patients_doctorschedule"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "DoctorCreateView",
+    "serializer": "DoctorSerializer",
+    "models": [
+      "Staff",
+      "User"
+    ],
+    "collections": [
+      "auth_user",
+      "patients_staff"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctors/<str:doctor_id>/available-slots/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "DoctorAvailableSlotsView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Branch",
+      "DoctorDateOverride",
+      "DoctorSchedule"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_branch",
+      "patients_doctordateoverride",
+      "patients_doctorschedule"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-schedules/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "DoctorScheduleListView",
+    "serializer": "DoctorScheduleSerializer",
+    "models": [
+      "Branch",
+      "Doctor",
+      "DoctorSchedule",
+      "DoctorScheduleProposal"
+    ],
+    "collections": [
+      "patients_branch",
+      "patients_doctor",
+      "patients_doctorschedule",
+      "patients_doctorscheduleproposal"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-schedules/direct/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "DoctorScheduleDirectManageView",
+    "serializer": "DoctorScheduleSerializer",
+    "models": [
+      "Branch",
+      "DoctorSchedule",
+      "Staff"
+    ],
+    "collections": [
+      "patients_branch",
+      "patients_doctorschedule",
+      "patients_staff"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-schedules/<str:pk>/",
+    "http_methods": [
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleUpdateView",
+    "serializer": "DoctorScheduleSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "DoctorScheduleProposalListView",
+    "serializer": "DoctorScheduleProposalSerializer",
+    "models": [
+      "Branch",
+      "Doctor",
+      "DoctorScheduleProposal"
+    ],
+    "collections": [
+      "patients_branch",
+      "patients_doctor",
+      "patients_doctorscheduleproposal"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "DoctorScheduleProposalDetailView",
+    "serializer": "DoctorScheduleSerializer",
+    "models": [
+      "DoctorSchedule"
+    ],
+    "collections": [
+      "patients_doctorschedule"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/approve/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "DoctorScheduleProposalApproveView",
+    "serializer": null,
+    "models": [
+      "DoctorDateOverride",
+      "DoctorSchedule"
+    ],
+    "collections": [
+      "patients_doctordateoverride",
+      "patients_doctorschedule"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/reject/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "DoctorScheduleProposalRejectView",
+    "serializer": "DoctorScheduleProposalSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/withdraw/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "DoctorScheduleProposalWithdrawView",
+    "serializer": "DoctorScheduleProposalSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/conflicts/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "DoctorScheduleProposalConflictsView",
+    "serializer": null,
+    "models": [
+      "Appointment"
+    ],
+    "collections": [
+      "patients_appointment"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-date-overrides/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "DoctorDateOverrideListCreateView",
+    "serializer": "DoctorDateOverrideSerializer",
+    "models": [
+      "DoctorDateOverride"
+    ],
+    "collections": [
+      "patients_doctordateoverride"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/doctor-date-overrides/<str:pk>/action/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "DoctorDateOverrideActionView",
+    "serializer": "DoctorDateOverrideSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/notifications/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "InAppNotificationListView",
+    "serializer": "InAppNotificationSerializer",
+    "models": [
+      "InAppNotification"
+    ],
+    "collections": [
+      "patients_inappnotification"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/notifications/<str:pk>/read/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "InAppNotificationReadView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/notifications/mark-all-read/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "InAppNotificationMarkAllReadView",
+    "serializer": null,
+    "models": [
+      "InAppNotification"
+    ],
+    "collections": [
+      "patients_inappnotification"
+    ],
+    "operations": [
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/teeth/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "ToothMasterListView",
+    "serializer": "ToothMasterSerializer",
+    "models": [
+      "ToothMaster"
+    ],
+    "collections": [
+      "patients_toothmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/teeth/select/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "ClinicalNotesSaveView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicalNotes",
+      "Doctor",
+      "ToothConditionRecord"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_doctor",
+      "patients_toothconditionrecord"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient-images/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "PatientImageListView",
+    "serializer": "PatientImageSerializer",
+    "models": [
+      "PatientImage",
+      "Visit"
+    ],
+    "collections": [
+      "patients_patientimage",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient-images/<str:pk>/",
+    "http_methods": [
+      "DELETE"
+    ],
+    "view_name": "PatientImageDetailView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "DELETE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/follow-ups/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "FollowUpListView",
+    "serializer": null,
+    "models": [
+      "ClinicalNotes"
+    ],
+    "collections": [
+      "patients_clinicalnotes"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/follow-ups/update/<str:pk>/",
+    "http_methods": [
+      "PATCH"
+    ],
+    "view_name": "FollowUpUpdateView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Doctor"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_doctor"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pre-bookings/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "PreBookingListView",
+    "serializer": null,
+    "models": [
+      "PreBooking"
+    ],
+    "collections": [
+      "patients_prebooking"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pre-bookings/book/<str:pk>/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PreBookingBookView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Patient"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_patient"
+    ],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pre-bookings/sync-missed/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PreBookingSyncMissedView",
+    "serializer": null,
+    "models": [
+      "ClinicalNotes",
+      "PreBooking"
+    ],
+    "collections": [
+      "patients_clinicalnotes",
+      "patients_prebooking"
+    ],
+    "operations": [
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/prescription/add/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PrescriptionAddView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicalNotes",
+      "MedicineMaster",
+      "Patient",
+      "Prescription",
+      "PrescriptionItem",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_medicinemaster",
+      "patients_patient",
+      "patients_prescription",
+      "patients_prescriptionitem",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/prescription/list/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PrescriptionListView",
+    "serializer": null,
+    "models": [
+      "Doctor",
+      "Patient",
+      "Prescription",
+      "PrescriptionItem"
+    ],
+    "collections": [
+      "patients_doctor",
+      "patients_patient",
+      "patients_prescription",
+      "patients_prescriptionitem"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/medicine-master/list/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "MedicineMasterListView",
+    "serializer": "MedicineMasterSerializer",
+    "models": [
+      "MedicineMaster"
+    ],
+    "collections": [
+      "patients_medicinemaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/medicines/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "MedicineMasterListView",
+    "serializer": "MedicineMasterSerializer",
+    "models": [
+      "MedicineMaster"
+    ],
+    "collections": [
+      "patients_medicinemaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/bill/create-advanced/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "CreateBillingView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "BillingItem",
+      "Doctor",
+      "Payment",
+      "TreatmentMaster",
+      "TreatmentRecord",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_billingitem",
+      "patients_doctor",
+      "patients_payment",
+      "patients_treatmentmaster",
+      "patients_treatmentrecord",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/bill/list/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "BillingListView",
+    "serializer": null,
+    "models": [
+      "Billing",
+      "BillingItem",
+      "Patient",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_billing",
+      "patients_billingitem",
+      "patients_patient",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/create-billing/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "CreateBillingView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "BillingItem",
+      "Doctor",
+      "Payment",
+      "TreatmentMaster",
+      "TreatmentRecord",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_billingitem",
+      "patients_doctor",
+      "patients_payment",
+      "patients_treatmentmaster",
+      "patients_treatmentrecord",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/billing/latest/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "LatestBillingPDFView",
+    "serializer": null,
+    "models": [
+      "Billing"
+    ],
+    "collections": [
+      "patients_billing"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/billing/<str:pk>/update/",
+    "http_methods": [
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "BillingUpdateView",
+    "serializer": null,
+    "models": [
+      "BillingItem",
+      "MedicineMaster",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_billingitem",
+      "patients_medicinemaster",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/billing/<str:pk>/pdf/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "BillingPDFView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/prescription/<str:pk>/pdf/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PrescriptionPDFView",
+    "serializer": null,
+    "models": [
+      "Billing"
+    ],
+    "collections": [
+      "patients_billing"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/communication-logs/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "CommunicationLogView",
+    "serializer": null,
+    "models": [
+      "CommunicationLog"
+    ],
+    "collections": [
+      "patients_communicationlog"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient-groups/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "PatientGroupListView",
+    "serializer": "PatientGroupSerializer",
+    "models": [
+      "Group",
+      "PatientGroup"
+    ],
+    "collections": [
+      "auth_group",
+      "patients_patientgroup"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient-groups/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientGroupDetailView",
+    "serializer": "PatientGroupSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/bulk-group-update/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PatientBulkGroupUpdateView",
+    "serializer": null,
+    "models": [
+      "Patient"
+    ],
+    "collections": [
+      "patients_patient"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/reminders/pending/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PendingRemindersView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicalNotes",
+      "CommunicationLog",
+      "Patient"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_communicationlog",
+      "patients_patient"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/appointments/reminders/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "AppointmentRemindersView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicalNotes",
+      "CommunicationLog"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_communicationlog"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/login/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "LoginView",
+    "serializer": null,
+    "models": [
+      "User"
+    ],
+    "collections": [
+      "auth_user"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "AllowAny"
+    ]
+  },
+  {
+    "url": "/api/token/refresh/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "TokenRefreshView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/api/auth/token/refresh/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "TokenRefreshView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated (Global Default)"
+    ]
+  },
+  {
+    "url": "/api/staff/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "StaffCreateView",
+    "serializer": null,
+    "models": [
+      "Branch",
+      "Doctor",
+      "Staff",
+      "User"
+    ],
+    "collections": [
+      "auth_user",
+      "patients_branch",
+      "patients_doctor",
+      "patients_staff"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/staff/onboarding/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "StaffOnboardingView",
+    "serializer": null,
+    "models": [
+      "Doctor",
+      "Staff",
+      "StaffBenefit",
+      "StaffInsurance",
+      "StaffLeaveConfig",
+      "User"
+    ],
+    "collections": [
+      "auth_user",
+      "patients_doctor",
+      "patients_staff",
+      "patients_staffbenefit",
+      "patients_staffinsurance",
+      "patients_staffleaveconfig"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/staff/list/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "StaffListView",
+    "serializer": null,
+    "models": [
+      "Staff",
+      "User"
+    ],
+    "collections": [
+      "auth_user",
+      "patients_staff"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/staff/check-availability/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "StaffCheckAvailabilityView",
+    "serializer": null,
+    "models": [
+      "Staff"
+    ],
+    "collections": [
+      "patients_staff"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/staff/<str:pk>/update/",
+    "http_methods": [
+      "PUT"
+    ],
+    "view_name": "StaffUpdateView",
+    "serializer": null,
+    "models": [
+      "Doctor",
+      "Expense",
+      "Staff",
+      "User"
+    ],
+    "collections": [
+      "auth_user",
+      "patients_doctor",
+      "patients_expense",
+      "patients_staff"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/staff/<str:pk>/permissions/",
+    "http_methods": [
+      "PATCH"
+    ],
+    "view_name": "StaffPermissionsUpdateView",
+    "serializer": "StaffSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/staff/<str:staff_id>/leave/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "StaffLeaveConfigManageView",
+    "serializer": "StaffLeaveConfigSerializer",
+    "models": [
+      "StaffLeaveConfig"
+    ],
+    "collections": [
+      "patients_staffleaveconfig"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/staff/<str:staff_id>/benefits/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "StaffBenefitManageView",
+    "serializer": "StaffBenefitSerializer",
+    "models": [
+      "StaffBenefit"
+    ],
+    "collections": [
+      "patients_staffbenefit"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/staff/<str:staff_id>/insurance/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT"
+    ],
+    "view_name": "StaffInsuranceManageView",
+    "serializer": "StaffInsuranceSerializer",
+    "models": [
+      "StaffInsurance"
+    ],
+    "collections": [
+      "patients_staffinsurance"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/transactions/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "TransactionListView",
+    "serializer": "TransactionSerializer",
+    "models": [
+      "Transaction"
+    ],
+    "collections": [
+      "patients_transaction"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/transactions/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "TransactionCreateView",
+    "serializer": "TransactionSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/accounts/summary/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "AccountSummaryView",
+    "serializer": null,
+    "models": [
+      "Transaction"
+    ],
+    "collections": [
+      "patients_transaction"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/suppliers/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "SupplierListView",
+    "serializer": "SupplierSerializer",
+    "models": [
+      "Supplier",
+      "SupplierLedger"
+    ],
+    "collections": [
+      "patients_supplier",
+      "patients_supplierledger"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/suppliers/<str:pk>/",
+    "http_methods": [
+      "DELETE"
+    ],
+    "view_name": "SupplierDetailView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "DELETE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/purchase/create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "PharmacyPurchaseCreateView",
+    "serializer": "PharmacyPurchaseSerializer",
+    "models": [
+      "Expense",
+      "ExpenseCategory",
+      "MedicineStock",
+      "PharmacyPurchaseItem"
+    ],
+    "collections": [
+      "patients_expense",
+      "patients_expensecategory",
+      "patients_medicinestock",
+      "patients_pharmacypurchaseitem"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/stock/batches/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "MedicineStockListView",
+    "serializer": "MedicineStockSerializer",
+    "models": [
+      "MedicineStock"
+    ],
+    "collections": [
+      "patients_medicinestock"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/suppliers/<str:supplier_id>/ledger/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "SupplierLedgerView",
+    "serializer": "SupplierLedgerSerializer",
+    "models": [
+      "SupplierLedger"
+    ],
+    "collections": [
+      "patients_supplierledger"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/ledger/<str:pk>/delete/",
+    "http_methods": [
+      "DELETE"
+    ],
+    "view_name": "SupplierLedgerDeleteView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/pharmacy/purchase/<str:pk>/delete/",
+    "http_methods": [
+      "DELETE"
+    ],
+    "view_name": "PharmacyPurchaseDeleteView",
+    "serializer": null,
+    "models": [
+      "Expense"
+    ],
+    "collections": [
+      "patients_expense"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/stock/purchase/<str:pk>/delete/",
+    "http_methods": [
+      "DELETE"
+    ],
+    "view_name": "MedicinePurchaseDeleteView",
+    "serializer": null,
+    "models": [
+      "Expense"
+    ],
+    "collections": [
+      "patients_expense"
+    ],
+    "operations": [
+      "DELETE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/reports/<str:report_type>/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "EHRReportView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "ClinicalNotes",
+      "CommunicationLog",
+      "Expense",
+      "Patient",
+      "PharmacyPurchase",
+      "PreBooking",
+      "Prescription",
+      "Transaction",
+      "TreatmentRecord"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_clinicalnotes",
+      "patients_communicationlog",
+      "patients_expense",
+      "patients_patient",
+      "patients_pharmacypurchase",
+      "patients_prebooking",
+      "patients_prescription",
+      "patients_transaction",
+      "patients_treatmentrecord"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/taxes/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "TaxSettingListView",
+    "serializer": "TaxSettingSerializer",
+    "models": [
+      "TaxSetting"
+    ],
+    "collections": [
+      "patients_taxsetting"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/taxes/<str:pk>/",
+    "http_methods": [
+      "DELETE"
+    ],
+    "view_name": "TaxSettingDetailView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "DELETE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/communication-templates/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "CommunicationTemplateListView",
+    "serializer": "CommunicationTemplateSerializer",
+    "models": [
+      "CommunicationTemplate"
+    ],
+    "collections": [
+      "patients_communicationtemplate"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/communication-templates/<str:pk>/",
+    "http_methods": [
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "CommunicationTemplateDetailView",
+    "serializer": "CommunicationTemplateSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/lab-headers/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "LabHeaderListView",
+    "serializer": "LabHeaderSerializer",
+    "models": [
+      "LabHeader"
+    ],
+    "collections": [
+      "patients_labheader"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/laboratories/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "LaboratoryListView",
+    "serializer": "LaboratorySerializer",
+    "models": [
+      "Laboratory"
+    ],
+    "collections": [
+      "patients_laboratory"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/lab-tests/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "LabTestMasterListView",
+    "serializer": "LabTestMasterSerializer",
+    "models": [
+      "LabTestMaster"
+    ],
+    "collections": [
+      "patients_labtestmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/lab-parameters/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "LabTestParameterView",
+    "serializer": "LabTestParameterSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/lab-packages/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "LabPackageListView",
+    "serializer": "LabPackageSerializer",
+    "models": [
+      "LabPackage"
+    ],
+    "collections": [
+      "patients_labpackage"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/clinic-profile/",
+    "http_methods": [
+      "GET",
+      "PATCH"
+    ],
+    "view_name": "ClinicProfileAPIView",
+    "serializer": "ClinicProfileSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/clinic-timing/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "ClinicTimingListCreateAPIView",
+    "serializer": "ClinicTimingSerializer",
+    "models": [
+      "ClinicTiming"
+    ],
+    "collections": [
+      "patients_clinictiming"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/clinic-timing/<str:pk>/",
+    "http_methods": [
+      "PUT",
+      "PATCH"
+    ],
+    "view_name": "ClinicTimingUpdateAPIView",
+    "serializer": "ClinicTimingSerializer",
+    "models": [
+      "ClinicTiming"
+    ],
+    "collections": [
+      "patients_clinictiming"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/auto-numbering/",
+    "http_methods": [
+      "GET",
+      "PATCH"
+    ],
+    "view_name": "AutoNumberingAPIView",
+    "serializer": "AutoNumberingSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/salutations/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "SalutationListCreateAPIView",
+    "serializer": "SalutationSerializer",
+    "models": [
+      "Salutation"
+    ],
+    "collections": [
+      "patients_salutation"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/salutations/<str:pk>/",
+    "http_methods": [
+      "DELETE"
+    ],
+    "view_name": "SalutationDeleteAPIView",
+    "serializer": null,
+    "models": [
+      "Salutation"
+    ],
+    "collections": [
+      "patients_salutation"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/patient-required-fields/",
+    "http_methods": [
+      "GET",
+      "PATCH"
+    ],
+    "view_name": "PatientRequiredFieldsAPIView",
+    "serializer": "PatientRequiredFieldsSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/role-defaults/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "RoleDefaultPermissionsListView",
+    "serializer": "RoleDefaultPermissionsSerializer",
+    "models": [
+      "RoleDefaultPermissions"
+    ],
+    "collections": [
+      "patients_roledefaultpermissions"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/role-defaults/<str:role>/",
+    "http_methods": [
+      "GET",
+      "PATCH"
+    ],
+    "view_name": "RoleDefaultPermissionsDetailView",
+    "serializer": "RoleDefaultPermissionsSerializer",
+    "models": [
+      "RoleDefaultPermissions"
+    ],
+    "collections": [
+      "patients_roledefaultpermissions"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/pharmacy/",
+    "http_methods": [
+      "GET",
+      "PATCH"
+    ],
+    "view_name": "PharmacySettingsAPIView",
+    "serializer": "PharmacySettingsSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/prescription-templates/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "PrescriptionTemplateListCreateView",
+    "serializer": "PrescriptionTemplateSerializer",
+    "models": [
+      "PrescriptionTemplate"
+    ],
+    "collections": [
+      "patients_prescriptiontemplate"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/prescription-templates/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PrescriptionTemplateDetailView",
+    "serializer": "PrescriptionTemplateSerializer",
+    "models": [
+      "PrescriptionTemplate"
+    ],
+    "collections": [
+      "patients_prescriptiontemplate"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/dosage-labels/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "DELETE"
+    ],
+    "view_name": "DosageLabelListView",
+    "serializer": "DosageLabelSerializer",
+    "models": [
+      "DosageLabel"
+    ],
+    "collections": [
+      "patients_dosagelabel"
+    ],
+    "operations": [
+      "DELETE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/dental-laboratories/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "DentalLaboratoryListView",
+    "serializer": "DentalLaboratorySerializer",
+    "models": [
+      "DentalLaboratory",
+      "Laboratory"
+    ],
+    "collections": [
+      "patients_dentallaboratory",
+      "patients_laboratory"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/dental-laboratories/<str:pk>/",
+    "http_methods": [
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DentalLaboratoryDetailView",
+    "serializer": "DentalLaboratorySerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/dental-lab-work/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "DentalLabWorkListView",
+    "serializer": "DentalLabWorkSerializer",
+    "models": [
+      "DentalLabWork"
+    ],
+    "collections": [
+      "patients_dentallabwork"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/settings/dental-lab-work/<str:pk>/",
+    "http_methods": [
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DentalLabWorkDetailView",
+    "serializer": "DentalLabWorkSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/dashboard/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "DELETE"
+    ],
+    "view_name": "FinanceDashboardView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "BillingItem",
+      "Doctor",
+      "Expense",
+      "ExpenseCategory",
+      "MedicineMaster",
+      "MedicinePurchase",
+      "Patient",
+      "Payment",
+      "PharmacyPurchase",
+      "TreatmentMaster",
+      "TreatmentRecord",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_billingitem",
+      "patients_doctor",
+      "patients_expense",
+      "patients_expensecategory",
+      "patients_medicinemaster",
+      "patients_medicinepurchase",
+      "patients_patient",
+      "patients_payment",
+      "patients_pharmacypurchase",
+      "patients_treatmentmaster",
+      "patients_treatmentrecord",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/categories/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "ExpenseCategoryAPIView",
+    "serializer": null,
+    "models": [
+      "ExpenseCategory"
+    ],
+    "collections": [
+      "patients_expensecategory"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/categories/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "ExpenseCategoryAPIView",
+    "serializer": null,
+    "models": [
+      "ExpenseCategory"
+    ],
+    "collections": [
+      "patients_expensecategory"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/expenses/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "ExpenseAPIView",
+    "serializer": null,
+    "models": [
+      "AuditLog",
+      "Expense",
+      "ExpenseCategory"
+    ],
+    "collections": [
+      "patients_auditlog",
+      "patients_expense",
+      "patients_expensecategory"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/expenses/bulk-delete/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "ExpenseBulkDeleteAPIView",
+    "serializer": null,
+    "models": [
+      "AuditLog",
+      "Expense"
+    ],
+    "collections": [
+      "patients_auditlog",
+      "patients_expense"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/expenses/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "ExpenseAPIView",
+    "serializer": null,
+    "models": [
+      "AuditLog",
+      "Expense",
+      "ExpenseCategory"
+    ],
+    "collections": [
+      "patients_auditlog",
+      "patients_expense",
+      "patients_expensecategory"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/transaction-summary/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "TransactionSummaryAPIView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "Expense",
+      "Payment"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_billing",
+      "patients_expense",
+      "patients_payment"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/salaries/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "DELETE"
+    ],
+    "view_name": "DoctorSalaryAPIView",
+    "serializer": null,
+    "models": [
+      "AuditLog",
+      "Doctor",
+      "DoctorSalary",
+      "DoctorSalaryRecord",
+      "Expense",
+      "ExpenseCategory",
+      "Staff"
+    ],
+    "collections": [
+      "patients_auditlog",
+      "patients_doctor",
+      "patients_doctorsalary",
+      "patients_doctorsalaryrecord",
+      "patients_expense",
+      "patients_expensecategory",
+      "patients_staff"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/generate-salaries/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "GenerateSalariesAPIView",
+    "serializer": null,
+    "models": [
+      "Expense",
+      "Staff"
+    ],
+    "collections": [
+      "patients_expense",
+      "patients_staff"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/salaries/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "DELETE"
+    ],
+    "view_name": "DoctorSalaryAPIView",
+    "serializer": null,
+    "models": [
+      "AuditLog",
+      "Doctor",
+      "DoctorSalary",
+      "DoctorSalaryRecord",
+      "Expense",
+      "ExpenseCategory",
+      "Staff"
+    ],
+    "collections": [
+      "patients_auditlog",
+      "patients_doctor",
+      "patients_doctorsalary",
+      "patients_doctorsalaryrecord",
+      "patients_expense",
+      "patients_expensecategory",
+      "patients_staff"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/materials/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "DentalMaterialAPIView",
+    "serializer": null,
+    "models": [
+      "AuditLog",
+      "DentalMaterial",
+      "DentalMaterialPurchase",
+      "Expense",
+      "ExpenseCategory",
+      "Supplier"
+    ],
+    "collections": [
+      "patients_auditlog",
+      "patients_dentalmaterial",
+      "patients_dentalmaterialpurchase",
+      "patients_expense",
+      "patients_expensecategory",
+      "patients_supplier"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/finance/total-expenses/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "TotalExpenseSummaryView",
+    "serializer": null,
+    "models": [
+      "Expense",
+      "ExpenseCategory",
+      "MedicinePurchase",
+      "PharmacyPurchase"
+    ],
+    "collections": [
+      "patients_expense",
+      "patients_expensecategory",
+      "patients_medicinepurchase",
+      "patients_pharmacypurchase"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/website-appointments/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "WebsiteAppointmentRequestListCreateView",
+    "serializer": "WebsiteAppointmentRequestSerializer",
+    "models": [
+      "WebsiteAppointmentRequest"
+    ],
+    "collections": [
+      "patients_websiteappointmentrequest"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/website-appointments/<str:pk>/action/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "WebsiteAppointmentRequestActionView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Patient"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_patient"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/patient-types/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "PatientTypeMasterAPIView",
+    "serializer": null,
+    "models": [
+      "PatientTypeMaster"
+    ],
+    "collections": [
+      "patients_patienttypemaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/patient-types/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "PatientTypeMasterAPIView",
+    "serializer": null,
+    "models": [
+      "PatientTypeMaster"
+    ],
+    "collections": [
+      "patients_patienttypemaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/staff-levels/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "StaffLevelMasterAPIView",
+    "serializer": null,
+    "models": [
+      "StaffLevelMaster"
+    ],
+    "collections": [
+      "patients_stafflevelmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/staff-levels/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "StaffLevelMasterAPIView",
+    "serializer": null,
+    "models": [
+      "StaffLevelMaster"
+    ],
+    "collections": [
+      "patients_stafflevelmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/designations/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "DesignationMasterAPIView",
+    "serializer": null,
+    "models": [
+      "DesignationMaster"
+    ],
+    "collections": [
+      "patients_designationmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/designations/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "DesignationMasterAPIView",
+    "serializer": null,
+    "models": [
+      "DesignationMaster"
+    ],
+    "collections": [
+      "patients_designationmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/roles/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "RoleMasterAPIView",
+    "serializer": null,
+    "models": [
+      "Permission",
+      "PermissionMaster",
+      "RoleMaster",
+      "RolePermission"
+    ],
+    "collections": [
+      "auth_permission",
+      "patients_permissionmaster",
+      "patients_rolemaster",
+      "patients_rolepermission"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/roles/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "RoleMasterAPIView",
+    "serializer": null,
+    "models": [
+      "Permission",
+      "PermissionMaster",
+      "RoleMaster",
+      "RolePermission"
+    ],
+    "collections": [
+      "auth_permission",
+      "patients_permissionmaster",
+      "patients_rolemaster",
+      "patients_rolepermission"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/permissions/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PermissionMasterAPIView",
+    "serializer": null,
+    "models": [
+      "PermissionMaster"
+    ],
+    "collections": [
+      "patients_permissionmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/discounts/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "DiscountMasterAPIView",
+    "serializer": null,
+    "models": [
+      "DiscountMaster"
+    ],
+    "collections": [
+      "patients_discountmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/discounts/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "DiscountMasterAPIView",
+    "serializer": null,
+    "models": [
+      "DiscountMaster"
+    ],
+    "collections": [
+      "patients_discountmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/packages/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "OfferPackageAPIView",
+    "serializer": null,
+    "models": [
+      "OfferPackage",
+      "OfferPackageItem"
+    ],
+    "collections": [
+      "patients_offerpackage",
+      "patients_offerpackageitem"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/packages/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "OfferPackageAPIView",
+    "serializer": null,
+    "models": [
+      "OfferPackage",
+      "OfferPackageItem"
+    ],
+    "collections": [
+      "patients_offerpackage",
+      "patients_offerpackageitem"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/package-subscriptions/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "PackageSubscriptionAPIView",
+    "serializer": null,
+    "models": [
+      "PatientPackageSubscription"
+    ],
+    "collections": [
+      "patients_patientpackagesubscription"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/treatments/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "TreatmentMasterAPIView",
+    "serializer": null,
+    "models": [
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/treatments/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "TreatmentMasterAPIView",
+    "serializer": null,
+    "models": [
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/diagnoses/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "DiagnosisMasterAPIView",
+    "serializer": null,
+    "models": [
+      "DiagnosisMaster",
+      "DropdownMaster"
+    ],
+    "collections": [
+      "patients_diagnosismaster",
+      "patients_dropdownmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/diagnoses/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "DiagnosisMasterAPIView",
+    "serializer": null,
+    "models": [
+      "DiagnosisMaster",
+      "DropdownMaster"
+    ],
+    "collections": [
+      "patients_diagnosismaster",
+      "patients_dropdownmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/examinations/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "ExaminationMasterAPIView",
+    "serializer": null,
+    "models": [
+      "DropdownMaster",
+      "ExaminationMaster"
+    ],
+    "collections": [
+      "patients_dropdownmaster",
+      "patients_examinationmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/examinations/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "ExaminationMasterAPIView",
+    "serializer": null,
+    "models": [
+      "DropdownMaster",
+      "ExaminationMaster"
+    ],
+    "collections": [
+      "patients_dropdownmaster",
+      "patients_examinationmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/tooth-conditions/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "ToothConditionMasterAPIView",
+    "serializer": null,
+    "models": [
+      "ToothConditionMaster"
+    ],
+    "collections": [
+      "patients_toothconditionmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/tooth-conditions/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "view_name": "ToothConditionMasterAPIView",
+    "serializer": null,
+    "models": [
+      "ToothConditionMaster"
+    ],
+    "collections": [
+      "patients_toothconditionmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/auto-create/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "AutoCreateOrReuseMasterAPIView",
+    "serializer": null,
+    "models": [
+      "DiagnosisMaster",
+      "ExaminationMaster",
+      "ToothConditionMaster",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_diagnosismaster",
+      "patients_examinationmaster",
+      "patients_toothconditionmaster",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/resolve-treatment-masters/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "ResolveTreatmentMastersAPIView",
+    "serializer": null,
+    "models": [
+      "DiagnosisMaster",
+      "ExaminationMaster",
+      "ToothConditionMaster",
+      "TreatmentMaster"
+    ],
+    "collections": [
+      "patients_diagnosismaster",
+      "patients_examinationmaster",
+      "patients_toothconditionmaster",
+      "patients_treatmentmaster"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/companies/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "CompanyListView",
+    "serializer": "CompanySerializer",
+    "models": [
+      "Branch",
+      "Company"
+    ],
+    "collections": [
+      "patients_branch",
+      "patients_company"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/companies/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "PUT"
+    ],
+    "view_name": "CompanyDetailView",
+    "serializer": "CompanySerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/branches/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "BranchListView",
+    "serializer": "BranchSerializer",
+    "models": [
+      "Branch"
+    ],
+    "collections": [
+      "patients_branch"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/branches/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "PUT"
+    ],
+    "view_name": "BranchDetailView",
+    "serializer": "BranchSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/investigation-masters/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "InvestigationMasterListView",
+    "serializer": "InvestigationMasterSerializer",
+    "models": [
+      "InvestigationMaster"
+    ],
+    "collections": [
+      "patients_investigationmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/investigation-masters/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InvestigationMasterDetailView",
+    "serializer": "InvestigationMasterSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/investigations/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "InvestigationMasterListView",
+    "serializer": "InvestigationMasterSerializer",
+    "models": [
+      "InvestigationMaster"
+    ],
+    "collections": [
+      "patients_investigationmaster"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/masters/investigations/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InvestigationMasterDetailView",
+    "serializer": "InvestigationMasterSerializer",
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient-investigations/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "PatientInvestigationListView",
+    "serializer": "PatientInvestigationSerializer",
+    "models": [
+      "Appointment",
+      "Doctor",
+      "InvestigationAttachment",
+      "InvestigationMaster",
+      "Patient",
+      "PatientInvestigation",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_doctor",
+      "patients_investigationattachment",
+      "patients_investigationmaster",
+      "patients_patient",
+      "patients_patientinvestigation",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient-investigations/<str:pk>/",
+    "http_methods": [
+      "GET",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientInvestigationDetailView",
+    "serializer": "PatientInvestigationSerializer",
+    "models": [
+      "Doctor",
+      "InvestigationAttachment"
+    ],
+    "collections": [
+      "patients_doctor",
+      "patients_investigationattachment"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patient-investigations/<str:pk>/attachments/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "InvestigationAttachmentUploadView",
+    "serializer": "InvestigationAttachmentSerializer",
+    "models": [
+      "InvestigationAttachment"
+    ],
+    "collections": [
+      "patients_investigationattachment"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/investigation-attachments/<str:pk>/",
+    "http_methods": [
+      "DELETE"
+    ],
+    "view_name": "InvestigationAttachmentDetailView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "DELETE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/investigations-history/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PatientInvestigationHistoryView",
+    "serializer": "PatientInvestigationSerializer",
+    "models": [
+      "Patient",
+      "PatientInvestigation"
+    ],
+    "collections": [
+      "patients_patient",
+      "patients_patientinvestigation"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": true,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/tooth-conditions/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "PatientToothConditionsView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicalNotes",
+      "EMRChangeLog",
+      "ToothConditionRecord",
+      "Visit"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_emrchangelog",
+      "patients_toothconditionrecord",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/treatment-plans/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "TreatmentPlanListCreateView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Doctor",
+      "EMRChangeLog",
+      "TreatmentMaster",
+      "TreatmentPlan",
+      "TreatmentPlanItem"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_doctor",
+      "patients_emrchangelog",
+      "patients_treatmentmaster",
+      "patients_treatmentplan",
+      "patients_treatmentplanitem"
+    ],
+    "operations": [
+      "CREATE",
+      "DELETE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/treatment-plan-items/<str:item_id>/",
+    "http_methods": [
+      "PATCH"
+    ],
+    "view_name": "TreatmentPlanItemUpdateView",
+    "serializer": null,
+    "models": [
+      "TreatmentPlanItem"
+    ],
+    "collections": [
+      "patients_treatmentplanitem"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/treatment-plan-items/<str:item_id>/convert-to-treatment/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "ConvertPlanItemToTreatmentRecordView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Doctor",
+      "Session",
+      "TreatmentMaster",
+      "TreatmentPlanItem",
+      "TreatmentRecord",
+      "TreatmentSession",
+      "Visit"
+    ],
+    "collections": [
+      "django_session",
+      "patients_appointment",
+      "patients_doctor",
+      "patients_treatmentmaster",
+      "patients_treatmentplanitem",
+      "patients_treatmentrecord",
+      "patients_treatmentsession",
+      "patients_visit"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/treatment-sessions/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "TreatmentSessionListCreateView",
+    "serializer": null,
+    "models": [
+      "Doctor",
+      "Session",
+      "TreatmentPlanItem",
+      "TreatmentRecord",
+      "TreatmentSession"
+    ],
+    "collections": [
+      "django_session",
+      "patients_doctor",
+      "patients_treatmentplanitem",
+      "patients_treatmentrecord",
+      "patients_treatmentsession"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/treatment-records/<str:record_id>/sessions/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "TreatmentSessionListCreateView",
+    "serializer": null,
+    "models": [
+      "Doctor",
+      "Session",
+      "TreatmentPlanItem",
+      "TreatmentRecord",
+      "TreatmentSession"
+    ],
+    "collections": [
+      "django_session",
+      "patients_doctor",
+      "patients_treatmentplanitem",
+      "patients_treatmentrecord",
+      "patients_treatmentsession"
+    ],
+    "operations": [
+      "CREATE",
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/emr/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PatientEMRDetailView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Billing",
+      "Estimate",
+      "PatientInvestigation",
+      "Prescription",
+      "Session",
+      "ToothConditionRecord",
+      "TreatmentPlan",
+      "TreatmentRecord",
+      "TreatmentSession"
+    ],
+    "collections": [
+      "django_session",
+      "patients_appointment",
+      "patients_billing",
+      "patients_estimate",
+      "patients_patientinvestigation",
+      "patients_prescription",
+      "patients_toothconditionrecord",
+      "patients_treatmentplan",
+      "patients_treatmentrecord",
+      "patients_treatmentsession"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/emr-report/pdf/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "EMRPDFReportView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicProfile",
+      "ClinicalNotes",
+      "PatientInvestigation",
+      "Prescription",
+      "Session",
+      "ToothConditionRecord",
+      "TreatmentPlan",
+      "TreatmentRecord",
+      "TreatmentSession",
+      "Visit"
+    ],
+    "collections": [
+      "django_session",
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_clinicprofile",
+      "patients_patientinvestigation",
+      "patients_prescription",
+      "patients_toothconditionrecord",
+      "patients_treatmentplan",
+      "patients_treatmentrecord",
+      "patients_treatmentsession",
+      "patients_visit"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/visits/<str:visit_id>/emr-report/pdf/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "EMRPDFReportView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "ClinicProfile",
+      "ClinicalNotes",
+      "PatientInvestigation",
+      "Prescription",
+      "Session",
+      "ToothConditionRecord",
+      "TreatmentPlan",
+      "TreatmentRecord",
+      "TreatmentSession",
+      "Visit"
+    ],
+    "collections": [
+      "django_session",
+      "patients_appointment",
+      "patients_clinicalnotes",
+      "patients_clinicprofile",
+      "patients_patientinvestigation",
+      "patients_prescription",
+      "patients_toothconditionrecord",
+      "patients_treatmentplan",
+      "patients_treatmentrecord",
+      "patients_treatmentsession",
+      "patients_visit"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/estimates/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "EstimateListCreateView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Doctor",
+      "Estimate",
+      "EstimateItem",
+      "TreatmentMaster",
+      "TreatmentPlan",
+      "TreatmentPlanItem"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_doctor",
+      "patients_estimate",
+      "patients_estimateitem",
+      "patients_treatmentmaster",
+      "patients_treatmentplan",
+      "patients_treatmentplanitem"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/estimates/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "EstimateListCreateView",
+    "serializer": null,
+    "models": [
+      "Appointment",
+      "Doctor",
+      "Estimate",
+      "EstimateItem",
+      "TreatmentMaster",
+      "TreatmentPlan",
+      "TreatmentPlanItem"
+    ],
+    "collections": [
+      "patients_appointment",
+      "patients_doctor",
+      "patients_estimate",
+      "patients_estimateitem",
+      "patients_treatmentmaster",
+      "patients_treatmentplan",
+      "patients_treatmentplanitem"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/estimates/<str:estimate_id>/",
+    "http_methods": [
+      "GET",
+      "POST",
+      "PATCH"
+    ],
+    "view_name": "EstimateDetailUpdateView",
+    "serializer": null,
+    "models": [
+      "Estimate",
+      "EstimateItem"
+    ],
+    "collections": [
+      "patients_estimate",
+      "patients_estimateitem"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/estimates/<str:estimate_id>/pdf/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "EstimatePDFView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/estimates/<str:estimate_id>/convert-to-bill/",
+    "http_methods": [
+      "POST"
+    ],
+    "view_name": "EstimateConvertToBillView",
+    "serializer": null,
+    "models": [
+      "BillPayment",
+      "Billing",
+      "BillingItem",
+      "EstimateItem",
+      "Payment",
+      "Transaction",
+      "TreatmentMaster",
+      "TreatmentRecord"
+    ],
+    "collections": [
+      "patients_billing",
+      "patients_billingitem",
+      "patients_billpayment",
+      "patients_estimateitem",
+      "patients_payment",
+      "patients_transaction",
+      "patients_treatmentmaster",
+      "patients_treatmentrecord"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/billing/<str:billing_id>/payments/",
+    "http_methods": [
+      "GET",
+      "POST"
+    ],
+    "view_name": "BillPaymentCreateView",
+    "serializer": null,
+    "models": [
+      "BillPayment",
+      "Payment",
+      "Transaction"
+    ],
+    "collections": [
+      "patients_billpayment",
+      "patients_payment",
+      "patients_transaction"
+    ],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": true,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/billing/receipts/<str:receipt_id>/pdf/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "BillReceiptPDFView",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [
+      "CREATE",
+      "READ",
+      "UPDATE"
+    ],
+    "company_filtering": false,
+    "branch_filtering": true,
+    "patient_relationship": true,
+    "appointment_visit_relationship": false,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/unbilled-treatments/",
+    "http_methods": [
+      "GET"
+    ],
+    "view_name": "PatientUnbilledTreatmentsView",
+    "serializer": null,
+    "models": [
+      "BillingItem",
+      "EstimateItem",
+      "TreatmentRecord"
+    ],
+    "collections": [
+      "patients_billingitem",
+      "patients_estimateitem",
+      "patients_treatmentrecord"
+    ],
+    "operations": [
+      "READ"
+    ],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": true,
+    "appointment_visit_relationship": true,
+    "permissions": [
+      "IsAuthenticated"
+    ]
+  },
+  {
+    "url": "/^media/(?P<path>.*)$",
+    "http_methods": [
+      "ALL"
+    ],
+    "view_name": "serve",
+    "serializer": null,
+    "models": [],
+    "collections": [],
+    "operations": [],
+    "company_filtering": false,
+    "branch_filtering": false,
+    "patient_relationship": false,
+    "appointment_visit_relationship": false,
+    "permissions": []
+  }
+]

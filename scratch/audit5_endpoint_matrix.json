@@ -1,0 +1,4429 @@
+[
+  {
+    "url": "/api/dashboard/doctor-performance/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorPerformanceAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/appointments/doctor-performance/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorPerformanceAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/dashboard/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PharmacyDashboardAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/queue/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PharmacyQueueView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/bill/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PharmacyBillView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/direct-bill/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DirectBillView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/dispense/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PharmacyBillView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/prescriptions/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PharmacyQueueView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/stock/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StockManageView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/stock/purchase/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "MedicinePurchaseView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/stock/purchase/history/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "MedicinePurchaseHistoryView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/stock/purchase/advanced/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PharmacyPurchaseCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/stock/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StockManageView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient/search/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientSearchView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/recent/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RecentPatientsView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient/by-phone/<str:phone>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientByPhoneView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient/<str:pk>/profile/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientProfileView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient/<str:pk>/balance/waiver/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientBalanceWaiverView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient/<int:patient_id>/lab-orders/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientLabOrderListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/lab-orders/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "GlobalLabOrderListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/lab-orders/<int:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientLabOrderDeleteView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/appointment/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "AppointmentCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/appointment/patient/<str:patient_id>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "AppointmentByPatientView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/appointments/today/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TodayAppointmentListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/appointments/all/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "AllAppointmentListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/appointments/stats/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "AppointmentStatsView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/appointments/<str:pk>/status/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "AppointmentStatusUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/appointments/<str:pk>/move-to-today/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "MoveAppointmentToTodayView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/bill/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientBillCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/visit/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "VisitGetOrCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/visit/get-or-create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "VisitGetOrCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/visit/appointment/<str:appointment_id>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "VisitDetailByAppointmentView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/visits/today/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TodayVisitListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/clinical-notes/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ClinicalNotesSaveView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/clinical-notes/save/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ClinicalNotesSaveView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/clinical-notes/<str:appointment_id>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ClinicalNotesDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient/<str:patient_id>/clinical-history/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientClinicalHistoryView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient/<str:patient_id>/treatment-history/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientTreatmentHistoryView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/dropdowns/<str:type>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DropdownMasterListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/treatment-master/list/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentMasterListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/treatment-master/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentMasterCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/treatment-master/update/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentMasterUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/treatment-record/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentRecordAddView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/treatment-record/add/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentRecordAddView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/payment/pay/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PaymentPayView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/payments/search/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PaymentSearchView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/payments/recent/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RecentPaymentsView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/billing/search/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PaymentSearchView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/credits/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "CreditPatientView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctors/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctors/<str:doctor_id>/available-slots/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorAvailableSlotsView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-schedules/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-schedules/direct/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleDirectManageView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-schedules/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleProposalListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleProposalDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/approve/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleProposalApproveView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/reject/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleProposalRejectView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/withdraw/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleProposalWithdrawView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-schedule-proposals/<str:pk>/conflicts/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorScheduleProposalConflictsView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-date-overrides/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorDateOverrideListCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/doctor-date-overrides/<str:pk>/action/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorDateOverrideActionView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/notifications/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InAppNotificationListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/notifications/<str:pk>/read/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InAppNotificationReadView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/notifications/mark-all-read/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InAppNotificationMarkAllReadView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/teeth/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ToothMasterListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/teeth/select/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ClinicalNotesSaveView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient-images/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientImageListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient-images/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientImageDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/follow-ups/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "FollowUpListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/follow-ups/update/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "FollowUpUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pre-bookings/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PreBookingListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pre-bookings/book/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PreBookingBookView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pre-bookings/sync-missed/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PreBookingSyncMissedView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/prescription/add/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PrescriptionAddView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/prescription/list/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PrescriptionListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/medicine-master/list/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "MedicineMasterListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/medicines/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "MedicineMasterListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/bill/create-advanced/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "CreateBillingView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/bill/list/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "BillingListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/create-billing/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "CreateBillingView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/billing/latest/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "LatestBillingPDFView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/billing/<str:pk>/update/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "BillingUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/billing/<str:pk>/pdf/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "BillingPDFView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/prescription/<str:pk>/pdf/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PrescriptionPDFView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/communication-logs/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "CommunicationLogView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient-groups/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientGroupListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient-groups/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientGroupDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/bulk-group-update/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientBulkGroupUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/reminders/pending/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PendingRemindersView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/appointments/reminders/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "AppointmentRemindersView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/login/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "LoginView",
+    "auth_required": false,
+    "permission_classes": [
+      "AllowAny"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/token/refresh/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TokenRefreshView",
+    "auth_required": false,
+    "permission_classes": [],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/auth/token/refresh/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TokenRefreshView",
+    "auth_required": false,
+    "permission_classes": [],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/staff/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/staff/onboarding/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffOnboardingView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/staff/list/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/staff/check-availability/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffCheckAvailabilityView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/staff/<str:pk>/update/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/staff/<str:pk>/permissions/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffPermissionsUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/staff/<str:staff_id>/leave/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffLeaveConfigManageView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/staff/<str:staff_id>/benefits/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffBenefitManageView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/staff/<str:staff_id>/insurance/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffInsuranceManageView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/transactions/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TransactionListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/transactions/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TransactionCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/accounts/summary/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "AccountSummaryView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/suppliers/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "SupplierListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/suppliers/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "SupplierDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/purchase/create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PharmacyPurchaseCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/stock/batches/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "MedicineStockListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/suppliers/<str:supplier_id>/ledger/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "SupplierLedgerView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/ledger/<str:pk>/delete/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "SupplierLedgerDeleteView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/pharmacy/purchase/<str:pk>/delete/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PharmacyPurchaseDeleteView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/stock/purchase/<str:pk>/delete/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "MedicinePurchaseDeleteView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/reports/<str:report_type>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "EHRReportView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/taxes/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TaxSettingListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/taxes/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TaxSettingDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/communication-templates/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "CommunicationTemplateListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/communication-templates/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "CommunicationTemplateDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/lab-headers/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "LabHeaderListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/laboratories/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "LaboratoryListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/lab-tests/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "LabTestMasterListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/lab-parameters/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "LabTestParameterView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/lab-packages/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "LabPackageListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/clinic-profile/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ClinicProfileAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/clinic-timing/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ClinicTimingListCreateAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/clinic-timing/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ClinicTimingUpdateAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/auto-numbering/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "AutoNumberingAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/salutations/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "SalutationListCreateAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/salutations/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "SalutationDeleteAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/patient-required-fields/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientRequiredFieldsAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/role-defaults/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RoleDefaultPermissionsListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/role-defaults/<str:role>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RoleDefaultPermissionsDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/pharmacy/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PharmacySettingsAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/prescription-templates/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PrescriptionTemplateListCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/prescription-templates/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PrescriptionTemplateDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/dosage-labels/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DosageLabelListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/dental-laboratories/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DentalLaboratoryListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/dental-laboratories/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DentalLaboratoryDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/dental-lab-work/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DentalLabWorkListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/settings/dental-lab-work/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DentalLabWorkDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/dashboard/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "FinanceDashboardView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/categories/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ExpenseCategoryAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/categories/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ExpenseCategoryAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/expenses/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ExpenseAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/expenses/bulk-delete/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ExpenseBulkDeleteAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/expenses/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ExpenseAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/transaction-summary/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TransactionSummaryAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/salaries/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorSalaryAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/generate-salaries/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "GenerateSalariesAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/salaries/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DoctorSalaryAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/materials/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DentalMaterialAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/finance/total-expenses/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TotalExpenseSummaryView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/website-appointments/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "WebsiteAppointmentRequestListCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/website-appointments/<str:pk>/action/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "WebsiteAppointmentRequestActionView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/patient-types/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientTypeMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/patient-types/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientTypeMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/staff-levels/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffLevelMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/staff-levels/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "StaffLevelMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/designations/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DesignationMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/designations/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DesignationMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/roles/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RoleMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/roles/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "RoleMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/permissions/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PermissionMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/discounts/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DiscountMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/discounts/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DiscountMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/packages/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "OfferPackageAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/packages/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "OfferPackageAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/package-subscriptions/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PackageSubscriptionAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/treatments/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/treatments/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/diagnoses/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DiagnosisMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/diagnoses/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "DiagnosisMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/examinations/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ExaminationMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/examinations/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ExaminationMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/tooth-conditions/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ToothConditionMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/tooth-conditions/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ToothConditionMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/auto-create/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "AutoCreateOrReuseMasterAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/resolve-treatment-masters/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ResolveTreatmentMastersAPIView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/companies/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "CompanyListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/companies/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "CompanyDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/branches/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "BranchListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/branches/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "BranchDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/investigation-masters/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InvestigationMasterListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/investigation-masters/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InvestigationMasterDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/investigations/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InvestigationMasterListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/masters/investigations/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InvestigationMasterDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient-investigations/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientInvestigationListView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient-investigations/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientInvestigationDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patient-investigations/<str:pk>/attachments/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InvestigationAttachmentUploadView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/investigation-attachments/<str:pk>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "InvestigationAttachmentDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/investigations-history/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientInvestigationHistoryView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/tooth-conditions/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientToothConditionsView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/treatment-plans/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentPlanListCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/treatment-plan-items/<str:item_id>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentPlanItemUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": false,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/treatment-plan-items/<str:item_id>/convert-to-treatment/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "ConvertPlanItemToTreatmentRecordView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/treatment-sessions/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentSessionListCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/treatment-records/<str:record_id>/sessions/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "TreatmentSessionListCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/emr/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientEMRDetailView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/emr-report/pdf/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "EMRPDFReportView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/visits/<str:visit_id>/emr-report/pdf/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "EMRPDFReportView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/estimates/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "EstimateListCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/estimates/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "EstimateListCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/estimates/<str:estimate_id>/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "EstimateDetailUpdateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/estimates/<str:estimate_id>/pdf/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "EstimatePDFView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/estimates/<str:estimate_id>/convert-to-bill/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "EstimateConvertToBillView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/billing/<str:billing_id>/payments/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "BillPaymentCreateView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": true,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": true,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/billing/receipts/<str:receipt_id>/pdf/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "BillReceiptPDFView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": true,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  },
+  {
+    "url": "/api/patients/<str:patient_id>/unbilled-treatments/",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "view_name": "PatientUnbilledTreatmentsView",
+    "auth_required": true,
+    "permission_classes": [
+      "IsAuthenticated"
+    ],
+    "company_scoped": false,
+    "branch_scoped": false,
+    "patient_validated": true,
+    "role_restricted": false,
+    "is_read": true,
+    "is_write": true
+  }
+]

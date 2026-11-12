@@ -1,0 +1,582 @@
+[
+  {
+    "file": "src\\components\\Accounts.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\Accounts.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\Accounts.jsx",
+    "endpoint": "/transactions/create/"
+  },
+  {
+    "file": "src\\components\\AddPatient.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\AddPatient.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\AddPatient.jsx",
+    "endpoint": "/patient-groups/"
+  },
+  {
+    "file": "src\\components\\AddPatient.jsx",
+    "endpoint": "/dropdowns/payment_method/"
+  },
+  {
+    "file": "src\\components\\AddPatient.jsx",
+    "endpoint": "/patient/create/"
+  },
+  {
+    "file": "src\\components\\AddPatient.jsx",
+    "endpoint": "/patient-groups/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/appointment/create/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/visit/get-or-create/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/bill/create-advanced/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/visit/get-or-create/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/bill/create-advanced/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/patient/${selectedProfile.patient.id}/profile/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/patient/${p.id}/profile/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/appointments/${apptId}/status/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/appointments/${editingAppt.id}/status/"
+  },
+  {
+    "file": "src\\components\\Appointments.jsx",
+    "endpoint": "/patient/${appt.patient}/profile/"
+  },
+  {
+    "file": "src\\components\\AppointmentStatus.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\AppointmentStatus.jsx",
+    "endpoint": "/appointments/today/"
+  },
+  {
+    "file": "src\\components\\AppointmentStatus.jsx",
+    "endpoint": "/appointments/${apptId}/status/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/patients/${billForm.patient.id}/unbilled-treatments/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/payments/search/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/credits/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/billing/${payModal.billId}/payments/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/payment/pay/${payModal.billId}/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/billing/receipts/${receiptId}/pdf/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/visit/get-or-create/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/bill/create-advanced/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/patient/${billForm.patient.id}/balance/waiver/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/billing/${bill.id}/pdf/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/billing/${bill.id}/payments/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/billing/receipts/${payments[0].id}/pdf/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/billing/${bill.id}/pdf/"
+  },
+  {
+    "file": "src\\components\\Bills.jsx",
+    "endpoint": "/billing/${bill.id}/pdf/"
+  },
+  {
+    "file": "src\\components\\ConsultationPage.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\ConsultationPage.jsx",
+    "endpoint": "/medicine-master/list/"
+  },
+  {
+    "file": "src\\components\\ConsultationPage.jsx",
+    "endpoint": "/prescription/add/"
+  },
+  {
+    "file": "src\\components\\ConsultationPage.jsx",
+    "endpoint": "/appointments/all/"
+  },
+  {
+    "file": "src\\components\\ConsultationPage.jsx",
+    "endpoint": "/prescription/add/"
+  },
+  {
+    "file": "src\\components\\ConsultationPage.new.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\Credits.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\Credits.jsx",
+    "endpoint": "/credits/"
+  },
+  {
+    "file": "src\\components\\Credits.jsx",
+    "endpoint": "/patient/${patient.id}/profile/"
+  },
+  {
+    "file": "src\\components\\Credits.jsx",
+    "endpoint": "/patient/${selectedPatient.id}/balance/waiver/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctor-schedules/direct/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctor-schedule-proposals/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctor-schedules/direct/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctor-schedule-proposals/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctor-schedule-proposals/${proposalId}/withdraw/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctor-schedule-proposals/${proposalId}/conflicts/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctor-schedule-proposals/${proposalId}/approve/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctor-schedule-proposals/${rejectModalProposal.id}/reject/"
+  },
+  {
+    "file": "src\\components\\DoctorSlots.jsx",
+    "endpoint": "/doctor-date-overrides/"
+  },
+  {
+    "file": "src\\components\\EstimateModal.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\EstimateModal.jsx",
+    "endpoint": "/patients/${patientId}/estimates/"
+  },
+  {
+    "file": "src\\components\\EstimateModal.jsx",
+    "endpoint": "/patients/${patientId}/estimates/"
+  },
+  {
+    "file": "src\\components\\EstimateModal.jsx",
+    "endpoint": "/estimates/${estId}/"
+  },
+  {
+    "file": "src\\components\\EstimateModal.jsx",
+    "endpoint": "/estimates/${activeEstimate.id}/convert-to-bill/"
+  },
+  {
+    "file": "src\\components\\EstimateModal.jsx",
+    "endpoint": "/billing/${data.billing_id}/pdf/"
+  },
+  {
+    "file": "src\\components\\EstimateModal.jsx",
+    "endpoint": "/estimates/${activeEstimate.id}/pdf/"
+  },
+  {
+    "file": "src\\components\\Labs.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\Labs.jsx",
+    "endpoint": "/lab-orders/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/visit/get-or-create/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/bill/create-advanced/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/billing/${data.billing_id}/pdf/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/billing/${b.id}/pdf/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/billing/${b.id}/payments/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/billing/receipts/${payments[0].id}/pdf/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/billing/${b.id}/pdf/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/billing/${b.id}/pdf/"
+  },
+  {
+    "file": "src\\components\\PatientProfileInvoice.jsx",
+    "endpoint": "/estimates/${est.id}/pdf/"
+  },
+  {
+    "file": "src\\components\\PatientProfileLaboratory.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\PatientProfilePrescription.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\PatientProfilePrescription.jsx",
+    "endpoint": "/medicine-master/list/"
+  },
+  {
+    "file": "src\\components\\PatientProfilePrescription.jsx",
+    "endpoint": "/visit/get-or-create/"
+  },
+  {
+    "file": "src\\components\\PatientProfilePrescription.jsx",
+    "endpoint": "/prescription/add/"
+  },
+  {
+    "file": "src\\components\\PatientProfilePrescription.jsx",
+    "endpoint": "/prescription/${p.id}/pdf/"
+  },
+  {
+    "file": "src\\components\\PatientProfileTreatment.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\PatientProfileTreatment.jsx",
+    "endpoint": "/treatment-master/list/"
+  },
+  {
+    "file": "src\\components\\PatientProfileTreatment.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\PatientProfileTreatment.jsx",
+    "endpoint": "/visit/get-or-create/"
+  },
+  {
+    "file": "src\\components\\PatientProfileTreatment.jsx",
+    "endpoint": "/create-billing/"
+  },
+  {
+    "file": "src\\components\\PatientProfileView.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\PatientProfileView.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\PatientProfileView.jsx",
+    "endpoint": "/patient/${patient.id}/profile/"
+  },
+  {
+    "file": "src\\components\\PatientTreatmentHistoryTab.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\PendingReminders.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\PendingReminders.jsx",
+    "endpoint": "/reminders/pending/"
+  },
+  {
+    "file": "src\\components\\PendingReminders.jsx",
+    "endpoint": "/communication-logs/"
+  },
+  {
+    "file": "src\\components\\PharmacyStock.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\PharmacyStock.jsx",
+    "endpoint": "/pharmacy/stock/batches/"
+  },
+  {
+    "file": "src\\components\\PurchaseEntry.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\PurchaseEntry.jsx",
+    "endpoint": "/stock/purchase/history/"
+  },
+  {
+    "file": "src\\components\\SearchPatient.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\components\\SearchPatient.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\SearchPatient.jsx",
+    "endpoint": "/patient/${patient.id}/profile/"
+  },
+  {
+    "file": "src\\components\\SearchPatient.jsx",
+    "endpoint": "/patient/${viewPatient.id}/profile/"
+  },
+  {
+    "file": "src\\components\\SearchPatient.jsx",
+    "endpoint": "/appointment/create/"
+  },
+  {
+    "file": "src\\components\\SearchPatient.jsx",
+    "endpoint": "/patient/${patientId}/profile/"
+  },
+  {
+    "file": "src\\components\\StatsCards.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\TeleMedicine.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\TodayPatients.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\TodayPatients.jsx",
+    "endpoint": "/patient/${appt.patient}/profile/"
+  },
+  {
+    "file": "src\\components\\TodayPatients.jsx",
+    "endpoint": "/visit/get-or-create/"
+  },
+  {
+    "file": "src\\components\\TodayPatients.jsx",
+    "endpoint": "/bill/create-advanced/"
+  },
+  {
+    "file": "src\\components\\TodayPatients.jsx",
+    "endpoint": "/patient/${appt.patient}/profile/"
+  },
+  {
+    "file": "src\\components\\TodayPatients.jsx",
+    "endpoint": "/appointments/today/"
+  },
+  {
+    "file": "src\\components\\TodayPatients.jsx",
+    "endpoint": "/appointments/${appt.id}/status/"
+  },
+  {
+    "file": "src\\components\\TodayPatients.jsx",
+    "endpoint": "/appointments/${appt.id}/status/"
+  },
+  {
+    "file": "src\\components\\TodayPatients.jsx",
+    "endpoint": "/appointment/create/"
+  },
+  {
+    "file": "src\\components\\TreatmentModal.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\TreatmentModal.jsx",
+    "endpoint": "/treatment-master/list/"
+  },
+  {
+    "file": "src\\components\\TreatmentModal.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\TreatmentModal.jsx",
+    "endpoint": "/visit/get-or-create/"
+  },
+  {
+    "file": "src\\components\\TreatmentModal.jsx",
+    "endpoint": "/create-billing/"
+  },
+  {
+    "file": "src\\components\\WebsiteAppointments.jsx",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\components\\WebsiteAppointments.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\WebsiteAppointments.jsx",
+    "endpoint": "/patient/search/"
+  },
+  {
+    "file": "src\\components\\WebsiteAppointments.jsx",
+    "endpoint": "/website-appointments/"
+  },
+  {
+    "file": "src\\components\\WebsiteAppointments.jsx",
+    "endpoint": "/website-appointments/${id}/action/"
+  },
+  {
+    "file": "src\\components\\WebsiteAppointments.jsx",
+    "endpoint": "/website-appointments/${id}/action/"
+  },
+  {
+    "file": "src\\components\\WebsiteAppointments.jsx",
+    "endpoint": "/website-appointments/${id}/action/"
+  },
+  {
+    "file": "src\\components\\investigations\\InvestigationsSection.jsx",
+    "endpoint": "../../utils/api"
+  },
+  {
+    "file": "src\\components\\investigations\\InvestigationsSection.jsx",
+    "endpoint": "/investigation-masters/"
+  },
+  {
+    "file": "src\\components\\investigations\\InvestigationsSection.jsx",
+    "endpoint": "/doctors/"
+  },
+  {
+    "file": "src\\components\\investigations\\InvestigationsSection.jsx",
+    "endpoint": "/patients/${patientId}/investigations-history/"
+  },
+  {
+    "file": "src\\components\\investigations\\InvestigationsSection.jsx",
+    "endpoint": "/patient-investigations/${editingId}/"
+  },
+  {
+    "file": "src\\components\\investigations\\InvestigationsSection.jsx",
+    "endpoint": "/patient-investigations/"
+  },
+  {
+    "file": "src\\components\\investigations\\InvestigationsSection.jsx",
+    "endpoint": "/patient-investigations/${invId}/"
+  },
+  {
+    "file": "src\\components\\investigations\\InvestigationsSection.jsx",
+    "endpoint": "/investigation-attachments/${attId}/"
+  },
+  {
+    "file": "src\\context\\BranchContext.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\context\\BranchContext.jsx",
+    "endpoint": "/branches/"
+  },
+  {
+    "file": "src\\context\\PatientContext.jsx",
+    "endpoint": "../utils/api"
+  },
+  {
+    "file": "src\\utils\\api.js",
+    "endpoint": "http://127.0.0.1:8000/api"
+  },
+  {
+    "file": "src\\utils\\api.js",
+    "endpoint": "/token/refresh/"
+  }
+]

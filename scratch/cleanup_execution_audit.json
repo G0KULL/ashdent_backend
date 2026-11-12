@@ -1,0 +1,163 @@
+{
+  "pre_counts": {
+    "patients_patient": 26,
+    "patients_appointment": 25,
+    "patients_visit": 18,
+    "patients_clinicalnotes": 10,
+    "patients_toothconditionrecord": 11,
+    "patients_treatmentplan": 113,
+    "patients_treatmentplanitem": 125,
+    "patients_estimate": 41,
+    "patients_prescription": 6,
+    "patients_prescriptionitem": 9,
+    "patients_billing": 45,
+    "patients_billpayment": 38,
+    "patients_slot_lock": 61
+  },
+  "post_counts": {
+    "patients_patient": 25,
+    "patients_appointment": 24,
+    "patients_visit": 17,
+    "patients_clinicalnotes": 9,
+    "patients_toothconditionrecord": 10,
+    "patients_treatmentplan": 112,
+    "patients_treatmentplanitem": 123,
+    "patients_estimate": 40,
+    "patients_prescription": 5,
+    "patients_prescriptionitem": 7,
+    "patients_billing": 44,
+    "patients_billpayment": 36,
+    "patients_slot_lock": 60
+  },
+  "deletions": [
+    {
+      "collection": "patients_patient",
+      "id": "6aeef65ef054fbd01ad70dd3",
+      "status": "DELETED",
+      "reason": "Arthur Dentist synthetic patient"
+    },
+    {
+      "collection": "patients_appointment",
+      "id": "6aeef65ef054fbd01ad70dd4",
+      "status": "DELETED",
+      "reason": "Arthur Dentist test appointment (2026-11-20)"
+    },
+    {
+      "collection": "patients_communicationlog",
+      "id": "6aeef65ef054fbd01ad70dd5",
+      "status": "DELETED",
+      "reason": "Arthur Dentist communication log"
+    },
+    {
+      "collection": "patients_visit",
+      "id": "6aeef65ef054fbd01ad70dd6",
+      "status": "DELETED",
+      "reason": "Arthur Dentist visit encounter"
+    },
+    {
+      "collection": "patients_clinicalnotes",
+      "id": "6aeef65ef054fbd01ad70dd7",
+      "status": "DELETED",
+      "reason": "Arthur Dentist clinical notes"
+    },
+    {
+      "collection": "patients_toothconditionrecord",
+      "id": "6aeef65ef054fbd01ad70dd8",
+      "status": "DELETED",
+      "reason": "Arthur Dentist tooth condition record (46)"
+    },
+    {
+      "collection": "patients_emrchangelog",
+      "id": "6aeef65ef054fbd01ad70dd9",
+      "status": "DELETED",
+      "reason": "Arthur Dentist emr change log 1"
+    },
+    {
+      "collection": "patients_emrchangelog",
+      "id": "6aeef65ff054fbd01ad70ddf",
+      "status": "DELETED",
+      "reason": "Arthur Dentist emr change log 2"
+    },
+    {
+      "collection": "patients_treatmentplan",
+      "id": "6aeef65ef054fbd01ad70ddc",
+      "status": "DELETED",
+      "reason": "Arthur Dentist treatment plan"
+    },
+    {
+      "collection": "patients_treatmentplanitem",
+      "id": "6aeef65ff054fbd01ad70ddd",
+      "status": "DELETED",
+      "reason": "Arthur Dentist treatment plan item 1 (Tooth 46 RCT)"
+    },
+    {
+      "collection": "patients_treatmentplanitem",
+      "id": "6aeef65ff054fbd01ad70dde",
+      "status": "DELETED",
+      "reason": "Arthur Dentist treatment plan item 2 (Tooth 46 Crown)"
+    },
+    {
+      "collection": "patients_estimate",
+      "id": "6aeef65ff054fbd01ad70de0",
+      "status": "DELETED",
+      "reason": "Arthur Dentist estimate"
+    },
+    {
+      "collection": "patients_prescription",
+      "id": "6aeef65ff054fbd01ad70de5",
+      "status": "DELETED",
+      "reason": "Arthur Dentist prescription"
+    },
+    {
+      "collection": "patients_prescriptionitem",
+      "id": "6aeef65ff054fbd01ad70de6",
+      "status": "DELETED",
+      "reason": "Arthur Dentist prescription item (Amoxicillin)"
+    },
+    {
+      "collection": "patients_prescriptionitem",
+      "id": "6aeef65ff054fbd01ad70de7",
+      "status": "DELETED",
+      "reason": "Arthur Dentist prescription item (Ketorolac)"
+    },
+    {
+      "collection": "patients_billing",
+      "id": "6aeef65ff054fbd01ad70de8",
+      "status": "DELETED",
+      "reason": "Arthur Dentist test billing invoice"
+    },
+    {
+      "collection": "patients_billpayment",
+      "id": "6aeef65ff054fbd01ad70deb",
+      "status": "DELETED",
+      "reason": "Arthur Dentist partial payment (RCP-BR_ALPHA_MAIN-1001)"
+    },
+    {
+      "collection": "patients_billpayment",
+      "id": "6aeef65ff054fbd01ad70ded",
+      "status": "DELETED",
+      "reason": "Arthur Dentist final payment (RCP-BR_ALPHA_MAIN-1002)"
+    },
+    {
+      "collection": "patients_transaction",
+      "id": "6aeef65ff054fbd01ad70dec",
+      "status": "DELETED",
+      "reason": "Arthur Dentist ledger transaction 1"
+    },
+    {
+      "collection": "patients_transaction",
+      "id": "6aeef65ff054fbd01ad70dee",
+      "status": "DELETED",
+      "reason": "Arthur Dentist ledger transaction 2"
+    },
+    {
+      "collection": "patients_slot_lock",
+      "id": "slot_6aeef65cf054fbd01ad70dc8_2026-11-20_10:00",
+      "status": "DELETED",
+      "reason": "Arthur Dentist appointment slot lock"
+    }
+  ],
+  "all_counts_valid": true,
+  "legacy_payments_intact": true,
+  "prices_intact": true
+}

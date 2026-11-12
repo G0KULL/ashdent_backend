@@ -1,0 +1,44 @@
+{
+  "counts": {
+    "estimates": 40,
+    "estimate_items": 86,
+    "billings": 39,
+    "billing_items": 38,
+    "bill_payments": 27,
+    "legacy_payments": 9,
+    "transactions": 27
+  },
+  "estimates": {
+    "total": 40,
+    "converted": 0,
+    "accepted": 0,
+    "draft_or_other": 0
+  },
+  "billings": {
+    "total": 39,
+    "invoices": 34,
+    "pharmacy_bills": 0,
+    "clinical_bills": 39,
+    "invoice_number_duplicates": 0
+  },
+  "bill_payments": {
+    "total": 27,
+    "linked_to_valid_bill": 27
+  },
+  "legacy_payments": {
+    "total": 9,
+    "with_visit": 9,
+    "with_patient": 9
+  },
+  "transactions": {
+    "total": 27,
+    "types": [
+      {
+        "_id": "Income",
+        "count": 27
+      }
+    ],
+    "with_patient": 27
+  },
+  "reconciliation_discrepancies": []
+}

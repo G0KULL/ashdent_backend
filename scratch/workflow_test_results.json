@@ -1,0 +1,129 @@
+{
+  "summary": {
+    "passed": 20,
+    "failed": 0,
+    "total": 20
+  },
+  "tests": [
+    {
+      "test_num": 1,
+      "name": "Patient Registration",
+      "status": "PASS",
+      "details": "Patient ID: 6aef1520a932d0e8baaf79d5"
+    },
+    {
+      "test_num": 2,
+      "name": "Patient Profile Retrieval",
+      "status": "PASS",
+      "details": "Name: Arthur Dentist"
+    },
+    {
+      "test_num": 3,
+      "name": "Patient Search by Name & Phone",
+      "status": "PASS",
+      "details": "Found 1 matching Arthur Dent"
+    },
+    {
+      "test_num": 4,
+      "name": "Doctor Available Slot Retrieval",
+      "status": "PASS",
+      "details": "Retrieved 18 slots"
+    },
+    {
+      "test_num": 5,
+      "name": "Appointment Booking",
+      "status": "PASS",
+      "details": "Appt ID: 6aef1521a932d0e8baaf79d6"
+    },
+    {
+      "test_num": 6,
+      "name": "Appointment Conflict Detection",
+      "status": "PASS",
+      "details": "Conflict response status: 409, error: Slot 10:00 on 2026-11-20 is already booked for Dr. Alpha Specialist at Alpha Central. Please select an available slot."
+    },
+    {
+      "test_num": 7,
+      "name": "Appointment Status Lifecycle (Completed)",
+      "status": "PASS",
+      "details": "Status: Completed"
+    },
+    {
+      "test_num": 8,
+      "name": "Visit Generation",
+      "status": "PASS",
+      "details": "Visit ID: 6aef1521a932d0e8baaf79d8"
+    },
+    {
+      "test_num": 9,
+      "name": "Clinical Notes Entry",
+      "status": "PASS",
+      "details": "Note ID: 6aef1521a932d0e8baaf79d9"
+    },
+    {
+      "test_num": 10,
+      "name": "Tooth Condition / Odontogram Notation",
+      "status": "PASS",
+      "details": "Tooth 46 marked Deep Caries"
+    },
+    {
+      "test_num": 11,
+      "name": "Clinical Masters Dynamic Registration",
+      "status": "PASS",
+      "details": "Master diagnosis registered"
+    },
+    {
+      "test_num": 12,
+      "name": "Treatment Plan Creation",
+      "status": "PASS",
+      "details": "Plan ID: 6aef1521a932d0e8baaf79dc"
+    },
+    {
+      "test_num": 13,
+      "name": "Treatment Plan Items Retrieval",
+      "status": "PASS",
+      "details": "Found 2 items in plan"
+    },
+    {
+      "test_num": 14,
+      "name": "Estimate Generation",
+      "status": "PASS",
+      "details": "Estimate ID: 6aef1521a932d0e8baaf79e0"
+    },
+    {
+      "test_num": 15,
+      "name": "Treatment Record Creation",
+      "status": "PASS",
+      "details": "Treatment record started"
+    },
+    {
+      "test_num": 16,
+      "name": "Prescription Creation & Dispensation Items",
+      "status": "PASS",
+      "details": "Prescription recorded"
+    },
+    {
+      "test_num": 17,
+      "name": "Billing Invoice Generation",
+      "status": "PASS",
+      "details": "Bill ID: 6aef1521a932d0e8baaf79e7, Total: 12000.00"
+    },
+    {
+      "test_num": 18,
+      "name": "Partial Payment Recording",
+      "status": "PASS",
+      "details": "Paid: 4000.0, Remaining Balance: 8000.00"
+    },
+    {
+      "test_num": 19,
+      "name": "Full Bill Settlement",
+      "status": "PASS",
+      "details": "Balance: 0.00, Status: Paid"
+    },
+    {
+      "test_num": 20,
+      "name": "Cross-Company Tenant Isolation Verification",
+      "status": "PASS",
+      "details": "Alpha Patient profile from Beta: 403, Estimate: 404, Treatment plans: 403"
+    }
+  ]
+}

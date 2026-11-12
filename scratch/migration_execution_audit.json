@@ -1,0 +1,75 @@
+{
+  "started_at": "2026-11-07T15:27:48.592202",
+  "actions": [
+    {
+      "name": "archive_raw_treatment_plan_items",
+      "timestamp": "2026-11-07T15:27:50.686706",
+      "details": "Archived 56644 items to archived_treatmentplanitems_raw"
+    },
+    {
+      "name": "archive_legacy_payments",
+      "timestamp": "2026-11-07T15:27:50.707753",
+      "details": "Archived 9 records to archived_legacy_payments"
+    },
+    {
+      "name": "retire_clinicsubscription",
+      "timestamp": "2026-11-07T15:27:50.727743",
+      "details": "Archived 1 doc to archived_clinicsubscription and dropped patients_clinicsubscription"
+    },
+    {
+      "name": "retire_patient_groups_junction",
+      "timestamp": "2026-11-07T15:27:50.730060",
+      "details": "Dropped empty unused junction collection patients_patient_groups (count: 0)"
+    },
+    {
+      "name": "deduplicate_treatment_plan_items",
+      "timestamp": "2026-11-07T15:27:53.044913",
+      "details": {
+        "original_count": 56644,
+        "unique_preserved": 123,
+        "duplicates_archived": 56521,
+        "divergent_groups_corrected": 83
+      }
+    },
+    {
+      "name": "backfill_billing_tenants",
+      "timestamp": "2026-11-07T15:27:53.090508",
+      "details": "Backfilled company/branch on 6 historical billing records"
+    },
+    {
+      "name": "backfill_visit_tenants",
+      "timestamp": "2026-11-07T15:27:53.114959",
+      "details": "Backfilled company/branch on 5 historical visit records"
+    },
+    {
+      "name": "backfill_prescription_tenants",
+      "timestamp": "2026-11-07T15:27:53.146148",
+      "details": "Backfilled company/branch on 5 historical prescription records"
+    },
+    {
+      "name": "backfill_doctor_tenants",
+      "timestamp": "2026-11-07T15:27:53.163733",
+      "details": "Backfilled company/branch on 2 historical doctor profiles"
+    },
+    {
+      "name": "consolidate_legacy_payments",
+      "timestamp": "2026-11-07T15:27:53.297494",
+      "details": {
+        "total_legacy_payments_processed": 9,
+        "consultation_bills_created": 5,
+        "billpayments_created": 9,
+        "exceptions_count": 0
+      }
+    },
+    {
+      "name": "create_indexes",
+      "timestamp": "2026-11-07T15:27:53.373916",
+      "details": "Verified 4 performance indexes on target database"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "exceptions_report": [],
+  "completed_at": "2026-11-07T15:27:53.373947",
+  "elapsed_seconds": 4.7817463874816895
+}

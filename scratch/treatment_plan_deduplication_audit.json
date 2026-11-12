@@ -1,0 +1,1435 @@
+[
+  {
+    "plan_id": "6ae970d46e182a759c23b8d8",
+    "tooth_number": "35",
+    "procedure_name": "amalgam filling",
+    "surface": "All",
+    "status": "Planned",
+    "total_original_items": 2,
+    "original_prices": [
+      "0"
+    ],
+    "selected_item_id": "6ae970d46e182a759c23b8d9",
+    "selected_price": "0",
+    "standard_price_snapshot": "None",
+    "reason": "Identical duplicate group, retained earliest record"
+  },
+  {
+    "plan_id": "6ae970e66e182a759c23b8de",
+    "tooth_number": "35",
+    "procedure_name": "amalgam filling",
+    "surface": "All",
+    "status": "Planned",
+    "total_original_items": 2,
+    "original_prices": [
+      "0"
+    ],
+    "selected_item_id": "6ae970e66e182a759c23b8df",
+    "selected_price": "0",
+    "standard_price_snapshot": "None",
+    "reason": "Identical duplicate group, retained earliest record"
+  },
+  {
+    "plan_id": "6ae970e66e182a759c23b8e1",
+    "tooth_number": "35",
+    "procedure_name": "amalgam filling",
+    "surface": "All",
+    "status": "Planned",
+    "total_original_items": 2,
+    "original_prices": [
+      "0"
+    ],
+    "selected_item_id": "6ae970e66e182a759c23b8e4",
+    "selected_price": "0",
+    "standard_price_snapshot": "None",
+    "reason": "Identical duplicate group, retained earliest record"
+  },
+  {
+    "plan_id": "6ae970e66e182a759c23b8e8",
+    "tooth_number": "35",
+    "procedure_name": "amalgam filling",
+    "surface": "All",
+    "status": "Planned",
+    "total_original_items": 5,
+    "original_prices": [
+      "0"
+    ],
+    "selected_item_id": "6ae970e66e182a759c23b8e9",
+    "selected_price": "0",
+    "standard_price_snapshot": "None",
+    "reason": "Identical duplicate group, retained earliest record"
+  },
+  {
+    "plan_id": "6ae970e66e182a759c23b8e8",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 3,
+    "original_prices": [
+      "1500"
+    ],
+    "selected_item_id": "6ae970e66e182a759c23b8eb",
+    "selected_price": "1500",
+    "standard_price_snapshot": "None",
+    "reason": "Identical duplicate group, retained earliest record"
+  },
+  {
+    "plan_id": "6ae970e76e182a759c23b8f2",
+    "tooth_number": "35",
+    "procedure_name": "amalgam filling",
+    "surface": "All",
+    "status": "Planned",
+    "total_original_items": 9,
+    "original_prices": [
+      "0"
+    ],
+    "selected_item_id": "6ae970e76e182a759c23b8f3",
+    "selected_price": "0",
+    "standard_price_snapshot": "None",
+    "reason": "Identical duplicate group, retained earliest record"
+  },
+  {
+    "plan_id": "6ae970e76e182a759c23b8f2",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 5,
+    "original_prices": [
+      "1500"
+    ],
+    "selected_item_id": "6ae970e76e182a759c23b8f5",
+    "selected_price": "1500",
+    "standard_price_snapshot": "None",
+    "reason": "Identical duplicate group, retained earliest record"
+  },
+  {
+    "plan_id": "6ae97d050b648da885614f8a",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 4,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae97d050b648da885614f8c",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae97d66ec59e7479b8bb141",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 4,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae97d66ec59e7479b8bb143",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae97d66ec59e7479b8bb147",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 9,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae97d66ec59e7479b8bb149",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae988a7ec59e7479b8bb152",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 9,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae988a7ec59e7479b8bb154",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae988a7ec59e7479b8bb158",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 9,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae988a7ec59e7479b8bb15d",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae988a8ec59e7479b8bb168",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 22,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae988a8ec59e7479b8bb16a",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae988a8ec59e7479b8bb180",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 40,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae988a8ec59e7479b8bb182",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9894eec59e7479b8bb1aa",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 40,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9894eec59e7479b8bb1ac",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9894fec59e7479b8bb1d4",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 102,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9894fec59e7479b8bb1d6",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae98d82ec59e7479b8bb23d",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 102,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae98d82ec59e7479b8bb241",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae98d82ec59e7479b8bb23e",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 102,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae98d82ec59e7479b8bb242",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae98d85ec59e7479b8bb30d",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 244,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae98d85ec59e7479b8bb30f",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae98d87ec59e7479b8bb403",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 448,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae98d87ec59e7479b8bb405",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f57ec59e7479b8bb5c5",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 447,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f57ec59e7479b8bb5c7",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f58ec59e7479b8bb61c",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 446,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f58ec59e7479b8bb621",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f58ec59e7479b8bb66d",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 445,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f58ec59e7479b8bb673",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f59ec59e7479b8bb6be",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 444,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f59ec59e7479b8bb6c5",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f59ec59e7479b8bb703",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 443,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f59ec59e7479b8bb70e",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f5aec59e7479b8bb75c",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 442,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f5aec59e7479b8bb769",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f61ec59e7479b8bbd70",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 441,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f61ec59e7479b8bbd7e",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f64ec59e7479b8bbf8c",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 440,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f64ec59e7479b8bbf95",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f65ec59e7479b8bc085",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 439,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f65ec59e7479b8bc094",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f66ec59e7479b8bc113",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 438,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f66ec59e7479b8bc125",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f66ec59e7479b8bc186",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 437,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f67ec59e7479b8bc191",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f67ec59e7479b8bc195",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 436,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f67ec59e7479b8bc19d",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f6eec59e7479b8bc7a1",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 435,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f6eec59e7479b8bc7b4",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f71ec59e7479b8bc9f6",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 434,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f71ec59e7479b8bca08",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f73ec59e7479b8bcafd",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 433,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f73ec59e7479b8bcb13",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae99f73ec59e7479b8bcb3b",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 432,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae99f73ec59e7479b8bcb41",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4a2ec59e7479b8bd15d",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 418,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4a2ec59e7479b8bd15e",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4a7ec59e7479b8bd301",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 417,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4a7ec59e7479b8bd302",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4a8ec59e7479b8bd38d",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 416,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4a8ec59e7479b8bd390",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4acec59e7479b8bd646",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 415,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4acec59e7479b8bd649",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4b2ec59e7479b8bd7e7",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 414,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4b2ec59e7479b8bd7e9",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4b4ec59e7479b8bd8c2",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 413,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4b4ec59e7479b8bd8c4",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4b5ec59e7479b8bd98b",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 412,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4b5ec59e7479b8bd98e",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4b6ec59e7479b8bda37",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 411,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4b6ec59e7479b8bda3b",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4b7ec59e7479b8bdae9",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 410,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4b7ec59e7479b8bdaf4",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4b8ec59e7479b8bdb6e",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 409,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4b8ec59e7479b8bdb78",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4b9ec59e7479b8bdc39",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 408,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4b9ec59e7479b8bdc42",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4bdec59e7479b8bdf86",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 407,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4bdec59e7479b8bdf8c",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4c0ec59e7479b8be1b3",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 406,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4c0ec59e7479b8be1c5",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4c2ec59e7479b8be369",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 405,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4c2ec59e7479b8be37c",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4c3ec59e7479b8be40b",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 404,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4c3ec59e7479b8be412",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4c4ec59e7479b8be4f3",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 403,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4c5ec59e7479b8be4f9",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4c6ec59e7479b8be5c6",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 402,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4c6ec59e7479b8be5cd",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4caec59e7479b8be907",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 401,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4caec59e7479b8be914",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4cdec59e7479b8beb20",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 400,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4cdec59e7479b8beb29",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4cfec59e7479b8bed0d",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 399,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4cfec59e7479b8bed13",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4d0ec59e7479b8bedb5",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 398,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4d0ec59e7479b8bedbc",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4d1ec59e7479b8bee6e",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 397,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4d1ec59e7479b8bee80",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4d2ec59e7479b8bef36",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 396,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4d2ec59e7479b8bef43",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4d7ec59e7479b8bf2a1",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 395,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4d7ec59e7479b8bf2ab",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4d9ec59e7479b8bf470",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 394,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4d9ec59e7479b8bf479",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4dcec59e7479b8bf696",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 393,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4dcec59e7479b8bf69b",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4ddec59e7479b8bf73e",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 392,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4ddec59e7479b8bf74e",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4deec59e7479b8bf7aa",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 391,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4deec59e7479b8bf7b5",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4deec59e7479b8bf82c",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 390,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4deec59e7479b8bf836",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4e4ec59e7479b8bfc2a",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 389,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4e4ec59e7479b8bfc37",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4e5ec59e7479b8bfd52",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 388,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4e5ec59e7479b8bfd5e",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4e9ec59e7479b8c000b",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 387,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4e9ec59e7479b8c0015",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4eaec59e7479b8c0085",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 386,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4eaec59e7479b8c008c",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4ebec59e7479b8c0138",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 385,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4ebec59e7479b8c013e",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4ebec59e7479b8c0141",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 384,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4ebec59e7479b8c0155",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4f1ec59e7479b8c0530",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 365,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4f1ec59e7479b8c0537",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4f2ec59e7479b8c0640",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 364,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4f2ec59e7479b8c0648",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4f7ec59e7479b8c0967",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 366,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4f7ec59e7479b8c0975",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4f7ec59e7479b8c09a3",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 363,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4f7ec59e7479b8c09ac",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4f8ec59e7479b8c0a2b",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 362,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4f8ec59e7479b8c0a3e",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4f8ec59e7479b8c0a3b",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 361,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a4f8ec59e7479b8c0a4a",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4fdec59e7479b8c0e14",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 360,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4fdec59e7479b8c0e1c",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a4feec59e7479b8c0ec2",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 359,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a4feec59e7479b8c0ecc",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a502ec59e7479b8c11f6",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 358,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a502ec59e7479b8c1200",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a503ec59e7479b8c1259",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 357,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a503ec59e7479b8c1266",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a503ec59e7479b8c1274",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 356,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a503ec59e7479b8c127b",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a503ec59e7479b8c12b0",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 355,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a503ec59e7479b8c12b9",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a509ec59e7479b8c16cc",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 354,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a509ec59e7479b8c16d7",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a509ec59e7479b8c1747",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 353,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a509ec59e7479b8c1761",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a50dec59e7479b8c1a57",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 352,
+    "original_prices": [
+      "15000",
+      "1500"
+    ],
+    "selected_item_id": "6ae9a50dec59e7479b8c1a69",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9a50eec59e7479b8c1aae",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 351,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9a50eec59e7479b8c1ab4",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9ac0eec59e7479b8c1efe",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 351,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9ac0eec59e7479b8c1eff",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9ac0eec59e7479b8c1f05",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 351,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9ac0eec59e7479b8c1f07",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  },
+  {
+    "plan_id": "6ae9accbec59e7479b8c21c0",
+    "tooth_number": "36",
+    "procedure_name": "composite filling",
+    "surface": "All",
+    "status": "Completed",
+    "total_original_items": 27943,
+    "original_prices": [
+      "1500",
+      "15000"
+    ],
+    "selected_item_id": "6ae9accbec59e7479b8c21c1",
+    "selected_price": "1500",
+    "standard_price_snapshot": "1500",
+    "reason": "Selected catalogue standard price 1500 (suppressed runaway insertion error {'15000'})"
+  }
+]

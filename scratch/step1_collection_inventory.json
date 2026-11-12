@@ -1,0 +1,7874 @@
+{
+  "auth_permission": {
+    "collection_name": "auth_permission",
+    "document_count": 388,
+    "is_framework": true,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "content_type_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "codename",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4c9a4470e815ac823f5ba",
+      "name": "REDACTED_NAME",
+      "content_type_id": "6ac4c9a4470e815ac823f5b9",
+      "codename": "REDACTED_NAME"
+    }
+  },
+  "auth_user": {
+    "collection_name": "auth_user",
+    "document_count": 24,
+    "is_framework": true,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "password",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "last_login",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 24,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_superuser",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "username",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "first_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "last_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "email",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_staff",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "date_joined",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4c9c5451a504a886a8bc0",
+      "password": "REDACTED_HASH",
+      "last_login": "None",
+      "is_superuser": "True",
+      "username": "REDACTED_NAME",
+      "first_name": "REDACTED_NAME",
+      "last_name": "REDACTED_NAME",
+      "email": "redacted@example.com",
+      "is_staff": "True",
+      "is_active": "True",
+      "date_joined": "2026-10-06T10:13:24.772000",
+      "id": "6ac4c9c5451a504a886a8bc0"
+    }
+  },
+  "django_content_type": {
+    "collection_name": "django_content_type",
+    "document_count": 97,
+    "is_framework": true,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "app_label",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "model",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4c9a4470e815ac823f5b9",
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  "django_migrations": {
+    "collection_name": "django_migrations",
+    "document_count": 109,
+    "is_framework": true,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "app",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "applied",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4c7e3e0d0ae065f484976",
+      "app": "contenttypes",
+      "name": "REDACTED_NAME",
+      "applied": "2026-10-06T10:05:23.217000"
+    }
+  },
+  "numbering_sequences": {
+    "collection_name": "numbering_sequences",
+    "document_count": 4,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "current",
+        "types": "int",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "estimate_6ae06c1ba7492ed0d8b71808_6ae06c1ba7492ed0d8b71809",
+      "current": "1021"
+    }
+  },
+  "patients_appointment": {
+    "collection_name": "patients_appointment",
+    "document_count": 24,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_appointment_branch_id_0dc09fba",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_appointment_company_id_a98522e2",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "date",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "time",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 3,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "rescheduled_to_date",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 24,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "rescheduled_to_time",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 24,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_virtual",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "meeting_link",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 24,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "telemedicine_notes",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 24,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "duration_minutes",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae82f58458ef4dbf30e312b",
+      "company_id": "6ae06c1ba7492ed0d8b71808",
+      "branch_id": "6ae06c1ba7492ed0d8b71809",
+      "patient_id": "6ae82f58458ef4dbf30e3129",
+      "doctor_id": "6ad223544700afea755fcb03",
+      "date": "2026-11-02T00:00:00",
+      "time": "0001-01-01T06:36:08.679000",
+      "status": "Completed",
+      "rescheduled_to_date": "None",
+      "rescheduled_to_time": "None",
+      "is_virtual": "False",
+      "meeting_link": "None",
+      "telemedicine_notes": "None",
+      "duration_minutes": "30"
+    }
+  },
+  "patients_auditlog": {
+    "collection_name": "patients_auditlog",
+    "document_count": 65,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_auditlog_company_id_9d2d819a",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "action",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "user_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 7,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6aec1ef25a10b408479a3c7a",
+      "action": "Doctor Akhil submitted schedule proposal #6aec1ef25a10b408479a3c72 for East Branch",
+      "user_id": "6aec1e8b4966b3d1059e461e",
+      "created_at": "2026-11-05T06:15:14.645000"
+    }
+  },
+  "patients_autonumbering": {
+    "collection_name": "patients_autonumbering",
+    "document_count": 1,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_autonumbering_branch_id_5ff4f02d",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_autonumbering_company_id_be217b3e",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_prefix",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_start",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "invoice_prefix",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "invoice_start",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "prescription_prefix",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "prescription_start",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "estimate_prefix",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "estimate_start",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "receipt_prefix",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "receipt_start",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae09461f29cf1b0a0fb5c84",
+      "company_id": "6ae06c1ba7492ed0d8b71808",
+      "branch_id": "6ae06c1ba7492ed0d8b71809",
+      "patient_prefix": "PT-",
+      "patient_start": "1001",
+      "invoice_prefix": "INV-",
+      "invoice_start": "500",
+      "prescription_prefix": "RX-",
+      "prescription_start": "200",
+      "estimate_prefix": "EST-",
+      "estimate_start": "1001",
+      "receipt_prefix": "RCP-",
+      "receipt_start": "1001"
+    }
+  },
+  "patients_billing": {
+    "collection_name": "patients_billing",
+    "document_count": 39,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billing_branch_id_9d3761c2",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billing_company_id_5d8ff112",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billing_invoice_number_52cb4262",
+        "key": [
+          [
+            "invoice_number",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billing_estimate_id_984f9235",
+        "key": [
+          [
+            "estimate_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "visit_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 33,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "clinical_note_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 39,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "bill_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "total_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "paid_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "cash_received",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "balance_returned",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "balance_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "payment_method",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_by_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 39,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_invoice",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount_total",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "invoice_number",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "subtotal",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tax_total",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "estimate_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae9782499ca57772af9a1ae",
+      "company_id": "None",
+      "branch_id": "None",
+      "patient_id": "6ae977fd417c55180548e1dc",
+      "visit_id": "6ae9782499ca57772af9a1a3",
+      "clinical_note_id": "None",
+      "doctor_id": "6ae977fd417c55180548e1db",
+      "bill_type": "Clinical",
+      "total_amount": "6000.00",
+      "paid_amount": "2000.0",
+      "cash_received": "0",
+      "balance_returned": "0",
+      "balance_amount": "4000.00",
+      "payment_method": "Cash",
+      "status": "Partial",
+      "notes": "None",
+      "created_by_id": "None",
+      "is_invoice": "False",
+      "created_at": "2026-11-03T05:59:00.754000",
+      "discount_total": "0",
+      "invoice_number": "None",
+      "subtotal": "0",
+      "tax_total": "0",
+      "estimate_id": "None"
+    }
+  },
+  "patients_billingitem": {
+    "collection_name": "patients_billingitem",
+    "document_count": 38,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billingitem_treatment_record_id_82ed05dc",
+        "key": [
+          [
+            "treatment_record_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billingitem_estimate_item_id_48b959f4",
+        "key": [
+          [
+            "estimate_item_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "billing_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "treatment_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "qty",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "standard_price_snapshot",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price_override_reason",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 34,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tooth_number",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "treatment_record_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 38,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "estimate_item_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae9782499ca57772af9a1b0",
+      "billing_id": "6ae9782499ca57772af9a1ae",
+      "treatment_id": "6ae9780c237fd3ffbcb0609e",
+      "qty": "1",
+      "price": "6000.0",
+      "standard_price_snapshot": "5000.00",
+      "discount": "0",
+      "price_override_reason": "Complex calcified canal",
+      "tooth_number": "",
+      "treatment_record_id": "None",
+      "estimate_item_id": "None"
+    }
+  },
+  "patients_billpayment": {
+    "collection_name": "patients_billpayment",
+    "document_count": 27,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_receipt_number_7dd2ff5e_uniq",
+        "key": [
+          [
+            "receipt_number",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_billpayment_billing_id_8356163e",
+        "key": [
+          [
+            "billing_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_branch_id_8404754d",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_company_id_a73a9047",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_patient_id_d01f49f9",
+        "key": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_billpayment_received_by_id_5ff7b35b",
+        "key": [
+          [
+            "received_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "billing_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "receipt_number",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "payment_method",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "transaction_reference",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "payment_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "received_by_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 27,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6aeacc32299c1c48fca48e68",
+      "billing_id": "6aeacc32299c1c48fca48e65",
+      "patient_id": "6ae82f58458ef4dbf30e3129",
+      "company_id": "6ae06c1ba7492ed0d8b71808",
+      "branch_id": "6ae06c1ba7492ed0d8b71809",
+      "receipt_number": "RCP-MAIN-1001",
+      "amount": "5000.0",
+      "payment_method": "UPI",
+      "transaction_reference": "",
+      "payment_type": "Payment",
+      "notes": "Payment on invoice generation",
+      "received_by_id": "None",
+      "created_at": "2026-11-04T06:09:54.468000"
+    }
+  },
+  "patients_branch": {
+    "collection_name": "patients_branch",
+    "document_count": 13,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_branch_company_id_9deb3c8c",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_branch_company_id_code_6524e111_uniq",
+        "key": [
+          [
+            "company_id",
+            1
+          ],
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "phone",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 12,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "email",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 13,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "address",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 13,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "city",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 12,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "state",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 12,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "country",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "zip_code",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 13,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae06c1ba7492ed0d8b71809",
+      "company_id": "6ae06c1ba7492ed0d8b71808",
+      "name": "REDACTED_NAME",
+      "code": "MAIN",
+      "phone": "REDACTED_PHONE",
+      "email": "redacted@example.com",
+      "address": "REDACTED_ADDRESS",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India",
+      "zip_code": "None",
+      "is_active": "True",
+      "created_at": "2026-10-27T09:17:15.612000",
+      "updated_at": "2026-10-27T09:17:15.612000"
+    }
+  },
+  "patients_clinicalnotes": {
+    "collection_name": "patients_clinicalnotes",
+    "document_count": 9,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_clinicalnotes_visit_id_0b585439",
+        "key": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_clinicalnotes_doctor_id_baadbfb9",
+        "key": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "appointment_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "selected_teeth",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "complaints",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "observations",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "investigations",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "diagnosis",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "medical_history",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "dental_history",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "allergies",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "ongoing_medications",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "chief_complaint",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "treatment_plan",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "follow_up_date",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "follow_up_note",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "follow_up_status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "chart_conditions",
+        "types": "dict",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tooth_details",
+        "types": "dict",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "vitals",
+        "types": "dict",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae82f58458ef4dbf30e312c",
+      "appointment_id": "6ae82f58458ef4dbf30e312b",
+      "selected_teeth": "[16, 21, 55]",
+      "complaints": "['Pain', 'Swelling']",
+      "observations": "[]",
+      "investigations": "[]",
+      "diagnosis": "['Irreversible Pulpitis']",
+      "medical_history": "['Hypertension']",
+      "dental_history": "[]",
+      "allergies": "[]",
+      "ongoing_medications": "[]",
+      "chief_complaint": "Severe toothache in upper left region",
+      "patient_type": "Adult",
+      "notes": "",
+      "treatment_plan": "",
+      "follow_up_date": "None",
+      "follow_up_note": "",
+      "follow_up_status": "Pending",
+      "created_at": "2026-11-02T06:36:08.716000",
+      "chart_conditions": "{}",
+      "tooth_details": "{}",
+      "vitals": "{}",
+      "doctor_id": "6ad223544700afea755fcb03"
+    }
+  },
+  "patients_clinicprofile": {
+    "collection_name": "patients_clinicprofile",
+    "document_count": 1,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_clinicprofile_branch_id_5f08026d",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_clinicprofile_company_id_3077eb28",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "specialization",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "phone",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "mobile",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "address",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "slogan",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "locality",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "country",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "state",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "city",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "email",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "website",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tax",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "zip_code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "default_language",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "default_currency",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac5038c00d494426a544ece",
+      "name": "REDACTED_NAME",
+      "specialization": "Multispeciality Dental Hospital & Digital Implantology Center",
+      "phone": "REDACTED_PHONE",
+      "mobile": "REDACTED_PHONE",
+      "address": "REDACTED_ADDRESS",
+      "slogan": "Precision Care for Every Smile",
+      "locality": "None",
+      "country": "India",
+      "state": "Kerala",
+      "city": "Kochi",
+      "email": "redacted@example.com",
+      "website": "www.ashdent.demo",
+      "tax": "None",
+      "zip_code": "682016",
+      "default_language": "English",
+      "default_currency": "INR",
+      "branch_id": "6ae06c1ba7492ed0d8b71809",
+      "company_id": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  "patients_clinicsubscription": {
+    "collection_name": "patients_clinicsubscription",
+    "document_count": 1,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "plan_id",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "plan_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "billing_cycle",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branches_count",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "base_price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "additional_branch_price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tax_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "total_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "clinic_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "contact_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "contact_email",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "contact_phone",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "activated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "expires_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ad9da2a9ab27704974300df",
+      "plan_id": "scale",
+      "plan_name": "REDACTED_NAME",
+      "billing_cycle": "yearly",
+      "branches_count": "2",
+      "base_price": "38000",
+      "additional_branch_price": "10000",
+      "tax_amount": "8640.00",
+      "total_amount": "56640.00",
+      "status": "Active",
+      "clinic_name": "REDACTED_NAME",
+      "contact_name": "REDACTED_NAME",
+      "contact_email": "redacted@example.com",
+      "contact_phone": "REDACTED_PHONE",
+      "activated_at": "2026-10-22T09:40:58.677000",
+      "expires_at": "2027-10-22T09:40:58.673000",
+      "notes": ""
+    }
+  },
+  "patients_communicationlog": {
+    "collection_name": "patients_communicationlog",
+    "document_count": 13,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "message",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "channel",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "sent_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae82fceaa6aecd55d34d21a",
+      "patient_id": "6ae82fceaa6aecd55d34d216",
+      "message": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+      "channel": "SMS",
+      "sent_at": "2026-11-02T06:38:06.329000"
+    }
+  },
+  "patients_communicationtemplate": {
+    "collection_name": "patients_communicationtemplate",
+    "document_count": 8,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "category",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "text",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "email_enabled",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "sms_enabled",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "whatsapp_enabled",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4f23f00d494426a544eb9",
+      "category": "Appointment",
+      "type": "Confirmation",
+      "text": "Dear [Name], your dental appointment is confirmed for today. Please arrive 10 mins early. Thank you!",
+      "email_enabled": "redacted@example.com",
+      "sms_enabled": "True",
+      "whatsapp_enabled": "False",
+      "created_at": "2026-10-06T13:06:07.155000"
+    }
+  },
+  "patients_company": {
+    "collection_name": "patients_company",
+    "document_count": 11,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_company_code_b88c1237_uniq",
+        "key": [
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "email",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 9,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "phone",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 10,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae06c1ba7492ed0d8b71808",
+      "name": "REDACTED_NAME",
+      "code": "ASHDENT",
+      "email": "redacted@example.com",
+      "phone": "REDACTED_PHONE",
+      "is_active": "True",
+      "created_at": "2026-10-27T09:17:15.607000",
+      "updated_at": "2026-10-27T09:17:15.607000"
+    }
+  },
+  "patients_designationmaster": {
+    "collection_name": "patients_designationmaster",
+    "document_count": 8,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "display_order",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4cd87e339bc230b38d7d5",
+      "name": "REDACTED_NAME",
+      "code": "CDS",
+      "description": "Clinical director and primary dental surgeon",
+      "is_active": "True",
+      "display_order": "1",
+      "created_at": "2026-10-06T10:29:27.676000",
+      "updated_at": "2026-10-06T10:29:27.676000"
+    }
+  },
+  "patients_diagnosismaster": {
+    "collection_name": "patients_diagnosismaster",
+    "document_count": 14,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_diagnosismaster_name_9fa11249_uniq",
+        "key": [
+          [
+            "name",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_diagnosismaster_code_06e803e6_uniq",
+        "key": [
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "category",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "display_order",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ad9b6a6e4b98668a81c92e3",
+      "name": "REDACTED_NAME",
+      "code": "DX-001",
+      "description": "Inflammation of the gingival tissues",
+      "category": "Specialized Periodontics",
+      "is_active": "True",
+      "display_order": "1",
+      "created_at": "2026-10-22T07:09:26.734000",
+      "updated_at": "2026-10-22T08:09:10.482000"
+    }
+  },
+  "patients_discountmaster": {
+    "collection_name": "patients_discountmaster",
+    "document_count": 7,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 2,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount_value",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "applicable_module",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "valid_from",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "valid_to",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 7,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "max_discount",
+        "types": "Decimal128/NoneType",
+        "optional": true,
+        "null_count_in_sample": 2,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4cd87e339bc230b38d7dd",
+      "name": "REDACTED_NAME",
+      "code": "DISC_SNR",
+      "description": "15% concession for registered senior citizens",
+      "discount_type": "Percentage",
+      "discount_value": "15",
+      "applicable_module": "BILLING",
+      "valid_from": "2026-10-06T00:00:00",
+      "valid_to": "None",
+      "max_discount": "2000",
+      "is_active": "True",
+      "created_at": "2026-10-06T10:29:27.722000",
+      "updated_at": "2026-10-06T10:29:27.722000"
+    }
+  },
+  "patients_doctor": {
+    "collection_name": "patients_doctor",
+    "document_count": 11,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctor_company_id_12e32428",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctor_primary_branch_id_955d8db6",
+        "key": [
+          [
+            "primary_branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "color",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "phone",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 4,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "email",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "specialization",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "qualification",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "experience_years",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "availability",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 11,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "consultation_fee",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "slot_duration",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "assigned_branches",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "primary_branch_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 6,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 2,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ad223544700afea755fcb03",
+      "name": "REDACTED_NAME",
+      "color": "#3b82f6",
+      "phone": "REDACTED_PHONE",
+      "email": "redacted@example.com",
+      "specialization": "General Dentistry",
+      "qualification": "BDS, MDS (General Dentistry)",
+      "experience_years": "8",
+      "availability": "None",
+      "consultation_fee": "500.00",
+      "slot_duration": "30",
+      "assigned_branches": "['6ae07122dff61e5ede81e19c']",
+      "primary_branch_id": "6ae06c1ba7492ed0d8b71809",
+      "company_id": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  "patients_doctordateoverride": {
+    "collection_name": "patients_doctordateoverride",
+    "document_count": 0,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctordateoverride_approved_by_id_5b882d99",
+        "key": [
+          [
+            "approved_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctordateoverride_created_by_id_76dd8d28",
+        "key": [
+          [
+            "created_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctordateoverride_branch_id_d5f0b8aa",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctordateoverride_company_id_cde064b1",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [],
+    "sample_document": {}
+  },
+  "patients_doctorschedule": {
+    "collection_name": "patients_doctorschedule",
+    "document_count": 34,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorschedule_branch_id_ffd62c03",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorschedule_company_id_0035329f",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "day_of_week",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "start_time",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "end_time",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "slot_duration",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "session_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_by_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 33,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "approved_by_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 34,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 23,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ad223544700afea755fcb06",
+      "doctor_id": "6ad223544700afea755fcb03",
+      "day_of_week": "1",
+      "start_time": "0001-01-01T08:00:00",
+      "end_time": "0001-01-01T20:00:00",
+      "is_active": "True",
+      "slot_duration": "30",
+      "session_name": "REDACTED_NAME",
+      "status": "APPROVED",
+      "created_by_id": "None",
+      "approved_by_id": "None",
+      "created_at": "None",
+      "updated_at": "2026-11-03T05:14:21.054000",
+      "branch_id": "6ae06c1ba7492ed0d8b71809",
+      "company_id": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  "patients_doctorscheduleproposal": {
+    "collection_name": "patients_doctorscheduleproposal",
+    "document_count": 6,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_doctor_id_97b47b1f",
+        "key": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_reviewed_by_id_3ec6df02",
+        "key": [
+          [
+            "reviewed_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_submitted_by_id_965b5044",
+        "key": [
+          [
+            "submitted_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_branch_id_b2353b65",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_doctorscheduleproposal_company_id_ccb721c3",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "proposal_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "slot_duration",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "proposed_slots",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "date_exceptions",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "submitted_by_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "submitted_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "reviewed_by_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "reviewed_at",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "rejection_reason",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "schedule_mode",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "target_day",
+        "types": "Int64/NoneType",
+        "optional": true,
+        "null_count_in_sample": 5,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6aec1ef25a10b408479a3c72",
+      "company_id": "6aeac8c03cad43c4e188a405",
+      "branch_id": "6aeac8c03cad43c4e188a407",
+      "doctor_id": "6aec1e8b4966b3d1059e461f",
+      "proposal_type": "RECURRING_SCHEDULE",
+      "slot_duration": "60",
+      "proposed_slots": "[{'day_of_week': 0, 'start_time': '09:00', 'end_time': '10:00', 'session_name': 'Morning Session'}, {'day_of_week': 0, 'start_time': '14:00', 'end_time': '16:00', 'session_name': 'Afternoon Session'}]",
+      "date_exceptions": "[]",
+      "status": "REJECTED",
+      "submitted_by_id": "6aec1e8b4966b3d1059e461e",
+      "submitted_at": "2026-11-05T06:15:14.544000",
+      "reviewed_by_id": "6ac4c9c5451a504a886a8bc0",
+      "reviewed_at": "2026-11-05T07:57:09.300000",
+      "rejection_reason": "na",
+      "notes": "",
+      "schedule_mode": "FULL_WEEK",
+      "target_day": "None"
+    }
+  },
+  "patients_dropdownmaster": {
+    "collection_name": "patients_dropdownmaster",
+    "document_count": 39,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4c7d703e026ec2de47c70",
+      "type": "complaint",
+      "name": "REDACTED_NAME"
+    }
+  },
+  "patients_emrchangelog": {
+    "collection_name": "patients_emrchangelog",
+    "document_count": 121,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_emrchangelog_changed_by_id_cc7c4f10",
+        "key": [
+          [
+            "changed_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_emrchangelog_patient_id_4f30cda5",
+        "key": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "entity_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "entity_id",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "action",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "changed_by_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 100,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "changes",
+        "types": "dict",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "timestamp",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae8688d24228921e98878e5",
+      "patient_id": "6ae82f58458ef4dbf30e3129",
+      "entity_type": "ToothConditionRecord",
+      "entity_id": "batch-6ae82f58458ef4dbf30e3129",
+      "action": "UPDATE",
+      "changed_by_id": "None",
+      "changes": "{'updated_teeth': [13, 14]}",
+      "timestamp": "2026-11-02T10:40:13.745000"
+    }
+  },
+  "patients_estimate": {
+    "collection_name": "patients_estimate",
+    "document_count": 40,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_estimate_number_6298a6ba_uniq",
+        "key": [
+          [
+            "estimate_number",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_estimate_branch_id_ec674cd7",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_company_id_454c46df",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_created_by_id_feeb1d5f",
+        "key": [
+          [
+            "created_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_doctor_id_9342217f",
+        "key": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_parent_estimate_id_8b19056e",
+        "key": [
+          [
+            "parent_estimate_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_patient_id_45fb3778",
+        "key": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_status_updated_by_id_9a5314e5",
+        "key": [
+          [
+            "status_updated_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimate_treatment_plan_id_ceeb819f",
+        "key": [
+          [
+            "treatment_plan_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "treatment_plan_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 40,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "estimate_number",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "version",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "parent_estimate_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 27,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "subtotal",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tax",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "grand_total",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "terms",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "valid_until",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_by_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 40,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status_updated_by_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 40,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status_updated_at",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 27,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6aeaca092563e8b1f6a74065",
+      "company_id": "6ae06c1ba7492ed0d8b71808",
+      "branch_id": "6ae06c1ba7492ed0d8b71809",
+      "patient_id": "6ae82f58458ef4dbf30e3129",
+      "doctor_id": "6ad223544700afea755fcb03",
+      "treatment_plan_id": "None",
+      "estimate_number": "EST-MAIN-1002",
+      "version": "1",
+      "parent_estimate_id": "None",
+      "status": "Draft",
+      "subtotal": "5700.00",
+      "discount": "0.00",
+      "tax": "0.00",
+      "grand_total": "5700.00",
+      "notes": "Treatment estimate for dental restoration",
+      "terms": "Estimate valid for 30 days from date of issue. Prices subject to clinical changes during treatment.",
+      "valid_until": "2026-12-04T00:00:00",
+      "created_by_id": "None",
+      "status_updated_by_id": "None",
+      "status_updated_at": "None",
+      "created_at": "2026-11-04T06:00:41.936000",
+      "updated_at": "2026-11-04T06:00:41.960000"
+    }
+  },
+  "patients_estimateitem": {
+    "collection_name": "patients_estimateitem",
+    "document_count": 86,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimateitem_estimate_id_f8cd7e2e",
+        "key": [
+          [
+            "estimate_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimateitem_plan_item_id_6573926b",
+        "key": [
+          [
+            "plan_item_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_estimateitem_treatment_master_id_28efd01f",
+        "key": [
+          [
+            "treatment_master_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "estimate_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "plan_item_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 86,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "treatment_master_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 46,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tooth_number",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "surface",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "procedure_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "quantity",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "billed_quantity",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "standard_price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "unit_price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "total_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6aeaca092563e8b1f6a74066",
+      "estimate_id": "6aeaca092563e8b1f6a74065",
+      "plan_item_id": "None",
+      "treatment_master_id": "6ad9b6a6e4b98668a81c92d8",
+      "tooth_number": "16",
+      "surface": "MOD",
+      "procedure_name": "Composite Filling",
+      "quantity": "1",
+      "billed_quantity": "0",
+      "standard_price": "1500",
+      "unit_price": "1200",
+      "discount": "0",
+      "total_amount": "1200",
+      "status": "Pending",
+      "notes": "Tooth 16 composite restoration",
+      "created_at": "2026-11-04T06:00:41.949000"
+    }
+  },
+  "patients_examinationmaster": {
+    "collection_name": "patients_examinationmaster",
+    "document_count": 19,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_examinationmaster_name_70c6227b_uniq",
+        "key": [
+          [
+            "name",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_examinationmaster_code_881c3263_uniq",
+        "key": [
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "category",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "display_order",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ad9b6a6e4b98668a81c92fc",
+      "name": "REDACTED_NAME",
+      "code": "EXAM-001",
+      "description": "Tenderness elicited when palpating apical or gingival tissue",
+      "category": "Clinical Test",
+      "is_active": "True",
+      "display_order": "1",
+      "created_at": "2026-10-22T07:09:26.893000",
+      "updated_at": "2026-10-22T07:09:26.893000"
+    }
+  },
+  "patients_expense": {
+    "collection_name": "patients_expense",
+    "document_count": 0,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_expense_branch_ref_id_4e84a678",
+        "key": [
+          [
+            "branch_ref_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_expense_company_id_575e1e9f",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [],
+    "sample_document": {}
+  },
+  "patients_expensecategory": {
+    "collection_name": "patients_expensecategory",
+    "document_count": 16,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "key",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "color",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "icon",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_predefined",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "default_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4cbffaa50a420709cd840",
+      "name": "REDACTED_NAME",
+      "key": "consumables",
+      "color": "#f43f5e",
+      "icon": "ShieldAlert",
+      "is_predefined": "True",
+      "default_amount": "0",
+      "created_at": "2026-10-06T10:22:55.105000"
+    }
+  },
+  "patients_inappnotification": {
+    "collection_name": "patients_inappnotification",
+    "document_count": 153,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "recipient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "title",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "message",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notification_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_read",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "data",
+        "types": "dict",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6aec1ef25a10b408479a3c73",
+      "recipient_id": "6ac4c9c5451a504a886a8bc0",
+      "title": "New Schedule Proposal",
+      "message": "Dr. Akhil submitted a proposed schedule for approval at East Branch.",
+      "notification_type": "SCHEDULE_PROPOSAL",
+      "is_read": "False",
+      "data": "{'proposal_id': '6aec1ef25a10b408479a3c72', 'doctor_id': '6aec1e8b4966b3d1059e461f'}",
+      "created_at": "2026-11-05T06:15:14.614000"
+    }
+  },
+  "patients_investigationattachment": {
+    "collection_name": "patients_investigationattachment",
+    "document_count": 14,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_investigationattachment_investigation_id_8d73c06c",
+        "key": [
+          [
+            "investigation_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "investigation_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "file",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "file_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "file_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "file_size",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "file_data",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 14,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "uploaded_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae878b711f8ec3835d1ddd9",
+      "investigation_id": "6ae878b711f8ec3835d1ddd8",
+      "file": "investigations/2026/11/opg_report_c10283ceb6.pdf",
+      "file_name": "REDACTED_NAME",
+      "file_type": "application/pdf",
+      "file_size": "89",
+      "file_data": "None",
+      "uploaded_at": "2026-11-02T11:49:11.706000"
+    }
+  },
+  "patients_investigationmaster": {
+    "collection_name": "patients_investigationmaster",
+    "document_count": 17,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_investigationmaster_company_id_84b8ce84",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 9,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "category",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "default_cost",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae841b43892396ee0299207",
+      "company_id": "None",
+      "name": "REDACTED_NAME",
+      "code": "OPG",
+      "category": "Radiology / Imaging",
+      "description": "Orthopantomogram digital panoramic radiograph",
+      "default_cost": "0",
+      "is_active": "True",
+      "created_at": "2026-11-02T07:54:28.535000",
+      "updated_at": "2026-11-02T07:54:28.535000"
+    }
+  },
+  "patients_medicinemaster": {
+    "collection_name": "patients_medicinemaster",
+    "document_count": 10,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "dosage",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "frequency",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "purchase_rate",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "sales_rate",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "stock_quantity",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "low_stock_threshold",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4f183fc826c7498499e10",
+      "name": "REDACTED_NAME",
+      "dosage": "1-0-1 (After Food)",
+      "frequency": "Twice Daily",
+      "purchase_rate": "9.00",
+      "sales_rate": "15.00",
+      "stock_quantity": "180",
+      "low_stock_threshold": "20",
+      "notes": "",
+      "is_active": "True"
+    }
+  },
+  "patients_offerpackage": {
+    "collection_name": "patients_offerpackage",
+    "document_count": 4,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "package_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "original_price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "package_price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount_value",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "valid_from",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "valid_to",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 4,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "validity_days",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "max_redemptions",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4cd87e339bc230b38d7e2",
+      "code": "PKG_SMILE",
+      "name": "REDACTED_NAME",
+      "description": "Full mouth scaling, stain removal, whitening, and high-gloss polish",
+      "package_type": "Combo Treatment",
+      "original_price": "7500",
+      "package_price": "4999",
+      "discount_type": "Flat Amount",
+      "discount_value": "2501",
+      "valid_from": "2026-10-06T00:00:00",
+      "valid_to": "None",
+      "validity_days": "365",
+      "max_redemptions": "0",
+      "is_active": "True",
+      "created_at": "2026-10-06T10:29:27.748000",
+      "updated_at": "2026-10-06T10:29:27.748000"
+    }
+  },
+  "patients_patient": {
+    "collection_name": "patients_patient",
+    "document_count": 25,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patient_registration_branch_id_42abc887",
+        "key": [
+          [
+            "registration_branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patient_company_id_573c1c9c",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "registration_branch_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 3,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "phone",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "dob",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 20,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "age",
+        "types": "Int64/NoneType",
+        "optional": true,
+        "null_count_in_sample": 16,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "gender",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 16,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "address",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 24,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "pincode",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 24,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 9,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_type_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 24,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 20,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "consultation_fee",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "balance_adjustment",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "email",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 25,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "occupation",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 25,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae82f58458ef4dbf30e3129",
+      "company_id": "6ae06c1ba7492ed0d8b71808",
+      "registration_branch_id": "6ae06c1ba7492ed0d8b71809",
+      "name": "REDACTED_NAME",
+      "phone": "REDACTED_PHONE",
+      "dob": "None",
+      "age": "28",
+      "gender": "Female",
+      "address": "REDACTED_ADDRESS",
+      "pincode": "None",
+      "status": "Active",
+      "doctor_id": "None",
+      "patient_type_id": "None",
+      "notes": "None",
+      "consultation_fee": "0",
+      "balance_adjustment": "0",
+      "created_at": "2026-11-02T06:36:08.378000",
+      "email": "redacted@example.com",
+      "occupation": "None"
+    }
+  },
+  "patients_patient_groups": {
+    "collection_name": "patients_patient_groups",
+    "document_count": 0,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [],
+    "sample_document": {}
+  },
+  "patients_patientgroup": {
+    "collection_name": "patients_patientgroup",
+    "document_count": 1,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4f18dfc826c7498499e60",
+      "name": "REDACTED_NAME",
+      "description": "Automatically created Ortho communication group",
+      "created_at": "2026-10-06T13:03:09.281000"
+    }
+  },
+  "patients_patientimage": {
+    "collection_name": "patients_patientimage",
+    "document_count": 0,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [],
+    "sample_document": {}
+  },
+  "patients_patientinvestigation": {
+    "collection_name": "patients_patientinvestigation",
+    "document_count": 26,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_appointment_id_0120630d",
+        "key": [
+          [
+            "appointment_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_branch_id_a5fe6920",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_company_id_8595cf44",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_doctor_id_bb7c04b7",
+        "key": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_investigation_master_id_a964b27f",
+        "key": [
+          [
+            "investigation_master_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_patient_id_29855a34",
+        "key": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_patientinvestigation_visit_id_69c4f0f1",
+        "key": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 21,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "appointment_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 20,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "visit_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 26,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 20,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "investigation_master_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 25,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "investigation_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "investigation_date",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "reason",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "findings",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "remarks",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae869be40734333265ff0d6",
+      "company_id": "None",
+      "branch_id": "None",
+      "patient_id": "6ae8699909ec923b605a61c9",
+      "appointment_id": "6ae8699909ec923b605a61ca",
+      "visit_id": "None",
+      "doctor_id": "6ae8699909ec923b605a61c8",
+      "investigation_master_id": "6ae869be40734333265ff0d5",
+      "investigation_name": "REDACTED_NAME",
+      "investigation_date": "2026-11-02T00:00:00",
+      "reason": "Evaluation of periapical radiolucency #16 and generalized bone levels",
+      "findings": "Periapical widening of PDL space seen at apex of mesiobuccal root #16. No furcation involvement. Alveolar bone height normal.",
+      "remarks": "None",
+      "status": "Completed",
+      "created_at": "2026-11-02T10:45:18.461000",
+      "updated_at": "2026-11-02T10:45:18.461000"
+    }
+  },
+  "patients_patientlaborder": {
+    "collection_name": "patients_patientlaborder",
+    "document_count": 0,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [],
+    "sample_document": {}
+  },
+  "patients_patienttypemaster": {
+    "collection_name": "patients_patienttypemaster",
+    "document_count": 10,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 4,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "display_order",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4c7d703e026ec2de47c6c",
+      "name": "REDACTED_NAME",
+      "code": "REG",
+      "description": "Standard walk-in patient with standard pricing",
+      "is_active": "True",
+      "display_order": "1",
+      "created_at": "2026-10-06T10:05:11.883000",
+      "updated_at": "2026-10-06T10:29:27.598000"
+    }
+  },
+  "patients_payment": {
+    "collection_name": "patients_payment",
+    "document_count": 9,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_payment_branch_id_8f9b8b86",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_payment_company_id_f4a77c5c",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 9,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 9,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "visit_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 4,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "total_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "paid_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "cash_received",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "balance_returned",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "balance_amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "payment_method",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "transaction_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 9,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "transaction_date",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 9,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae82fceaa6aecd55d34d219",
+      "company_id": "None",
+      "branch_id": "None",
+      "patient_id": "6ae82fceaa6aecd55d34d216",
+      "visit_id": "6ae82fceaa6aecd55d34d218",
+      "doctor_id": "6ad223554700afea755fcb0d",
+      "total_amount": "800.00",
+      "paid_amount": "800.00",
+      "cash_received": "800",
+      "balance_returned": "0.00",
+      "balance_amount": "0.00",
+      "payment_method": "Cash",
+      "transaction_id": "None",
+      "transaction_date": "None",
+      "status": "Paid",
+      "created_at": "2026-11-02T06:38:06.271000"
+    }
+  },
+  "patients_pharmacysettings": {
+    "collection_name": "patients_pharmacysettings",
+    "document_count": 1,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "default_payment_method",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "low_stock_threshold",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "require_prescription",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "allow_partial_dispensing",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "auto_deduct_stock_on_bill",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "auto_print_receipt",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "apply_gst",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "gst_percent",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4db9028ae00206707b6d8",
+      "default_payment_method": "Cash",
+      "low_stock_threshold": "10",
+      "require_prescription": "False",
+      "allow_partial_dispensing": "True",
+      "auto_deduct_stock_on_bill": "True",
+      "auto_print_receipt": "False",
+      "apply_gst": "False",
+      "gst_percent": "0"
+    }
+  },
+  "patients_prebooking": {
+    "collection_name": "patients_prebooking",
+    "document_count": 0,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [],
+    "sample_document": {}
+  },
+  "patients_prescription": {
+    "collection_name": "patients_prescription",
+    "document_count": 5,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_prescription_branch_id_50474bab",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_prescription_company_id_1d7494a1",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 5,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 5,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "visit_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 4,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "clinical_note_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 5,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_by_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 5,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae869be40734333265ff0d1",
+      "company_id": "None",
+      "branch_id": "None",
+      "patient_id": "6ae8699909ec923b605a61c9",
+      "visit_id": "6ae8699909ec923b605a61cb",
+      "clinical_note_id": "None",
+      "doctor_id": "6ae8699909ec923b605a61c8",
+      "notes": "Take medications strictly after meals. Avoid chewing hard on tooth #16.",
+      "status": "PENDING",
+      "created_by_id": "None",
+      "created_at": "2026-11-02T10:45:18.400000"
+    }
+  },
+  "patients_prescriptionitem": {
+    "collection_name": "patients_prescriptionitem",
+    "document_count": 7,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "prescription_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "medicine_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "dosage",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "duration",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "quantity",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "unit_price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_billed",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_dispensed",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae869be40734333265ff0d2",
+      "prescription_id": "6ae869be40734333265ff0d1",
+      "medicine_name": "Amoxicillin + Clavulanic Acid (Augmentin 625)",
+      "dosage": "1-0-1",
+      "duration": "5 days",
+      "notes": "Take after breakfast and dinner",
+      "quantity": "1",
+      "unit_price": "0",
+      "is_billed": "False",
+      "is_dispensed": "False"
+    }
+  },
+  "patients_roledefaultpermissions": {
+    "collection_name": "patients_roledefaultpermissions",
+    "document_count": 4,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "role",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "permissions",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4d2cb60f5fe207a656318",
+      "role": "Admin",
+      "permissions": "['dashboard', 'add-patients', 'appointments', 'today-patients', 'search-patient', 'follow-ups', 'pre-bookings', 'tele-medicine', 'website-appointment', 'communication', 'billing', 'expense-manager', 'reports', 'pathology-lab', 'dental-lab', 'pharmacy', 'purchases', 'stock', 'prescriptions', 'users', 'doctors', 'settings']"
+    }
+  },
+  "patients_rolemaster": {
+    "collection_name": "patients_rolemaster",
+    "document_count": 9,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_system_role",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4c7d703e026ec2de47c66",
+      "name": "REDACTED_NAME",
+      "code": "ADMIN",
+      "description": "Full administrative control over clinic operations, staff, and settings",
+      "is_system_role": "True",
+      "is_active": "True",
+      "created_at": "2026-10-06T10:05:11.861000",
+      "updated_at": "2026-10-06T10:29:27.617000"
+    }
+  },
+  "patients_slot_lock": {
+    "collection_name": "patients_slot_lock",
+    "document_count": 60,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "date",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "time",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "slot_6ae8699909ec923b605a61c8_2026-11-03_10:00",
+      "doctor_id": "6ae8699909ec923b605a61c8",
+      "date": "2026-11-03",
+      "time": "10:00",
+      "created_at": "2026-11-03T05:11:46.006000"
+    }
+  },
+  "patients_staff": {
+    "collection_name": "patients_staff",
+    "document_count": 30,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_staff_company_id_c8df402e",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_staff_primary_branch_id_30443d34",
+        "key": [
+          [
+            "primary_branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "staff_level",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "user_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_profile_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 23,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "role",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "phone",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 22,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "email",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 23,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "gender",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 22,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "age",
+        "types": "Int64/NoneType",
+        "optional": true,
+        "null_count_in_sample": 22,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "dob",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 28,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "blood_group",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 28,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "address",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 28,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "emergency_contact",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 28,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "base_salary",
+        "types": "Decimal128",
+        "optional": true,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "incentive",
+        "types": "Decimal128",
+        "optional": true,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "permissions",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "additional_details",
+        "types": "dict",
+        "optional": true,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": true,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 1
+      },
+      {
+        "field": "accessible_branches",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "primary_branch_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 2,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ad223544700afea755fcb04",
+      "staff_level": "Senior Consultant",
+      "user_id": "6ad223544700afea755fcb02",
+      "doctor_profile_id": "6ad223544700afea755fcb03",
+      "name": "REDACTED_NAME",
+      "role": "Doctor",
+      "phone": "REDACTED_PHONE",
+      "email": "redacted@example.com",
+      "gender": "Female",
+      "age": "40",
+      "dob": "None",
+      "blood_group": "None",
+      "address": "REDACTED_ADDRESS",
+      "status": "Active",
+      "emergency_contact": "None",
+      "base_salary": "85000.00",
+      "incentive": "0",
+      "is_active": "True",
+      "permissions": "['dashboard', 'add-patients', 'appointments', 'today-patients', 'search-patient', 'reports', 'prescriptions']",
+      "additional_details": "{}",
+      "created_at": "2026-10-16T13:15:00.874000",
+      "accessible_branches": "['6ae06c1ba7492ed0d8b71809']",
+      "primary_branch_id": "6ae06c1ba7492ed0d8b71809",
+      "company_id": "6ae06c1ba7492ed0d8b71808"
+    }
+  },
+  "patients_staffbenefit": {
+    "collection_name": "patients_staffbenefit",
+    "document_count": 0,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [],
+    "sample_document": {}
+  },
+  "patients_staffinsurance": {
+    "collection_name": "patients_staffinsurance",
+    "document_count": 0,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [],
+    "sample_document": {}
+  },
+  "patients_staffleaveconfig": {
+    "collection_name": "patients_staffleaveconfig",
+    "document_count": 4,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "staff_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "leave_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "annual_entitlement",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_paid",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "carry_forward",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "max_carry_forward",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "applicable_from",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ad1bd88e16e921f716c067a",
+      "staff_id": "6ad1bd88e16e921f716c0679",
+      "leave_type": "Casual Leave",
+      "annual_entitlement": "12",
+      "is_paid": "True",
+      "carry_forward": "True",
+      "max_carry_forward": "6",
+      "applicable_from": "2026-10-16T00:00:00",
+      "status": "Active",
+      "created_at": "2026-10-16T06:00:40.620000",
+      "updated_at": "2026-10-16T06:00:40.620000"
+    }
+  },
+  "patients_stafflevelmaster": {
+    "collection_name": "patients_stafflevelmaster",
+    "document_count": 5,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "display_order",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4cd87e339bc230b38d7d0",
+      "name": "REDACTED_NAME",
+      "code": "L1",
+      "description": "Entry-level trainee undergoing orientation",
+      "is_active": "True",
+      "display_order": "1",
+      "created_at": "2026-10-06T10:29:27.645000",
+      "updated_at": "2026-10-06T10:29:27.645000"
+    }
+  },
+  "patients_toothconditionmaster": {
+    "collection_name": "patients_toothconditionmaster",
+    "document_count": 13,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_toothconditionmaster_name_1d23b1e2_uniq",
+        "key": [
+          [
+            "name",
+            1
+          ]
+        ],
+        "unique": true
+      },
+      {
+        "name": "patients_toothconditionmaster_code_eb016103_uniq",
+        "key": [
+          [
+            "code",
+            1
+          ]
+        ],
+        "unique": true
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "color",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_system",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "display_order",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ad9b6a7e4b98668a81c9319",
+      "name": "REDACTED_NAME",
+      "code": "COND-REMOVED",
+      "description": "Tooth extracted or missing from arch; blocks routine restorations",
+      "color": "#64748b",
+      "is_system": "True",
+      "is_active": "True",
+      "display_order": "0",
+      "created_at": "2026-10-22T07:09:27.038000",
+      "updated_at": "2026-10-22T07:09:27.038000"
+    }
+  },
+  "patients_toothconditionrecord": {
+    "collection_name": "patients_toothconditionrecord",
+    "document_count": 10,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_toothconditionrecord_appointment_id_fce01b8f",
+        "key": [
+          [
+            "appointment_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_toothconditionrecord_patient_id_adaed71f",
+        "key": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_toothconditionrecord_visit_id_9195e778",
+        "key": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "visit_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 3,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "appointment_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 2,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tooth_number",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "condition",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "surfaces",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "examination",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "diagnosis",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "treatments_suggested",
+        "types": "list",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "mobility",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "pocket_depth",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "furcation",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "plaque_index",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae8688d24228921e98878e3",
+      "patient_id": "6ae82f58458ef4dbf30e3129",
+      "visit_id": "None",
+      "appointment_id": "None",
+      "tooth_number": "13",
+      "condition": "['Decayed']",
+      "surfaces": "['Mesial', 'Occlusal']",
+      "examination": "[]",
+      "diagnosis": "['Deep Dental Caries']",
+      "treatments_suggested": "[]",
+      "mobility": "",
+      "pocket_depth": "",
+      "furcation": "",
+      "plaque_index": "",
+      "notes": "",
+      "is_active": "True",
+      "created_at": "2026-11-02T10:40:13.740000",
+      "updated_at": "2026-11-02T10:40:13.740000"
+    }
+  },
+  "patients_toothmaster": {
+    "collection_name": "patients_toothmaster",
+    "document_count": 52,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tooth_number",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "category",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "position",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae82d79e737f89a2d1862d2",
+      "tooth_number": "18",
+      "type": "molar",
+      "category": "permanent",
+      "position": "upper_right"
+    }
+  },
+  "patients_transaction": {
+    "collection_name": "patients_transaction",
+    "document_count": 27,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_transaction_branch_id_44100f5a",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_transaction_company_id_9b526528",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "amount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "category",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "payment_method",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "date",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6aeacc32299c1c48fca48e69",
+      "company_id": "6ae06c1ba7492ed0d8b71808",
+      "branch_id": "6ae06c1ba7492ed0d8b71809",
+      "type": "Income",
+      "amount": "5000.0",
+      "category": "Patient Payment",
+      "patient_id": "6ae82f58458ef4dbf30e3129",
+      "doctor_id": "6ad223544700afea755fcb03",
+      "notes": "Receipt RCP-MAIN-1001 for Invoice INV-MAIN-504",
+      "payment_method": "UPI",
+      "date": "2026-11-04T00:00:00",
+      "created_at": "2026-11-04T06:09:54.495000"
+    }
+  },
+  "patients_treatmentmaster": {
+    "collection_name": "patients_treatmentmaster",
+    "document_count": 43,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "fee_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "is_active",
+        "types": "bool",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "code",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 2,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ac4f183fc826c7498499e04",
+      "name": "REDACTED_NAME",
+      "price": "500.00",
+      "fee_type": "Consultation",
+      "is_active": "True",
+      "code": "TX-001",
+      "created_at": "2026-10-22T07:07:54.519000",
+      "updated_at": "2026-10-22T07:07:54.542000"
+    }
+  },
+  "patients_treatmentplan": {
+    "collection_name": "patients_treatmentplan",
+    "document_count": 112,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_appointment_id_6eb0aa79",
+        "key": [
+          [
+            "appointment_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_branch_id_6f267026",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_company_id_1546d46a",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_doctor_id_51e3aaa2",
+        "key": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_patient_id_3c3ab7c9",
+        "key": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplan_visit_id_e636ff03",
+        "key": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "visit_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 100,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "appointment_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 100,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "title",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "total_estimated_cost",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae8688d24228921e98878e6",
+      "company_id": "6ae06c1ba7492ed0d8b71808",
+      "branch_id": "6ae06c1ba7492ed0d8b71809",
+      "patient_id": "6ae82f58458ef4dbf30e3129",
+      "visit_id": "None",
+      "appointment_id": "None",
+      "doctor_id": "6ad223544700afea755fcb03",
+      "title": "Comprehensive Restorative Plan",
+      "status": "Proposed",
+      "total_estimated_cost": "5500.00",
+      "notes": "",
+      "created_at": "2026-11-02T10:40:13.762000",
+      "updated_at": "2026-11-03T05:02:20.405000"
+    }
+  },
+  "patients_treatmentplanitem": {
+    "collection_name": "patients_treatmentplanitem",
+    "document_count": 56644,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplanitem_plan_id_c0ec4be8",
+        "key": [
+          [
+            "plan_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplanitem_treatment_master_id_b60cafc4",
+        "key": [
+          [
+            "treatment_master_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplanitem_doctor_id_88adc167",
+        "key": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentplanitem_price_modified_by_id_63239701",
+        "key": [
+          [
+            "price_modified_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "plan_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tooth_number",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "surface",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "diagnosis",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "procedure_name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "treatment_master_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 8,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "priority",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "estimated_cost",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "final_cost",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "estimated_visits",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "description",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 13,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price_modified_at",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 83,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price_modified_by_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 100,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price_override_reason",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 97,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "standard_price_snapshot",
+        "types": "Decimal128/NoneType",
+        "optional": true,
+        "null_count_in_sample": 52,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae8688d24228921e98878e7",
+      "plan_id": "6ae8688d24228921e98878e6",
+      "tooth_number": "13",
+      "surface": "All",
+      "diagnosis": "",
+      "procedure_name": "Root Canal Therapy",
+      "treatment_master_id": "None",
+      "priority": "Urgent",
+      "estimated_cost": "4500",
+      "discount": "0",
+      "final_cost": "4000",
+      "estimated_visits": "2",
+      "status": "Proposed",
+      "notes": "Access opening and obturation",
+      "description": "",
+      "created_at": "2026-11-02T10:40:13.769000",
+      "updated_at": "2026-11-02T10:40:13.769000",
+      "doctor_id": "None",
+      "price_modified_at": "None",
+      "price_modified_by_id": "None",
+      "price_override_reason": "None",
+      "standard_price_snapshot": "None"
+    }
+  },
+  "patients_treatmentrecord": {
+    "collection_name": "patients_treatmentrecord",
+    "document_count": 17,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentrecord_price_modified_by_id_20ab8531",
+        "key": [
+          [
+            "price_modified_by_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "visit_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "treatment_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "tooth_number",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 2,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "fee_type",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 8,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "discount",
+        "types": "Decimal128",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price_modified_at",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 11,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price_modified_by_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 17,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "price_override_reason",
+        "types": "NoneType/str",
+        "optional": true,
+        "null_count_in_sample": 11,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "quantity",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "standard_price_snapshot",
+        "types": "Decimal128/NoneType",
+        "optional": true,
+        "null_count_in_sample": 7,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "updated_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae869be40734333265ff0ce",
+      "visit_id": "6ae8699909ec923b605a61cb",
+      "treatment_id": "6ae869be40734333265ff0cd",
+      "tooth_number": "16",
+      "price": "4500",
+      "fee_type": "Treatment",
+      "notes": "Session 1 Completed: Access opening done, working length determined (MB: 20mm, DB: 19.5mm, P: 21mm). Closed dressing given with Ca(OH)2.",
+      "status": "In Progress",
+      "doctor_id": "6ae8699909ec923b605a61c8",
+      "created_at": "2026-11-03T05:49:29.537000",
+      "discount": "0",
+      "price_modified_at": "None",
+      "price_modified_by_id": "None",
+      "price_override_reason": "None",
+      "quantity": "1",
+      "standard_price_snapshot": "None",
+      "updated_at": "2026-11-03T05:49:29.937000"
+    }
+  },
+  "patients_treatmentsession": {
+    "collection_name": "patients_treatmentsession",
+    "document_count": 2,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_doctor_id_8f4ce70e",
+        "key": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_patient_id_57fd56f7",
+        "key": [
+          [
+            "patient_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_plan_item_id_4da75d86",
+        "key": [
+          [
+            "plan_item_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_treatment_record_id_06f79532",
+        "key": [
+          [
+            "treatment_record_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_treatmentsession_visit_id_aaccff34",
+        "key": [
+          [
+            "visit_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "treatment_record_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "plan_item_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "visit_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "session_number",
+        "types": "Int64",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "session_date",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "procedure_performed",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "clinical_notes",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "materials_used",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "next_session_plan",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "next_session_date",
+        "types": "NoneType/datetime",
+        "optional": true,
+        "null_count_in_sample": 1,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae869be40734333265ff0cf",
+      "treatment_record_id": "6ae869be40734333265ff0ce",
+      "plan_item_id": "6ae869be40734333265ff0c9",
+      "patient_id": "6ae8699909ec923b605a61c9",
+      "visit_id": "6ae8699909ec923b605a61cb",
+      "doctor_id": "6ae8699909ec923b605a61c8",
+      "session_number": "1",
+      "session_date": "2026-11-02T00:00:00",
+      "procedure_performed": "Session 1: Molar Endodontic Therapy (RCT) initiated",
+      "clinical_notes": "Session 1 Completed: Access opening done, working length determined (MB: 20mm, DB: 19.5mm, P: 21mm). Closed dressing given with Ca(OH)2.",
+      "materials_used": "",
+      "next_session_plan": "",
+      "next_session_date": "None",
+      "status": "In Progress",
+      "created_at": "2026-11-02T10:45:18.376000"
+    }
+  },
+  "patients_visit": {
+    "collection_name": "patients_visit",
+    "document_count": 17,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_visit_branch_id_6e5a2bb1",
+        "key": [
+          [
+            "branch_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_visit_company_id_5b80e714",
+        "key": [
+          [
+            "company_id",
+            1
+          ]
+        ],
+        "unique": false
+      },
+      {
+        "name": "patients_visit_doctor_id_b701616a",
+        "key": [
+          [
+            "doctor_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "company_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 5,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "branch_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 5,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "patient_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "appointment_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 2,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "doctor_id",
+        "types": "NoneType/ObjectId",
+        "optional": true,
+        "null_count_in_sample": 2,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6ae82fceaa6aecd55d34d218",
+      "company_id": "None",
+      "branch_id": "None",
+      "patient_id": "6ae82fceaa6aecd55d34d216",
+      "appointment_id": "6ae82fceaa6aecd55d34d217",
+      "created_at": "2026-11-02T06:38:06.210000",
+      "doctor_id": "6ad223554700afea755fcb0d"
+    }
+  },
+  "patients_websiteappointmentrequest": {
+    "collection_name": "patients_websiteappointmentrequest",
+    "document_count": 3,
+    "is_framework": false,
+    "indexes": [
+      {
+        "name": "_id_",
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ],
+        "unique": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "_id",
+        "types": "ObjectId",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "name",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "phone",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "email",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 3,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "preferred_date",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "preferred_time",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 3,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "preferred_doctor_id",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 3,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "reason",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 3,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "status",
+        "types": "str",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "notes",
+        "types": "NoneType",
+        "optional": true,
+        "null_count_in_sample": 3,
+        "missing_count_in_sample": 0
+      },
+      {
+        "field": "created_at",
+        "types": "datetime",
+        "optional": false,
+        "null_count_in_sample": 0,
+        "missing_count_in_sample": 0
+      }
+    ],
+    "sample_document": {
+      "_id": "6aeecd7b17b545666d984a47",
+      "name": "REDACTED_NAME",
+      "phone": "REDACTED_PHONE",
+      "email": "redacted@example.com",
+      "preferred_date": "2026-11-10T00:00:00",
+      "preferred_time": "None",
+      "preferred_doctor_id": "None",
+      "reason": "None",
+      "status": "Pending",
+      "notes": "None",
+      "created_at": "2026-11-07T07:04:27.623000"
+    }
+  }
+}

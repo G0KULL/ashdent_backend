@@ -1,0 +1,1122 @@
+[
+  {
+    "role": "Super Admin",
+    "endpoint": "Patient Profile (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/profile/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Patient Clinical History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/clinical-history/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Patient EMR Detail (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "EMR PDF Report (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr-report/pdf/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Tooth Conditions (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Tooth Conditions (POST)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "POST",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Treatment Plans (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/treatment-plans/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Treatment Plan Item (PATCH)",
+    "url": "/api/treatment-plan-items/6aef1521a932d0e8baaf79de/",
+    "method": "PATCH",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Treatment History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/treatment-history/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Unbilled Treatments (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/unbilled-treatments/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Appointment by Patient (GET)",
+    "url": "/api/appointment/patient/6aef1520a932d0e8baaf79d5/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Investigation Detail (GET)",
+    "url": "/api/patient-investigations/6aef1892b8518e4bbaddbfae/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Patient Images (GET)",
+    "url": "/api/patient-images/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Billing List (GET)",
+    "url": "/api/bill/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Bill Payments (GET)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Record Payment (POST)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "POST",
+    "status_code": 201,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Recent Payments (GET)",
+    "url": "/api/payments/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Prescription List (GET)",
+    "url": "/api/prescription/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Recent Patients (GET)",
+    "url": "/api/patients/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Super Admin",
+    "endpoint": "Payment Search (GET)",
+    "url": "/api/payments/search/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Patient Profile (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/profile/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Patient Clinical History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/clinical-history/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Patient EMR Detail (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "EMR PDF Report (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr-report/pdf/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Tooth Conditions (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Tooth Conditions (POST)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "POST",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Treatment Plans (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/treatment-plans/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Treatment Plan Item (PATCH)",
+    "url": "/api/treatment-plan-items/6aef1521a932d0e8baaf79de/",
+    "method": "PATCH",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Treatment History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/treatment-history/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Unbilled Treatments (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/unbilled-treatments/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Appointment by Patient (GET)",
+    "url": "/api/appointment/patient/6aef1520a932d0e8baaf79d5/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Investigation Detail (GET)",
+    "url": "/api/patient-investigations/6aef1892b8518e4bbaddbfae/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Patient Images (GET)",
+    "url": "/api/patient-images/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Billing List (GET)",
+    "url": "/api/bill/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Bill Payments (GET)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Record Payment (POST)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "POST",
+    "status_code": 201,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Recent Payments (GET)",
+    "url": "/api/payments/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Prescription List (GET)",
+    "url": "/api/prescription/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Recent Patients (GET)",
+    "url": "/api/patients/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Alpha Admin",
+    "endpoint": "Payment Search (GET)",
+    "url": "/api/payments/search/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Patient Profile (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/profile/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Patient Clinical History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/clinical-history/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Patient EMR Detail (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "EMR PDF Report (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr-report/pdf/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Tooth Conditions (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Tooth Conditions (POST)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "POST",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Treatment Plans (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/treatment-plans/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Treatment Plan Item (PATCH)",
+    "url": "/api/treatment-plan-items/6aef1521a932d0e8baaf79de/",
+    "method": "PATCH",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Treatment History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/treatment-history/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Unbilled Treatments (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/unbilled-treatments/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Appointment by Patient (GET)",
+    "url": "/api/appointment/patient/6aef1520a932d0e8baaf79d5/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Investigation Detail (GET)",
+    "url": "/api/patient-investigations/6aef1892b8518e4bbaddbfae/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Patient Images (GET)",
+    "url": "/api/patient-images/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Billing List (GET)",
+    "url": "/api/bill/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Bill Payments (GET)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Record Payment (POST)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "POST",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Recent Payments (GET)",
+    "url": "/api/payments/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Prescription List (GET)",
+    "url": "/api/prescription/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Recent Patients (GET)",
+    "url": "/api/patients/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Company Beta Admin",
+    "endpoint": "Payment Search (GET)",
+    "url": "/api/payments/search/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Patient Profile (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/profile/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Patient Clinical History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/clinical-history/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Patient EMR Detail (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "EMR PDF Report (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr-report/pdf/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Tooth Conditions (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Tooth Conditions (POST)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "POST",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Treatment Plans (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/treatment-plans/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Treatment Plan Item (PATCH)",
+    "url": "/api/treatment-plan-items/6aef1521a932d0e8baaf79de/",
+    "method": "PATCH",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Treatment History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/treatment-history/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Unbilled Treatments (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/unbilled-treatments/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Appointment by Patient (GET)",
+    "url": "/api/appointment/patient/6aef1520a932d0e8baaf79d5/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Investigation Detail (GET)",
+    "url": "/api/patient-investigations/6aef1892b8518e4bbaddbfae/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Patient Images (GET)",
+    "url": "/api/patient-images/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Billing List (GET)",
+    "url": "/api/bill/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Bill Payments (GET)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Record Payment (POST)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "POST",
+    "status_code": 201,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Recent Payments (GET)",
+    "url": "/api/payments/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Prescription List (GET)",
+    "url": "/api/prescription/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Recent Patients (GET)",
+    "url": "/api/patients/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Doctor",
+    "endpoint": "Payment Search (GET)",
+    "url": "/api/payments/search/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Patient Profile (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/profile/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Patient Clinical History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/clinical-history/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Patient EMR Detail (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "EMR PDF Report (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr-report/pdf/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Tooth Conditions (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Tooth Conditions (POST)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "POST",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Treatment Plans (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/treatment-plans/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Treatment Plan Item (PATCH)",
+    "url": "/api/treatment-plan-items/6aef1521a932d0e8baaf79de/",
+    "method": "PATCH",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Treatment History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/treatment-history/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Unbilled Treatments (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/unbilled-treatments/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Appointment by Patient (GET)",
+    "url": "/api/appointment/patient/6aef1520a932d0e8baaf79d5/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Investigation Detail (GET)",
+    "url": "/api/patient-investigations/6aef1892b8518e4bbaddbfae/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Patient Images (GET)",
+    "url": "/api/patient-images/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Billing List (GET)",
+    "url": "/api/bill/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Bill Payments (GET)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Record Payment (POST)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "POST",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Recent Payments (GET)",
+    "url": "/api/payments/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Prescription List (GET)",
+    "url": "/api/prescription/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Recent Patients (GET)",
+    "url": "/api/patients/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Doctor",
+    "endpoint": "Payment Search (GET)",
+    "url": "/api/payments/search/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Patient Profile (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/profile/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Patient Clinical History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/clinical-history/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Patient EMR Detail (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "EMR PDF Report (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr-report/pdf/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Tooth Conditions (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Tooth Conditions (POST)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "POST",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Treatment Plans (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/treatment-plans/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Treatment Plan Item (PATCH)",
+    "url": "/api/treatment-plan-items/6aef1521a932d0e8baaf79de/",
+    "method": "PATCH",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Treatment History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/treatment-history/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Unbilled Treatments (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/unbilled-treatments/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Appointment by Patient (GET)",
+    "url": "/api/appointment/patient/6aef1520a932d0e8baaf79d5/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Investigation Detail (GET)",
+    "url": "/api/patient-investigations/6aef1892b8518e4bbaddbfae/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Patient Images (GET)",
+    "url": "/api/patient-images/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Billing List (GET)",
+    "url": "/api/bill/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Bill Payments (GET)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Record Payment (POST)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "POST",
+    "status_code": 201,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Recent Payments (GET)",
+    "url": "/api/payments/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Prescription List (GET)",
+    "url": "/api/prescription/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Recent Patients (GET)",
+    "url": "/api/patients/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Alpha Receptionist",
+    "endpoint": "Payment Search (GET)",
+    "url": "/api/payments/search/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Patient Profile (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/profile/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Patient Clinical History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/clinical-history/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Patient EMR Detail (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "EMR PDF Report (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/emr-report/pdf/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Tooth Conditions (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Tooth Conditions (POST)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/tooth-conditions/",
+    "method": "POST",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Treatment Plans (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/treatment-plans/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Treatment Plan Item (PATCH)",
+    "url": "/api/treatment-plan-items/6aef1521a932d0e8baaf79de/",
+    "method": "PATCH",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Treatment History (GET)",
+    "url": "/api/patient/6aef1520a932d0e8baaf79d5/treatment-history/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Unbilled Treatments (GET)",
+    "url": "/api/patients/6aef1520a932d0e8baaf79d5/unbilled-treatments/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Appointment by Patient (GET)",
+    "url": "/api/appointment/patient/6aef1520a932d0e8baaf79d5/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Investigation Detail (GET)",
+    "url": "/api/patient-investigations/6aef1892b8518e4bbaddbfae/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Patient Images (GET)",
+    "url": "/api/patient-images/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Billing List (GET)",
+    "url": "/api/bill/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Bill Payments (GET)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Record Payment (POST)",
+    "url": "/api/billing/6aef1521a932d0e8baaf79e7/payments/",
+    "method": "POST",
+    "status_code": 403,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Recent Payments (GET)",
+    "url": "/api/payments/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Prescription List (GET)",
+    "url": "/api/prescription/list/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Recent Patients (GET)",
+    "url": "/api/patients/recent/",
+    "method": "GET",
+    "status_code": 200,
+    "passed": true
+  },
+  {
+    "role": "Beta Receptionist",
+    "endpoint": "Payment Search (GET)",
+    "url": "/api/payments/search/?patient_id=6aef1520a932d0e8baaf79d5",
+    "method": "GET",
+    "status_code": 403,
+    "passed": true
+  }
+]

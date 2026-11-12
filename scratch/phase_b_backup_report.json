@@ -1,0 +1,32 @@
+{
+  "production_backup": {
+    "source_db": "dental_clinic_db",
+    "restore_db": "dental_clinic_db_restore_verify_prod",
+    "archive_path": "E:\\My repos\\dental software\\ashdent-back\\backups\\phase3_4_dental_clinic_db_prod_20261107_174548.gz",
+    "size_bytes": 918122,
+    "sha256": "c6b6aa098fde3b987091ce355c085c5e0eafbe7c90dd075581b41c85c780c85e",
+    "timestamp": "20261107_174548",
+    "exit_code": 0,
+    "collections_count": 68,
+    "collections_match": true,
+    "count_mismatches": [],
+    "index_mismatches": [],
+    "can_read": true,
+    "status": "VERIFIED"
+  },
+  "migrated_backup": {
+    "source_db": "dental_clinic_db_migrated",
+    "restore_db": "dental_clinic_db_restore_verify_migrated",
+    "archive_path": "E:\\My repos\\dental software\\ashdent-back\\backups\\phase3_4_dental_clinic_db_migrated_20261107_174548.gz",
+    "size_bytes": 926777,
+    "sha256": "579313535afc8a99e0c8f71d678a343f0765fa12d4c87d9737a9218e52ddd4dd",
+    "timestamp": "20261107_174548",
+    "exit_code": 0,
+    "collections_count": 64,
+    "collections_match": true,
+    "count_mismatches": [],
+    "index_mismatches": [],
+    "can_read": true,
+    "status": "VERIFIED"
+  }
+}

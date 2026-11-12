@@ -1,3 +1,4 @@
+from rest_framework_simplejwt.views import TokenRefreshView
 from django.urls import path
 from .views import (
     PatientCreateView, PatientByPhoneView, PatientSearchView, PatientProfileView,
@@ -40,11 +41,20 @@ from .views import (
     WebsiteAppointmentRequestListCreateView, WebsiteAppointmentRequestActionView,
     PatientLabOrderListView, PatientLabOrderDeleteView,
     GlobalLabOrderListView,
-    CompanyListView, CompanyDetailView, BranchListView, BranchDetailView,
+    CompanyListView, CompanyDetailView, CompanyDependencyCheckView, BranchListView, BranchDetailView,
     InvestigationMasterListView, InvestigationMasterDetailView,
     PatientInvestigationListView, PatientInvestigationDetailView,
     InvestigationAttachmentUploadView, InvestigationAttachmentDetailView,
     PatientInvestigationHistoryView,
+)
+from .billing_views import (
+    EstimateListCreateView,
+    EstimateDetailUpdateView,
+    EstimatePDFView,
+    EstimateConvertToBillView,
+    BillPaymentCreateView,
+    BillReceiptPDFView,
+    PatientUnbilledTreatmentsView
 )
 from .emr_views import (
     PatientToothConditionsView,
@@ -210,6 +220,8 @@ urlpatterns = [
     path('appointments/reminders/', AppointmentRemindersView.as_view()),
     # AUTH
     path('login/', LoginView.as_view()),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh_alt'),
     path('staff/create/', StaffCreateView.as_view()),
     path('staff/onboarding/', StaffOnboardingView.as_view()),
     path('staff/list/', StaffListView.as_view()),
@@ -325,6 +337,7 @@ urlpatterns = [
 
     # MULTI-COMPANY & MULTI-BRANCH APIs
     path('companies/', CompanyListView.as_view()),
+    path('companies/<str:pk>/dependency-check/', CompanyDependencyCheckView.as_view()),
     path('companies/<str:pk>/', CompanyDetailView.as_view()),
     path('branches/', BranchListView.as_view()),
     path('branches/<str:pk>/', BranchDetailView.as_view()),
@@ -349,6 +362,16 @@ urlpatterns = [
     path('patients/<str:patient_id>/emr/', PatientEMRDetailView.as_view()),
     path('patients/<str:patient_id>/emr-report/pdf/', EMRPDFReportView.as_view()),
     path('visits/<str:visit_id>/emr-report/pdf/', EMRPDFReportView.as_view()),
+
+    # ESTIMATE & ADVANCED BILLING WORKFLOW
+    path('patients/<str:patient_id>/estimates/', EstimateListCreateView.as_view(), name='patient-estimates'),
+    path('estimates/', EstimateListCreateView.as_view(), name='estimates-list-create'),
+    path('estimates/<str:estimate_id>/', EstimateDetailUpdateView.as_view(), name='estimate-detail'),
+    path('estimates/<str:estimate_id>/pdf/', EstimatePDFView.as_view(), name='estimate-pdf'),
+    path('estimates/<str:estimate_id>/convert-to-bill/', EstimateConvertToBillView.as_view(), name='estimate-convert-to-bill'),
+    path('billing/<str:billing_id>/payments/', BillPaymentCreateView.as_view(), name='billing-add-payment'),
+    path('billing/receipts/<str:receipt_id>/pdf/', BillReceiptPDFView.as_view(), name='billing-receipt-pdf'),
+    path('patients/<str:patient_id>/unbilled-treatments/', PatientUnbilledTreatmentsView.as_view(), name='patient-unbilled-treatments'),
 
 ]
 

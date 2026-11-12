@@ -1,0 +1,410 @@
+{
+  "auth_permission": {
+    "collection_name": "auth_permission",
+    "document_count": 388,
+    "recommendation": "FRAMEWORK REQUIRED",
+    "rationale": "Essential Django framework collection for auth, content types, and migrations."
+  },
+  "auth_user": {
+    "collection_name": "auth_user",
+    "document_count": 24,
+    "recommendation": "FRAMEWORK REQUIRED",
+    "rationale": "Essential Django framework collection for auth, content types, and migrations."
+  },
+  "django_content_type": {
+    "collection_name": "django_content_type",
+    "document_count": 97,
+    "recommendation": "FRAMEWORK REQUIRED",
+    "rationale": "Essential Django framework collection for auth, content types, and migrations."
+  },
+  "django_migrations": {
+    "collection_name": "django_migrations",
+    "document_count": 109,
+    "recommendation": "FRAMEWORK REQUIRED",
+    "rationale": "Essential Django framework collection for auth, content types, and migrations."
+  },
+  "numbering_sequences": {
+    "collection_name": "numbering_sequences",
+    "document_count": 4,
+    "recommendation": "RETAIN",
+    "rationale": "Raw PyMongo atomic counter collection used by AutoNumbering.get_next_sequence for branch/company invoice and estimate sequencing."
+  },
+  "patients_appointment": {
+    "collection_name": "patients_appointment",
+    "document_count": 24,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_appointment) with 24 documents, correctly structured and referenced."
+  },
+  "patients_auditlog": {
+    "collection_name": "patients_auditlog",
+    "document_count": 65,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_auditlog) with 65 documents, correctly structured and referenced."
+  },
+  "patients_autonumbering": {
+    "collection_name": "patients_autonumbering",
+    "document_count": 1,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_autonumbering) with 1 documents, correctly structured and referenced."
+  },
+  "patients_billing": {
+    "collection_name": "patients_billing",
+    "document_count": 39,
+    "recommendation": "RETAIN AND FIX",
+    "rationale": "Core collection (patients_billing). Contains a few historical documents missing company_id/branch_id from before multi-tenant scoping was introduced."
+  },
+  "patients_billingitem": {
+    "collection_name": "patients_billingitem",
+    "document_count": 38,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_billingitem) with 38 documents, correctly structured and referenced."
+  },
+  "patients_billpayment": {
+    "collection_name": "patients_billpayment",
+    "document_count": 27,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_billpayment) with 27 documents, correctly structured and referenced."
+  },
+  "patients_branch": {
+    "collection_name": "patients_branch",
+    "document_count": 13,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_branch) with 13 documents, correctly structured and referenced."
+  },
+  "patients_clinicalnotes": {
+    "collection_name": "patients_clinicalnotes",
+    "document_count": 9,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_clinicalnotes) with 9 documents, correctly structured and referenced."
+  },
+  "patients_clinicprofile": {
+    "collection_name": "patients_clinicprofile",
+    "document_count": 1,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_clinicprofile) with 1 documents, correctly structured and referenced."
+  },
+  "patients_clinicsubscription": {
+    "collection_name": "patients_clinicsubscription",
+    "document_count": 1,
+    "recommendation": "POTENTIAL RETIREMENT",
+    "rationale": "Single record (1 doc) from early single-tenant setup. Unused in multi-tenant AshDent architecture."
+  },
+  "patients_communicationlog": {
+    "collection_name": "patients_communicationlog",
+    "document_count": 13,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_communicationlog) with 13 documents, correctly structured and referenced."
+  },
+  "patients_communicationtemplate": {
+    "collection_name": "patients_communicationtemplate",
+    "document_count": 8,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_communicationtemplate) with 8 documents, correctly structured and referenced."
+  },
+  "patients_company": {
+    "collection_name": "patients_company",
+    "document_count": 11,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_company) with 11 documents, correctly structured and referenced."
+  },
+  "patients_designationmaster": {
+    "collection_name": "patients_designationmaster",
+    "document_count": 8,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_designationmaster) with 8 documents, correctly structured and referenced."
+  },
+  "patients_diagnosismaster": {
+    "collection_name": "patients_diagnosismaster",
+    "document_count": 14,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_diagnosismaster) with 14 documents, correctly structured and referenced."
+  },
+  "patients_discountmaster": {
+    "collection_name": "patients_discountmaster",
+    "document_count": 7,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_discountmaster) with 7 documents, correctly structured and referenced."
+  },
+  "patients_doctor": {
+    "collection_name": "patients_doctor",
+    "document_count": 11,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_doctor) with 11 documents, correctly structured and referenced."
+  },
+  "patients_doctordateoverride": {
+    "collection_name": "patients_doctordateoverride",
+    "document_count": 0,
+    "recommendation": "RETAIN",
+    "rationale": "Active domain model (patients_doctordateoverride) currently having 0 records. Collection and APIs are active and functional when users utilize this module."
+  },
+  "patients_doctorschedule": {
+    "collection_name": "patients_doctorschedule",
+    "document_count": 34,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_doctorschedule) with 34 documents, correctly structured and referenced."
+  },
+  "patients_doctorscheduleproposal": {
+    "collection_name": "patients_doctorscheduleproposal",
+    "document_count": 6,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_doctorscheduleproposal) with 6 documents, correctly structured and referenced."
+  },
+  "patients_dropdownmaster": {
+    "collection_name": "patients_dropdownmaster",
+    "document_count": 39,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_dropdownmaster) with 39 documents, correctly structured and referenced."
+  },
+  "patients_emrchangelog": {
+    "collection_name": "patients_emrchangelog",
+    "document_count": 121,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_emrchangelog) with 121 documents, correctly structured and referenced."
+  },
+  "patients_estimate": {
+    "collection_name": "patients_estimate",
+    "document_count": 40,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_estimate) with 40 documents, correctly structured and referenced."
+  },
+  "patients_estimateitem": {
+    "collection_name": "patients_estimateitem",
+    "document_count": 86,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_estimateitem) with 86 documents, correctly structured and referenced."
+  },
+  "patients_examinationmaster": {
+    "collection_name": "patients_examinationmaster",
+    "document_count": 19,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_examinationmaster) with 19 documents, correctly structured and referenced."
+  },
+  "patients_expense": {
+    "collection_name": "patients_expense",
+    "document_count": 0,
+    "recommendation": "RETAIN",
+    "rationale": "Active domain model (patients_expense) currently having 0 records. Collection and APIs are active and functional when users utilize this module."
+  },
+  "patients_expensecategory": {
+    "collection_name": "patients_expensecategory",
+    "document_count": 16,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_expensecategory) with 16 documents, correctly structured and referenced."
+  },
+  "patients_inappnotification": {
+    "collection_name": "patients_inappnotification",
+    "document_count": 153,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_inappnotification) with 153 documents, correctly structured and referenced."
+  },
+  "patients_investigationattachment": {
+    "collection_name": "patients_investigationattachment",
+    "document_count": 14,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_investigationattachment) with 14 documents, correctly structured and referenced."
+  },
+  "patients_investigationmaster": {
+    "collection_name": "patients_investigationmaster",
+    "document_count": 17,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_investigationmaster) with 17 documents, correctly structured and referenced."
+  },
+  "patients_medicinemaster": {
+    "collection_name": "patients_medicinemaster",
+    "document_count": 10,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_medicinemaster) with 10 documents, correctly structured and referenced."
+  },
+  "patients_offerpackage": {
+    "collection_name": "patients_offerpackage",
+    "document_count": 4,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_offerpackage) with 4 documents, correctly structured and referenced."
+  },
+  "patients_patient": {
+    "collection_name": "patients_patient",
+    "document_count": 25,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_patient) with 25 documents, correctly structured and referenced."
+  },
+  "patients_patient_groups": {
+    "collection_name": "patients_patient_groups",
+    "document_count": 0,
+    "recommendation": "POTENTIAL RETIREMENT",
+    "rationale": "Empty unmodeled collection (0 docs). AshDent uses patients_patientgroup (1 doc) with an embedded members list rather than a separate junction table."
+  },
+  "patients_patientgroup": {
+    "collection_name": "patients_patientgroup",
+    "document_count": 1,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_patientgroup) with 1 documents, correctly structured and referenced."
+  },
+  "patients_patientimage": {
+    "collection_name": "patients_patientimage",
+    "document_count": 0,
+    "recommendation": "RETAIN",
+    "rationale": "Active domain model (patients_patientimage) currently having 0 records. Collection and APIs are active and functional when users utilize this module."
+  },
+  "patients_patientinvestigation": {
+    "collection_name": "patients_patientinvestigation",
+    "document_count": 26,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_patientinvestigation) with 26 documents, correctly structured and referenced."
+  },
+  "patients_patientlaborder": {
+    "collection_name": "patients_patientlaborder",
+    "document_count": 0,
+    "recommendation": "RETAIN",
+    "rationale": "Active domain model (patients_patientlaborder) currently having 0 records. Collection and APIs are active and functional when users utilize this module."
+  },
+  "patients_patienttypemaster": {
+    "collection_name": "patients_patienttypemaster",
+    "document_count": 10,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_patienttypemaster) with 10 documents, correctly structured and referenced."
+  },
+  "patients_payment": {
+    "collection_name": "patients_payment",
+    "document_count": 9,
+    "recommendation": "POTENTIAL MERGE",
+    "rationale": "Legacy payment record created during walk-in visit creation (9 docs). Overlaps with patients_billpayment (27 docs) and patients_transaction (27 docs)."
+  },
+  "patients_pharmacysettings": {
+    "collection_name": "patients_pharmacysettings",
+    "document_count": 1,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_pharmacysettings) with 1 documents, correctly structured and referenced."
+  },
+  "patients_prebooking": {
+    "collection_name": "patients_prebooking",
+    "document_count": 0,
+    "recommendation": "RETAIN",
+    "rationale": "Active domain model (patients_prebooking) currently having 0 records. Collection and APIs are active and functional when users utilize this module."
+  },
+  "patients_prescription": {
+    "collection_name": "patients_prescription",
+    "document_count": 5,
+    "recommendation": "RETAIN AND FIX",
+    "rationale": "Core collection (patients_prescription). Contains a few historical documents missing company_id/branch_id from before multi-tenant scoping was introduced."
+  },
+  "patients_prescriptionitem": {
+    "collection_name": "patients_prescriptionitem",
+    "document_count": 7,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_prescriptionitem) with 7 documents, correctly structured and referenced."
+  },
+  "patients_roledefaultpermissions": {
+    "collection_name": "patients_roledefaultpermissions",
+    "document_count": 4,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_roledefaultpermissions) with 4 documents, correctly structured and referenced."
+  },
+  "patients_rolemaster": {
+    "collection_name": "patients_rolemaster",
+    "document_count": 9,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_rolemaster) with 9 documents, correctly structured and referenced."
+  },
+  "patients_slot_lock": {
+    "collection_name": "patients_slot_lock",
+    "document_count": 60,
+    "recommendation": "RETAIN",
+    "rationale": "Raw PyMongo atomic lock collection with TTL index used by acquire_slot_lock and release_slot_lock for appointment slot concurrency control."
+  },
+  "patients_staff": {
+    "collection_name": "patients_staff",
+    "document_count": 30,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_staff) with 30 documents, correctly structured and referenced."
+  },
+  "patients_staffbenefit": {
+    "collection_name": "patients_staffbenefit",
+    "document_count": 0,
+    "recommendation": "RETAIN",
+    "rationale": "Active domain model (patients_staffbenefit) currently having 0 records. Collection and APIs are active and functional when users utilize this module."
+  },
+  "patients_staffinsurance": {
+    "collection_name": "patients_staffinsurance",
+    "document_count": 0,
+    "recommendation": "RETAIN",
+    "rationale": "Active domain model (patients_staffinsurance) currently having 0 records. Collection and APIs are active and functional when users utilize this module."
+  },
+  "patients_staffleaveconfig": {
+    "collection_name": "patients_staffleaveconfig",
+    "document_count": 4,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_staffleaveconfig) with 4 documents, correctly structured and referenced."
+  },
+  "patients_stafflevelmaster": {
+    "collection_name": "patients_stafflevelmaster",
+    "document_count": 5,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_stafflevelmaster) with 5 documents, correctly structured and referenced."
+  },
+  "patients_toothconditionmaster": {
+    "collection_name": "patients_toothconditionmaster",
+    "document_count": 13,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_toothconditionmaster) with 13 documents, correctly structured and referenced."
+  },
+  "patients_toothconditionrecord": {
+    "collection_name": "patients_toothconditionrecord",
+    "document_count": 10,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_toothconditionrecord) with 10 documents, correctly structured and referenced."
+  },
+  "patients_toothmaster": {
+    "collection_name": "patients_toothmaster",
+    "document_count": 52,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_toothmaster) with 52 documents, correctly structured and referenced."
+  },
+  "patients_transaction": {
+    "collection_name": "patients_transaction",
+    "document_count": 27,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_transaction) with 27 documents, correctly structured and referenced."
+  },
+  "patients_treatmentmaster": {
+    "collection_name": "patients_treatmentmaster",
+    "document_count": 43,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_treatmentmaster) with 43 documents, correctly structured and referenced."
+  },
+  "patients_treatmentplan": {
+    "collection_name": "patients_treatmentplan",
+    "document_count": 112,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_treatmentplan) with 112 documents, correctly structured and referenced."
+  },
+  "patients_treatmentplanitem": {
+    "collection_name": "patients_treatmentplanitem",
+    "document_count": 56644,
+    "recommendation": "RETAIN AND FIX",
+    "rationale": "Core EMR collection holding 56,644 items. Suffers from runaway duplicates (27k+ duplicate items in a single plan from Nov 3 runaway loop). Requires deduplication script and unique index."
+  },
+  "patients_treatmentrecord": {
+    "collection_name": "patients_treatmentrecord",
+    "document_count": 17,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_treatmentrecord) with 17 documents, correctly structured and referenced."
+  },
+  "patients_treatmentsession": {
+    "collection_name": "patients_treatmentsession",
+    "document_count": 2,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_treatmentsession) with 2 documents, correctly structured and referenced."
+  },
+  "patients_visit": {
+    "collection_name": "patients_visit",
+    "document_count": 17,
+    "recommendation": "RETAIN AND FIX",
+    "rationale": "Core collection (patients_visit). Contains a few historical documents missing company_id/branch_id from before multi-tenant scoping was introduced."
+  },
+  "patients_websiteappointmentrequest": {
+    "collection_name": "patients_websiteappointmentrequest",
+    "document_count": 3,
+    "recommendation": "RETAIN",
+    "rationale": "Actively used application collection (patients_websiteappointmentrequest) with 3 documents, correctly structured and referenced."
+  }
+}
