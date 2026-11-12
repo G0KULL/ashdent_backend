@@ -15043,7 +15043,7 @@ class PatientInvestigationListView(APIView):
 
             company=company or (patient.company if hasattr(patient, 'company') else None),
 
-            branch=branch or (appointment.branch if appointment and hasattr(appointment, 'branch') else None),
+            branch=branch or (appointment.branch if appointment and hasattr(appointment, 'branch') else (patient.registration_branch if patient and hasattr(patient, 'registration_branch') else None)),
 
             patient=patient,
 
@@ -15221,6 +15221,18 @@ class PatientInvestigationDetailView(APIView):
 
             inv.investigation_name = data['investigation_name']
 
+        if 'investigation_master' in data or 'investigation_master_id' in data:
+
+            master_id = data.get('investigation_master') or data.get('investigation_master_id')
+
+            master = InvestigationMaster.objects.filter(id=master_id).first() if master_id else None
+
+            inv.investigation_master = master
+
+            if master and not data.get('investigation_name'):
+
+                inv.investigation_name = master.name
+
         if 'doctor' in data or 'doctor_id' in data:
 
             doc_id = data.get('doctor') or data.get('doctor_id')
@@ -15228,6 +15240,16 @@ class PatientInvestigationDetailView(APIView):
             doc = Doctor.objects.filter(id=doc_id).first() if doc_id else None
 
             inv.doctor = doc
+
+        if 'patient' in data or 'patient_id' in data:
+
+            pid = data.get('patient') or data.get('patient_id')
+
+            pat = Patient.objects.filter(id=pid).first() if pid else None
+
+            if pat:
+
+                inv.patient = pat
 
 
 
@@ -15313,7 +15335,18 @@ class PatientInvestigationDetailView(APIView):
 
     def delete(self, request, pk):
 
+        scope = get_request_scope(request)
+        if not scope.is_authenticated:
+            return Response({"detail": "Authentication credentials were not provided."}, status=status.HTTP_401_UNAUTHORIZED)
+
         inv = get_object_or_404(PatientInvestigation, pk=pk)
+
+        if not scope.is_super:
+            if not scope.company or (inv.patient and inv.patient.company_id and inv.patient.company_id != scope.company.id):
+                return Response({"detail": "You do not have permission to delete this investigation."}, status=status.HTTP_403_FORBIDDEN)
+            if scope.branch and not scope.is_company_admin:
+                if inv.patient and inv.patient.registration_branch_id and not scope.has_access_to_branch(inv.patient.registration_branch_id):
+                    return Response({"detail": "You do not have permission to delete records for this branch."}, status=status.HTTP_403_FORBIDDEN)
 
         for att in inv.attachments.all():
 
@@ -15442,7 +15475,19 @@ class InvestigationAttachmentDetailView(APIView):
 
     def delete(self, request, pk):
 
+        scope = get_request_scope(request)
+        if not scope.is_authenticated:
+            return Response({"detail": "Authentication credentials were not provided."}, status=status.HTTP_401_UNAUTHORIZED)
+
         att = get_object_or_404(InvestigationAttachment, pk=pk)
+        inv = att.investigation
+
+        if not scope.is_super:
+            if not scope.company or (inv and inv.patient and inv.patient.company_id and inv.patient.company_id != scope.company.id):
+                return Response({"detail": "You do not have permission to delete this attachment."}, status=status.HTTP_403_FORBIDDEN)
+            if scope.branch and not scope.is_company_admin:
+                if inv and inv.patient and inv.patient.registration_branch_id and not scope.has_access_to_branch(inv.patient.registration_branch_id):
+                    return Response({"detail": "You do not have permission to delete records for this branch."}, status=status.HTTP_403_FORBIDDEN)
 
         if att.file:
 

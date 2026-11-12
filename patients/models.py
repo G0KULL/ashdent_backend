@@ -3526,6 +3526,8 @@ class PatientInvestigation(models.Model):
 
         ('Requested', 'Requested'),
 
+        ('In Progress', 'In Progress'),
+
         ('Result Pending', 'Result Pending'),
 
         ('Completed', 'Completed'),
